@@ -8,10 +8,9 @@ echo -e "Started system rebuild"
 # Copy changes
 echo -e "Copying changes... $NC"
 cp /etc/nixos/configuration.nix ~/backup/configuration.nix 
-echo -e "$RED"
 
 # Commit and push changes
-echo -e "Committing..."
+echo -e "${RED}Committing..."
 echo -e "$NC"
 
 git -C ~/backup/ add -A > /dev/null

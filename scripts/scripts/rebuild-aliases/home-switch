@@ -8,10 +8,9 @@ echo -e "Started rebuild of home-manager.."
 # Copy changes
 echo -e "Copying changes... $NC"
 cp -r ~/.config/home-manager/ ~/backup/home-manager/
-echo -e "$YELLOW"
 
 # Commit and push changes
-echo -e "Committing..."
+echo -e "${YELLOW}Committing..."
 echo -e "$NC"
 
 git -C ~/backup/ add -A > /dev/null
@@ -26,4 +25,4 @@ echo -e "$NC"
 home-manager switch
 
 echo -e "$YELLOW"
-echo "Finished${NC}"
+echo -e "Finished${NC}"
