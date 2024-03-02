@@ -7,6 +7,11 @@
     enableCompletion = true;
     enableVteIntegration = true;
 
+    # Init
+    interactiveShellInit = ''
+      eval "$(zoxide init zsh)"
+    '';
+
     # Aliases
     shellAliases = {
 
@@ -24,9 +29,5 @@
       rba = "bash ~/scripts/rebuild-aliases/backup";
     };
 
-    # Init
-    interactiveShellInit = ''
-      eval "$(zoxide init zsh)"
-    '';
   };
 }
