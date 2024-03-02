@@ -3,7 +3,7 @@
 let 
   colors = import ../variables/colors.nix;
 
-  hexToHypr = color: "rgba(${color.r}${color.g}${color.b}${color.a})";
+  hexToHypr = color: "${color.r}${color.g}${color.b}${color.a}";
 in
 {
   wayland.windowManager.hyprland.settings = {
