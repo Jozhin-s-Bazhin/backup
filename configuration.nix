@@ -41,15 +41,15 @@
   # Configure keymap in X11
   services.xserver = {
     # Plasma 6
-    enable = true;
-    displayManager.sddm.enable = true;
-    desktopManager.plasma6.enable = true;
+    #enable = true;
+    #displayManager.sddm.enable = true;
+    #desktopManager.plasma6.enable = true;
 
     xkb.layout = "us";
     xkb.variant = "";
 
     # Nvidia
-    #videoDrivers = [ "nvidia" ];
+    videoDrivers = [ "nvidia" ];
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -75,50 +75,50 @@
   environment.pathsToLink = [ "/share/zsh" ];
 
   # Greetd
-  #services.greetd = {
-  #  enable = true;
-  #  settings = {
-  #    default_session = {
-  #      command = "${pkgs.greetd.greetd}/bin/agreety --cmd Hyprland";
-  #      user = "roman";
-  #    };
-  #  };
-  #};
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.greetd}/bin/agreety --cmd Hyprland";
+        user = "roman";
+      };
+    };
+  };
 
   # Hyprland
-  #programs.hyprland.enable = true;
+  programs.hyprland.enable = true;
 
   ## NVIDIA BS
   # something for hyprland
-  #boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocation=1" ];
+  boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocation=1" ];
 
   # OpenGL
-  #hardware.opengl = {
-  #  enable = true;
-  #  driSupport = true;
-  #  driSupport32Bit = true;
-  #};
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
 
-  #hardware.nvidia = {
-  #  # Required
-  #  modesetting.enable = true;
-  #  
-  #  # Sleep issues
-  #  powerManagement.enable = true;
-  #  powerManagement.finegrained = false;  # Leave off
-  #
-  #  # Open-source drivers (not nouveau)
-  #  open = false;
+  hardware.nvidia = {
+    # Required
+    modesetting.enable = true;
+    
+    # Sleep issues
+    powerManagement.enable = true;
+    powerManagement.finegrained = false;  # Leave off
+  
+    # Open-source drivers (not nouveau)
+    open = false;
 
     # Something settings
-  #  nvidiaSettings = true;
+    nvidiaSettings = true;
 
-  #  # PRIME
-  #  prime = {
-  #    intelBusId = "PCI:0:2:0";
-  #    nvidiaBusId = "PCI:1:0:0";
-  #  };
-  #};
+    # PRIME
+    prime = {
+      intelBusId = "PCI:0:2:0";
+      nvidiaBusId = "PCI:1:0:0";
+    };
+  };
   
   # Do not touch
   system.stateVersion = "23.11";
