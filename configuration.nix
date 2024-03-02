@@ -86,11 +86,11 @@
   #};
 
   # Hyprland
-  programs.hyprland.enable = true;
+  #programs.hyprland.enable = true;
 
   ## NVIDIA BS
   # something for hyprland
-  boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocation=1" ];
+  #boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocation=1" ];
 
   # OpenGL
   hardware.opengl = {
