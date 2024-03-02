@@ -25,5 +25,5 @@
     };
 
   };
-  programs.zsh.interactiveShellInit = "eval \"$(zoxide init zsh)\""
+  programs.zsh.interactiveShellInit = "eval \"$(zoxide init zsh)\"";
 }
