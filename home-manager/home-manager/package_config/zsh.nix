@@ -7,11 +7,6 @@
     enableCompletion = true;
     enableVteIntegration = true;
 
-    # Init
-    interactiveShellInit = ''
-      eval "$(zoxide init zsh)"
-    '';
-
     # Aliases
     shellAliases = {
 
@@ -30,4 +25,5 @@
     };
 
   };
+  programs.zsh.interactiveShellInit = "eval \"$(zoxide init zsh)\""
 }
