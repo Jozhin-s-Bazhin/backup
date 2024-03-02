@@ -33,5 +33,6 @@
     vscodium 
     lutris
     libreoffice
+    eza
   ];
 }

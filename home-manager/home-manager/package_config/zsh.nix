@@ -15,6 +15,9 @@
       vi = "nvim";
       vim = "nvim";
 
+      c = "codium .";
+      l = "eza";
+
       # Nix rebuilds
       rbs = "bash ~/scripts/rebuild-aliases/rebuild-switch";
       rbh = "bash ~/scripts/rebuild-aliases/home-switch";
