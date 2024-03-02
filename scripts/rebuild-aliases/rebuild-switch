@@ -1,0 +1,33 @@
+#!/usr/bin/env/bash
+
+echo "Started system rebuild"
+echo ""
+
+# Copy changes
+echo "Copying changes..."
+echo ""
+
+cp /etc/nixos/configuration.nix ~/backup/configuration.nix  # Copy config
+
+echo ""
+
+# Commit and push changes
+echo "Committing..."
+echo ""
+
+git -C ~/backup/ add -A > /dev/null
+git -C ~/backup/ commit -m "[ $(date) ] nixos-rebuild switch" 
+git -C ~/backup/ push > /dev/null
+
+echo ""
+
+# Rebuild system
+echo "Starting nixos-rebuild switch ..."
+echo ""
+echo ""
+
+sudo nixos-rebuild switch
+
+echo ""
+echo ""
+echo "Finished"
