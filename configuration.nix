@@ -40,6 +40,11 @@
 
   # Configure keymap in X11
   services.xserver = {
+    # Plasma 6
+    enable = true;
+    displayManager.sddm.enable = true;
+    services.xserver.desktopManager.plasma6.enable = true;
+
     xkb.layout = "us";
     xkb.variant = "";
 
@@ -70,15 +75,15 @@
   environment.pathsToLink = [ "/share/zsh" ];
 
   # Greetd
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.greetd}/bin/agreety --cmd Hyprland";
-        user = "roman";
-      };
-    };
-  };
+  #services.greetd = {
+  #  enable = true;
+  #  settings = {
+  #    default_session = {
+  #      command = "${pkgs.greetd.greetd}/bin/agreety --cmd Hyprland";
+  #      user = "roman";
+  #    };
+  #  };
+  #};
 
   # Hyprland
   programs.hyprland.enable = true;
