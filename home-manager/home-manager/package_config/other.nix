@@ -21,5 +21,5 @@
     enable = true;
     extraConfig = ''
       inoremap jk <Esc>
-    ''
+    '';
 }
