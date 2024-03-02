@@ -23,5 +23,10 @@
       rbh = "bash ~/scripts/rebuild-aliases/home-switch";
       rba = "bash ~/scripts/rebuild-aliases/backup";
     };
+
+    # Init
+    interactiveShellInit = ''
+      eval "$(zoxide init zsh)"
+    '';
   };
 }

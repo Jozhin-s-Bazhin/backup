@@ -29,10 +29,12 @@
     nerdfonts
 
     # Other
-    lf
     vscodium 
     lutris
     libreoffice
+
+    # CLI utilities
     eza
+    zoxide
   ];
 }
