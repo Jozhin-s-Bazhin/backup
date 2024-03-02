@@ -1,16 +1,29 @@
+# Colors
+YELLOW='\033[0;33m'
+NC='\033[0m'
+
+echo -e "$YELLOW"
+echo -e "Started rebuild of home-manager.."
+
+# Copy changes
+echo -e "Copying changes... $NC"
 cp -r ~/.config/home-manager/ ~/backup/home-manager/
+echo -e "$YELLOW"
 
 # Commit and push changes
+echo -e "Committing..."
+echo -r "$NC"
+
 git -C ~/backup/ add -A > /dev/null
 git -C ~/backup/ commit -m "[ $(date) ] home-manager switch"
 git -C ~/backup/ push > /dev/null
 
 # Rebuild system
-echo "
+echo -e "$YELLOW"
+echo -e "Starting home-manager switch..."
+echo -e "$NC"
 
-
-
-"
 home-manager switch
 
-echo "Finished"
+echo -e "$YELLOW"
+echo "Finished${NC}"

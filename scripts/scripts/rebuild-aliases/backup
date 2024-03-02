@@ -2,30 +2,30 @@
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-echo "${GREEN}Started backup process"
-echo "Running rebuild of home-manager and system..."
-echo ""
-echo "$NC"
+echo -e "${GREEN}Started backup process"
+echo -e "Running rebuild of home-manager and system..."
+echo -e "$NC"
 
 # Run other backup things
 ~/scripts/rebuild-aliases/rebuild-switch
+echo ""
 ~/scripts/rebuild-aliases/home-switch
 
-echo "$GREEN"
-echo "Copying scripts..."
-echo "$NC"
+echo -e "$GREEN"
+echo -e "Copying scripts..."
+echo -e "$NC"
 
 # Copy scripts dir
 cp -r ~/scripts ~/backup/scripts
 
-echo "$GREEN"
-echo "Committing..."
-echo "$NC"
+echo -e "$GREEN"
+echo -e "Committing..."
+echo -e "$NC"
 
 # Commit and push changes
 git -C ~/backup/ add -A > /dev/null
 git -C ~/backup/ commit -m "[ $(date) ] backup"
 git -C ~/backup/ push > /dev/null
 
-echo "$GREEN"
-echo "Finished${NC}"
+echo -e "$GREEN"
+echo -e "Finished${NC}"
