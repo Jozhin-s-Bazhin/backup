@@ -22,6 +22,7 @@
 
       c = "codium .";
       l = "eza -la";
+      cd = "z";
 
       # Nix rebuilds
       rbs = "bash ~/scripts/rebuild-aliases/rebuild-switch";
