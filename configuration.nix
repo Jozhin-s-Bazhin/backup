@@ -43,7 +43,7 @@
     # Plasma 6
     enable = true;
     displayManager.sddm.enable = true;
-    services.xserver.desktopManager.plasma6.enable = true;
+    desktopManager.plasma6.enable = true;
 
     xkb.layout = "us";
     xkb.variant = "";
