@@ -8,7 +8,7 @@ in
   opacity = opacity;
 
   accent = {
-    hex = {r = "06"; g = "6c"; b = "fa"; a = "ff"};
+    hex = {r = "06"; g = "6c"; b = "fa"; a = "ff";};
     rgba = {r = 6; g = 108; b = 250; a = 1;}
   };
 
