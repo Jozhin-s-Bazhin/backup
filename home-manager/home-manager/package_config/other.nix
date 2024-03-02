@@ -16,4 +16,10 @@
       size = 11;
     };
   };
+
+  programs.neovim = {
+    enable = true;
+    extraConfig = ''
+      inoremap jk <Esc>
+    ''
 }

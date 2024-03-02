@@ -34,7 +34,4 @@
     lutris
     libreoffice
   ];
-
-  home.file = {
-  };
 }
