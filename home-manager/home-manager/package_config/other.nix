@@ -22,4 +22,5 @@
     extraConfig = ''
       inoremap jk <Esc>
     '';
+  };
 }
