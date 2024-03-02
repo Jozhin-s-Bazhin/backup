@@ -2,7 +2,6 @@
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-clear
 echo -e "${GREEN}Started backup process"
 echo -e "Running rebuild of home-manager and system..."
 echo -e "$NC"
