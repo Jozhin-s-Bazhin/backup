@@ -3,7 +3,7 @@
 let 
   colors = import ../variables/colors.nix;
 
-  hexToHypr = color: "${color.r}${color.g}${color.b}${color.a}";
+  hexToHypr = color: "${color.r}${color.g}${color.b}";
 in
 {
   wayland.windowManager.hyprland.settings = {
@@ -11,8 +11,8 @@ in
       gaps_in = 5;
       gaps_out = 20;
       border_size = 2;
-      "col.active_border" = "rgba(${hexToHypr colors.accent.hex})";
-      "col.inactive_border" = "rgba(595959aa)";
+      "col.active_border" = "rgba(${hexToHypr colors.accent.hex}ff)";
+      "col.inactive_border" = "rgba(${hexToHypr colors.background.hex}ff)";
 
       layout = "dwindle";
 
