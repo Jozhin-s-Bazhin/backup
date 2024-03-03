@@ -2,7 +2,6 @@
 
 let 
   colors = import ../variables/colors.nix { inherit lib; };
-  misc = import ../variables/misc.nix;
 in
 {
   wayland.windowManager.hyprland.settings = {
@@ -59,8 +58,8 @@ in
   };
 
   xdg.configFile."hypr/hyprpaper.conf".text = ''
-    preload =${misc.wallpaper}
-    wallpaper =,${misc.wallpaper}
+    preload = ~/.config/home-manager/package_config/wallpaper.jpg
+    wallpaper =,~/.config/home-manager/package_config/wallpaper.jpg
     splash = false
   '';
 }
