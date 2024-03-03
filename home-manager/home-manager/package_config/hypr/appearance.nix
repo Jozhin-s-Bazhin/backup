@@ -60,7 +60,7 @@ in
     };
   };
 
-  xdg.configFile."hypr/hyprpaper.conf" = ''
+  xdg.configFile."hypr/hyprpaper.conf".text = ''
     preload = ${misc.wallpaper}
   '';
 }
