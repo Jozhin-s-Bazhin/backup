@@ -1,7 +1,7 @@
 { lib, ... }:
 
 {
-  nixToHex = color: "${color.hex.r}${color.hex.g}${color.hex.b}";
+  nixToHex = color: "${color.r}${color.g}${color.b}";
   hexToRGB = color: { r = lib.fromHex color.r; g = lib.fromHex color.g; b = lib.fromHex color.b; };
 
   opacity = 1;
