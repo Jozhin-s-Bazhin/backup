@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
 
-let 
-  colors = import ../variables/colors.nix;
 {
   # Git
   programs.git = {
@@ -28,8 +26,8 @@ let
   };
 
   # Kitty
-  programs.kitty = {
-    enable = true;
-    settings = {
-      background_color = ""
+  #programs.kitty = {
+  #  enable = true;
+  #  settings = {
+  #    background_color = ""
 }
