@@ -2,6 +2,7 @@
 
 let 
   colors = import ../variables/colors.nix { inherit lib; };
+  misc = import ../variables/misc.nix;
   accent = colors.nixToHex colors.accent;
   background = colors.nixToHex colors.background;
 in
@@ -16,11 +17,7 @@ in
 
       layout = "dwindle";
 
-      allow_tearing = false;
-    };
-
-    decoration = {
-      rounding = 10;
+      allow_tearing = false; }; decoration = { rounding = 10;
 
       blur = {
         enabled = true;
@@ -62,4 +59,8 @@ in
       force_default_wallpaper = 1;
     };
   };
+
+  xdg.configFile."hypr/hyprpaper.conf" = ''
+    preload = ~/Pictures/Wallpapers/${misc.wallpaper}
+  '';
 }
