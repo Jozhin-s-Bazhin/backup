@@ -38,5 +38,6 @@
     # CLI utilities
     eza
     zoxide
+    bat
   ];
 }

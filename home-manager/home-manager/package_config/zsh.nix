@@ -19,11 +19,11 @@
       v = "nvim";
       vi = "nvim";
       vim = "nvim";
-
       c = "codium .; exit";
       ls = "eza -l";
       cd = "z";
       grep = "grep --color=auto";
+      cat = "bat";
 
       # Nix rebuilds
       rbs = "bash ~/scripts/rebuild-aliases/rebuild-switch";
