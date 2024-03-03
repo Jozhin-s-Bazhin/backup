@@ -23,6 +23,8 @@ in
       "SUPER, L, movefocus, r"
       "SUPER SHIFT, L, movewindow, r"
 
+      "SUPER, F11, fullscreen"
+
       # Important applications
       "SUPER, Tab, exec, wofi --show drun"
       "SUPER, Return, exec, kitty"
