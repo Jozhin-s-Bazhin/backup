@@ -24,7 +24,7 @@ in
 
       blur = {
         enabled = true;
-        size = 15;
+        size = 3;
         passes = 1;
         
         vibrancy = 0.1696;
