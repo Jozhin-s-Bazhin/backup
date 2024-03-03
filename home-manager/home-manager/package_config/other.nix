@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
+{ lib, config, pkgs, ... }:
 
+let 
+  colors = import ./variables/colors.nix { inherit lib; };
+in
 {
   # Git
   programs.git = {
@@ -26,8 +29,11 @@
   };
 
   # Kitty
-  #programs.kitty = {
-  #  enable = true;
-  #  settings = {
-  #    background_color = ""
+  programs.kitty = {
+    enable = true;
+    settings = {
+      background_color = "#${colors.nixToHex colors.background}";
+      background_opacity = colors.opacity_secondary;
+    };
+  };
 }
