@@ -1,7 +1,7 @@
 { lib, config, pkgs, ... }:
 
 let 
-  colors = import ../variables/colors.nix {lib};
+  colors = import ../variables/colors.nix { lib, ... };
   accent = colors.nixToHex colors.accent;
   background = colors.nixToHex colors.background;
 in
