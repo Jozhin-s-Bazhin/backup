@@ -39,5 +39,6 @@
     eza
     zoxide
     bat
+    graphicsmagick
   ];
 }
