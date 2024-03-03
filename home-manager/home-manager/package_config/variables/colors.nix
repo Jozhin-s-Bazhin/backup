@@ -2,9 +2,12 @@
 
 {
   nixToHex = color: "${color.hex.r}${color.hex.g}${color.hex.b}";
-  hexCompToDec = hexComp: lib.fromHex hexComp;
-  hexToRGB = color: {r = hexCompToDec color.r; g = hexCompToDec color.g; b = hexCompToDec color.b;};
-  #alphaToHex = 
+  hexCompToDec = hexComp: lib.fromHex hexComp;  # Correctly defined function name
+  hexToRGB = color: {
+    r = hexCompToDec color.r;  # Use the correct function name
+    g = hexCompToDec color.g;
+    b = hexCompToDec color.b;
+  };
 
   opacity = 1;
 
@@ -14,3 +17,4 @@
 
   background = {r = "25"; g = "25"; b = "25";};
 }
+
