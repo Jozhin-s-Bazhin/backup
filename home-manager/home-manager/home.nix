@@ -40,5 +40,6 @@
     zoxide
     bat
     graphicsmagick
+    socat
   ];
 }
