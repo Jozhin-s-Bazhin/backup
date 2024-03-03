@@ -32,7 +32,7 @@ in
   programs.kitty = {
     enable = true;
     settings = {
-      background = "#${colors.nixToHex colors.background}";
+      background = "#${colors.nixToHex colors.background_darker}";
       background_opacity = toString colors.opacity_secondary;
     };
   };
