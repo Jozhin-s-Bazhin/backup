@@ -3,7 +3,7 @@
 {
   nixToHex = color: "${color.hex.r}${color.hex.g}${color.hex.b}";
   hexCompToDec = hexComp: lib.fromHex hexComp;  # Correctly defined function name
-  hexToRGB = color: { r = hexCompToDec color.r; g = hexCompToDec color.g; b = hexCompToDec color.b; };
+  hexToRGB = color: { r = hexCompToDec color.r; };
 
   opacity = 1;
 
