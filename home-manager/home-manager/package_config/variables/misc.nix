@@ -1,3 +1,3 @@
 {
-  wallpaper = "~/Pictures/Wallpapers/mountain-clouds-wp.jpg";
+  wallpaper = "~/Pictures/Wallpapers/mountain-wallpaper.jpg";
 }
