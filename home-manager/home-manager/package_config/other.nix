@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
 
+let 
+  colors = import ../variables/colors.nix;
 {
   # Git
   programs.git = {
@@ -17,10 +19,17 @@
     };
   };
 
+  # Neovim
   programs.neovim = {
     enable = true;
     extraConfig = ''
       inoremap jk <Esc>
     '';
   };
+
+  # Kitty
+  programs.kitty = {
+    enable = true;
+    settings = {
+      background_color = ""
 }

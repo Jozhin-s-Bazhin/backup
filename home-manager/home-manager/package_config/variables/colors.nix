@@ -1,19 +1,16 @@
-let
-  opacity = {
-    dec = 1;
-    hex = "ff";
-  };
-in
+{ lib, ... }:
+
 {
-  opacity = opacity;
+  nixToHex = color: "${color.hex.r}${color.hex.g}${color.hex.b}";
+  hexCompToDec = hexComp: lib.fromHex hexComp;
+  hexToRGB = color: {r = hexCompToDec color.r; g = hexCompToDec color.g; b = hexCompToDec color.b;};
+  #alphaToHex = 
 
-  accent = {
-    hex = {r = "06"; g = "6c"; b = "fa"; a = "ff";};
-    rgba = {r = 6; g = 108; b = 250; a = 1;};
-  };
+  opacity = 1;
 
-  background = {
-    hex = {r = "25"; g = "25"; b = "25";};
-    rgba = {r = 37; g = 37; b = 37;};
-  };
+  opacity_secondary = 0.85;
+
+  accent = {r = "06"; g = "6c"; b = "fa"};
+
+  background = {r = "25"; g = "25"; b = "25";};
 }

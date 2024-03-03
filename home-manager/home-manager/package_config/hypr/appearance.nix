@@ -1,9 +1,7 @@
-{ lib, config, pkgs, ... }:
+{ config, pkgs, ... }:
 
 let 
   colors = import ../variables/colors.nix;
-
-  hexToHypr = color: "${color.r}${color.g}${color.b}";
 in
 {
   wayland.windowManager.hyprland.settings = {
@@ -11,8 +9,8 @@ in
       gaps_in = 5;
       gaps_out = 20;
       border_size = 2;
-      "col.active_border" = "rgba(${hexToHypr colors.accent.hex}ff)";
-      "col.inactive_border" = "rgba(${hexToHypr colors.background.hex}ff)";
+      "col.active_border" = "rgba(${colors.nixToHex colors.accent.hex}ff)";
+      "col.inactive_border" = "rgba(${colors.nixToHex colors.background.hex}ff)";
 
       layout = "dwindle";
 
