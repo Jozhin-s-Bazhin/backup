@@ -61,6 +61,6 @@ in
   };
 
   xdg.configFile."hypr/hyprpaper.conf" = ''
-    preload = ~/Pictures/Wallpapers/${misc.wallpaper}
+    preload = ${misc.wallpaper}
   '';
 }
