@@ -33,6 +33,7 @@
     lutris
     libreoffice
     qbittorrent
+    vlc
 
     # CLI utilities
     eza
