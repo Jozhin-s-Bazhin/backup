@@ -2,6 +2,8 @@
 
 let 
   colors = import ../variables/colors.nix;
+  accent = colors.nixToHex colors.accent;
+  background = colors.nixToHex colors.background;
 in
 {
   wayland.windowManager.hyprland.settings = {
@@ -9,8 +11,8 @@ in
       gaps_in = 5;
       gaps_out = 20;
       border_size = 2;
-      "col.active_border" = "rgba(${colors.nixToHex colors.accent}ff)";
-      "col.inactive_border" = "rgba(${colors.nixToHex colors.background}ff)";
+      "col.active_border" = "rgba(${accent}ff)";
+      "col.inactive_border" = "rgba(${background}ff)";
 
       layout = "dwindle";
 
