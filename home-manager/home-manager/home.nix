@@ -32,6 +32,7 @@
     vscodium 
     lutris
     libreoffice
+    qbittorrent
 
     # CLI utilities
     eza
