@@ -89,6 +89,17 @@
   # Hyprland
   programs.hyprland.enable = true;
 
+  # Pipewire
+  services.pipewire = {
+    enable = true;
+    audio.enable = true;
+
+    alsa = {
+      enable = true;
+      support32Bit = true;
+    };
+  };
+
   ## NVIDIA BS
   # something for hyprland
   boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocation=1" ];
