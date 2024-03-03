@@ -33,7 +33,7 @@ in
     enable = true;
     settings = {
       background_color = "#${colors.nixToHex colors.background}";
-      background_opacity = "${colors.opacity_secondary}";
+      background_opacity = toString colors.opacity_secondary;
     };
   };
 }
