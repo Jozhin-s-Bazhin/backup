@@ -21,7 +21,7 @@
       vim = "nvim";
 
       c = "codium .";
-      ls = "eza -la";
+      ls = "eza -l";
       cd = "z";
 
       # Nix rebuilds
