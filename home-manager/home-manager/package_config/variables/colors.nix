@@ -6,7 +6,7 @@
 
   opacity = 1;
 
-  opacity_secondary = 0.85;
+  opacity_secondary = 0.90;
 
   accent = {r = "06"; g = "6c"; b = "fa";};
 
