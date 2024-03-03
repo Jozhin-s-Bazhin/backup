@@ -9,6 +9,7 @@
 
     exec-once = [
       "waybar"
+      "hyprpaper"
     ];
   };
 }
