@@ -67,6 +67,7 @@
     neovim
     htop
     home-manager
+    killall
   ];
 
   # zsh
