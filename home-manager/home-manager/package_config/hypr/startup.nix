@@ -10,7 +10,9 @@
     exec-once = [
       "waybar"
       "hyprpaper"
-      #"bash ~/scripts/misc/blur_wallpaper"
+      "hypridle"
     ];
   };
+
+  xdg.configFile."hypr/hypridle.conf".text = import ./hypridle.conf;
 }

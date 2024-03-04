@@ -64,4 +64,6 @@ in
     wallpaper =,~/.config/home-manager/package_config/wallpaper.jpg
     splash = false
   '';
+
+  xdg.configFile."hypr/hyprlock.conf".text = import ./hyprlock.conf;
 }
