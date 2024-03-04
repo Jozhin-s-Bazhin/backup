@@ -71,7 +71,7 @@
   ];
 
   # Home manager
-  home-manager.users.roman = { pkgs, ... }: import /home/roman/.config/home-manager/home.nix;
+  home-manager.users.roman = import /home/roman/.config/home-manager/home.nix;
 
   # zsh
   programs.zsh.enable = true;
