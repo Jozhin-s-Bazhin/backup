@@ -71,6 +71,11 @@
     killall
   ];
 
+  # Home manager
+  home-manager.users.roman = {
+    home.stateVersion = "unstable";
+  };
+
   # zsh
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
