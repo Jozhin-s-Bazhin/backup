@@ -70,7 +70,7 @@
     killall
   ];
 
-  # Home manager
+  # Home manager (I don't know if this is weird and i don't give a fuck)
   home-manager.users.roman = import /home/roman/.config/home-manager/home.nix;
 
   # zsh
