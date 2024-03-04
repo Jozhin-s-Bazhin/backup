@@ -24,6 +24,7 @@ in
       "SUPER SHIFT, L, movewindow, r"
 
       "SUPER, F11, fullscreen"
+      "SUPER, V, togglefloating"
 
       # Important applications
       "SUPER, Tab, exec, wofi --show drun"
