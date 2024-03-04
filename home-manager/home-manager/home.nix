@@ -11,10 +11,10 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./package_config/package_config.nix
-    ./config.nix
-  ];
+  #imports = [
+  #  ./package_config/package_config.nix
+  #  ./config.nix
+  #];
 
   home.packages = with pkgs; [
     # Essentials
@@ -43,6 +43,6 @@
     eza
     zoxide
     bat
-    #graphicsmagick
+    graphicsmagick
   ];
 }
