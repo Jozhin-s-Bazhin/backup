@@ -21,12 +21,17 @@
     # Essentials
     floorp
     kitty
+
+    # Hyprland
     (waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ]; }))
     mako
     libnotify
-    hyprpaper
     wofi
     nerdfonts
+
+    hyprpaper
+    hypridle
+    hyprlock
 
     # Other
     vscodium 
