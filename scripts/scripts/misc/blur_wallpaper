@@ -1,8 +1,7 @@
 handle() {
-  if [[ "$1" == 
-  if [[ $(hyprctl activewindow) == "Invalid" ]]; then
+  if [[ "$1" == "activewindow>>" ]]; then
     hyprctl hyprpaper wallpaper ",~/.config/home-manager/package_config/wallpaper_blurred.jpg"
-  else
+  elif [[ "activewindow.{2}" =~ $1 ]]; then
     hyprctl hyprpaper wallpaper ",~/.config/home-manager/package_config/wallpaper.jpg"
   fi
 }
