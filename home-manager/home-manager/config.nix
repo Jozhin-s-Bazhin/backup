@@ -13,7 +13,5 @@
     config.common.default = "gtk";
   };
 
-  # Enable Pipewire
-
   programs.home-manager.enable = true;
 }
