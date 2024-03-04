@@ -43,7 +43,6 @@
     eza
     zoxide
     bat
-    graphicsmagick
-    socat
+    #graphicsmagick
   ];
 }
