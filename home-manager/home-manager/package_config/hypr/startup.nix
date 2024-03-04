@@ -10,7 +10,7 @@
     exec-once = [
       "waybar"
       "hyprpaper"
-      "bash ~/scripts/misc/blur_wallpaper"
+      #"bash ~/scripts/misc/blur_wallpaper"
     ];
   };
 }
