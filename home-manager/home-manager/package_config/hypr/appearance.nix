@@ -53,13 +53,14 @@ in
     };
 
     misc = {
-      force_default_wallpaper = "-2";
+      force_default_wallpaper = "0";
+      disable_hyprland_logo = true;
     };
   };
 
   xdg.configFile."hypr/hyprpaper.conf".text = ''
     preload = ~/.config/home-manager/package_config/wallpaper.jpg
-    #preload = ~/.config/home-manager/package_config/wallpaper_blurred.jpg
+    preload = ~/.config/home-manager/package_config/wallpaper_blurred.jpg
     wallpaper =,~/.config/home-manager/package_config/wallpaper.jpg
     splash = false
   '';
