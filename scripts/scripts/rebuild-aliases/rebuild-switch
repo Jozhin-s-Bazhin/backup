@@ -1,5 +1,5 @@
 # Colors
-RED='\033[0;34m'
+RED='\033[0;34m'  # It's blue
 NC='\033[0m'
 
 echo -e "$RED"
@@ -8,6 +8,7 @@ echo -e "Started system rebuild"
 # Copy changes
 echo -e "Copying changes... $NC"
 cp /etc/nixos/configuration.nix ~/backup/configuration.nix 
+cp -r ~/.config/home-manager/ ~/backup/home-manager/
 
 # Commit and push changes
 echo -e "${RED}Committing..."

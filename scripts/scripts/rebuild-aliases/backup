@@ -8,8 +8,6 @@ echo -e "$NC"
 
 # Run other backup things
 ~/scripts/rebuild-aliases/rebuild-switch
-echo ""
-~/scripts/rebuild-aliases/home-switch
 
 echo -e "$GREEN"
 echo -e "Copying scripts... $NC"
