@@ -67,14 +67,11 @@
   environment.systemPackages = with pkgs; [
     neovim
     htop
-    home-manager
     killall
   ];
 
   # Home manager
-  home-manager.users.roman = {
-    home.stateVersion = "23.11";
-  };
+  #home-manager.users.roman = { pkgs, ... }: import /home/roman/.config/home-manager/home.nix;
 
   # zsh
   programs.zsh.enable = true;
