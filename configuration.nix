@@ -68,6 +68,7 @@
     htop
     home-manager
     killall
+    hypridle
   ];
 
   # zsh
