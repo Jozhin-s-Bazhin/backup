@@ -16,14 +16,14 @@ echo -e "$NC"
 
 git -C ~/backup/ add -A > /dev/null
 git -C ~/backup/ commit -m "[ $(date) ] nixos-rebuild switch" 
-git -C ~/backup/ push > /dev/null
+git -C ~/backup/ push -q
 
 # Rebuild system
 echo -e "$RED"
 echo -e "Starting nixos-rebuild switch ..."
 echo -e "$NC"
 
-sudo nixos-rebuild switch
+sudo nixos-rebuild switch | tee ~/backup/logs/"[ $(date) ]-log"
 
 echo -e "$RED"
 echo -e "Finished${NC}"
