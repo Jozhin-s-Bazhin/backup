@@ -12,8 +12,7 @@ echo ""
 ~/scripts/rebuild-aliases/home-switch
 
 echo -e "$GREEN"
-echo -e "Copying scripts..."
-echo -e "$NC"
+echo -e "Copying scripts... $NC"
 
 # Copy scripts dir
 cp -r ~/scripts ~/backup/scripts
