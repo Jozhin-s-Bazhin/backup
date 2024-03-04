@@ -12,7 +12,7 @@
 
 {
   imports = [
-  #  ./package_config/package_config.nix
+    ./package_config/package_config.nix
     ./config.nix
   ];
 
