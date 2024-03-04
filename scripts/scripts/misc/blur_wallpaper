@@ -1,0 +1,11 @@
+handle() {
+  if [[ "$1" == 
+  if [[ $(hyprctl activewindow) == "Invalid" ]]; then
+    hyprctl hyprpaper wallpaper ",~/.config/home-manager/package_config/wallpaper_blurred.jpg"
+  else
+    hyprctl hyprpaper wallpaper ",~/.config/home-manager/package_config/wallpaper.jpg"
+  fi
+}
+
+
+socat -U - UNIX-CONNECT:/tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock | while read -r line; do handle "$line"; done
