@@ -14,5 +14,5 @@
     ];
   };
 
-  xdg.configFile."hypr/hypridle.conf".text = import ./hypridle.conf;
+  xdg.configFile."hypr/hypridle.conf".text = builtins.readFile ./hypridle.conf;
 }
