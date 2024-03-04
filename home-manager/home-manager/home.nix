@@ -30,8 +30,8 @@
     nerdfonts
 
     hyprpaper
-    hypridle
-    hyprlock
+    #hypridle
+    #hyprlock
 
     # Other
     vscodium 
