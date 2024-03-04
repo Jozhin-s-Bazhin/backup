@@ -8,14 +8,13 @@
 # By Roman Bezroutchko
 
 
-{ inputs, config, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [
     ./package_config/package_config.nix
     ./config.nix
   ];
-  nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
     # Essentials
@@ -30,8 +29,8 @@
     nerdfonts
 
     hyprpaper
-    #hypridle
-    #hyprlock
+    hypridle
+    hyprlock
 
     # Other
     vscodium 
