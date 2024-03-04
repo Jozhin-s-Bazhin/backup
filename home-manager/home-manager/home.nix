@@ -11,10 +11,10 @@
 { config, pkgs, ... }:
 
 {
-  #imports = [
+  imports = [
   #  ./package_config/package_config.nix
-  #  ./config.nix
-  #];
+    ./config.nix
+  ];
 
   home.packages = with pkgs; [
     # Essentials
