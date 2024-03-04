@@ -73,7 +73,7 @@
 
   # Home manager
   home-manager.users.roman = {
-    home.stateVersion = "unstable";
+    home.stateVersion = "23.11";
   };
 
   # zsh
