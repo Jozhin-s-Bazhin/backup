@@ -29,6 +29,5 @@
       rbs = "bash ~/scripts/rebuild-aliases/rebuild-switch";
       rba = "bash ~/scripts/rebuild-aliases/backup";
     };
-
   };
 }
