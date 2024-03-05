@@ -29,6 +29,8 @@
     libnotify
     wofi
     nerdfonts
+    brightnessctl
+
 
     hyprpaper
     hypridle
