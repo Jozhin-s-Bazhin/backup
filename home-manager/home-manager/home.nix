@@ -34,6 +34,7 @@
 
     hyprpaper
     hypridle
+    inputs.hyprlock.default
 
     # Other
     vscodium 
