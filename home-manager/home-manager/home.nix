@@ -34,7 +34,6 @@
 
     hyprpaper
     hypridle
-    pkgs.lib.getFlake "github: Aylur/ags";
 
     # Other
     vscodium 
