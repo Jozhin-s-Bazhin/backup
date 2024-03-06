@@ -8,7 +8,7 @@
 # By Roman Bezroutchko
 
 
-{ inputs, config, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [
@@ -34,7 +34,7 @@
 
     hyprpaper
     hypridle
-    inputs.hyprlock.default
+    #inputs.hyprlock.default
 
     # Other
     vscodium 
