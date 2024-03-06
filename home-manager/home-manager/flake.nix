@@ -9,8 +9,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # AGS
+    Flakes
     ags.url = "github:Aylur/ags";
+    hyprlock.url = "github:hyprwm/hyprlock";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
@@ -20,15 +21,7 @@
     in {
       homeConfigurations."roman" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-
-        # Specify your home configuration modules here, for example,
-        # the path to your home.nix.
         modules = [ ./home.nix ];
-
-        # Optionally use extraSpecialArgs
-        # to pass through arguments to home.nix
-
-	# AGS
 	extraSpecialArgs = { inherit inputs; };
       };
     };
