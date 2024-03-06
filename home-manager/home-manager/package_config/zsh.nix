@@ -27,7 +27,7 @@
 
       # Misc
       c = "codium .; exit";
-      clipboard = "kitten clipboard";
+      clip = "kitten clipboard";
 
       # Nix rebuilds
       rbs = "bash ~/scripts/rebuild-aliases/rebuild-switch";
