@@ -34,7 +34,6 @@
 
     hyprpaper
     hypridle
-    hyprlock
 
     # Other
     vscodium 
