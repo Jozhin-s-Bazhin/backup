@@ -14,16 +14,20 @@
 
     # Aliases
     shellAliases = {
-
-      # Basic stuff
+      # nvim
       v = "nvim";
       vi = "nvim";
       vim = "nvim";
-      c = "codium .; exit";
+
+      # Basic shit
       ls = "eza -l";
       cd = "z";
       grep = "grep --color=auto";
       cat = "bat";
+
+      # Misc
+      c = "codium .; exit";
+      clipboard = "kitten clipboard";
 
       # Nix rebuilds
       rbs = "bash ~/scripts/rebuild-aliases/rebuild-switch";
