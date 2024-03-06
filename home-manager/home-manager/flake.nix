@@ -21,7 +21,7 @@
     in {
       homeConfigurations."roman" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home-manager/home.nix ];
+        modules = [ ~/.config/home-manager/home.nix ];
 	extraSpecialArgs = { inherit inputs; };
       };
     };
