@@ -14,7 +14,7 @@
   imports =
     [
       ./hardware-configuration.nix
-      <home-manager/nixos>
+      #<home-manager/nixos>
     ];
 
   # Bootloader.
@@ -71,7 +71,7 @@
   ];
 
   # Home manager (I don't know if this is weird and i don't give a fuck)
-  home-manager.users.roman = import /home/roman/.config/home-manager/home.nix;
+  #home-manager.users.roman = import /home/roman/.config/home-manager/home.nix;
 
   # zsh
   programs.zsh.enable = true;
