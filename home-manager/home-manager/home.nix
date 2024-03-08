@@ -8,7 +8,7 @@
 # By Roman Bezroutchko
 
 
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   imports = [
@@ -31,9 +31,9 @@
     nerdfonts
     brightnessctl
 
-
     hyprpaper
     hypridle
+    inputs.hyprlock.packages.x86_64-linux.hyprlock
 
     # Other
     vscodium 

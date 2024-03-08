@@ -3,7 +3,7 @@
 {
   imports = [
     ./other.nix
-    #./ags/ags.nix
+    ./ags/ags.nix
     ./hypr/hyprland.nix
     ./zsh.nix
   ];
