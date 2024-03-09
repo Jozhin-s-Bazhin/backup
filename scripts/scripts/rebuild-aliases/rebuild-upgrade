@@ -26,7 +26,7 @@ echo -e "Starting nixos-rebuild switch ..."
 echo -e "$NC"
 
 sudo nixos-rebuild switch --flake /etc/nixos#nixos | tee /home/roman/backup/logs/"[ $date ]-log"
-nix flake update >> /home/roman/backup/logs/"[ $date ]-log"
+sudo nix flake update /etc/nixos#nixos >> /home/roman/backup/logs/"[ $date ]-log"
 
 echo -e "$RED"
 echo -e "Finished${NC}"

@@ -59,9 +59,8 @@ in
   };
 
   xdg.configFile."hypr/hyprpaper.conf".text = ''
-    preload = ~/.config/home-manager/package_config/wallpaper.jpg
-    #preload = ~/.config/home-manager/package_config/wallpaper_blurred.jpg
-    wallpaper =,~/.config/home-manager/package_config/wallpaper.jpg
+    preload = /etc/nixos/home/package_config/wallpaper.jpg
+    wallpaper =,/etc/nixos/home/package_config/wallpaper.jpg
     splash = false
   '';
 
