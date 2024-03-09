@@ -9,6 +9,7 @@
     # My flakes
     ags.url = "github:Aylur/ags";
     hyprlock.url = "github:hyprwm/hyprlock";
+    hyprland.url = "github:hyprwm/hyprland";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
