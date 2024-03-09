@@ -8,7 +8,7 @@
 # By Roman Bezroutchko
 
 
-{ config, pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   imports =
