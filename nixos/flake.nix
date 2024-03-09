@@ -9,7 +9,10 @@
     # My flakes
     ags.url = "github:Aylur/ags";
     hyprlock.url = "github:hyprwm/hyprlock";
-    hyprland.url = "github:hyprwm/hyprland";
+    hyprland = {
+      url = "github:hyprwm/hyprland";
+      inputs.nixpkgs.follows = nixpkgs;
+    };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, hyprland, ... }: {
@@ -26,8 +29,10 @@
             home-manager.users.roman = import ./home.nix;
 	    home-manager.extraSpecialArgs = { inherit inputs; };
           }
+
+	  # Hyprland
 	  hyprland.homeManagerModules.default
-	  {wayland.windowManager.hyprland.enable = true;}
+	  { programs.hyprland.enable = true; }
         ];
       };
     };
