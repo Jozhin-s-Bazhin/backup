@@ -12,7 +12,7 @@
 {
   imports = [
     # Hyprland home-manager module
-    hyprland.homeManagerModules.default
+    inputs.hyprland.homeManagerModules.default
 
     # Startup
     ./startup.nix
