@@ -9,10 +9,10 @@
     # My flakes
     ags.url = "github:Aylur/ags";
     hyprlock.url = "github:hyprwm/hyprlock";
-    hyprland = {
-      url = "github:hyprwm/hyprland";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #hyprland = {
+    #  url = "github:hyprwm/hyprland";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
   };
 
   outputs = inputs@{ nixpkgs, home-manager, hyprland, ... }: {
@@ -31,8 +31,8 @@
           }
 
 	  # Hyprland
-	  hyprland.homeManagerModules.default
-	  { programs.hyprland.enable = true; }
+	  #hyprland.homeManagerModules.default
+	  #{ programs.hyprland.enable = true; }
         ];
       };
     };
