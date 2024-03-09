@@ -32,7 +32,7 @@
       vim = "nvim";
 
       # basic 
-      ls = "eza -l";
+      ls = "eza -l --git --sort 'modified'";
       cd = "z";
       grep = "grep --color=auto";
       cat = "bat";
