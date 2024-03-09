@@ -19,6 +19,7 @@ in
     settings = {
       background = "#${colors.nixToHex colors.background_darker}";
       background_opacity = toString colors.opacity;
+      confirm_os_window_close = "0";
     };
   };
 
