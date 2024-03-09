@@ -29,10 +29,6 @@
             home-manager.users.roman = import ./home.nix;
 	    home-manager.extraSpecialArgs = { inherit inputs; };
           }
-
-	  # Hyprland
-	  hyprland.homeManagerModules.default
-	  { wayland.windowManager.hyprland.enable = true; }
         ];
       };
     };
