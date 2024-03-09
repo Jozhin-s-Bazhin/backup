@@ -27,6 +27,7 @@
 	    home-manager.extraSpecialArgs = { inherit inputs; };
           }
 	  hyprland.homeManagerModules.default
+	  {wayland.windowManager.hyprland.enable = true;}
         ];
       };
     };
