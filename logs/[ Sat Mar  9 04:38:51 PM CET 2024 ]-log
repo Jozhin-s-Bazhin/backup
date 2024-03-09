@@ -1,0 +1,24 @@
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+warning: the following units failed: home-manager-roman.service
+
+[0;1;31m×[0m home-manager-roman.service - Home Manager environment for roman
+     Loaded: loaded (]8;;file://nixos/etc/systemd/system/home-manager-roman.service/etc/systemd/system/home-manager-roman.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Sat 2024-03-09 16:38:56 CET; 63ms ago
+    Process: 6041 ExecStart=/nix/store/0l615v39ak6wbnsi1zlmv88xz5grwvn9-hm-setup-env /nix/store/0fsl7w3gziag77i9rhnfn2lbyfql6nc6-home-manager-generation [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 6041 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 176ms
+
+Mar 09 16:38:56 nixos hm-activate-roman[6041]: Starting Home Manager activation
+Mar 09 16:38:56 nixos hm-activate-roman[6041]: Activating checkFilesChanged
+Mar 09 16:38:56 nixos hm-activate-roman[6041]: Activating checkLinkTargets
+Mar 09 16:38:56 nixos hm-activate-roman[6041]: Activating writeBoundary
+Mar 09 16:38:56 nixos hm-activate-roman[6041]: Activating installPackages
+Mar 09 16:38:56 nixos hm-activate-roman[6041]: Activating dconfSettings
+Mar 09 16:38:56 nixos hm-activate-roman[6176]: error: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name ca.desrt.dconf was not provided by any .service files
+Mar 09 16:38:56 nixos systemd[1]: [0;1;39m[0;1;31m[0;1;39mhome-manager-roman.service: Main process exited, code=exited, status=1/FAILURE[0m
+Mar 09 16:38:56 nixos systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mhome-manager-roman.service: Failed with result 'exit-code'.[0m
+Mar 09 16:38:56 nixos systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Home Manager environment for roman.[0m
