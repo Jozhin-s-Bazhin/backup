@@ -1,0 +1,31 @@
+{ lib, config, pkgs, ... }:
+
+let 
+  colors = import ./variables/colors.nix { inherit lib; };
+in
+{
+  # GTK
+  gtk = {
+    enable = true;
+    font = {
+      name = "Sans";
+      size = 11;
+    };
+  };
+
+  # Kitty
+  programs.kitty = {
+    enable = true;
+    settings = {
+      background = "#${colors.nixToHex colors.background_darker}";
+      background_opacity = toString colors.opacity;
+    };
+  };
+
+  # Git
+  programs.git = {
+    enable = true;
+    userName = "Jozhin-s-Bazhin";
+    userEmail = "rbezroutchko@gmail.com";
+  };
+}
