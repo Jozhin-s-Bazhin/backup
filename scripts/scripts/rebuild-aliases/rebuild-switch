@@ -17,7 +17,7 @@ echo -e "$NC"
 date=$(date)
 
 git -C ~/backup/ add -A > /dev/null
-git -C ~/backup/ commit -m "[ $date ] nixos-rebuild switch" 
+git -C ~/backup/ commit -m "[ $date ] nixos-rebuild switch --flake /etc/nixos#nixos" 
 git -C ~/backup/ push -q
 
 # Rebuild system
