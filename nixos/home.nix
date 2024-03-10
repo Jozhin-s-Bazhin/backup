@@ -44,5 +44,6 @@
 
     # CLI utilities
     graphicsmagick
+    yazi
   ];
 }
