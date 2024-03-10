@@ -41,7 +41,7 @@
     # Other
     vscodium 
     lutris
-    libreoffice
+    libreoffice-still.writer
     qbittorrent
     vlc
 
