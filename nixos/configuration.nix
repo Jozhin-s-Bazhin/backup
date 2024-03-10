@@ -1,4 +1,4 @@
- _   _   _____  _     _    ____      ___
+# _   _   _____  _     _    ____      ___
 # | \ | | |_   _| \ \ / /   / __ \   / ___|
 # |  \| |   | |    \ V /   | |  | | | (_
 # | . ` |   | |     > <    | |  | |  \_  \
@@ -59,7 +59,7 @@
     isNormalUser = true;
     description = "Roman";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ lxqt.lxqt-policykit ];
   };
 
   # Logind

@@ -8,6 +8,7 @@
     ];
 
     exec-once = [
+      "lxqt-policykit-agent"
       "waybar"
       "hyprpaper"
       "hypridle"
