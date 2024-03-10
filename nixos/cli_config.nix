@@ -43,7 +43,7 @@
 
       # Nix rebuilds
       rbs = "bash /home/roman/scripts/rebuild-aliases/rebuild-switch";
-      rbu = "bash /home/roman/scripts/rebuild-aliases/rebuild-upgrade";
+      #rbu = "bash /home/roman/scripts/rebuild-aliases/rebuild-upgrade";
     };
   };
   users.defaultUserShell = pkgs.zsh;
