@@ -59,7 +59,7 @@
     isNormalUser = true;
     description = "Roman";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [ lxqt.lxqt-policykit ];
+    packages = with pkgs; [];
   };
 
   # Logind
