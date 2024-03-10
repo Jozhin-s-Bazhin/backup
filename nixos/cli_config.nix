@@ -19,8 +19,16 @@
     vteIntegration = true;
 
     # Init
-    shellInit  = ''
+    interactiveShellInit  = ''
       eval "$(zoxide init zsh)"
+      function f() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+      }
     '';
 
     # Aliases
@@ -37,7 +45,6 @@
       # Misc
       c = "codium .";
       clip = "kitten clipboard";
-      f = "yazi";
 
       # Nix rebuilds
       rbs = "bash /home/roman/scripts/rebuild-aliases/rebuild-switch";
