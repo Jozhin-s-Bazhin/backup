@@ -8,7 +8,6 @@
     eza
     zoxide
     bat
-    lxqt.lxqt-policykit
   ];
 
   # Config for cli utilities
