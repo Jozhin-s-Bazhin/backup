@@ -103,6 +103,23 @@
   # GTK fix
   programs.dconf.enable = true;
 
+  # Better battery life
+  services.thermald.enable = true;
+  powerManagement.powertop.enable = true;
+  services.auto-cpufreq = {
+    enable = true;
+    settings = {
+      battery = {
+        governor = "powersave";
+        turbo = "never";
+      };
+      charger = {
+        governor = "performance";
+        turbo = "auto";
+      };
+    };
+  };
+
   ## NVIDIA BS
   # something for hyprland
   boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocation=1" ];
