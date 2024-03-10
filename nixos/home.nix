@@ -42,7 +42,7 @@
     vscodium 
     lutris
     qbittorrent
-    onlyoffice
+    onlyoffice-bin
     vlc
 
     # CLI utilities
