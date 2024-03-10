@@ -3,7 +3,6 @@
 {
   # Packages
   environment.systemPackages = with pkgs; [
-    neovim
     htop
     killall
     eza
@@ -28,8 +27,6 @@
     shellAliases = {
       # nvim
       v = "nvim";
-      vi = "nvim";
-      vim = "nvim";
 
       # basic 
       ls = "eza -l --git --sort 'modified'";
@@ -52,8 +49,12 @@
   # nvim
   programs.neovim = {
     enable = true;
+    defaultEditor = true;
+    vimAlias = true;
+    viAlias = true;
     configure.customRC = ''
       inoremap jk <Esc>
+      set ignorecase
     '';
   };
 }
