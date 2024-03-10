@@ -20,6 +20,7 @@ in
       background = "#${colors.nixToHex colors.background_darker}";
       background_opacity = toString colors.opacity;
       confirm_os_window_close = "0";
+      window_padding_width = "5";
     };
   };
 
