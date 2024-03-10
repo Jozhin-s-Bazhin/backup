@@ -29,14 +29,14 @@
     libnotify
     wofi
     nerdfonts
+    qt5.qtbase
+    qt6.qtbase
     brightnessctl
 
     hyprpaper
     hypridle
     inputs.hyprlock.packages.x86_64-linux.hyprlock
-    qt5.qtbase
-    qt6.qtbase
-
+    
     # Other
     vscodium 
     lutris
