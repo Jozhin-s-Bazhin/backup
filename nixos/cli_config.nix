@@ -37,10 +37,10 @@
       # Misc
       c = "codium .";
       clip = "kitten clipboard";
+      f = "yazi";
 
       # Nix rebuilds
       rbs = "bash /home/roman/scripts/rebuild-aliases/rebuild-switch";
-      #rbu = "bash /home/roman/scripts/rebuild-aliases/rebuild-upgrade";
     };
   };
   users.defaultUserShell = pkgs.zsh;
