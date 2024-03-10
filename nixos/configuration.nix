@@ -21,9 +21,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Enable automatic upgrade
-  #system.autoUpgrade.enable = true;  # Not needed because flakes
-
   # Define your hostname
   networking.hostName = "nixos";
 
@@ -55,6 +52,11 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
+
+  # Logind
+  services.logind.extraConfig = ''
+    HandlePowerKey=hibernate
+  '';
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
