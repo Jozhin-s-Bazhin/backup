@@ -59,6 +59,19 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Auto-updates
+  system.autoUpgrade = {
+    enable = true;
+    flake = inputs.self.outPath;
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "-L" 
+    ];
+    dates = "03:00";
+    randomizedDelaySec = "60min";
+  };
+
   # Greetd
   services.greetd = {
     enable = true;
