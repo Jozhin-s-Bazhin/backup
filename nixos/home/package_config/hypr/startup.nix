@@ -8,7 +8,14 @@
     ];
 
     exec-once = [
+      # Polkit
       "lxqt-policykit-agent"
+
+      # Clipboard manager
+      "wl-paste --type text --watch cliphist store"
+      "wl-paste --type image --watch cliphist store"
+
+      # Other
       "waybar"
       "hyprpaper"
       "hypridle"

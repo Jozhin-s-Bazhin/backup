@@ -32,6 +32,7 @@
     qt5.qtbase
     qt6.qtbase
     brightnessctl
+    cliphist
 
     hyprpaper
     hypridle
