@@ -14,8 +14,11 @@ in
 
       layout = "dwindle";
 
-      allow_tearing = false; }; decoration = { rounding = 10;
+      allow_tearing = false; 
+      }; 
 
+    decoration = { 
+      rounding = 10;
       blur = {
         enabled = true;
         size = 3;
