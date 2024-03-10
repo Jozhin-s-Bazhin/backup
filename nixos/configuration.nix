@@ -45,6 +45,15 @@
     videoDrivers = [ "nvidia" ];
   };
 
+  # Enable printing
+  services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    openFirewall = true;
+  };
+
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.roman = {
     isNormalUser = true;
