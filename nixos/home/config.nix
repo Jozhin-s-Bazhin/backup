@@ -16,7 +16,7 @@
     };
     Service = {
       Type = "oneshot";
-      ExecStart = "${pkgs.systemd}/bin/loginctl lock-session";
+      ExecStart = "${pkgs.systemd}/bin/loginctl lock-session & sleep 3";
     };
   };
 
