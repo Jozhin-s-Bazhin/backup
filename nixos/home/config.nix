@@ -8,16 +8,15 @@
   # Create systemd service to lock session before sleep
   systemd.user.services.lockScreenBeforeSleep = {
     Unit = {
-      description = "Lock screen before sleep";
+      Description = "Lock screen before system sleep, suspend, or hibernate";
+      Before = [ "sleep.target" ];
     };
-
+    Install = {
+      WantedBy = [ "sleep.target" ];
+    };
     Service = {
-      wantedBy = [ "sleep.target" ];
-      before = [ "sleep.target" ]; # Ensure this is a simple list of strings
-      serviceConfig = {
-        Type = "oneshot";
-        ExecStart = "${pkgs.systemd}/bin/loginctl lock-session & sleep 3";
-      };
+      Type = "oneshot";
+      ExecStart = "${pkgs.systemd}/bin/loginctl lock-session";
     };
   };
 
