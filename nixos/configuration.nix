@@ -63,9 +63,10 @@
   };
 
   # Logind
-  services.logind.extraConfig = ''
-    HandlePowerKey=hibernate
-  '';
+  services.logind = {
+    lidSwitch = "ignore";
+    powerKey = "hibernate";
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
