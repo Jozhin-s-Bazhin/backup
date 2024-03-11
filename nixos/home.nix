@@ -33,7 +33,6 @@
     qt6.qtbase
     brightnessctl
     cliphist
-    pamixer
 
     hyprpaper
     hypridle
