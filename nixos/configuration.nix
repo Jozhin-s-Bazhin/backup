@@ -64,7 +64,6 @@
 
   # Logind
   services.logind = {
-    lidSwitch = "ignore";
     powerKey = "hibernate";
   };
 

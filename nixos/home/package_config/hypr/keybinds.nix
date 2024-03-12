@@ -47,8 +47,8 @@ in
       ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     ];
 
-    bindl = [
-      ", switch:off:Lid Switch, exec, systemctl suspend"
-    ];
+    #bindl = [
+    #  ", switch:off:Lid Switch, exec, systemctl suspend"
+    #];
   };
 }
