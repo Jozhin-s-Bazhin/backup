@@ -48,7 +48,7 @@ in
     ];
 
     bindl = [
-      ", switch:off: Lid Switch, exec, systemctl suspend"
+      ", switch:off:Lid Switch, exec, systemctl suspend"
     ];
   };
 }
