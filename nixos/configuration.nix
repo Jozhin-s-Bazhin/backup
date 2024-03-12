@@ -94,11 +94,15 @@
     };
   };
 
-  # Hyprland
-  #programs.hyprland = {
-  #  enable = true;
-  #  package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-  #};
+  # Systemd service to lock screen before sleep
+  systemd.services.lockBeforeSleep = {
+    wantedBy = [ "sleep.target" ];
+    before = [ "sleep.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.systemd}/bin/loginctl lock-session && sleep 3";
+    };
+  };
 
   # Pipewire
   security.rtkit.enable = true;
