@@ -20,6 +20,18 @@
     };
   };
 
+  systemd.user.services.exampel = {
+    Unit = {
+      Description = "test";
+    };
+    Install = {
+      WantedBy = [ "default.target" ];
+    };
+    Service = {
+      ExecStart = "${pkgs.kitty}/bin/kitty";
+    }:
+  };
+
   # Enable XDG desktop portal
   xdg.portal = {
     enable = true;
