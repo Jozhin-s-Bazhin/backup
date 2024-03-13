@@ -48,7 +48,7 @@ in
     ];
 
     bindl = [
-      ", switch:off:Lid Switch, exec, loginctl lock-session; systemctl suspend"
+      ", switch:off:Lid Switch, exec, /home/roman/scripts/misc/lockBeforeSleep"
     ];
   };
 }
