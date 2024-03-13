@@ -12,23 +12,11 @@
       Before = [ "sleep.target" ];
     };
     Install = {
-      WantedBy = [ "sleep.target" ];
+      WantedBy = [ "suspend.target" ];
     };
     Service = {
       Type = "oneshot";
       ExecStart = "${pkgs.systemd}/bin/loginctl lock-session && sleep 3";
-    };
-  };
-
-  systemd.user.services.exampel = {
-    Unit = {
-      Description = "test";
-    };
-    Install = {
-      WantedBy = [ "sleep.target" ];
-    };
-    Service = {
-      ExecStart = "${pkgs.kitty}/bin/kitty";
     };
   };
 
