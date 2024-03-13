@@ -94,19 +94,20 @@
     };
   };
 
-  ## Systemd service to lock screen before sleep
-  #systemd.services.lockBeforeSleep = {
-  #  wantedBy = [ "sleep.target" ];
-  #  before = [ "sleep.target" ];
-  #  serviceConfig = {
-  #    Type = "oneshot";
-  #    ExecStart = "${pkgs.writeShellScript "watch-store" ''
-  #      #!/run/current-system/sw/bin/bash
-  #	 ${pkgs.systemd}/bin/loginctl lock-session &&
-  #	 sleep 3
-  #   ''}";
-  #  };
-  #};
+  # Systemd service to lock screen before sleep
+  systemd.services.lockBeforeSleep = {
+    wantedBy = [ "sleep.target" ];
+    before = [ "sleep.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.writeShellScript "watch-store" ''
+         #!/run/current-system/sw/bin/bash
+	 SESSION_ID=$(${pkgs.systemd}/bin/loginctl | grep $(whoami) | ${pkgs.awk} '{print $1}')
+  	 ${pkgs.systemd}/bin/loginctl lock-session $SESSION_ID &&
+  	 sleep 3
+     ''}";
+    };
+  };
 
   # Pipewire
   security.rtkit.enable = true;
