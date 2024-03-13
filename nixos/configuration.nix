@@ -100,7 +100,7 @@
     before = [ "sleep.target" ];
     serviceConfig = {
       Type = "oneshot";
-      ExecStart = "${pkgs.systemd}/bin/loginctl lock-session && sleep 3";
+      ExecStart = "${pkgs.systemd}/bin/loginctl lock-session; sleep 3";
     };
   };
 
