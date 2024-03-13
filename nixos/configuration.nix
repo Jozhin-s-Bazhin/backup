@@ -102,7 +102,8 @@
       Type = "oneshot";
       ExecStart = "${pkgs.writeShellScript "watch-store" ''
          #!/run/current-system/sw/bin/bash
-	 ${pkgs.systemd}/bin/loginctl | grep $(whoami) | ${pkgs.gawk}/bin/awk '{print $1}' | ${pkgs.systemd}/bin/loginctl lock-session && sleep 3
+	 #${pkgs.systemd}/bin/loginctl | grep $(whoami) | ${pkgs.gawk}/bin/awk '{print $1}' | ${pkgs.systemd}/bin/loginctl lock-session && sleep 3
+	 ${pkgs.systemd}/bin/loginctl lock-session 3
       ''}";
       User = "roman";
     };
