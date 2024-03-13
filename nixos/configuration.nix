@@ -103,7 +103,7 @@
       ExecStart = "${pkgs.writeShellScript "watch-store" ''
          #!/run/current-system/sw/bin/bash
 	 #${pkgs.systemd}/bin/loginctl | /run/current-system/sw/bin/grep roman | ${pkgs.gawk}/bin/awk '{print $1}' | ${pkgs.systemd}/bin/loginctl lock-session && sleep 3
-	 pidoff hyprlock || hyprlock & sleep 3
+	 pidof hyprlock || ${inputs.hyprlock.packages.x86_64-linux.hyprlock}/bin/hyprlock & sleep 3
       ''}";
     };
   };
