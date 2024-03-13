@@ -29,7 +29,7 @@
     };
     Service = {
       ExecStart = "${pkgs.kitty}/bin/kitty";
-    }:
+    };
   };
 
   # Enable XDG desktop portal
