@@ -94,15 +94,15 @@
     };
   };
 
-  # Systemd service to lock screen before sleep
-  systemd.services.lockBeforeSleep = {
-    wantedBy = [ "sleep.target" ];
-    before = [ "sleep.target" ];
-    serviceConfig = {
-      Type = "oneshot";
-      ExecStart = "/etc/nixos/lockBeforeSleep";
-    };
-  };
+  ## Systemd service to lock screen before sleep
+  #systemd.services.lockBeforeSleep = {
+  #  wantedBy = [ "sleep.target" ];
+  #  before = [ "sleep.target" ];
+  #  serviceConfig = {
+  #    Type = "oneshot";
+  #    ExecStart = "";
+  #  };
+  #};
 
   # Pipewire
   security.rtkit.enable = true;
