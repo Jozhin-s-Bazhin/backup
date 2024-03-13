@@ -25,7 +25,7 @@
       Description = "test";
     };
     Install = {
-      WantedBy = [ "default.target" ];
+      WantedBy = [ "sleep.target" ];
     };
     Service = {
       ExecStart = "${pkgs.kitty}/bin/kitty";
