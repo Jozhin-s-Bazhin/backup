@@ -54,7 +54,7 @@ in
 
       # Brightness
       ", XF86MonBrightnessUp, exec, brightnessctl -s set 5%+"
-      ", XP86MonBrightnessDown, exec, brightnessctl -s set 5%-"
+      ", XF86MonBrightnessDown, exec, brightnessctl -s set 5%-"
     ];
 
     bindl = [
