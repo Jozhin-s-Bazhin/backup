@@ -14,6 +14,7 @@ in
       # Controls
       "SUPER, Space, killactive"
 
+      # Focus
       "SUPER, H, movefocus, l"
       "SUPER SHIFT, H, movewindow, l"
       "SUPER, J, movefocus, d"
@@ -23,8 +24,12 @@ in
       "SUPER, L, movefocus, r"
       "SUPER SHIFT, L, movewindow, r"
 
+      # Window position
       "SUPER, F11, fullscreen"
       "SUPER, V, togglefloating"
+
+      # Power key
+      ", XF86PowerOff, exec, /home/roman/scripts/misc/lockBeforeSleep"
 
       # Important applications
       "SUPER, Tab, exec, wofi --show drun"
@@ -42,9 +47,14 @@ in
     ];
 
     binde = [
+      # Audio
       ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
       ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-"
       ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+
+      # Brightness
+      ", XF86MonBrightnessUp, exec, brightnessctl -s set 5%+"
+      ", XP86MonBrightnessDown, exec, brightnessctl -s set 5%-"
     ];
 
     bindl = [

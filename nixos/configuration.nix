@@ -65,7 +65,7 @@
   # Logind
   services.logind = {
     lidSwitch = "ignore";
-    powerKey = "hibernate";
+    powerKey = "ignore";
   };
 
   # Allow unfree packages
