@@ -25,5 +25,7 @@
 
   xdg.configFile = {
     "ags/config.js".source = ./config.js;
+    "ags/bar.js".source = ./bar.js;
+    "ags/variables.js".source = ./variables.js;
   };
 }
