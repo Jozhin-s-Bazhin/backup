@@ -1,5 +1,8 @@
+import bar from "./bar.js";
+monitor = 0;
+
 export default {
     windows: [
-        // Windows go here
+        
     ]
 }

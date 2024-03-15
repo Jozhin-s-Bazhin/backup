@@ -23,9 +23,9 @@
     ];
   };
 
-  xdg.configFile = {
-    "ags/config.js".source = ./config.js;
-    "ags/bar.js".source = ./bar.js;
-    "ags/variables.js".source = ./variables.js;
+  home.file = {
+    ".config/ags/config.js".source = ./config.js;
+    ".config/ags/bar.js".source = ./bar.js;
+    ".config/ags/variables.js".source = ./variables.js;
   };
 }
