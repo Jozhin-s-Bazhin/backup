@@ -67,5 +67,5 @@ in
     splash = false
   '';
 
-  xdg.configFile."hypr/hyprlock.conf".text = builtins.readFile ./hyprlock.conf;
+  home.file.".config/hypr/hyprlock.conf".source = ./hyprlock.conf;
 }
