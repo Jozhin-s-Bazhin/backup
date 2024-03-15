@@ -3,6 +3,6 @@ monitor = 0;
 
 export default {
     windows: [
-        
+        bar(monitor)
     ]
 }
