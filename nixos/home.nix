@@ -31,7 +31,7 @@
     # Dependencies
     libnotify
     nerdfonts
-    cantarell
+    cantarell-fonts
     qt5.qtbase
     qt6.qtbase
     brightnessctl
