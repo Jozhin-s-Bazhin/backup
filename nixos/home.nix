@@ -26,9 +26,12 @@
     # Hyprland
     (waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ]; }))
     mako
-    libnotify
     wofi
+
+    # Dependencies
+    libnotify
     nerdfonts
+    lato
     qt5.qtbase
     qt6.qtbase
     brightnessctl
