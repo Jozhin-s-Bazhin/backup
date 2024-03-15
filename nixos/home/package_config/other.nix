@@ -43,7 +43,7 @@ in
     ];
     userSettings = {
       vscode-neovim.neovimExecutablePaths.linux = "${pkgs.neovim}/bin/nvim";
-      extensions.experimental.affinity.asvetliakov.vscode-neovim = 1;
+      extensions.experimental.affinity."asvetliakov.vscode-neovim" = 1;
     };
     keybindings = [
       {
