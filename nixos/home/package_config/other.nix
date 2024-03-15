@@ -39,6 +39,7 @@ in
       asvetliakov.vscode-neovim
       ms-python.python
       ms-python.vscode-pylance
+      ms-python.python-debug
       jnoortheen.nix-ide
     ];
     userSettings = {
