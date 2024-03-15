@@ -39,12 +39,25 @@ in
       asvetliakov.vscode-neovim
       ms-python.python
       ms-python.vscode-pylance
-      ms-python.python-debugger
       jnoortheen.nix-ide
     ];
     userSettings = {
       vscode-neovim.neovimExecutablePaths.linux = "${pkgs.neovim}/bin/nvim";
       extensions.experimental.affinity.asvetliakov.vscode-neovim = 1;
     };
+    keybindings = [
+      {
+        "command" = "vscode-neovim.compositeEscape1";
+        "key" = "j";
+        "when" = "neovim.mode == insert && editorTextFocus";
+        "args" = "j";
+      }
+      {
+        "command" = "vscode-neovim.compositeEscape2";
+        "key" = "k";
+        "when" = "neovim.mode == insert && editorTextFocus";
+        "args" = "k";
+      }
+    ];
   };
 }
