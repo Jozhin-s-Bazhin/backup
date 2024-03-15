@@ -34,8 +34,15 @@ in
   # VSCode
   programs.vscodium = {
     enable = true;
-    extensions = with pkgs.vscodium-extensions; [
-      vscodeneovim
+    extensions = with pkgs.vscode-extensions; [
+      asvetliakov.vscode-neovim
+      ms-python.python
+      ms-python.vscode-pylance
+      jnoortheen.nix-ide
     ];
+    userSettings = {
+      vscode-neovim.neovimExecutablePaths.linux = "${pkgs.neovim}/bin/nvim";
+      extensions.experimental.affinity.asvetliakov.vscode-neovim = 1;
+    };
   };
 }
