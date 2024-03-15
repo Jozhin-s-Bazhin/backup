@@ -30,4 +30,12 @@ in
     userName = "Jozhin-s-Bazhin";
     userEmail = "rbezroutchko@gmail.com";
   };
+
+  # VSCode
+  programs.vscodium = {
+    enable = true;
+    extensions = with pkgs.vscodium-extensions; [
+      vscodeneovim
+    ];
+  };
 }
