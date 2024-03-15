@@ -43,7 +43,7 @@
       cat = "bat";
 
       # Misc
-      c = "codium .";
+      c = "codium . && exit";
       clip = "kitten clipboard";
 
       # Nix rebuilds
