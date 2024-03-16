@@ -19,14 +19,23 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    # Essentials
+    # Applications
     floorp
     kitty
+    lutris
+    qbittorrent
+    onlyoffice-bin
+    vlc
+    vscodium 
+    spotube
 
     # Hyprland
     (waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ]; }))
     mako
     wofi
+    hyprpaper
+    hypridle
+    inputs.hyprlock.packages.x86_64-linux.hyprlock
 
     # Dependencies
     libnotify
@@ -36,17 +45,6 @@
     qt6.qtbase
     brightnessctl
     cliphist
-
-    hyprpaper
-    hypridle
-    inputs.hyprlock.packages.x86_64-linux.hyprlock
-    
-    # Other
-    vscodium 
-    lutris
-    qbittorrent
-    onlyoffice-bin
-    vlc
 
     # CLI utilities
     graphicsmagick
