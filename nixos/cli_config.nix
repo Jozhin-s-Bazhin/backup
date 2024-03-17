@@ -20,7 +20,8 @@
 
     # Init
     interactiveShellInit  = ''
-      eval "$(zoxide init zsh)"
+      eval "$(zoxide init --cmd zsh)"
+
       function f() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -38,7 +39,6 @@
 
       # basic 
       ls = "eza -l --git --sort 'modified'";
-      cd = "z";
       grep = "grep --color=auto";
       cat = "bat";
 
