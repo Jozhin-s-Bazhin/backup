@@ -20,7 +20,7 @@
 
     # Init
     interactiveShellInit  = ''
-      eval "$(zoxide init --cmd zsh)"
+      eval "$(zoxide init --cmd cd zsh)"
 
       function f() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
