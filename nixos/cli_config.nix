@@ -8,7 +8,7 @@
     eza
     zoxide
     bat
-    nix-direnv
+    direnv
   ];
 
   # Config for cli utilities
