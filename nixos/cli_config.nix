@@ -23,6 +23,9 @@
       # Zoxide
       eval "$(zoxide init --cmd cd zsh)"
 
+      # Direnv
+      eval "$(direnv hook zsh)"
+
       # Yazi
       function f() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
