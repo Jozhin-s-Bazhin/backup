@@ -8,7 +8,6 @@
     eza
     zoxide
     bat
-    direnv
   ];
 
   # Config for cli utilities
@@ -25,7 +24,7 @@
       eval "$(zoxide init --cmd cd zsh)"
 
       # Direnv
-      eval "$(direnv hook zsh)"
+      #eval "$(direnv hook zsh)"
 
       # Yazi
       function f() {
