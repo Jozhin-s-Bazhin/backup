@@ -20,8 +20,10 @@
 
     # Init
     interactiveShellInit  = ''
+      # Zoxide
       eval "$(zoxide init --cmd cd zsh)"
 
+      # Yazi
       function f() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"

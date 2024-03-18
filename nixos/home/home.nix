@@ -28,6 +28,7 @@
     vlc
     vscodium 
     spotube
+    whatsapp-for-linux
 
     # Hyprland
     (waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ]; }))
