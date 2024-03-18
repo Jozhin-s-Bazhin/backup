@@ -50,6 +50,5 @@
     # CLI utilities
     yazi
     graphicsmagick
-    nix-direnv
   ];
 }
