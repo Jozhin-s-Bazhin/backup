@@ -24,11 +24,11 @@
     kitty
     lutris
     qbittorrent
-    onlyoffice-bin
     vlc
     vscodium 
     spotube
     whatsapp-for-linux
+    libreoffice
 
     # Hyprland
     (waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ]; }))
