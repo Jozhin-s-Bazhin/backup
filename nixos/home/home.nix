@@ -48,7 +48,8 @@
     cliphist
 
     # CLI utilities
-    graphicsmagick
     yazi
+    graphicsmagick
+    nix-direnv
   ];
 }
