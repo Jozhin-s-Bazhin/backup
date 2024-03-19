@@ -34,9 +34,10 @@ in
       # Important applications
       "SUPER, Tab, exec, wofi --show drun"
       "SUPER, Return, exec, kitty"
-      "SUPER, B, exec, floorp"
 
       # Other applications
+      "SUPER, B, exec, floorp"
+      "SUPER, C, exec, codium"
     ] 
     ++
     workspaceBindings;
