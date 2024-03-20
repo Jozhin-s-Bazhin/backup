@@ -123,6 +123,13 @@
   # GTK fix
   programs.dconf.enable = true;
 
+  # Fonts
+  fonts.fontconfig.defaultFonts = {
+    sansSerif = [ "Ubuntu Nerd Font" ];
+    serif = [ "Ubuntu Nerd Font" ];
+    mono = [ "UbuntuMono Nerd Font" ];
+  };
+
   # Better battery life
   services.thermald.enable = true;
   powerManagement.powertop.enable = true;
