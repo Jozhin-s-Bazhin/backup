@@ -21,7 +21,8 @@ in
       background_opacity = toString colors.opacity;
       confirm_os_window_close = "0";
       window_padding_width = "3";
-      font = "UbuntuMono Nerd Font";
+      font_family = "UbuntuMono Nerd Font";
+      font_size = "11.0";
     };
   };
 
