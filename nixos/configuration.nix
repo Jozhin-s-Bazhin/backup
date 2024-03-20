@@ -127,7 +127,7 @@
   fonts.fontconfig.defaultFonts = {
     sansSerif = [ "Ubuntu Nerd Font" ];
     serif = [ "Ubuntu Nerd Font" ];
-    mono = [ "UbuntuMono Nerd Font" ];
+    #mono = [ "UbuntuMono Nerd Font" ];
   };
 
   # Better battery life
