@@ -22,7 +22,7 @@ in
       confirm_os_window_close = "0";
       window_padding_width = "3";
       font_family = "UbuntuMono Nerd Font";
-      font_size = "12.0";
+      font_size = "13.0";
     };
   };
 
