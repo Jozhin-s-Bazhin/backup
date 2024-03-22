@@ -12,6 +12,7 @@
 
       touchpad = {
         natural_scroll = true;
+	disable_while_typing = false;
       };
       sensitivity = 0;
     };
