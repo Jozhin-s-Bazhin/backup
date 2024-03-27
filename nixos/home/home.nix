@@ -60,6 +60,6 @@
     sl
     cmatrix
     pipes-rs
-    tui-mines
+    minesweeper-rs
   ];
 }
