@@ -29,6 +29,8 @@
     spotube
     whatsapp-for-linux
     libreoffice
+    bitwarden
+    thunderbird
 
     # Hyprland
     (waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ]; }))
