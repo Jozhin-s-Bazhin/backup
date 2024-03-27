@@ -50,5 +50,13 @@
     # CLI utilities
     yazi
     graphicsmagick
+
+    # Goofy ah
+    neofetch 
+    fastfetch
+    lolcat
+    sl
+    cmatrix
+    pipes-rs
   ];
 }
