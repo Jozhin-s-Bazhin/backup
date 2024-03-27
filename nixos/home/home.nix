@@ -64,6 +64,6 @@
 
 
 
-    inputs.gsm-cli.packages.default
+    inputs.game-setting-manager.packages.${system}.gsm-cli
   ];
 }
