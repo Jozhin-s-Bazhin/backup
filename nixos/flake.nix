@@ -13,6 +13,7 @@
       url = "github:hyprwm/hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    gsm-cli.url = "github:Jozhin-s-Bazhin/game-setting-manager";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, hyprland, ... }: {

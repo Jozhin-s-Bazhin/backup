@@ -61,5 +61,9 @@
     cmatrix
     pipes-rs
     freesweep
+
+
+
+    inputs.gsm-cli.packages.default
   ];
 }
