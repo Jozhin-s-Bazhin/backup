@@ -82,6 +82,7 @@
     ];
     dates = "03:00";
     randomizedDelaySec = "60min";
+    persistent = true;
   };
 
   # Greetd
@@ -94,20 +95,6 @@
       };
     };
   };
-
-  # Systemd service to lock screen before sleep
-  #systemd.services.lockBeforeSleep = {
-  #  wantedBy = [ "sleep.target" ];
-  #  before = [ "sleep.target" ];
-  #  serviceConfig = {
-  #    Type = "oneshot";
-  #    ExecStart = "${pkgs.writeShellScript "watch-store" ''
-  #       #!/run/current-system/sw/bin/bash
-  #	 #${pkgs.systemd}/bin/loginctl | /run/current-system/sw/bin/grep roman | ${pkgs.gawk}/bin/awk '{print $1}' | ${pkgs.systemd}/bin/loginctl lock-session && sleep 3
-  #	 pidof hyprlock || ${inputs.hyprlock.packages.x86_64-linux.hyprlock}/bin/hyprlock & sleep 3
-  #    ''}";
-  #  };
-  #};
 
   # Pipewire
   security.rtkit.enable = true;
