@@ -60,6 +60,6 @@
     sl
     cmatrix
     pipes-rs
-    minesweeper-rs
+    minesweep-rs
   ];
 }
