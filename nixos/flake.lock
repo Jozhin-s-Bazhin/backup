@@ -54,7 +54,7 @@
         "type": "github"
       }
     },
-    "gsm-cli": {
+    "game-setting-manager": {
       "inputs": {
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs_2",
@@ -263,7 +263,7 @@
     "nix-github-actions": {
       "inputs": {
         "nixpkgs": [
-          "gsm-cli",
+          "game-setting-manager",
           "poetry2nix",
           "nixpkgs"
         ]
@@ -350,7 +350,7 @@
         "flake-utils": "flake-utils_2",
         "nix-github-actions": "nix-github-actions",
         "nixpkgs": [
-          "gsm-cli",
+          "game-setting-manager",
           "nixpkgs"
         ],
         "systems": "systems_3",
@@ -373,7 +373,7 @@
     "root": {
       "inputs": {
         "ags": "ags",
-        "gsm-cli": "gsm-cli",
+        "game-setting-manager": "game-setting-manager",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "hyprlock": "hyprlock",
@@ -472,7 +472,7 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "gsm-cli",
+          "game-setting-manager",
           "poetry2nix",
           "nixpkgs"
         ]
