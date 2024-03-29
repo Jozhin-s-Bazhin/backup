@@ -1,0 +1,31 @@
+stopping the following units: systemd-tmpfiles-resetup.service, systemd-udevd-control.socket, systemd-udevd-kernel.socket, systemd-udevd.service
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: home-manager-roman.service, polkit.service
+[0;1;31mJob for home-manager-roman.service failed because the control process exited with error code.[0m
+[0;1;31mSee "systemctl status home-manager-roman.service" and "journalctl -xeu home-manager-roman.service" for details.[0m
+starting the following units: systemd-tmpfiles-resetup.service, systemd-udevd-control.socket, systemd-udevd-kernel.socket
+warning: the following units failed: home-manager-roman.service
+
+[0;1;31m×[0m home-manager-roman.service - Home Manager environment for roman
+     Loaded: loaded (]8;;file://nixos/etc/systemd/system/home-manager-roman.service/etc/systemd/system/home-manager-roman.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Fri 2024-03-29 09:13:05 CET; 60ms ago
+   Duration: 2min 52.520s
+    Process: 10891 ExecStart=/nix/store/d9m34l7qxpdv2n00xwdsmxv2v7zrdi0s-hm-setup-env /nix/store/7hly6w1bvhvlq2q8blh4z1pfqch3ih6n-home-manager-generation [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 10891 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 141ms
+
+Mar 29 09:13:05 nixos systemd[1]: Starting Home Manager environment for roman...
+Mar 29 09:13:05 nixos hm-activate-roman[10891]: Starting Home Manager activation
+Mar 29 09:13:05 nixos hm-activate-roman[10891]: Activating checkFilesChanged
+Mar 29 09:13:05 nixos hm-activate-roman[10891]: Activating checkLinkTargets
+Mar 29 09:13:05 nixos hm-activate-roman[11018]: cmp: /nix/store/01as2bjfj13bn3i9m4y4di952dlnzhkk-home-manager-files/.vscode-oss/extensions: Is a directory
+Mar 29 09:13:05 nixos hm-activate-roman[10988]: Existing file '/home/roman/.vscode-oss/extensions' is in the way of '/nix/store/01as2bjfj13bn3i9m4y4di952dlnzhkk-home-manager-files/.vscode-oss/extensions'
+Mar 29 09:13:05 nixos hm-activate-roman[10988]: Please move the above files and try again or use 'home-manager switch -b backup' to back up existing files automatically.
+Mar 29 09:13:05 nixos systemd[1]: [0;1;39m[0;1;31m[0;1;39mhome-manager-roman.service: Main process exited, code=exited, status=1/FAILURE[0m
+Mar 29 09:13:05 nixos systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mhome-manager-roman.service: Failed with result 'exit-code'.[0m
+Mar 29 09:13:05 nixos systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Home Manager environment for roman.[0m
