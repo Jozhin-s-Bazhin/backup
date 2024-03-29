@@ -39,8 +39,8 @@ in
     package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
       asvetliakov.vscode-neovim
-      #ms-python.python
-      #ms-python.vscode-pylance
+      ms-python.python
+      ms-python.vscode-pylance
       jnoortheen.nix-ide
     ];
     userSettings = {
