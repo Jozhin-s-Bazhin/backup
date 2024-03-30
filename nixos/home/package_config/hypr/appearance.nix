@@ -16,7 +16,7 @@ in
       }; 
 
     decoration = { 
-      rounding = 10;
+      rounding = 0;
       blur = {
         enabled = false;
         size = 3;
@@ -25,7 +25,7 @@ in
         vibrancy = 0.1696;
       };
 
-      drop_shadow = true;
+      drop_shadow = false;
       shadow_range = 4;
       shadow_render_power = 3;
       "col.shadow" = "rgba(1a1a1aee)";
