@@ -25,7 +25,8 @@
 
   home.file = {
     ".config/ags/config.js".source = ./config.js;
-    ".config/ags/bar.js".source = ./bar.js;
+    #".config/ags/bar.js".source = ./bar.js;
     ".config/ags/variables.js".source = ./variables.js;
+    ".config/ags/style.css".source = ./style.css;
   };
 }
