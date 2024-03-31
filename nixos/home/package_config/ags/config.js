@@ -131,11 +131,12 @@ function BatteryLabel() {
         visible: battery.bind("available"),
         children: [
 	    //Widget.Icon({ icon }),
-            Widget.LevelBar({
-                widthRequest: 140,
-                vpack: "center",
-                value,
-            }),
+	    //Widget.LevelBar({
+            //    widthRequest: 140,
+            //    vpack: "center",
+            //    value,
+            //}),
+	    Widget.Label ({ `${battery}` })
         ],
     })
 }
