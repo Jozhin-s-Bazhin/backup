@@ -1,4 +1,4 @@
-import bar from "./bar.js";
+import function bar from "./bar.js";
 monitor = 0;
 
 export default {
