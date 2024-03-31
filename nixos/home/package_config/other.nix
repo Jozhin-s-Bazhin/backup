@@ -20,7 +20,7 @@ in
     };
     iconTheme = {
       name = "Adwaita";
-      package = pkgs.adwaita;
+      package = pkgs.gnome.adwaita-icon-theme;
     };
   };
 
