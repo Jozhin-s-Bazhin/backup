@@ -62,7 +62,7 @@
     freesweep
 
 
-
+    # My own shit
     inputs.game-setting-manager.packages.${system}.gsm-cli
   ];
 }
