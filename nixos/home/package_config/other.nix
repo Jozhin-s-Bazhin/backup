@@ -20,7 +20,7 @@ in
     };
     iconTheme = {
       name = "adwaita";
-      package = pkgs.gnome.adwaita;
+      package = pkgs.gnome.adwaita-icon-theme;
     };
     gtk3.extraConfig.Settings = ''
       gtk-decoration-layout="menu:"
