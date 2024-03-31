@@ -19,8 +19,8 @@ in
       package = fluent-gtk-theme-custom;
     };
     iconTheme = {
-      name = "tela-circle";
-      package = pkgs.tela-circle-icon-theme;
+      name = "adwaita";
+      package = pkgs.gnome.adwaita;
     };
     gtk3.extraConfig.Settings = ''
       gtk-decoration-layout="menu:"
