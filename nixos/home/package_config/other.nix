@@ -23,9 +23,9 @@ in
       package = pkgs.gnome.adwaita-icon-theme;
     };
     gtk3.extraConfig.Settings = ''
-      gtk-decoration-layout="menu:"
       gtk-application-prefer-dark-theme=1
     '';
+    gtk3.extraConfig.gtk-decoration-layout="menu:"
     gtk4.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
     '';
