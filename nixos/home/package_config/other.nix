@@ -22,11 +22,10 @@ in
       name = "tela-circle";
       package = pkgs.tela-circle-icon-theme;
     };
+    gtk3.extraConfig = ''
+      gtk-decoration-layout="menu:"
+    '';
   };
-  gtk3.extraConfig = ''
-    gtk-decoration-layout="menu:"
-  '';
-
   # Kitty
   programs.kitty = {
     enable = true;
