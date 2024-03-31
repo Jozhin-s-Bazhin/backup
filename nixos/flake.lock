@@ -61,11 +61,11 @@
         "poetry2nix": "poetry2nix"
       },
       "locked": {
-        "lastModified": 1711740751,
-        "narHash": "sha256-UCwKV2WbHzrp9MalW8idZegLbHvw9scd7ZLIN6xgcSw=",
+        "lastModified": 1711881755,
+        "narHash": "sha256-rk/rpRuUOBQBRPiwy8RzO73BkIboQ2xOeTv6k7NhSF0=",
         "owner": "Jozhin-s-Bazhin",
         "repo": "game-setting-manager",
-        "rev": "3040b4be68b648e63c049fe2e6052ed6162ddecb",
+        "rev": "e53e412cb4549cae677f5043361f40d0c5d95e95",
         "type": "github"
       },
       "original": {
