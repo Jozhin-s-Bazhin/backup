@@ -26,6 +26,8 @@ in
       gtk-decoration-layout="menu:"
     '';
   };
+  home.sessionVariables.GTK_THEME = config.gtk.theme.name;
+
   # Kitty
   programs.kitty = {
     enable = true;
