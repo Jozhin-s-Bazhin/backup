@@ -9,6 +9,6 @@
 
   accent = {r = "06"; g = "6c"; b = "fa";};
   background = {r = "25"; g = "25"; b = "25";};
-  background_darker = { r = "15"; g = "15"; b = "15"; };
+  background_darker = { r = "20"; g = "20"; b = "20"; };
 }
 
