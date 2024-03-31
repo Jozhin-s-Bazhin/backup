@@ -117,6 +117,8 @@
     #mono = [ "UbuntuMono Nerd Font" ];
   };
 
+  services.upower.enable = true;
+
   # Better battery life
   services.thermald.enable = true;
   powerManagement.powertop.enable = true;

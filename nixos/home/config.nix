@@ -27,7 +27,5 @@
     config.common.default = "gtk";
   };
 
-  services.upower.enable = true;
-
   programs.home-manager.enable = true;
 }
