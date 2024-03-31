@@ -126,17 +126,19 @@ function BatteryLabel() {
     //const icon = battery.bind("percent").as(p =>
     //    `battery-level-${Math.floor(p / 10) * 10}-symbolic`)
 
-    return Widget.Box({
-        class_name: "battery",
-        visible: battery.bind("available"),
-        child: Widget.Label ( `${battery}%` )
+    return Widget.Label(`${battery}%`)
+
+    //return Widget.Box({
+    //    class_name: "battery",
+    //   visible: battery.bind("available"),
+    //    child: Widget.Label ( `${battery}%` )
 	    //Widget.Icon({ icon }),
 	    //Widget.LevelBar({
             //    widthRequest: 140,
             //    vpack: "center",
             //    value,
             //}),
-    })
+    //})
 }
 
 
