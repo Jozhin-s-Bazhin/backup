@@ -3,7 +3,7 @@
 let 
   colors = import ./variables/colors.nix { inherit lib; };
   fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.override {
-    tweaks = [ "round" "compact" ];
+    tweaks = [ "round" ];
   };
 in
 {
