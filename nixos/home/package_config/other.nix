@@ -23,6 +23,9 @@ in
       package = pkgs.tela-circle-icon-theme;
     };
   };
+  gtk3.extraConfig = ''
+    gtk-decoration-layout="menu:"
+  '';
 
   # Kitty
   programs.kitty = {
