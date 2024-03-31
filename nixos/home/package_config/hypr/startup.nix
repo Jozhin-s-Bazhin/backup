@@ -16,9 +16,9 @@
       "wl-paste --type image --watch cliphist store"
 
       # Other
-      "waybar"
       "hyprpaper"
       "hypridle"
+      "ags"
     ];
   };
 
