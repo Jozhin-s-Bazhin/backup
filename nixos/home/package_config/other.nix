@@ -8,7 +8,7 @@ in
   gtk = {
     enable = true;
     font = {
-      name = "Ubuntu";
+      name = "Ubuntu Nerd Font";
       size = 11;
     };
   };
