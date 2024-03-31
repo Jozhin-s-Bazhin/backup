@@ -3,10 +3,8 @@
 let 
   colors = import ./variables/colors.nix { inherit lib; };
   fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.overrideAttrs (oldAttrs: rec {
-    installPhase = ''
-      ${oldAttrs.installPhase}
-      ./install.sh --dest $out --tweaks round --color dark
-    '';
+    accents = [ "blue" ];
+    tweaks = [ "round" ];
   });
 in
 {
