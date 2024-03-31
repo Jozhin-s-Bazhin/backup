@@ -142,7 +142,7 @@ function BatteryLabel() {
     
     return Widget.Label({
         class_name: "battery",
-        label: label,
+        label: `${label}%`,
     });
 }
 
