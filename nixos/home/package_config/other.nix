@@ -3,7 +3,6 @@
 let 
   colors = import ./variables/colors.nix { inherit lib; };
   fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.override {
-    #accents = [ "blue" ];
     tweaks = [ "round" ];
   };
 in
@@ -18,6 +17,10 @@ in
     theme = {
       name = "Fluent-Dark";
       package = fluent-gtk-theme-custom;
+    };
+    iconTheme = {
+      name = "Adwaita";
+      package = pkgs.adwaita;
     };
   };
 
