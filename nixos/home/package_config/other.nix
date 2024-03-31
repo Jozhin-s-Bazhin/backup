@@ -19,8 +19,8 @@ in
       package = fluent-gtk-theme-custom;
     };
     iconTheme = {
-      name = "Adwaita";
-      package = pkgs.gnome.adwaita-icon-theme;
+      name = "tela-circle";
+      package = pkgs.gnome.tela-circle-icon-theme;
     };
   };
 
