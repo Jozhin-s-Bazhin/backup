@@ -33,7 +33,6 @@
     thunderbird
 
     # Hyprland
-    mako
     wofi
     hyprpaper
     hypridle
