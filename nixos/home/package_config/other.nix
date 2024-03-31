@@ -3,7 +3,7 @@
 let 
   colors = import ./variables/colors.nix { inherit lib; };
   fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.override {
-    accents = [ "blue" ];
+    #accents = [ "blue" ];
     tweaks = [ "round" ];
   };
 in
