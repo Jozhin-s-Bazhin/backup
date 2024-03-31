@@ -138,11 +138,11 @@ function BatteryLabel() {
             //}),
     //})
 	
-    const label = battery.bind("percent").as(p => p > 0 ? p / 100 : 0);
+    const value = battery.bind("percent").as(p => p > 0 ? p / 100 : 0);
     
     return Widget.Label({
         class_name: "battery",
-        label: `${label}%`,
+        label: `${value}%`,
     });
 }
 
