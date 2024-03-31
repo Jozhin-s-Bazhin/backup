@@ -11,7 +11,7 @@ in
       name = "Ubuntu Nerd Font";
       size = 11;
     };
-    theme = fluent-gtk-theme;
+    theme = "Fluent";
   };
 
   # Kitty
