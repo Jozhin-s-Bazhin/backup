@@ -140,10 +140,14 @@ function BatteryLabel() {
 	
     //const value = battery.bind("percent").as(p => p > 0 ? p / 100 : 0);
     
-    return Widget.Label({
-        class_name: "battery",
-        label: `${battery.bind('percent').as(p => p > 0 ? p / 100 : 0)}`,
-    });
+    return Widget.CircularProgress({
+    child: Widget.Icon({
+        icon: battery.bind('icon_name')
+    }),
+    visible: battery.bind('available'),
+    value: battery.bind('percent').as(p => p > 0 ? p / 100 : 0),
+    class_name: battery.bind('charging').as(ch => ch ? 'charging' : ''),
+})
 }
 
 
