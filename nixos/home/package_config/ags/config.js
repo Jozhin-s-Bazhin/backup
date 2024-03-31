@@ -136,7 +136,7 @@ function BatteryLabel() {
             //    vpack: "center",
             //    value,
             //}),
-	    Widget.Label ({ `${battery}%` })
+	    Widget.Label (`${battery}%`)
         ],
     })
 }
