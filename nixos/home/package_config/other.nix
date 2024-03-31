@@ -5,7 +5,7 @@ let
   fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.overrideAttrs (oldAttrs: rec {
     installPhase = ''
       ${oldAttrs.installPhase}
-      ./install.sh --dest $out --tweaks round
+      ./install.sh --dest $out --tweaks round --color dark
     '';
   });
 in
