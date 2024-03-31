@@ -39,8 +39,6 @@
     hyprpaper
     hypridle
     inputs.hyprlock.packages.x86_64-linux.hyprlock
-
-    # Dependencies
     libnotify
     nerdfonts
     cantarell-fonts
@@ -48,6 +46,7 @@
     qt6.qtbase
     brightnessctl
     cliphist
+    fluent-gtk-theme
 
     # CLI utilities
     yazi
