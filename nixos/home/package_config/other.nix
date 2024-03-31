@@ -24,10 +24,10 @@ in
     };
     gtk3.extraConfig.Settings = ''
       gtk-decoration-layout="menu:"
-      prefer-dark=1
+      gtk-application-prefer-dark-theme=1
     '';
     gtk4.extraConfig.Settings = ''
-      prefer-dark=1
+      gtk-application-prefer-dark-theme=1
     '';
   };
 
