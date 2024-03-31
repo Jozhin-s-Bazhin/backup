@@ -120,19 +120,14 @@ function Volume() {
     })
 }
 
-
 function BatteryLabel() {
-    //return Widget.Label({
-    //    label: `${battery.bind('percent').as(p => p > 0 ? p / 100 : 0)}`,
-    //})
-    const label = battery.bind("percent").as(p => `${p.value}%`);
-
+    const label = battery.bind("percent").as(p => `${p}%`);
+    
     return Widget.Label({
         class_name: "battery",
         label: label,
     });
 }
-
 
 function SysTray() {
     const items = systemtray.bind("items")
