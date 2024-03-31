@@ -2,10 +2,6 @@
 
 let 
   colors = import ./variables/colors.nix { inherit lib; };
-  fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.override {
-    tweaks = [ "round" ];
-  };
-in
 {
   # GTK
   gtk = {
@@ -14,17 +10,23 @@ in
       name = "Ubuntu Nerd Font";
       size = 11;
     };
+
     theme = {
       name = "Fluent-Dark";
-      package = fluent-gtk-theme-custom;
+      package = pkgs.fluent-gtk-theme.override {
+        tweaks = [ "round" ];
+      };
     };
+
     iconTheme = {
       name = "adwaita";
       package = pkgs.gnome.adwaita-icon-theme;
     };
+
     gtk3.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
     '';
+
     gtk3.extraConfig.gtk-decoration-layout="menu:";
     gtk4.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
