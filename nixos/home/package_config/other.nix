@@ -22,7 +22,7 @@ in
       name = "tela-circle";
       package = pkgs.tela-circle-icon-theme;
     };
-    gtk3.extraConfig = ''
+    gtk3.extraConfig.Settings = ''
       gtk-decoration-layout="menu:"
     '';
   };
