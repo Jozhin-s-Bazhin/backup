@@ -28,7 +28,7 @@ in
   programs.kitty = {
     enable = true;
     settings = {
-      background = "#${colors.nixToHex colors.background_darker}";
+      background = "#${colors.nixToHex colors.background}";
       background_opacity = toString colors.opacity;
       confirm_os_window_close = "0";
       window_padding_width = "3";
