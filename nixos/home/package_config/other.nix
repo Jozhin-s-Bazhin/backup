@@ -2,6 +2,12 @@
 
 let 
   colors = import ./variables/colors.nix { inherit lib; };
+  fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.overrideAttrs (oldAttrs: rec {
+    installPhase = ''
+      ${oldAttrs.installPhase}
+      ./install.sh --dest $out --tweaks round
+    '';
+  });
 in
 {
   # GTK
@@ -13,7 +19,7 @@ in
     };
     theme = {
       name = "Fluent";
-      package = pkgs.fluent-gtk-theme;
+      package = fluent-gtk-theme-custom;
     };
   };
 
