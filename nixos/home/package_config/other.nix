@@ -20,7 +20,7 @@ in
     };
     iconTheme = {
       name = "tela-circle";
-      package = pkgs.gnome.tela-circle-icon-theme;
+      package = pkgs.tela-circle-icon-theme;
     };
   };
 
