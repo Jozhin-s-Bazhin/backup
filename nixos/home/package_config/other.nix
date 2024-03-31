@@ -16,7 +16,7 @@ in
       size = 11;
     };
     theme = {
-      name = "Fluent";
+      name = "Fluent-Dark";
       package = fluent-gtk-theme-custom;
     };
   };
