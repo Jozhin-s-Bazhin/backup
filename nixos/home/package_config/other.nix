@@ -2,10 +2,10 @@
 
 let 
   colors = import ./variables/colors.nix { inherit lib; };
-  fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.overrideAttrs (oldAttrs: rec {
+  fluent-gtk-theme-custom = pkgs.fluent-gtk-theme.override {
     accents = [ "blue" ];
     tweaks = [ "round" ];
-  });
+  };
 in
 {
   # GTK
