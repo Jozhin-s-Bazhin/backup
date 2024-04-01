@@ -7,7 +7,7 @@
                         
 # By Roman Bezroutchko
 
-{ inputs, lib, ... }:
+{ inputs, lib, pkgs, ... }:
 
 let
   colors = import ../variables/colors.nix;
