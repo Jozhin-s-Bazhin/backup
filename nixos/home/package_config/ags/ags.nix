@@ -11,7 +11,7 @@
 
 let
   colors = import ../variables/colors.nix;
-  #background = colors.hexToRGB colors.background;
+  background = colors.hexToRGB colors.background;
 in
 {
   # add the home manager module
@@ -31,7 +31,6 @@ in
   home.file.".config/ags/".source = ./.;
   home.file.".config/ags/colors.css".text = ''
     :root {
-      --background: (${background.r}, ${background.g}, ${background.b});
     };
   '';
 }
