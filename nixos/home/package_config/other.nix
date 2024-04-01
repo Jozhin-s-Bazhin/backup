@@ -2,6 +2,7 @@
 
 let 
   colors = import ./variables/colors.nix { inherit lib; };
+in
 {
   # GTK
   gtk = {
