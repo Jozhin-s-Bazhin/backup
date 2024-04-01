@@ -1,8 +1,8 @@
-import bar from "./bar.js";
+import Bar from "./bar.js";
 monitor = 0;
 
 export default {
     windows: [
-        bar(monitor)
+        Bar(monitor)
     ]
 }

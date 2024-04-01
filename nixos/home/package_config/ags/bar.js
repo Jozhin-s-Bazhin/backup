@@ -178,7 +178,7 @@ function Right() {
     })
 }
 
-function Bar(monitor = 0) {
+export function Bar(monitor = 0) {
     return Widget.Window({
         name: `bar-${monitor}`, // name has to be unique
         class_name: "bar",
@@ -192,16 +192,3 @@ function Bar(monitor = 0) {
         }),
     })
 }
-
-App.config({
-    style: "./style.css",
-    windows: [
-        Bar(),
-
-        // you can call it, for each monitor
-        // Bar(0),
-        // Bar(1)
-    ],
-})
-
-export { }
