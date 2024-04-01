@@ -31,6 +31,7 @@ in
   home.file.".config/ags/".source = ./.;
   home.file.".config/ags/colors.css".text = ''
     :root {
+      ${background}
     };
   '';
 }
