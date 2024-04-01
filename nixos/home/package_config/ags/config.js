@@ -1,4 +1,4 @@
-import Bar from "./bar.js";
+import { Bar } from "./bar.js";
 monitor = 0;
 
 export default {
