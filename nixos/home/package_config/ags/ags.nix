@@ -10,7 +10,7 @@
 { inputs, lib, pkgs, ... }:
 
 let
-  colors = import ../variables/colors.nix;
+  colors = import ../variables/colors.nix {inherit lib};
   background = colors.hexToRGB colors.background;
 in
 {
