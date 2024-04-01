@@ -70,7 +70,7 @@ in
       ms-python.python
       ms-python.vscode-pylance
       jnoortheen.nix-ide
-      Gydunhn.Javascript-Essentials
+      vscjava.vscode-java-debug
     ];
     userSettings = {
       vscode-neovim.neovimExecutablePaths.linux = "${pkgs.neovim}/bin/nvim";
