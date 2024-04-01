@@ -1,8 +1,8 @@
 import { Bar } from "./bar.js";
 const monitor = 0;
 
-export default {
+App.config({
     windows: [
         Bar(monitor)
     ]
-}
+})
