@@ -10,7 +10,7 @@
 { inputs, config, pkgs, ... }:
 
 let
-  colors = import ../varianles/colors.nix;
+  colors = import ../variables/colors.nix;
 in
 {
   # add the home manager module
