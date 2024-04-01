@@ -11,7 +11,7 @@
 
 let
   colors = import ../variables/colors.nix;
-  background = colors.hexToRGB colors.background;
+  #background = colors.hexToRGB colors.background;
 in
 {
   # add the home manager module
