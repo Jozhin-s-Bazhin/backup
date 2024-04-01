@@ -7,7 +7,7 @@
                         
 # By Roman Bezroutchko
 
-{ inputs, config, pkgs, ... }:
+{ lib, ... }:
 
 let
   colors = import ../variables/colors.nix;
@@ -31,7 +31,7 @@ in
   home.file.".config/ags/".source = ./.;
   home.file.".config/ags/colors.css".text = ''
     :root {
-      ${background}
+      --background: (${background.r}, ${background.g}, ${background.b});
     };
   '';
 }
