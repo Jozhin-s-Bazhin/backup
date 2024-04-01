@@ -31,7 +31,7 @@ in
   home.file.".config/ags/colors.css".text = ''
     :root {
       #--accent: ${colors.accent};
-      --background: ${colors.hexToRGB (colors.nixToHex colors.background)};
+      --background: ${colors.hexToRGB colors.nixToHex colors.background};
     };
   '';
 }
