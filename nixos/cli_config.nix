@@ -9,6 +9,7 @@
     zoxide
     bat
     direnv
+    tldr
   ];
 
   # Config for cli utilities
