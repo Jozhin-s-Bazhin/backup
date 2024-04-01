@@ -8,6 +8,10 @@
 # By Roman Bezroutchko
 
 { inputs, config, pkgs, ... }:
+
+let
+  colors = import ../varianles/colors.nix;
+in
 {
   # add the home manager module
   imports = [ inputs.ags.homeManagerModules.default ];
@@ -23,11 +27,11 @@
     ];
   };
 
-  home.file = {
-    ".config/ags/".source = ./.;
-    #".config/ags/config.js".source = ./config.js;
-    #".config/ags/bar.js".source = ./bar.js;
-    #".config/ags/variables.js".source = ./variables.js;
-    #".config/ags/style.css".source = ./style.css;
-  };
+  home.file.".config/ags/".source = ./.;
+  home.file.".config/ags/colors.css".text = ''
+    :root {
+      #--accent: ${colors.accent};
+      --background: ${colors.hexToRGB (colors.nixToHex colors.background)};
+    };
+  '';
 }
