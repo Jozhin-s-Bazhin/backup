@@ -1,7 +1,7 @@
 { lib, config, pkgs, ... }:
 
 let 
-  colors = import ../variables/colors.nix { inherit lib; };
+  colors = import ../variables/colors.nix;
 in
 {
   wayland.windowManager.hyprland.settings = {
