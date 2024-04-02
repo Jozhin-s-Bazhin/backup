@@ -31,7 +31,7 @@ in
   home.file.".config/ags/bar/".source = ./bar;
   home.file.".config/ags/colors.css".text = ''
     @define-color accent #${colors.nixToHex colors.accent};
-    @define-color background rgba(, ${colors.opacity});
+    @define-color background rgba(, ${toString colors.opacity});
     @define-color background-darker #${colors.nixToHex colors.background_darker};
   '';
 }
