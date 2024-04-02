@@ -10,7 +10,7 @@
     else lib.toInt digit;
 
   # Function to convert two hex digits (e.g., "ee") to a decimal number
-  hexToDec = hex: hexDigitToDec (lib.head lib.splitString "" hex)) * 16 + hexDigitToDec (lib.elemAt lib.splitString "" hex 1
+  hexToDec = hex: (hexDigitToDec (lib.head lib.splitString "" hex)) * 16 + hexDigitToDec (lib.elemAt lib.splitString "" hex 1)
 
   # Main function to convert a set of hex color components to their decimal equivalents
   nixToRGB = hexSet: {
