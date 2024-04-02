@@ -37,6 +37,6 @@ in
     --accent: ${colors.nixToHex colors.accent};
     --background: ${colors.nixToHex colors.background};
     --background-darker: ${colors.nixToHex colors.background_darker};
-    }
+    };
   '';
 }
