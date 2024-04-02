@@ -11,7 +11,7 @@ let
     else lib.toInt digit;
 
     #hexToDec = hex: lib.foldl' (acc: x: acc * 16 + x) 0 (map hexDigitToDec (lib.splitString "" hex));
-    hexToDec = hex: lib.foldl' (acc: x: acc * 16 + hexDigitToDec x) 0 (lib.splitString "" hex);
+    hexToDec = hex: lib.foldl' (acc: x: acc * 16 + hexDigitToDec x) 0 hex; #(lib.splitString "" hex);
 in
 {
 
