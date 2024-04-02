@@ -11,16 +11,16 @@ let
     else lib.toInt digit;
 
   #hexToDec = hex: lib.foldl' (acc: x: acc * 16 + x) 0 (map hexDigitToDec (lib.splitString "" hex));
-  hexToDec = hex: lib.foldl' (acc: x: acc * 16 + x) 0 [ "f" "1" ]; #(lib.splitString "" hex);
+  #hexToDec = hex: lib.foldl' (acc: x: acc * 16 + x) 0 [ "f" "1" ]; #(lib.splitString "" hex);
 in
 {
 
   # Main function to convert a set of hex color components to their decimal equivalents
-  nixToRGB = hexSet: {
-    r = hexToDec hexSet.r;
-    g = hexToDec hexSet.g;
-    b = hexToDec hexSet.b;
-  };
+  #nixToRGB = hexSet: {
+  #  r = hexToDec hexSet.r;
+  #  g = hexToDec hexSet.g;
+  #  b = hexToDec hexSet.b;
+  #};
   nixToHex = color: "${color.r}${color.g}${color.b}";
 
   opacity = 1;
