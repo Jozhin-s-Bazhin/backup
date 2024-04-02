@@ -10,7 +10,7 @@ let
     else if digit == "f" then 15
     else lib.toInt digit;
 
-  hexToDec = hex: lib.foldl' (acc: x: acc * 16 + x) 0 (lib.splitString "" hex);
+  hexToDec = hex: lib.foldl' (acc: x: acc * 16 + hexDigitToDec x) 0 (lib.splitString "" hex);
 in
 {
 
