@@ -2,7 +2,6 @@
 let
     # Function to convert a single hex digit to its decimal value
   hexDigitToDec = digit:
-    if digit == "" then 0
     else if digit == "a" then 10
     else if digit == "b" then 11
     else if digit == "c" then 12
@@ -16,10 +15,8 @@ let
     digits = lib.filter (x: x != "") (lib.splitString "" hex);
   in
   lib.foldl' (acc: x: acc * 16 + hexDigitToDec x) 0 digits;
-  #hexToDec = hex: (lib.splitString "" hex);
 in
 {
-
   # Main function to convert a set of hex color components to their decimal equivalents
   nixToRGB = hexSet: {
     r = hexToDec hexSet.r;
