@@ -10,7 +10,7 @@
 { inputs, lib, pkgs, ... }:
 
 let
-  colors = import ../variables/colors.nix { inherit lib; };
+  colors = import ../variables/colors.nix;
 in
 {
   # add the home manager module
