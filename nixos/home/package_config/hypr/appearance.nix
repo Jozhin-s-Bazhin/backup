@@ -10,7 +10,7 @@ in
       gaps_out = 4;
       border_size = 2;
       "col.active_border" = "rgba(${ colors.nixToHex colors.accent }ff)";
-      "col.inactive_border" = "rgba(${ colors.nixToHex colors.background_darker}ff)";
+      "col.inactive_border" = "rgba(${ colors.nixToHex colors.background_darker }ff)";
       layout = "dwindle";
       allow_tearing = false; 
       }; 
