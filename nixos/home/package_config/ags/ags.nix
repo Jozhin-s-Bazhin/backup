@@ -33,7 +33,7 @@ in
   home.file.".config/ags/bar/".source = ./bar;
   home.file.".config/ags/colors.css".text = ''
     @define-color accent #${colors.nixToHex colors.accent};
-    @define-color background rgba(${background.r}, ${background.g}, ${background.b}, ${toString colors.opacity});
-    @define-color background-darker rgba(${background_darker.r}, ${background_darker.g}, ${background_darker.b}, ${toString colors.opacity});
+    @define-color background rgba(${toString background.r}, ${toString background.g}, ${toString background.b}, ${toString colors.opacity});
+    @define-color background-darker rgba(${toString background_darker.r}, ${toString background_darker.g}, ${toString background_darker.b}, ${toString colors.opacity});
   '';
 }
