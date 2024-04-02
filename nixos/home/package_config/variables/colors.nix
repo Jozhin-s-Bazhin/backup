@@ -8,7 +8,7 @@ let
     else if digit == "d" then 13
     else if digit == "e" then 14
     else if digit == "f" then 15
-    #else lib.toInt digit;
+    else digit;
 
   #hexToDec = hex: lib.foldl' (acc: x: acc * 16 + x) 0 (map hexDigitToDec (lib.splitString "" hex));
   #hexToDec = hex: lib.foldl' (acc: x: acc * 16 + x) 0 [ "f" "1" ]; #(lib.splitString "" hex);
