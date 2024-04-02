@@ -9,8 +9,7 @@
     else if digit == "f" then 15
     else lib.toInt digit;
 
-  # Function to convert two hex digits (e.g., "ee") to a decimal number
-  hexToDec = hex: (hexDigitToDec (lib.head lib.splitString "" hex)) * 16 + hexDigitToDec (lib.elemAt lib.splitString "" hex 1);
+  hexToDec = hex: lib.foldl (map (num: hexDigitToDec num ) (lib.splitString hex))
 
   # Main function to convert a set of hex color components to their decimal equivalents
   nixToRGB = hexSet: {
@@ -27,4 +26,3 @@
   background = {r = "25"; g = "25"; b = "25";};
   background_darker = { r = "18"; g = "18"; b = "18"; };
 }
-
