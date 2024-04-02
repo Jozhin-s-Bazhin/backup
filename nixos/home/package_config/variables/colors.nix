@@ -1,4 +1,26 @@
 {
+    # Function to convert a single hex digit to its decimal value
+  hexDigitToDec = digit:
+    if digit == "a" then 10
+    else if digit == "b" then 11
+    else if digit == "c" then 12
+    else if digit == "d" then 13
+    else if digit == "e" then 14
+    else if digit == "f" then 15
+    else lib.toInt digit;
+
+  # Function to convert two hex digits (e.g., "ee") to a decimal number
+  hexToDec = hex: let
+    digits = lib.splitString "" hex;
+  in
+    (hexDigitToDec (lib.head digits)) * 16 + hexDigitToDec (lib.elemAt digits 1);
+
+  # Main function to convert a set of hex color components to their decimal equivalents
+  nixToRGB = hexSet: {
+    r = hexToDec hexSet.r;
+    g = hexToDec hexSet.g;
+    b = hexToDec hexSet.b;
+  };
   nixToHex = color: "${color.r}${color.g}${color.b}";
 
   opacity = 1;
