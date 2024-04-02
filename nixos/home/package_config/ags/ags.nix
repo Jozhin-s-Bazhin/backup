@@ -27,7 +27,9 @@ in
     ];
   };
 
-  home.file.".config/ags/".source = ./.;
+  pkgs.writeTextFile {
+  };
+
   home.file.".config/ags/colors.css".text = ''
     :root {
       --accent: ${colors.nixToHex colors.accent};
@@ -36,3 +38,4 @@ in
     };
   '';
 }
+  background = colors.nixToHex colors.background;
