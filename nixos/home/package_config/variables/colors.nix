@@ -2,7 +2,7 @@
 let
     # Function to convert a single hex digit to its decimal value
   hexDigitToDec = digit:
-    else if digit == "a" then 10
+    if digit == "a" then 10
     else if digit == "b" then 11
     else if digit == "c" then 12
     else if digit == "d" then 13
