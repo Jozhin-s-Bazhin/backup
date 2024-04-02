@@ -27,15 +27,16 @@ in
     ];
   };
 
-  pkgs.writeTextFile {
-  };
-
+  home.file.".config/ags/config.js".source = ./config.js;
+  home.file.".config/ags/bar/".source = ./bar;
   home.file.".config/ags/colors.css".text = ''
     :root {
+      --opacity: ${colors.opacity};
+      --opacity-secondary: ${colors.opacity_secondary};
+
       --accent: ${colors.nixToHex colors.accent};
       --background: ${colors.nixToHex colors.background};
       --background-darker: ${colors.nixToHex colors.background_darker};
     };
   '';
 }
-  background = colors.nixToHex colors.background;

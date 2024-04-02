@@ -1,8 +1,8 @@
-import { Bar } from "./bar.js";
+import { Bar } from "./bar/bar.js";
 const monitor = 0;
 
 App.config({
-    style: "./bar.css",
+    style: "./bar/bar.css",
     windows: [
         Bar(monitor)
     ]
