@@ -31,8 +31,8 @@ in
   home.file.".config/ags/bar/".source = ./bar;
   home.file.".config/ags/colors.css".text = ''
     :root {
-      --opacity: ${colors.opacity};
-      --opacity-secondary: ${colors.opacity_secondary};
+      --opacity: ${toString colors.opacity};
+      --opacity-secondary: ${toString colors.opacity_secondary};
 
       --accent: ${colors.nixToHex colors.accent};
       --background: ${colors.nixToHex colors.background};
