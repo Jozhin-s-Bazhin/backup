@@ -17,7 +17,7 @@
     ];
 
     workspace = [
-      "special, gaps 10"
+      "special, gapsin 10, gapsout 20"
     ];
   };
 }
