@@ -47,6 +47,7 @@ in
     dwindle = {
       pseudotile = true;
       preserve_split = true;
+      special_scale_factor = 1;
     };
 
     master = {

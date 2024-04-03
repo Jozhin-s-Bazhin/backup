@@ -15,5 +15,9 @@
       "maxsize 1 1,class:^(xwaylandvideobridge)$"
       "noblur,class:^(xwaylandvideobridge)$"
     ];
+
+    workspace = [
+      "special, gaps 10"
+    ];
   };
 }
