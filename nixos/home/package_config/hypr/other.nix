@@ -17,7 +17,7 @@
     ];
 
     workspace = [
-      "special, gapsin 10, gapsout 20, bordersize: 40"
+      "special, gapsin: 10, gapsout: 20"
     ];
   };
 }
