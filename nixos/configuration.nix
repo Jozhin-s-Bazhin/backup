@@ -71,7 +71,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Auto-updates
+  # Auto-updates and cleanup
   system.autoUpgrade = {
     enable = true;
     flake = inputs.self.outPath;
@@ -83,6 +83,15 @@
     dates = "03:00";
     randomizedDelaySec = "60min";
     persistent = true;
+  };
+  nix.optimise = {
+    automatic = true;
+    dates = [ "3:00" ];
+  };
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d"
   };
 
   # Greetd
