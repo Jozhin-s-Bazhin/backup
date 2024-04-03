@@ -31,13 +31,15 @@ in
       # Power key
       ", XF86PowerOff, exec, /home/roman/scripts/misc/lockBeforeSleep"
 
-      # Important applications
+      # Applications
       "SUPER, Tab, exec, wofi --show drun"
       "SUPER, Return, exec, kitty"
-
-      # Other applications
       "SUPER, B, exec, floorp"
       "SUPER, C, exec, codium"
+
+      # Scratchpad
+      "SUPER, Backspace, togglespecialworkspace"
+      "SUPER SHIFT, Backspace, movetoworkspace, special"
     ] 
     ++
     workspaceBindings;

@@ -5,10 +5,6 @@ const audio = await Service.import("audio")
 const battery = await Service.import("battery")
 const systemtray = await Service.import("systemtray")
 
-const date = Variable("", {
-    poll: [60000, 'date "+%H:%M"'],
-})
-
 // widgets can be only assigned as a child in one container
 // so to make a reuseable widget, make it a function
 // then you can simply instantiate one by calling it
@@ -159,6 +155,7 @@ function Center() {
     return Widget.Box({
         spacing: 8,
         children: [
+            Clock(),
             Media(),
             Notification(),
         ],
@@ -172,7 +169,6 @@ function Right() {
         children: [
             Volume(),
             BatteryLabel(),
-            Clock(),
             SysTray(),
         ],
     })
