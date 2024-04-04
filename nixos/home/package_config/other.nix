@@ -98,7 +98,7 @@ in
       "external:plug"
     ]
     plugin_paths = [
-      "/home/roman/plug/"
+      "/home/roman/pg/"
     ]
   '';
 }
