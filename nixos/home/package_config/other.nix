@@ -98,6 +98,6 @@ in
     ],
     plugin_paths = [
       "/home/roman/plug"
-    ],
+    ]
   '';
 }
