@@ -95,7 +95,7 @@ in
     [pyprland]
     plugins = [
       "workspaces_follow_focus",
-      ".plug"
+      "plug"
     ]
     plugin_paths = [
       "/home/roman/plug/"
