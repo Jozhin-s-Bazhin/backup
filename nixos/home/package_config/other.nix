@@ -94,7 +94,8 @@ in
   xdg.configFile."hypr/pyprland.toml".text = ''
     [pyprland]
     plugins = [
-      "workspaces_follow_focus"
+      "workspaces_follow_focus",
+      "plug"
     ]
     plugin_paths = [
       "/home/roman/plug"
