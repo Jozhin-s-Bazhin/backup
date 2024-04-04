@@ -42,7 +42,7 @@
     brightnessctl
     cliphist
     fluent-gtk-theme
-    pyprland.override { extraPackages = [ pointers ]; }
+    pyprland.override { extraPackages = [ pkgs.nerdfonts ]; }
 
     # CLI utilities
     yazi
