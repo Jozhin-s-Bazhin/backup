@@ -91,7 +91,7 @@ in
     ];
   };
 
-  xdg.configFile.".config/hypr/pyprland.toml".text = ''
+  xdg.configFile."hypr/pyprland.toml".text = ''
     [pyprland]
     plugins = [
       workspaces_follow_focus
