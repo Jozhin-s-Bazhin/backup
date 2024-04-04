@@ -1,5 +1,8 @@
 #  _   _    ____    _    _   _____
-# | | | |  / __ \  | \  / | |  ___| | |_| | | |  | | |  \/  | | |__ |  _  | | |  | | | |\/| | |  __| | | | | | |__| | | |  | | | |___
+# | | | |  / __ \  | \  / | |  ___| 
+# | |_| | | |  | | |  \/  | | |__ 
+# |  _  | | |  | | | |\/| | |  __| 
+# | | | | | |__| | | |  | | | |___
 # |_| |_|  \____/  |_|  |_| |_____|
 
 # By Roman Bezroutchko
@@ -42,7 +45,7 @@
     brightnessctl
     cliphist
     fluent-gtk-theme
-    (pyprland.override { extraPackages = [ pkgs.nerdfonts ]; })
+    pyprland
 
     # CLI utilities
     yazi
