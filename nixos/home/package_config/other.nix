@@ -95,7 +95,7 @@ in
     [pyprland]
     plugins = [
       "workspaces_follow_focus",
-      "plug.someplugin"
+      "someplugin"
     ]
   '';
 }
