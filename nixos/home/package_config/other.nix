@@ -94,8 +94,8 @@ in
   xdg.configFile."hypr/pyprland.toml".text = ''
     [pyprland]
     plugins = [
-      workspaces_follow_focus
-      expose
+      "workspaces_follow_focus",
+      "expose"
     ]
   '';
 }
