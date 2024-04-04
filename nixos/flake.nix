@@ -13,6 +13,7 @@
       url = "github:hyprwm/hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    pyprland.url = "github:Jozhin-s-Bazhin/pyprland";
     game-setting-manager.url = "github:Jozhin-s-Bazhin/game-setting-manager";
   };
 
