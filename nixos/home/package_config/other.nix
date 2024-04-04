@@ -98,7 +98,7 @@ in
       "plug"
     ]
     plugin_paths = [
-      "/home/roman/plug"
+      "~/plug/"
     ]
   '';
 }
