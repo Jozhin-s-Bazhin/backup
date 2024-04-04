@@ -1,5 +1,4 @@
 { lib, config, pkgs, ... }:
-
 let 
   colors = import ./variables/colors.nix { inherit lib; };
 in
@@ -91,4 +90,12 @@ in
       }
     ];
   };
+
+  xdg.configFile.".config/hypr/pyprland.toml".text = ''
+    [pyprland]
+    plugins = [
+      workspaces_follow_focus
+      expose
+    ]
+  '';
 }

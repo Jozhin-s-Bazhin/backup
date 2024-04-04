@@ -19,8 +19,9 @@
       "hyprpaper"
       "hypridle"
       "ags"
+      "pypr"
     ];
   };
 
-  xdg.configFile."hypr/hypridle.conf".text = builtins.readFile ./hypridle.conf;
+  xdg.configFile."hypr/hypridle.conf".source = ./hypridle.conf;
 }
