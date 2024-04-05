@@ -40,6 +40,8 @@
 
       # Vim keybinds
       bindkey -v
+      bindkey "^H" backward-delete-char
+      bindkey "^?" backward-delete-char
       bindkey -M viins 'jk' vi-cmd-mode
     '';
 
