@@ -37,6 +37,10 @@
 	fi
 	rm -f -- "$tmp"
       }
+
+      # Vim keybinds
+      bindkey -v
+      bindkey -M viins vi-cmd-mode
     '';
 
     # Aliases
