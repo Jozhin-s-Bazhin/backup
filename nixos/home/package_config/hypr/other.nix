@@ -4,7 +4,7 @@
   wayland.windowManager.hyprland.settings = {
     monitor = [
       ", preferred, auto, 1"
-      "eDP-1, preferred, 0x0, 1"
+      "eDP-1, preferred, auto, 1"
       "desc:Huawei Technologies Co. Inc. ZQE-CAA 0xC080F622, preferred, -720x-1440, 1"
     ];
 
