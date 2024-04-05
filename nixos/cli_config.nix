@@ -40,7 +40,7 @@
 
       # Vim keybinds
       bindkey -v
-      bindkey -M viins vi-cmd-mode
+      bindkey -M viins 'jk' vi-cmd-mode
     '';
 
     # Aliases
