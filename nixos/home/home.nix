@@ -62,6 +62,6 @@
 
     # My own shit
     inputs.game-setting-manager.packages.${system}.gsm-cli
-    inputs.pyprland.defaultPackage.${pkgs.system}
+    inputs.pyprland.packages.${pkgs.system}.pypr
   ];
 }
