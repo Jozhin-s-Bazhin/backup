@@ -4,7 +4,7 @@
   wayland.windowManager.hyprland.settings = {
     monitor = [
       ", preferred, auto, 1"
-      "desc:Huawei Technologies Co. Inc. ZQE-CAA 0xC080F622, preferred, 760x1440, 1"
+      "desc:Huawei Technologies Co. Inc. ZQE-CAA 0xC080F622, preferred, -760x1440, 1"
     ];
 
     windowrulev2 = [
