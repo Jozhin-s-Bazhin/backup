@@ -61,7 +61,7 @@ in
     ];
 
     bindl = [
-      ", switch:on:Lid Switch, exec, /home/roman/scripts/misc/lockBeforeSleep"
+      ", switch:on:Lid Switch, exec, /etc/nixos/home/scripts/misc/lockBeforeSleep"
     ];
   };
 }

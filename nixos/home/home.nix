@@ -43,6 +43,7 @@
     qt5.qtbase
     qt6.qtbase
     brightnessctl
+    wl-clipboard-rs
     cliphist
     fluent-gtk-theme
     #pyprland

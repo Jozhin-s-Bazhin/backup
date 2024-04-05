@@ -54,7 +54,7 @@
       clip = "kitten clipboard";
 
       # Nix rebuilds
-      rbs = "bash /home/roman/scripts/rebuild-aliases/rebuild-switch";
+      rbs = "bash /etc/nixos/home/scripts/rebuild-aliases/rebuild-switch";
     };
   };
   users.defaultUserShell = pkgs.zsh;
