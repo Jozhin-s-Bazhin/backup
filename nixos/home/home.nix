@@ -45,7 +45,7 @@
     brightnessctl
     cliphist
     fluent-gtk-theme
-    pyprland
+    #pyprland
 
     # CLI utilities
     yazi
