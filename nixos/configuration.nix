@@ -179,4 +179,6 @@
   
   # Do not touch
   system.stateVersion = "23.11";
+
+  services.fprintd.enable = true;
 }
