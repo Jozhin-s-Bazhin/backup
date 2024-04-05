@@ -5,7 +5,7 @@
     monitor = [
       ", preferred, auto, 1"
       "eDP-1, preferred, 0x0, 1"
-      "desc:Huawei Technologies Co. Inc. ZQE-CAA 0xC080F622, preferred, -960x-1440, 1"
+      "desc:Huawei Technologies Co. Inc. ZQE-CAA 0xC080F622, preferred, -1080x-1440, 1"
     ];
 
     windowrulev2 = [
