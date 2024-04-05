@@ -95,10 +95,6 @@ in
     [pyprland]
     plugins = [
       "workspaces_follow_focus",
-      "external:plug"
-    ]
-    plugin_paths = [
-      "/home/roman/pg/"
     ]
   '';
 }
