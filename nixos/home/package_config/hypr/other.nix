@@ -23,7 +23,7 @@
     ];
 
     workspace = [
-      "special,gapsin:10,gapsout:20,bordersize:10"
+      "special,gapsin:10,gapsout:20"
     ];
   };
 }
