@@ -1,11 +1,11 @@
 { lib, ... }:
 
-let
-  maxWorkspaceID = 2147483647;
-  difference = maxWorkspaceID / 11;
-  generateWorkspaceRule = num: toString (num * difference + difference) + ", persistent:true";
-  baseWorkspaces = lib.genList generateWorkspaceRule 9;
-in
+#let
+#  maxWorkspaceID = 2147483647;
+#  difference = maxWorkspaceID / 11;
+#  generateWorkspaceRule = num: toString (num * difference + difference) + ", persistent:true";
+#  baseWorkspaces = lib.genList generateWorkspaceRule 9;
+#in
 {
   wayland.windowManager.hyprland.settings = {
     monitor = [
@@ -30,8 +30,8 @@ in
 
     workspace = [
       "special,gapsin:10,gapsout:20"
-    ]
-    ++
-    baseWorkspaces;  # Each of these will be treated as if they are 1, 2, 3, ... But the difference will make it possible to insert new workspaces
+    ];
+#    ++
+#    baseWorkspaces;  # Each of these will be treated as if they are 1, 2, 3, ... But the difference will make it possible to insert new workspaces
   };
 }

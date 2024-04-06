@@ -25,17 +25,9 @@ class Extension(Plugin):
 
     async def event_focusedmon(self, event_data):
         await move_workspaces_to_focused_mon(self, event_data)
-        
-    MAX_WORKSPACES = 2147483647  # Highest possible workspace ID
 
     async def run_workspace(self, workspace):
         pass
     
     async def run_movetoworkspace(self, workspace, window):
-        pass
-    
-    async def run_insertworkspace(self, workspace):
-        pass
-    
-    async def run_movetoinsertedworkspace(self, workspace, window):
         pass
