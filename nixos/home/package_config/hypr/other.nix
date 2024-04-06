@@ -3,7 +3,7 @@
 let
   maxWorkspaceID = 2147483647;
   difference = maxWorkspaceID / 11;
-  generateWorkspaceRule = num: toString (num * difference) + ", persistent";
+  generateWorkspaceRule = num: toString (num * difference + difference) + ", persistent";
   baseWorkspaces = lib.genList generateWorkspaceRule 9;
 in
 {
