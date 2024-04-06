@@ -10,6 +10,7 @@
     bat
     direnv
     tldr
+    bc
   ];
 
   # Config for cli utilities
