@@ -34,7 +34,7 @@ async def get_target_workspace(self, workspaceid):
     
 
 class Extension(Plugin):
-    """A plugin for better workspaces, similar to Gnome's workspace behaviour, but also with a function to insert workspaces"""
+    """A plugin for better workspaces, similar to Gnome's workspace behaviour""" #, but also with a function to insert workspaces""" (This is fucking hard)
 
     async def event_focusedmon(self, event_data):
         await move_workspaces_to_focused_mon(self, event_data)

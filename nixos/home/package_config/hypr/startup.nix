@@ -20,6 +20,7 @@
       "hypridle"
       "ags"
       "pypr"
+      "hyprctl dispatch workspace 195225786"
     ];
   };
 
