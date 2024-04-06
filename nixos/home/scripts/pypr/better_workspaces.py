@@ -37,5 +37,5 @@ class Extension(Plugin):
     async def run_insertworkspace(self, workspace):
         pass
     
-    async def run_movetoinsertedworkspace(self, workspace):
+    async def run_movetoinsertedworkspace(self, workspace, window):
         pass
