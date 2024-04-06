@@ -2,7 +2,6 @@ from pyprland.plugins.interface import Plugin
 
 
 class Extension(Plugin):
-    " My plugin "
+    """A plugin for better workspaces, similar to Gnome"""
 
-    async def init(self):
-        await self.notify("My plugin loaded")
+    async def event_

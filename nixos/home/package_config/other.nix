@@ -94,7 +94,6 @@ in
   xdg.configFile."hypr/pyprland.toml".text = ''
     [pyprland]
     plugins = [
-      "workspaces_follow_focus",
       "external:better_workspaces"
     ]
     plugins_paths = [
