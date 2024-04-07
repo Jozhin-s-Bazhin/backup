@@ -30,8 +30,8 @@
 
     workspace = [
       "special,gapsin:10,gapsout:20"
-      "${(2147483647 / 11)*2},monitor:1,default:true"
-      "${(2147483647 / 11)*3},monitor:2,default:true"
+      "${toString (2147483647 / 11)*2},monitor:1,default:true"
+      "${toString (2147483647 / 11)*3},monitor:2,default:true"
     ];
   };
 }
