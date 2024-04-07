@@ -31,12 +31,23 @@ label {
 .workspaces {
     background-color: blue;
     border-radius: 10px;
+    display: flex;
+}
+
+.workspace-btn {
+    transition: transform 0.5s ease; /* Smooth transition for all buttons */
+    /* Other button styling here */
+}
+
+.focused {
+    transform: scale(1.2); /* Enlarge and highlight the active button */
+    /* Additional styling for the focused button */
 }
 
 .workspaces button {
     background-color: rgb(150, 150, 150);
     padding: 5px;
-    margin: 7px 5px;
+    margin: 7px;
     border-radius: 10px;
 }
 
