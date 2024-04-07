@@ -32,10 +32,9 @@ label {
     margin: 4px;
 }
 
-/*.workspaces button, .workspaces button.focused {
+.workspaces button, .workspaces button.focused {
     border-radius: 10px;
-    transition: padding 0.3s ease-in-out;
-}*/
+}
 
 .workspaces button {
     background-color: rgb(150, 150, 150);
