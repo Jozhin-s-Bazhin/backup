@@ -27,14 +27,6 @@ function Workspaces() {
     });
 }
 
-function ClientTitle() {
-    return Widget.Label({
-        class_name: "client-title",
-        label: hyprland.active.client.bind("title"),
-    })
-}
-
-
 function Clock() {
     return Widget.Label({
         class_name: "clock",
@@ -139,7 +131,6 @@ function Left() {
         spacing: 8,
         children: [
             Workspaces(),
-            ClientTitle(),
         ],
     })
 }
