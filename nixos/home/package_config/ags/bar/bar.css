@@ -29,7 +29,7 @@ label {
 }
 
 .workspaces {
-    background-color: #404040;
+    background-color: @background-selected;
     border-radius: 10px;
 }
 

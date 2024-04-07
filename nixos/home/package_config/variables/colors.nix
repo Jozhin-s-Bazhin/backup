@@ -32,6 +32,6 @@ in
   foreground = {r = "ff"; g = "ff"; b = "ff"; };
 
   background = {r = "25"; g = "25"; b = "25";};
-  #background_selected = { r = ""; g = ""; b = "";}; 
+  background_selected = { r = "40"; g = "40"; b = "40";}; 
   background_darker = { r = "18"; g = "18"; b = "18"; };
 }
