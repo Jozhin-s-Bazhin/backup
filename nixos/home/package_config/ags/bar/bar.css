@@ -16,8 +16,9 @@ button {
     background-color: transparent;
 }
 
-button:active {
-    background-color: @theme_selected_bg_color;
+button:hover {
+    background-color: @background-selected;
+    border-radius: 10px;
 }
 
 label {
