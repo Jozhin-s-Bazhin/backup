@@ -18,7 +18,6 @@ function Workspaces() {
     const workspaces = hyprland.bind("workspaces")
         .as(ws => ws.map(({ id }) => id > 0 ? Widget.Button({
             on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
-            child: Widget.Label(id >= 0 ? `${id}`: ""),
             class_name: activeId.as(i => `${i === id ? "focused" : ""}`),
         }) : "" ))
 
@@ -104,19 +103,10 @@ function Volume() {
         icon: Utils.watch(getIcon(), audio.speaker, getIcon),
     })
 
-    const slider = Widget.Slider({
-        hexpand: true,
-        draw_value: false,
-        on_change: ({ value }) => audio.speaker.volume = value,
-        setup: self => self.hook(audio.speaker, () => {
-            self.value = audio.speaker.volume || 0
-        }),
-    })
-
     return Widget.Box({
         class_name: "volume",
         css: "min-width: 180px",
-        children: [icon, slider],
+        child: icon,
     })
 }
 
