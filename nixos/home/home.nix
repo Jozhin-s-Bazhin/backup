@@ -31,6 +31,7 @@
     libreoffice
     bitwarden
     thunderbird
+    piper
 
     # Hyprland
     wofi
