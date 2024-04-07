@@ -20,10 +20,6 @@ button:active {
     background-color: @theme_selected_bg_color;
 }
 
-button:hover {
-    border-bottom: 3px solid @theme_fg_color;
-}
-
 label {
     font-weight: bold;
 }
@@ -35,15 +31,15 @@ label {
 
 .workspaces button {
     background-color: rgb(150, 150, 150);
-    padding: 5px;
-    margin: 7px 5px;
+    padding: 3px;
+    margin: 4px 2px;
     border-radius: 10px;
 }
 
 .workspaces button.focused {
-    background-color: white;
-    padding: 7px 10px;
-    margin: 5px;
+    background-color: @foreground;
+    padding: 4px 10px;
+    margin: 4px;
     border-radius: 10px;
 }
 
