@@ -35,8 +35,8 @@ label {
 
 .workspaces button {
     background-color: rgb(150, 150, 150);
-    padding: 7px;
-    margin: 5px;
+    padding: 5px;
+    margin: 7px 5px;
     border-radius: 10px;
 }
 
