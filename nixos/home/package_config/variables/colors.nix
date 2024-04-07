@@ -28,8 +28,10 @@ in
   opacity = 1;
   opacity_secondary = 0.85;
 
-  foreground = {r = "ff"; g = "ff"; b = "ff"; };
   accent = {r = "06"; g = "6c"; b = "fa";};
+  foreground = {r = "ff"; g = "ff"; b = "ff"; };
+
   background = {r = "25"; g = "25"; b = "25";};
+  #background_selected = { r = ""; g = ""; b = "";}; 
   background_darker = { r = "18"; g = "18"; b = "18"; };
 }
