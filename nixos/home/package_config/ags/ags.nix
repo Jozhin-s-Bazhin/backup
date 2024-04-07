@@ -35,7 +35,7 @@ in
     @define-color foreground #${colors.nixToHex colors.foreground};
     @define-color accent #${colors.nixToHex colors.accent};
     @define-color background rgba(${toString background.r}, ${toString background.g}, ${toString background.b}, ${toString colors.opacity});
-    @define-color background-selected #${colors.nixToHex colors.background_selected}
+    @define-color background-selected #${colors.nixToHex colors.background_selected};
     @define-color background-darker rgba(${toString background_darker.r}, ${toString background_darker.g}, ${toString background_darker.b}, ${toString colors.opacity});
   '';
 }
