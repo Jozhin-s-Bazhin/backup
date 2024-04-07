@@ -107,7 +107,7 @@ function BatteryLabel() {
         class_name: "battery",
         label: label,
     });*/
-    return Widget.Icon(icon)
+    return Widget.Icon(`${icon}`)
 }
 
 function SysTray() {
