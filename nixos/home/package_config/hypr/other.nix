@@ -30,8 +30,8 @@
 
     workspace = [
       "special,gapsin:10,gapsout:20"
+      "${(2147483647 / 11)*2},monitor:1,default:true"
+      "${(2147483647 / 11)*3},monitor:2,default:true"
     ];
-#    ++
-#    baseWorkspaces;  # Each of these will be treated as if they are 1, 2, 3, ... But the difference will make it possible to insert new workspaces
   };
 }
