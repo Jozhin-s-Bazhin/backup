@@ -42,7 +42,7 @@ label {
 
 .workspaces button.focused {
     background-color: white;
-    padding: 5px;
+    padding: 7px 10px;
     margin: 5px;
     border-radius: 10px;
 }
