@@ -30,9 +30,9 @@
 
     workspace = [
       "special,gapsin:10,gapsout:20"
-      "${toString ((2147483647 / 11)*1)},monitor:eDP-1,default:true"
-      "${toString ((2147483647 / 11)*2)},monitor:DP-1,default:true"
-      "${toString ((2147483647 / 11)*3)},monitor:HDMI-A-1,default:true"
+      "${toString (2147483647 / 2)},monitor:eDP-1,default:true"
+      "${toString ((2147483647 / 4) * 3)},monitor:DP-1,default:true"
+      "${toString ((2147483647 / 8) * 7)},monitor:HDMI-A-1,default:true"
     ];
   };
 }

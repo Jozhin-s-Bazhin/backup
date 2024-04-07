@@ -1,11 +1,11 @@
 from pyprland.plugins.interface import Plugin
 
 
-MAX_WORKSPACE_ID = 2147483647
-SLICE_FRACTION = 11  # Determines how many workspaces can be created without inserting. This is 9 plus room at the front and back for inserted workspaces
+FIRST_WORKSPACE = 2147483647 / 2
 
 async def get_workspaces(self):
     workspaces = [ workspace["id"] for workspace in (await self.hyprctlJSON("workspaces")) if workspace["id"] > 0 ]
+    workspaces.sort()
     return workspaces
 
 async def move_workspaces_to_focused_mon(self, event_data):
@@ -26,7 +26,6 @@ async def move_workspaces_to_focused_mon(self, event_data):
 async def get_target_workspace(self, workspaceid):
     workspaceid = int(workspaceid)
     workspaces = await get_workspaces(self)
-    workspaces.sort()
     
     if workspaceid > len(workspaces):
         target = workspaces[-1] + 1  # Gap
@@ -49,10 +48,14 @@ class Extension(Plugin):
         target = await get_target_workspace(self, workspaceid)
         await self.hyprctl(f"movetoworkspace {target}")
         
-    async def run_insertworkspace(self, workspace):
-        target = await get_target_inserted_workspace(self, workspace)
-        await self.hyprctl(f"workspace {target}")
+    #async def run_insertworkspace(self, workspace):
+    #    target = await get_target_inserted_workspace(self, workspace)
+    #    await self.hyprctl(f"workspace {target}")
 
-    async def run_movetoinsertedworkspace(self, workspace):
-        target = await get_target_inserted_workspace(self, workspace)
-        await self.hyprctl(f"movetoworkspace {target}")
+    #async def run_movetoinsertedworkspace(self, workspace):
+    #    target = await get_target_inserted_workspace(self, workspace)
+    #    await self.hyprctl(f"movetoworkspace {target}")
+    
+    async def event_workspace(self, event_data):
+        workspaces = await get_workspaces(self)
+        if workspaces[-1] == workspaces[-2] + 1:
