@@ -47,7 +47,6 @@
     wl-clipboard-rs
     cliphist
     fluent-gtk-theme
-    #pyprland
 
     # CLI utilities
     yazi
