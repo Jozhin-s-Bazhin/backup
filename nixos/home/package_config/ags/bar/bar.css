@@ -28,8 +28,17 @@ label {
     font-weight: bold;
 };
 
+.workspaces {
+    background-color: blue;
+    border-radius: 10px;
+};
+
+.workspaces button {
+    background-color: #505050
+};
+
 .workspaces button.focused {
-    border-bottom: 3px solid @theme_selected_bg_color;
+    background-color: white
 };
 
 .client-title {
