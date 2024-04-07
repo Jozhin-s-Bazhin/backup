@@ -6,7 +6,7 @@
 
 window.bar {
     background-color: @background-darker;
-    color: @theme_fg_color;
+    color: ;
 }
 
 button {

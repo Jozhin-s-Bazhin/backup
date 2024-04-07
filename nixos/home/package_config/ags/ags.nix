@@ -32,6 +32,7 @@ in
   home.file.".config/ags/config.js".source = ./config.js;
   home.file.".config/ags/bar/".source = ./bar;
   home.file.".config/ags/colors.css".text = ''
+    @define-color foreground #${colors.nixToHex colors.foreground};
     @define-color accent #${colors.nixToHex colors.accent};
     @define-color background rgba(${toString background.r}, ${toString background.g}, ${toString background.b}, ${toString colors.opacity});
     @define-color background-darker rgba(${toString background_darker.r}, ${toString background_darker.g}, ${toString background_darker.b}, ${toString colors.opacity});
