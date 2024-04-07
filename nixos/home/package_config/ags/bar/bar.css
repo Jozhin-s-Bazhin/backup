@@ -33,7 +33,7 @@ label {
 
 .workspaces button, .workspaces button.focused {
     border-radius: 10px;
-    transition: margin 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
 }
 
 .workspaces button {
