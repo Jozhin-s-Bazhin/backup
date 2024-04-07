@@ -96,7 +96,6 @@ function Volume() {
 
     return Widget.Box({
         class_name: "volume",
-        css: "min-width: 180px",
         child: icon,
     })
 }
