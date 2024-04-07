@@ -103,7 +103,10 @@ function Volume() {
 function BatteryLabel() {
     const label = battery.bind("percent").as(p => `${p}%`);
     
-    return Widget.Icon("battery-10%");
+    return Widget.Label({
+        class_name: "battery",
+        label: label,
+    });
 }
 
 function SysTray() {
