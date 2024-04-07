@@ -37,12 +37,14 @@ label {
     background-color: rgb(150, 150, 150);
     padding: 5px;
     margin: 5px;
+    border-radius: 10px;
 }
 
 .workspaces button.focused {
     background-color: white;
     padding: 5px;
     margin: 5px;
+    border-radius: 10px;
 }
 
 .client-title {
