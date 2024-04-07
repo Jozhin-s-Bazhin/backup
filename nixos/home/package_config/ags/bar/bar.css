@@ -5,7 +5,7 @@
 }
 
 window.bar {
-    background-color: @background;
+    background-color: @background-darker;
     color: @theme_fg_color;
 }
 
