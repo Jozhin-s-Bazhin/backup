@@ -27,6 +27,7 @@ label {
 .workspaces {
     background-color: @background-selected;
     border-radius: 10px;
+    padding: 0 2px;
 }
 
 .workspaces button {
