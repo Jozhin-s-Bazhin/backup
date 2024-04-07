@@ -19,7 +19,7 @@ async def get_target_workspace(self, workspaceid):
     workspaces = await get_workspaces(self)
     
     if workspaceid > len(workspaces):
-        target = insert_last_workspace(workspaces[-1])
+        target = workspaces[-1] + 1 #insert_last_workspace(workspaces[-1])
     else:
         target = workspaces[workspaceid - 1]
         
