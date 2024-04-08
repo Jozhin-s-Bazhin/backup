@@ -28,7 +28,7 @@ function Workspaces() {
 
     return Widget.Box({
         class_name: "workspaces",
-        children: [...workspaces, newWorkspace],
+        children: workspaces, //[...workspaces, newWorkspace],
     });
 }
 
