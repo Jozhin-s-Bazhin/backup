@@ -101,13 +101,13 @@ function Volume() {
 }
 
 function BatteryLabel() {
-    const icon = battery.bind("percent").as(p => `battery-level-${p}`);
+    const label = battery.bind("percent").as(p => `${p}`);
     
-    /*return Widget.Label({
+    return Widget.Label({
         class_name: "battery",
         label: label,
-    });*/
-    return Widget.Icon(`${icon}`)
+    });
+    /*return Widget.Icon(`${icon}`)*/
 }
 
 function SysTray() {
