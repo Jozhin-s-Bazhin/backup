@@ -123,7 +123,6 @@
 
   # Kde connect
   services.dbus.enable = true;
-  programs.kdeconnect.enable = true;
   networking.firewall.allowedTCPPorts = [ 1714 1715 ];
   networking.firewall.allowedUDPPorts = [ 1714 1715 1716 ];
 
