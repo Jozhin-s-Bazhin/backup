@@ -28,7 +28,7 @@ function Workspaces() {
                 children: workspaces,
             }),
             Widget.Button({
-                on_clicked: hyprland.messageAsync("dispatch exec pypr workspace new"),
+                on_clicked: () => hyprland.messageAsync("dispatch exec pypr workspace new"),
                 class_name: "workspace-btn",
             }),
         ]
