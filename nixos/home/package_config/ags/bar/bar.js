@@ -101,13 +101,22 @@ function Volume() {
 }
 
 function BatteryLabel() {
-    const icon = battery.bind("percent").as(p => `battery-level-${p}-symbolic`);
-    
-    return Widget.Label({
+    const value = battery.bind("percent").as(p => p > 0 ? p / 100 : 0)
+    const icon = battery.bind("percent").as(p =>
+        `battery-level-${Math.floor(p / 10) * 10}-symbolic`)
+
+    return Widget.Box({
         class_name: "battery",
-        label: icon,
-    });
-    /*return Widget.Icon(`${icon}`)*/
+        visible: battery.bind("available"),
+        children: [
+            Widget.Icon({ icon }),
+            Widget.LevelBar({
+                widthRequest: 140,
+                vpack: "center",
+                value,
+            }),
+        ],
+    })
 }
 
 function SysTray() {
