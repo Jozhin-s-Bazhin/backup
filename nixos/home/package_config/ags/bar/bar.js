@@ -101,8 +101,8 @@ function Volume() {
 }
 
 function BatteryLabel() {
-    const icon = battery.bind("percent").as(p =>
-        `battery-level-${Math.floor(p / 10) * 10}${battery.charging ? "-charging" : ""}-symbolic`)
+    const icon = battery.bind("percent", "charging").as(p, c =>
+        `battery-level-${Math.floor(p / 10) * 10}${c ? "-charging" : ""}-symbolic`)
 
     return Widget.Box({
         class_name: "battery",
