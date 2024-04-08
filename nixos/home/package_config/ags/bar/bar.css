@@ -2,6 +2,7 @@
 
 * {
     all: unset;
+    background-color: @background;
 }
 
 window.bar {
