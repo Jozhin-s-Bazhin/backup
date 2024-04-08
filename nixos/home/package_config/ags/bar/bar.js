@@ -99,12 +99,9 @@ function Volume() {
     })
 }
 
-battery.connect('changed', (service, ...args) => {
-    print(service.args)
-})
-
 function BatteryLabel() {
     const icon = Utils.merge([battery.bind("percent"), battery.bind("charging")], (p, c) => {
+        print(p)
         return  `battery-level-${Math.floor(p / 10) * 10}${c ? "-charging" : ""}-symbolic`
     })
 
