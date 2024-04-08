@@ -25,12 +25,10 @@ function Workspaces() {
         on_clicked: hyprland.messageAsync("dispatch exec pypr workspace new"),
         class_name: "workspace-btn", //activeId.as(i => `workspace-btn ${i === id ? "focused" : ""}`),
     })
-    
-    workspaces.push(newWorkspace)
 
     return Widget.Box({
         class_name: "workspaces",
-        children: workspaces,
+        children: [...workspaces, newWorkspace],
     });
 }
 
