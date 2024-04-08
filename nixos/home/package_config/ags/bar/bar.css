@@ -25,6 +25,10 @@ label {
     font-weight: bold;
 }
 
+menu {
+    background-color: @background;
+}
+
 .workspaces {
     background-color: @background-selected;
     border-radius: 10px;
