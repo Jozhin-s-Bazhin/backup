@@ -101,6 +101,7 @@ function Volume() {
 
 function BatteryLabel() {
     const batt = battery.percent
+    print("")
     print(batt)
 
     const icon = Utils.merge([battery.bind("percent"), battery.bind("charging")], (p, c) => {
