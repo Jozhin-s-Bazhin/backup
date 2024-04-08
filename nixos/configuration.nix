@@ -116,6 +116,11 @@
     #jack.enable = true;
   };
 
+  # Bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
+
   # GTK fix
   programs.dconf.enable = true;
 
@@ -126,9 +131,8 @@
     #mono = [ "UbuntuMono Nerd Font" ];
   };
 
-  services.upower.enable = true;
-
   # Better battery life
+  sevices.upower.enable = true;
   services.thermald.enable = true;
   powerManagement.powertop.enable = true;
   services.auto-cpufreq = {
