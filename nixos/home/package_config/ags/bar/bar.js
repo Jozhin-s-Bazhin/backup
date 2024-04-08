@@ -100,7 +100,9 @@ function Volume() {
 }
 
 function BatteryLabel() {
-    const batt = battery.bind("percent").as(p => print(p))
+    const batt = battery.percent
+    print(batt)
+
     const icon = Utils.merge([battery.bind("percent"), battery.bind("charging")], (p, c) => {
         return  `battery-level-${Math.floor(p / 10) * 10}${c ? "-charging" : ""}-symbolic`
     })
