@@ -26,7 +26,6 @@ in
       gtksourceview
       webkitgtk
       accountsservice
-      adwaita-icon-theme
     ];
   };
 
