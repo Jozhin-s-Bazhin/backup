@@ -23,16 +23,8 @@ function Workspaces() {
     
     return Widget.Box({
         class_name: "workspaces",
-        children: [
-            Widget.Box({
-                children: workspaces,
-            }),
-            Widget.Button({
-                on_clicked: () => hyprland.messageAsync("dispatch exec pypr workspace new"),
-                class_name: "workspace-btn",
-            }),
-        ]
-    })
+        children: workspaces,
+    });
 }
 
 function Clock() {
