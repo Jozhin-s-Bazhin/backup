@@ -21,15 +21,18 @@ function Workspaces() {
             class_name: activeId.as(i => `workspace-btn ${i === id ? "focused" : ""}`),
         }) : ""));
     
-    const newWorkspace = Widget.Button({
-        on_clicked: hyprland.messageAsync("dispatch exec pypr workspace new"),
-        class_name: "workspace-btn", //activeId.as(i => `workspace-btn ${i === id ? "focused" : ""}`),
-    })
-
     return Widget.Box({
         class_name: "workspaces",
-        children: workspaces, newWorkspace //[...workspaces, newWorkspace],
-    });
+        children: [
+            Widget.Box({
+                children: workspaces,
+            }),
+            Widget.Button({
+                on_clicked: hyprland.messageAsync("dispatch exec pypr workspace new"),
+                class_name: "workspace-btn",
+            }),
+        ]
+    })
 }
 
 function Clock() {
