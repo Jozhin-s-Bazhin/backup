@@ -1,5 +1,9 @@
 @import url("../colors.css");
 
+* {
+    all: unset;
+}
+
 window.bar {
     background-color: @background-darker;
     color: @foreground;
