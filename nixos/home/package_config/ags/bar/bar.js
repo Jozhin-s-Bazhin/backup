@@ -28,7 +28,7 @@ function Workspaces() {
 
     return Widget.Box({
         class_name: "workspaces",
-        children: workspaces, //[...workspaces, newWorkspace],
+        children: workspaces, newWorkspace //[...workspaces, newWorkspace],
     });
 }
 
@@ -77,7 +77,6 @@ function Media() {
         child: Widget.Label({ label }),
     })
 }
-
 
 function Volume() {
     const icons = {
