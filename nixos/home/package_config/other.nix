@@ -100,4 +100,7 @@ in
       "/etc/nixos/home/scripts/pypr"
     ]
   '';
+
+  # KDEConnect
+  programs.kdeconnect.enable = true;
 }
