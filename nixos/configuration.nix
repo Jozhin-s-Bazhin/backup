@@ -132,7 +132,7 @@
   };
 
   # Better battery life
-  sevices.upower.enable = true;
+  services.upower.enable = true;
   services.thermald.enable = true;
   powerManagement.powertop.enable = true;
   services.auto-cpufreq = {
