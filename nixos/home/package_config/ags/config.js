@@ -1,9 +1,10 @@
 import { Bar } from "./bar/bar.js";
-const monitor = 0;
 
 App.config({
     style: "./bar/bar.css",
     windows: [
-        Bar(monitor)
+        Bar(0),
+        Bar(1),
+        Bar(2)
     ]
 })
