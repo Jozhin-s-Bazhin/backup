@@ -17,7 +17,7 @@ const password = Widget.Entry({
 const response = Widget.Label()
 
 const win = Widget.Window({
-    css: 'background-color: blue;',
+    css: 'background-image: url("/etc/nixos/home/package_config/wallpaper_blurred.png");',
     anchor: ['top', 'left', 'right', 'bottom'],
     child: Widget.Box({
         vertical: true,
