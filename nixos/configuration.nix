@@ -110,6 +110,8 @@
       };
     };
   };
+  environment.etc."greetd/hyprland.conf".source = ./home/package_config/ags/hyprland.conf;
+  environment.etc."greetd/greeter.js".source = ./home/package_config/ags/greeter.js;
 
   # Pipewire
   security.rtkit.enable = true;
