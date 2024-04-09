@@ -24,7 +24,7 @@ echo -e "$RED"
 echo -e "Starting nixos-rebuild switch ..."
 echo -e "$NC"
 
-sudo nixos-rebuild switch --flake /etc/nixos#nixos | tee ~/backup/logs/"[ $date ]-log"
+sudo nixos-rebuild switch --flake /etc/nixos#nixos 2>&1 | tee ~/backup/logs/"[ $date ]-log"
 
 echo -e "$RED"
 echo -e "Finished${NC}"
