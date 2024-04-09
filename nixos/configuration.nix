@@ -94,6 +94,12 @@
     options = "--delete-older-than 30d";
   };
 
+  # Hyprland
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  };
+
   # Greetd
   services.greetd = {
     enable = true;

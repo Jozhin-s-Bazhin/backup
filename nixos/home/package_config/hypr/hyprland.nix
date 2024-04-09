@@ -11,9 +11,6 @@
 
 {
   imports = [
-    # Hyprland home-manager module
-    inputs.hyprland.homeManagerModules.default
-
     # Startup
     ./startup.nix
 
@@ -29,6 +26,4 @@
     # Other
     ./other.nix
   ];  
-
-  wayland.windowManager.hyprland.enable = true;
 }
