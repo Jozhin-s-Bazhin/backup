@@ -1,13 +1,13 @@
 const greetd = await Service.import('greetd');
 
 const name = Widget.Entry({
-    //css: "color: black; background-color: white; border-radius: 10px;"
+    css: "color: black; background-color: white; border-radius: 10px;",
     placeholder_text: 'Username',
     on_accept: () => password.grab_focus(),
 })
 
 const password = Widget.Entry({
-    //css: "color: black; background-color: white; border-radius: 10px;"
+    css: "color: black; background-color: white; border-radius: 10px;",
     placeholder_text: 'Password',
     visibility: false,
     on_accept: () => {
