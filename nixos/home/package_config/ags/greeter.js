@@ -22,7 +22,6 @@ const win = Widget.Window({
     css: 'background-image: url("/etc/nixos/home/package_config/wallpaper_blurred.png");',
     anchor: ['top', 'left', 'right', 'bottom'],
     child: Widget.Box({
-	css: 'background-color: blue',
         vertical: true,
         hpack: 'center',
         vpack: 'center',
