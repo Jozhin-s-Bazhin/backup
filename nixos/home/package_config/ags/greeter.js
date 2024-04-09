@@ -17,7 +17,7 @@ const password = Widget.Entry({
 const response = Widget.Label()
 
 const win = Widget.Window({
-    css: 'background-color: transparent;',
+    css: 'background-color: blue;',
     anchor: ['top', 'left', 'right', 'bottom'],
     child: Widget.Box({
         vertical: true,
