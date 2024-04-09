@@ -46,6 +46,7 @@
     wl-clipboard-rs
     cliphist
     fluent-gtk-theme
+    wirelesstools
 
     # CLI utilities
     yazi
