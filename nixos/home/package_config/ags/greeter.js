@@ -12,7 +12,7 @@ const password = Widget.Entry({
     visibility: false,
     on_accept: () => {
         greetd.login(name.text || '', password.text || '', 'Hyprland')
-            .catch(() => password.text = "")
+            .catch(() => password.text = "", name.text = "", name.grab_focus())
     },
 })
 
