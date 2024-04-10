@@ -16,27 +16,25 @@ const password = Widget.Entry({
     },
 })
 
-const stack = Widget.Stack({
-    children: {
-        "roman": password,
-        "otheruser": password,
-    }
+const stack = Widget.ListBox({
+    setup(self) {
+        self.add(Widget.Label("roman"))
+    },
 })
 
 const win = Widget.Window({
     css: 'background-image: url("/etc/nixos/home/package_config/wallpaper_blurred.png");',
     anchor: ['top', 'left', 'right', 'bottom'],
     child: Widget.Box({
-        vertical: true,
+        vertical: false,
         hpack: 'center',
         vpack: 'center',
         hexpand: true,
         vexpand: true,
-        /*children: [
-            name,
+        children: [
+            stack,
             password,
-        ],*/
-        child: stack,
+        ],
     }),
 })
 
