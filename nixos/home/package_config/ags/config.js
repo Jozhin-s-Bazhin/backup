@@ -5,6 +5,6 @@ App.config({
     style: App.configDir + "style.css",
     windows: [
         Bar(0),
-	notificationPopups()
+	NotificationPopups(),
     ]
 })
