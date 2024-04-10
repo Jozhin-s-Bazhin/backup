@@ -29,7 +29,7 @@ in
       "SUPER, V, togglefloating"
 
       # Power key
-      ", XF86PowerOff, exec, /home/roman/scripts/misc/lockBeforeSleep"
+      ", XF86PowerOff, exec, /etc/nixos/homw/scripts/misc/lockBeforeSleep"
 
       # Applications
       "SUPER, Tab, exec, wofi --show drun"
