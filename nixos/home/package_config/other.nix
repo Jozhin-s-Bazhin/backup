@@ -49,6 +49,7 @@ in
       window_padding_width = "3";
       font_family = "UbuntuMono Nerd Font";
       font_size = "13.0";
+      enable_audio_bell = "no";
     };
   };
 
