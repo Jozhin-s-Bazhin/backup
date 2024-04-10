@@ -11,9 +11,16 @@ const password = Widget.Entry({
     placeholder_text: 'Password',
     visibility: false,
     on_accept: () => {
-        greetd.login(name.text || '', password.text || '', 'Hyprland')
-            .catch(() => password.text = "", name.text = "", name.grab_focus())
+        greetd.login("roman" || '', password.text || '', 'Hyprland')
+            .catch(() => password.text = "", password.grab_focus())
     },
+})
+
+const stack = Widget.Stack({
+    children: {
+        "roman": password,
+        "otheruser": password,
+    }
 })
 
 const win = Widget.Window({
@@ -25,10 +32,11 @@ const win = Widget.Window({
         vpack: 'center',
         hexpand: true,
         vexpand: true,
-        children: [
+        /*children: [
             name,
             password,
-        ],
+        ],*/
+        child: stack,
     }),
 })
 
