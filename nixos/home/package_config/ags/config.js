@@ -1,7 +1,7 @@
 import { Bar } from "./bar/bar.js";
 
 App.config({
-    style: "./bar/bar.css",
+    style: App.configDir + "style.css",
     windows: [
         Bar(0)
     ]
