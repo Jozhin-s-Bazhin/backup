@@ -12,11 +12,9 @@ const password = Widget.Entry({
     visibility: false,
     on_accept: () => {
         greetd.login(name.text || '', password.text || '', 'Hyprland')
-            .catch(err => response.label = JSON.stringify(err))
+            .catch(err => password.Entry.placeholder_text = "Incorrect password")
     },
 })
-
-const response = Widget.Label()
 
 const win = Widget.Window({
     css: 'background-image: url("/etc/nixos/home/package_config/wallpaper_blurred.png");',
@@ -30,7 +28,7 @@ const win = Widget.Window({
         children: [
             name,
             password,
-            response,
+            //response,
         ],
     }),
 })
