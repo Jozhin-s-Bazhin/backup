@@ -1,10 +1,10 @@
 const greetd = await Service.import('greetd');
 
-const name = Widget.Entry({
+/*const name = Widget.Entry({
     css: "color: black; background-color: white; border-radius: 10px;",
     placeholder_text: 'Username',
     on_accept: () => password.grab_focus(),
-})
+})*/
 
 const password = Widget.Entry({
     css: "color: black; background-color: white; border-radius: 10px;",
@@ -18,7 +18,10 @@ const password = Widget.Entry({
 
 const stack = Widget.ListBox({
     setup(self) {
-        self.add(Widget.Label("roman"))
+        self.add(Widget.Button({
+            child: Widget.Label("roman"),
+            onClicked: () => password.grab_focus(),
+        }))
     },
 })
 
