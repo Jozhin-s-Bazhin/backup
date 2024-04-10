@@ -30,7 +30,6 @@ in
   };
 
   home.file.".config/ags/config.js".source = ./config.js;
-  home.file.".config/ags/bar/".source = ./bar;
   home.file.".config/ags/colors.css".text = ''
     @define-color foreground #${colors.nixToHex colors.foreground};
     @define-color accent #${colors.nixToHex colors.accent};
@@ -38,4 +37,10 @@ in
     @define-color background-selected #${colors.nixToHex colors.background_selected};
     @define-color background-darker rgba(${toString background_darker.r}, ${toString background_darker.g}, ${toString background_darker.b}, ${toString colors.opacity});
   '';
+
+  # Bar
+  home.file.".config/ags/bar/".source = ./bar;
+
+  # Notifications
+  home.file.".config/ags/notification".source = ./notifications;
 }
