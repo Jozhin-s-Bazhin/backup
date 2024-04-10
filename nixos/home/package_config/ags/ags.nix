@@ -42,5 +42,5 @@ in
   home.file.".config/ags/bar/".source = ./bar;
 
   # Notifications
-  home.file.".config/ags/notification".source = ./notifications;
+  home.file.".config/ags/notifications".source = ./notifications;
 }
