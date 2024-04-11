@@ -37,6 +37,7 @@ in
     @define-color background-selected #${colors.nixToHex colors.background_selected};
     @define-color background-darker rgba(${toString background_darker.r}, ${toString background_darker.g}, ${toString background_darker.b}, ${toString colors.opacity});
   '';
+  home.file.".config/ags/style.css".source = ./style.css;
 
   # Bar
   home.file.".config/ags/bar/".source = ./bar;
