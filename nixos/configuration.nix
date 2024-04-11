@@ -65,7 +65,7 @@
   # Logind
   services.logind = {
     lidSwitch = "ignore";
-    powerKey = "ignore";
+    powerKey = "poweroff";
   };
 
   # Allow unfree packages
