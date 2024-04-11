@@ -37,7 +37,7 @@ function Clock() {
 
 // we don't need dunst or any other notification daemon
 // because the Notifications module is a notification daemon itself
-function Notification() {
+/*function Notification() {
     const popups = notifications.bind("popups")
     return Widget.Box({
         class_name: "notification",
@@ -51,7 +51,7 @@ function Notification() {
             }),
         ],
     })
-}
+}*/
 
 
 function Media() {
@@ -153,7 +153,7 @@ function Right() {
         spacing: 8,
         children: [
             Media(),
-            Notification(),
+            //Notification(),
             Volume(),
             BatteryLabel(),
             SysTray(),
