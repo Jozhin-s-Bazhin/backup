@@ -23,7 +23,6 @@
       "hypridle"
       "ags"
       "pypr"
-      "hyprctl dispatch workspace 2"
     ];
   };
 
