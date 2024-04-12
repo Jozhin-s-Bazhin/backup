@@ -1,5 +1,31 @@
 {
   "nodes": {
+    "Hyprspace": {
+      "inputs": {
+        "hyprland": [
+          "hyprland"
+        ],
+        "hyprlandPlugins": "hyprlandPlugins",
+        "nixpkgs": [
+          "Hyprspace",
+          "hyprland",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712955408,
+        "narHash": "sha256-0Kxcb5nPzUJ5RcFDqPnOgaszGw3Nj+ZS2sXij2Mrg5A=",
+        "owner": "KZDKM",
+        "repo": "Hyprspace",
+        "rev": "004fb25ac9cff569b4b0d5ad1e23a9606186159c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KZDKM",
+        "repo": "Hyprspace",
+        "type": "github"
+      }
+    },
     "ags": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -130,26 +156,6 @@
         "type": "github"
       }
     },
-    "hy3": {
-      "inputs": {
-        "hyprland": [
-          "hyprland"
-        ]
-      },
-      "locked": {
-        "lastModified": 1712655750,
-        "narHash": "sha256-uTvoGFzbBJfVKZVZ/+nIPP93E8EnGXwmVPIqgRlT14I=",
-        "owner": "outfoxxed",
-        "repo": "hy3",
-        "rev": "7d988d310f2b15eea5f2b9998f777a9590c4d1d9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "outfoxxed",
-        "repo": "hy3",
-        "type": "github"
-      }
-    },
     "hyprcursor": {
       "inputs": {
         "hyprlang": "hyprlang",
@@ -225,6 +231,33 @@
       "original": {
         "owner": "hyprwm",
         "repo": "hyprland-protocols",
+        "type": "github"
+      }
+    },
+    "hyprlandPlugins": {
+      "inputs": {
+        "hyprland": [
+          "Hyprspace",
+          "hyprland"
+        ],
+        "systems": [
+          "Hyprspace",
+          "hyprlandPlugins",
+          "hyprland",
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712836056,
+        "narHash": "sha256-qf6yev9OlJuQv557ApLQ/5V8pQj0YOO9tyh5j3It1mY=",
+        "owner": "hyprwm",
+        "repo": "hyprland-plugins",
+        "rev": "e9457e08ca3ff16dc5a815be62baf9e18b539197",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hyprwm",
+        "repo": "hyprland-plugins",
         "type": "github"
       }
     },
@@ -518,10 +551,10 @@
     },
     "root": {
       "inputs": {
+        "Hyprspace": "Hyprspace",
         "ags": "ags",
         "game-setting-manager": "game-setting-manager",
         "home-manager": "home-manager",
-        "hy3": "hy3",
         "hyprland": "hyprland",
         "hyprlock": "hyprlock",
         "nixpkgs": "nixpkgs_4",

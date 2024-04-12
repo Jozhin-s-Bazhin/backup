@@ -1,0 +1,67 @@
+warning: updating lock file '/etc/nixos/flake.lock':
+• Added input 'Hyprspace':
+    'github:KZDKM/Hyprspace/004fb25ac9cff569b4b0d5ad1e23a9606186159c' (2024-04-12)
+• Added input 'Hyprspace/hyprland':
+    follows 'hyprland'
+• Added input 'Hyprspace/hyprlandPlugins':
+    'github:hyprwm/hyprland-plugins/e9457e08ca3ff16dc5a815be62baf9e18b539197' (2024-04-11)
+• Added input 'Hyprspace/hyprlandPlugins/hyprland':
+    follows 'Hyprspace/hyprland'
+• Added input 'Hyprspace/hyprlandPlugins/systems':
+    follows 'Hyprspace/hyprlandPlugins/hyprland/systems'
+• Added input 'Hyprspace/nixpkgs':
+    follows 'Hyprspace/hyprland/nixpkgs'
+• Removed input 'hy3'
+• Removed input 'hy3/hyprland'
+building the system configuration...
+these 24 derivations will be built:
+  /nix/store/5fmk5j51grm0y6d00j8z62awv7zfmvlr-wlroots-hyprland-2024-03-09_50eae51.drv
+  /nix/store/ckc2lyqgnk4m5wx15kj1sk0n55m64mrq-hyprland-0.38.1+date=2024-04-06_360ede7.drv
+  /nix/store/mx8ws97rmwl5d6rh2bavkhhcvm6yzz2k-xdg-desktop-portal-hyprland-1.3.1.drv
+  /nix/store/bnmsxnw6aa4s46bdfvfs74c6sz3dfz4g-system-path.drv
+  /nix/store/awr49w239fzlkh4bn164c7mrfw0yaphm-X-Restart-Triggers-polkit.drv
+  /nix/store/c8cwq4fgsmaa4l3dzxanc2dksamd6a2m-unit-polkit.service.drv
+  /nix/store/hjbck6922fj60y7iai30mgjzik801ypz-Hyprspace-0.1.drv
+  /nix/store/6d1yhkgqqc0cm6xkn1pa3mk0ipfyvva1-hm_hyprhyprland.conf.drv
+  /nix/store/hssspnm7syy0a6ln54iw0zb910ngqrx7-home-manager-files.drv
+  /nix/store/s25wnfg0pqd4z6adbl5jhdagx16rsynl-activation-script.drv
+  /nix/store/fpvsa2wbwmw81f3nfbh9ikgzwl9m3skk-home-manager-generation.drv
+  /nix/store/ghkhyjrkljx7170a03prq79cmrw5xdg1-unit-home-manager-roman.service.drv
+  /nix/store/v2z3i4fmh3pcm2i9hpqvs8ly5y6qmxs5-unit-script-nixos-upgrade-start.drv
+  /nix/store/r9nwj4kw1590li2ggqs6zgf8nxgizglg-unit-nixos-upgrade.service.drv
+  /nix/store/f5yjmmylv8a2nkmksf1fqwa6kl7r1sgy-dbus-1.drv
+  /nix/store/k8i9ihvc0c20yva3v72mg1bw5gz7izrl-X-Restart-Triggers-dbus-broker.drv
+  /nix/store/rshbp973q1x2342y27w31rs95b3dq039-unit-dbus-broker.service.drv
+  /nix/store/3s3nyci9sjiqc22l4am9b9bxk7fk0s50-system-units.drv
+  /nix/store/bg2188500v67dzpk4wl7jwi2zms9szwi-system-shutdown.drv
+  /nix/store/hcr3mjch9agp675zibs5g7539drmrp8y-unit-dbus-broker.service.drv
+  /nix/store/d77zf1y1wjkxbdzxazn06srv0lqn4a3c-user-units.drv
+  /nix/store/xb01dwdb73i12p9d2rlrq5mm3cx9xwzv-system-generators.drv
+  /nix/store/rr992bcb307khbhgl9iibxixvcar0ign-etc.drv
+  /nix/store/ib681n3zipmzmjb2rbly93qrkx7qzjvy-nixos-system-nixos-24.05.20240410.1042fd8.drv
+building '/nix/store/v2z3i4fmh3pcm2i9hpqvs8ly5y6qmxs5-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/5fmk5j51grm0y6d00j8z62awv7zfmvlr-wlroots-hyprland-2024-03-09_50eae51.drv'...
+building '/nix/store/r9nwj4kw1590li2ggqs6zgf8nxgizglg-unit-nixos-upgrade.service.drv'...
+building '/nix/store/ckc2lyqgnk4m5wx15kj1sk0n55m64mrq-hyprland-0.38.1+date=2024-04-06_360ede7.drv'...
+building '/nix/store/hjbck6922fj60y7iai30mgjzik801ypz-Hyprspace-0.1.drv'...
+building '/nix/store/mx8ws97rmwl5d6rh2bavkhhcvm6yzz2k-xdg-desktop-portal-hyprland-1.3.1.drv'...
+error: builder for '/nix/store/hjbck6922fj60y7iai30mgjzik801ypz-Hyprspace-0.1.drv' failed with exit code 1;
+       last 10 log lines:
+       >       |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+       > /nix/store/a3mmr5jmrd0sjvmnc9vqvs388ppq1bnf-gcc-13.2.0/include/c++/13.2.0/any:563:24: note: candidate: 'template<class _ValueType> _ValueType* std::any_cast(any*)'
+       >   563 |     inline _ValueType* any_cast(any* __any) noexcept
+       >       |                        ^~~~~~~~
+       > /nix/store/a3mmr5jmrd0sjvmnc9vqvs388ppq1bnf-gcc-13.2.0/include/c++/13.2.0/any:563:24: note:   template argument deduction/substitution failed:
+       > ../src/main.cpp:106:56: error: template argument 1 is invalid
+       >   106 |     const auto pWorkspace = std::any_cast<PHLWORKSPACE>(args);
+       >       |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+       > [5/6] Compiling C++ object libHyprspace.so.p/src_Overview.cpp.o
+       > ninja: build stopped: subcommand failed.
+       For full logs, run 'nix log /nix/store/hjbck6922fj60y7iai30mgjzik801ypz-Hyprspace-0.1.drv'.
+error: 1 dependencies of derivation '/nix/store/6d1yhkgqqc0cm6xkn1pa3mk0ipfyvva1-hm_hyprhyprland.conf.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/s25wnfg0pqd4z6adbl5jhdagx16rsynl-activation-script.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/fpvsa2wbwmw81f3nfbh9ikgzwl9m3skk-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ghkhyjrkljx7170a03prq79cmrw5xdg1-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/3s3nyci9sjiqc22l4am9b9bxk7fk0s50-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/rr992bcb307khbhgl9iibxixvcar0ign-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ib681n3zipmzmjb2rbly93qrkx7qzjvy-nixos-system-nixos-24.05.20240410.1042fd8.drv' failed to build
