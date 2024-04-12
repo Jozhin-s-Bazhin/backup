@@ -14,7 +14,7 @@ const userStack = Widget.ListBox({
             self.add(Widget.Button({
                 child: Widget.Label(user),
                 onClicked: () => {
-                    name.text = user;
+                    username = user
                     password.grab_focus();
                 },
             }))
@@ -22,22 +22,22 @@ const userStack = Widget.ListBox({
     },
 });
 
-const name = Widget.Entry({
+/*const name = Widget.Entry({
     css: "color: black; background-color: white; border-radius: 10px;",
     placeholder_text: 'Username',
     on_accept: () => password.grab_focus(),
     editable: false, // Making username field non-editable as it's selected from list
-});
+});*/
 
 const password = Widget.Entry({
     css: "color: black; background-color: white; border-radius: 10px;",
     placeholder_text: 'Password',
     visibility: false,
     on_accept: () => {
-        greetd.login(name.text || 'roman', password.text || '', 'Hyprland')
+        greetd.login(username || 'roman', password.text || '', 'Hyprland')
             .catch(() => {
                 password.text = "";
-                name.grab_focus();
+                password.grab_focus();
             });
     },
 });
@@ -49,15 +49,13 @@ const loginBox = Widget.Box({
     hexpand: true,
     vexpand: true,
     children: [
-        name,
+        //name,
         password,
     ],
 });
 
 const mainArea = Widget.Box({
-    //orientation: 'horizontal',
     children: [ userStack, loginBox],
-    //position: 150, // Adjust based on your UI needs
 });
 
 const win = Widget.Window({
