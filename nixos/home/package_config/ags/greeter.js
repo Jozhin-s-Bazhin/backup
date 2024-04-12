@@ -53,7 +53,7 @@ const loginBox = Widget.Box({
     ],
 });
 
-const mainArea = Widget.Paned({
+const mainArea = Widget.Box({
     //orientation: 'horizontal',
     children: [ userStack, loginBox],
     //position: 150, // Adjust based on your UI needs
