@@ -34,7 +34,7 @@ const password = Widget.Entry({
     placeholder_text: 'Password',
     visibility: false,
     on_accept: () => {
-        greetd.login(username || 'roman', password.text || '', 'Hyprland')
+        greetd.login('roman' || '', password.text || '', 'Hyprland')
             .catch(() => {
                 password.text = "";
                 password.grab_focus();
