@@ -15,12 +15,15 @@
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
 
+      # Startup apps
+      "floorp &"
+
       # Other
       "hyprpaper"
       "hypridle"
       "ags"
       "pypr"
-      #"hyprctl dispatch workspace 195225786"
+      "hyprctl dispatch workspace 2"
     ];
   };
 
