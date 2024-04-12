@@ -4,6 +4,10 @@
     all: unset;
 }
 
+window {
+    background-color: @background;
+}
+
 /* Bar */
 window.bar {
     background-color: @background-darker;
@@ -64,7 +68,6 @@ menu {
 }
 
 /* Notifications */
-
 levelbar block,
 highlight {
     min-height: 10px;
@@ -127,5 +130,3 @@ window.notification-popups box.notifications {
 .actions .action-button:last-child {
     margin-right: 0;
 }
-
-/* App launcher */
