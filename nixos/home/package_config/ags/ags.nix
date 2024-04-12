@@ -40,8 +40,8 @@ in
   home.file.".config/ags/style.css".source = ./style.css;
 
   # Bar
-  home.file.".config/ags/bar/".source = ./bar;
+  home.file.".config/ags/bar.js".source = ./bar.js;
 
   # Notifications
-  home.file.".config/ags/notifications".source = ./notifications;
+  home.file.".config/ags/notifications.js".source = ./notifications.js;
 }

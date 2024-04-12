@@ -14,28 +14,18 @@ const date = Variable("", {
 // then you can simply instantiate one by calling it
 
 function Workspaces() {
-    const activeId = hyprland.active.workspace.bind("id")
+    const activeId = hyprland.active.workspace.bind("id");
     const workspaces = hyprland.bind("workspaces")
-        .as(ws => ws.map(({ id }) => Widget.Button({
+        .as(ws => ws.map(({ id }) => id > 0 ? Widget.Button({
             on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
-            child: Widget.Label(`${id}`),
-            class_name: activeId.as(i => `${i === id ? "focused" : ""}`),
-        })))
-
+            class_name: activeId.as(i => `workspace-btn ${i === id ? "focused" : ""}`),
+        }) : ""));
+    
     return Widget.Box({
         class_name: "workspaces",
         children: workspaces,
-    })
+    });
 }
-
-
-function ClientTitle() {
-    return Widget.Label({
-        class_name: "client-title",
-        label: hyprland.active.client.bind("title"),
-    })
-}
-
 
 function Clock() {
     return Widget.Label({
@@ -47,7 +37,7 @@ function Clock() {
 
 // we don't need dunst or any other notification daemon
 // because the Notifications module is a notification daemon itself
-function Notification() {
+/*function Notification() {
     const popups = notifications.bind("popups")
     return Widget.Box({
         class_name: "notification",
@@ -61,7 +51,7 @@ function Notification() {
             }),
         ],
     })
-}
+}*/
 
 
 function Media() {
@@ -83,7 +73,6 @@ function Media() {
     })
 }
 
-
 function Volume() {
     const icons = {
         101: "overamplified",
@@ -104,37 +93,32 @@ function Volume() {
         icon: Utils.watch(getIcon(), audio.speaker, getIcon),
     })
 
-    const slider = Widget.Slider({
-        hexpand: true,
-        draw_value: false,
-        on_change: ({ value }) => audio.speaker.volume = value,
-        setup: self => self.hook(audio.speaker, () => {
-            self.value = audio.speaker.volume || 0
-        }),
-    })
-
     return Widget.Box({
         class_name: "volume",
-        css: "min-width: 180px",
-        children: [icon, slider],
+        child: icon,
     })
 }
 
 function BatteryLabel() {
-    const label = battery.bind("percent").as(p => `${p}%`);
-    
-    return Widget.Label({
+    const icon = Utils.merge([battery.bind("percent"), battery.bind("charging")], (p, c) => {
+        return  `battery-level-${Math.floor(p / 10) * 10}${c ? "-charging" : ""}-symbolic`
+    })
+
+    return Widget.Box({
         class_name: "battery",
-        label: label,
-    });
+        visible: battery.bind("available"),
+        children: [
+            Widget.Icon({ icon }),
+        ],
+    })
 }
 
 function SysTray() {
     const items = systemtray.bind("items")
         .as(items => items.map(item => Widget.Button({
             child: Widget.Icon({ icon: item.bind("icon") }),
-            on_primary_click: (_, event) => item.activate(event),
-            on_secondary_click: (_, event) => item.openMenu(event),
+            on_secondary_click: (_, event) => item.activate(event),
+            on_primary_click: (_, event) => item.openMenu(event),
             tooltip_markup: item.bind("tooltip_markup"),
         })))
 
@@ -150,7 +134,6 @@ function Left() {
         spacing: 8,
         children: [
             Workspaces(),
-            ClientTitle(),
         ],
     })
 }
@@ -159,8 +142,7 @@ function Center() {
     return Widget.Box({
         spacing: 8,
         children: [
-            Media(),
-            Notification(),
+            Clock(),
         ],
     })
 }
@@ -170,15 +152,16 @@ function Right() {
         hpack: "end",
         spacing: 8,
         children: [
+            Media(),
+            //Notification(),
             Volume(),
             BatteryLabel(),
-            Clock(),
             SysTray(),
         ],
     })
 }
 
-export function Bar(monitor = 0) {
+export function Bar(monitor) {
     return Widget.Window({
         name: `bar-${monitor}`, // name has to be unique
         class_name: "bar",
