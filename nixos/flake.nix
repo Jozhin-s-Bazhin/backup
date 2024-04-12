@@ -13,14 +13,14 @@
       url = "github:hyprwm/hyprland/360ede79d124ffdeebbe8401f1ac4bc0dbec2c91";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    #Hyprspace = {
-    #  url = github:KZDKM/Hyprspace;
-    #  inputs.hyprland.follows = "hyprland";
-    #};
-    hy3 = {
-      url = "github:outfoxxed/hy3";
+    Hyprspace = {
+      url = github:KZDKM/Hyprspace;
       inputs.hyprland.follows = "hyprland";
     };
+    #hy3 = {
+    #  url = "github:outfoxxed/hy3";
+    #  inputs.hyprland.follows = "hyprland";
+    #};
 
     # Custom flakes
     game-setting-manager.url = "github:Jozhin-s-Bazhin/game-setting-manager";
