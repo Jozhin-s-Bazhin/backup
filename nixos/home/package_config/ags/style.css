@@ -43,7 +43,7 @@ menu {
 
 .workspaces button {
     background-color: rgb(150, 150, 150);
-    padding: 3px;
+    padding: 4px;
     margin: 5px 2px;
     transition: padding 0.1s ease-in-out;
 }
