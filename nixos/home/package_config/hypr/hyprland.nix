@@ -10,8 +10,7 @@
 { inputs, config, pkgs, ... }:
 
 {
-  imports = [
-    # Startup
+  imports = [ # Startup
     ./startup.nix
 
     # Appearance

@@ -13,8 +13,12 @@
       url = "github:hyprwm/hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    Hyprspace = {
-      url = github:KZDKM/Hyprspace;
+    #Hyprspace = {
+    #  url = github:KZDKM/Hyprspace;
+    #  inputs.hyprland.follows = "hyprland";
+    #};
+    hy3 = {
+      url = "github:outfoxxed/hy3";
       inputs.hyprland.follows = "hyprland";
     };
 
@@ -37,8 +41,6 @@
             home-manager.users.roman = import ./home/home.nix;
 	    home-manager.extraSpecialArgs = { inherit inputs; };
           }
-	  hyprland.homeManagerModules.default
-	  {wayland.windowManager.hyprland.enable = true;}
         ];
       };
     };
