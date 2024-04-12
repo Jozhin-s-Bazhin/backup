@@ -32,7 +32,7 @@ in
       #", XF86PowerOff, exec, /etc/nixos/homw/scripts/misc/lockBeforeSleep"
 
       # Applications
-      "SUPER, Tab, exec, wofi --show drun"
+      "SUPER, Tab, exec, ags -t applauncher"
       "SUPER, Return, exec, kitty"
       "SUPER, B, exec, floorp"
       "SUPER, C, exec, codium"

@@ -33,7 +33,6 @@
     thunderbird
 
     # Hyprland
-    wofi
     hyprpaper
     hypridle
     inputs.hyprlock.packages.x86_64-linux.hyprlock
