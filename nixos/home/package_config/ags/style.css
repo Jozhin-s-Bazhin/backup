@@ -34,7 +34,7 @@ menu {
     border-radius: 10px;
     padding: 0 4px;
     margin: 3px;
-    min-height: 10px;
+    min-height: 50px;
 }
 
 .workspaces button, .workspaces button.focused {
