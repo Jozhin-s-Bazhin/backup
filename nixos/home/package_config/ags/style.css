@@ -4,6 +4,7 @@
     all: unset;
 }
 
+/* Bar */
 window.bar {
     background-color: @background-darker;
     color: @foreground;
@@ -61,6 +62,8 @@ menu {
 .client-title {
     color: @theme_selected_bg_color;
 }
+
+/* Notifications */
 
 levelbar block,
 highlight {
@@ -124,3 +127,5 @@ window.notification-popups box.notifications {
 .actions .action-button:last-child {
     margin-right: 0;
 }
+
+/* App launcher */
