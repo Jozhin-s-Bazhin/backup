@@ -11,7 +11,7 @@ const AppItem = app => Widget.Button({
     child: Widget.Box({
         children: [
             Widget.Icon({
-                icon: app.icon_name || "",
+                //icon: app.icon_name || "",
                 size: 42,
             }),
             Widget.Label({
