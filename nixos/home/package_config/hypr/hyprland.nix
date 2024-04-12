@@ -23,6 +23,9 @@
     # Keybindings
     ./keybinds.nix
 
+    # Plugins
+    ./plugins.nix
+
     # Other
     ./other.nix
   ];  
