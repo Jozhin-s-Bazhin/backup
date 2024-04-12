@@ -1,0 +1,15 @@
+error:
+       … while updating the lock file of flake 'path:/etc/nixos?lastModified=1712958470&narHash=sha256-OBYjrmlU5PoeZFCC1sh7%2B4ZfoC90d4uW2li08G/notQ%3D'
+
+       … while updating the flake input 'hyprland'
+
+       … while fetching the input 'github:hyprwm/hyprland/commit/360ede79d124ffdeebbe8401f1ac4bc0dbec2c91'
+
+       error: unable to download 'https://api.github.com/repos/hyprwm/hyprland/commits/commit/360ede79d124ffdeebbe8401f1ac4bc0dbec2c91': HTTP error 422
+
+       response body:
+
+       {
+         "message": "No commit found for SHA: commit/360ede79d124ffdeebbe8401f1ac4bc0dbec2c91",
+         "documentation_url": "https://docs.github.com/rest/commits/commits#get-a-commit"
+       }

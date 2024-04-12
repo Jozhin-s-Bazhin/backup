@@ -10,7 +10,7 @@
     ags.url = "github:Aylur/ags";
     hyprlock.url = "github:hyprwm/hyprlock";
     hyprland = {
-      url = "github:hyprwm/hyprland/commit/360ede79d124ffdeebbe8401f1ac4bc0dbec2c91";
+      url = "github:hyprwm/hyprland/360ede79d124ffdeebbe8401f1ac4bc0dbec2c91";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     #Hyprspace = {
