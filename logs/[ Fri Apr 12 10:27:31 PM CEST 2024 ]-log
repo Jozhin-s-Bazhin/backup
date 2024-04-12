@@ -1,0 +1,13 @@
+building the system configuration...
+these 10 derivations will be built:
+  /nix/store/h5wy93k7b5848r594c64sxnyhwpygm8m-hyprland-0.38.0+date=2024-04-05_942172d.drv
+  /nix/store/3cgngjyays1wfq3zfh88k5k74f3rjq6h-Hyprspace-0.1.drv
+  /nix/store/1ww1gd556raambh0q8s2inbvaxbq24zi-hm_hyprhyprland.conf.drv
+  /nix/store/fz96z0qpxhrq79r3jdbvlpqg51q5hppk-activation-script.drv
+  /nix/store/gn6hycc8zcvz4zr754j95wbzzr1brmjv-home-manager-files.drv
+  /nix/store/xvmvpryl2mlgvajx90m61azd2y7aipzn-home-manager-generation.drv
+  /nix/store/6n1cxclnvz63n8sgiz9wpf7cv95kn20b-unit-home-manager-roman.service.drv
+  /nix/store/ic1z7703lyfamnlfwwbipy1jki06zz9w-system-units.drv
+  /nix/store/zpp57673shwqmjrqhnm1f0bjfxs3cc8h-etc.drv
+  /nix/store/xhscikaymkqzrkfi4i6smx3fnf7wzggw-nixos-system-nixos-24.05.20240403.fd281bd.drv
+building '/nix/store/h5wy93k7b5848r594c64sxnyhwpygm8m-hyprland-0.38.0+date=2024-04-05_942172d.drv'...
