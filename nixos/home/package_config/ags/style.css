@@ -4,10 +4,6 @@
     all: unset;
 }
 
-window {
-    background-color: @background;
-}
-
 /* Bar */
 window.bar {
     background-color: @background-darker;
@@ -129,4 +125,9 @@ window.notification-popups box.notifications {
 
 .actions .action-button:last-child {
     margin-right: 0;
+}
+
+/* App Launcher */
+window.applauncher {
+    background-color: @background;
 }
