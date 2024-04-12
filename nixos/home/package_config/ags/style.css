@@ -34,6 +34,7 @@ menu {
     border-radius: 10px;
     padding: 0 4px;
     margin: 3px;
+    min-height: 10px;
 }
 
 .workspaces button, .workspaces button.focused {
@@ -59,10 +60,6 @@ menu {
 
 .client-title {
     color: @theme_selected_bg_color;
-}
-
-.notification {
-    color: yellow;
 }
 
 levelbar block,
