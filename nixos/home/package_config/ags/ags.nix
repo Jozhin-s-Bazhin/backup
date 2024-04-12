@@ -42,6 +42,9 @@ in
   # Bar
   home.file.".config/ags/bar.js".source = ./bar.js;
 
+  # App Launcher
+  home.file.".config/ags/applauncher.js".source = ./applauncher.js;
+
   # Notifications
   home.file.".config/ags/notifications.js".source = ./notifications.js;
 }
