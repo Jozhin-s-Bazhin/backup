@@ -8,6 +8,7 @@ async function getUsernames() {
 const users = await getUsernames();
 
 const userStack = Widget.ListBox({
+    css: "background-color: red;",
     setup(self) {
         users.forEach(user => {
             self.add(Widget.Button({
