@@ -1,0 +1,43 @@
+warning: updating lock file '/etc/nixos/flake.lock':
+• Added input 'Hyprspace':
+    'github:KZDKM/Hyprspace/490299ce5e19f68674d8d29e98c4a5c667b9fb70' (2024-04-12)
+• Added input 'Hyprspace/hyprland':
+    follows 'hyprland'
+• Added input 'Hyprspace/hyprlandPlugins':
+    'github:hyprwm/hyprland-plugins/e9457e08ca3ff16dc5a815be62baf9e18b539197' (2024-04-11)
+• Added input 'Hyprspace/hyprlandPlugins/hyprland':
+    follows 'Hyprspace/hyprland'
+• Added input 'Hyprspace/hyprlandPlugins/systems':
+    follows 'Hyprspace/hyprlandPlugins/hyprland/systems'
+• Added input 'Hyprspace/nixpkgs':
+    follows 'Hyprspace/hyprland/nixpkgs'
+building the system configuration...
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/n2g5cqwv8qf5p6vjxny6pg3blbdij12k-source/lib/attrsets.nix:1541:11:
+
+         1540|         || pred here (elemAt values 1) (head values) then
+         1541|           head values
+             |           ^
+         1542|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/n2g5cqwv8qf5p6vjxny6pg3blbdij12k-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: undefined variable 'pkgs'
+
+       at /nix/store/acw6fc6q3dz8z075z4p2296icmfxv5ml-source/home/package_config/hypr/plugins.nix:4:33:
+
+            3|   wayland.windowManager.hyprland.plugins = [
+            4|     inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+             |                                 ^
+            5|   ];
