@@ -9,6 +9,7 @@
     plugin = {
       overview = {
         panelColor = "rgba(ffffffff)";
+	hideBackgroundLayers = true;
 	panelHeight = "150";
 	showEmptyWorkspace = false;
       };
