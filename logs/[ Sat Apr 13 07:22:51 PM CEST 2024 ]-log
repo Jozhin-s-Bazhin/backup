@@ -1,0 +1,7 @@
+warning: updating lock file '/etc/nixos/flake.lock':
+• Removed input 'Hyprspace'
+• Removed input 'Hyprspace/hyprland'
+• Removed input 'Hyprspace/hyprlandPlugins'
+• Removed input 'Hyprspace/hyprlandPlugins/hyprland'
+• Removed input 'Hyprspace/hyprlandPlugins/systems'
+• Removed input 'Hyprspace/nixpkgs'
