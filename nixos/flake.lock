@@ -158,7 +158,10 @@
     },
     "hyprcursor": {
       "inputs": {
-        "hyprlang": "hyprlang",
+        "hyprlang": [
+          "hyprland",
+          "hyprlang"
+        ],
         "nixpkgs": [
           "hyprland",
           "nixpkgs"
@@ -186,7 +189,7 @@
       "inputs": {
         "hyprcursor": "hyprcursor",
         "hyprland-protocols": "hyprland-protocols",
-        "hyprlang": "hyprlang_2",
+        "hyprlang": "hyprlang",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -195,17 +198,17 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1712413453,
-        "narHash": "sha256-6y422rx8ScSkjR1dNYGYUxBmFewRYlCz9XZZ+XrVZng=",
+        "lastModified": 1712797985,
+        "narHash": "sha256-2WS5zErQC7DuGUoVIiWUqQPXsIpdYBqFJip5XSpCVrU=",
         "owner": "hyprwm",
         "repo": "hyprland",
-        "rev": "360ede79d124ffdeebbe8401f1ac4bc0dbec2c91",
+        "rev": "ac0f3411c18497a39498b756b711e092512de9e0",
         "type": "github"
       },
       "original": {
         "owner": "hyprwm",
         "repo": "hyprland",
-        "rev": "360ede79d124ffdeebbe8401f1ac4bc0dbec2c91",
+        "rev": "ac0f3411c18497a39498b756b711e092512de9e0",
         "type": "github"
       }
     },
@@ -265,12 +268,10 @@
       "inputs": {
         "nixpkgs": [
           "hyprland",
-          "hyprcursor",
           "nixpkgs"
         ],
         "systems": [
           "hyprland",
-          "hyprcursor",
           "systems"
         ]
       },
@@ -289,31 +290,6 @@
       }
     },
     "hyprlang_2": {
-      "inputs": {
-        "nixpkgs": [
-          "hyprland",
-          "nixpkgs"
-        ],
-        "systems": [
-          "hyprland",
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1711671891,
-        "narHash": "sha256-C/Wwsy/RLxHP1axFFl+AnwJRWfd8gxDKKoa8nt8Qk3c=",
-        "owner": "hyprwm",
-        "repo": "hyprlang",
-        "rev": "c1402612146ba06606ebf64963a02bc1efe11e74",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hyprwm",
-        "repo": "hyprlang",
-        "type": "github"
-      }
-    },
-    "hyprlang_3": {
       "inputs": {
         "nixpkgs": [
           "hyprlock",
@@ -337,7 +313,7 @@
     },
     "hyprlock": {
       "inputs": {
-        "hyprlang": "hyprlang_3",
+        "hyprlang": "hyprlang_2",
         "nixpkgs": "nixpkgs_3",
         "systems": "systems_6"
       },
