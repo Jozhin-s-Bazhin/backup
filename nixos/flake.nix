@@ -9,10 +9,7 @@
     # My flakes
     ags.url = "github:Aylur/ags";
     hyprlock.url = "github:hyprwm/hyprlock";
-    hyprland = {
-      url = "github:hyprwm/Hyprland/";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    hyprland.url = "github:hyprwm/Hyprland/";
     Hyprspace = {
       url = github:KZDKM/Hyprspace;
       inputs.hyprland.follows = "hyprland";
