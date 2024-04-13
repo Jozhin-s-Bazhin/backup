@@ -4,6 +4,6 @@
   imports = [
     ./other.nix
     ./ags/ags.nix
-    ./hypr/hyprland.nix
+    #./hypr/hyprland.nix
   ];
 }
