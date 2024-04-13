@@ -37,13 +37,17 @@
             home-manager.useUserPackages = true;
             home-manager.users.roman = import ./home/home.nix;
 	    home-manager.extraSpecialArgs = { inherit inputs; };
-	    home-manager.modules = [
-	       hyprland.homeManagerModules.default
-        {wayland.windowManager.hyprland.enable = true;}
-	    ];
           }
         ];
       };
+    };
+    homeConfigurations."roman@nixos" = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.x86_64-linux;
+
+      modules = [
+        hyprland.homeManagerModules.default
+        {wayland.windowManager.hyprland.enable = true;}
+      ];
     };
   };
 }
