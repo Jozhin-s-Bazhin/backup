@@ -1,0 +1,5 @@
+warning: updating lock file '/etc/nixos/flake.lock':
+• Updated input 'hyprland/nixpkgs':
+    follows 'nixpkgs'
+  → 'github:NixOS/nixpkgs/1042fd8b148a9105f3c0aca3a6177fd1d9360ba5' (2024-04-10)
+building the system configuration...
