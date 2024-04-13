@@ -10,10 +10,10 @@
     ags.url = "github:Aylur/ags";
     hyprlock.url = "github:hyprwm/hyprlock";
     hyprland.url = "github:hyprwm/Hyprland/9e4b2efe7e24f7b21faefbd50a88f25b5185bc35";
-    #Hyprspace = {
-    #  url = github:KZDKM/Hyprspace;
-    #  inputs.hyprland.follows = "hyprland";
-    #};
+    Hyprspace = {
+      url = github:KZDKM/Hyprspace;
+      inputs.hyprland.follows = "hyprland";
+    };
     #hy3 = {
     #  url = "github:outfoxxed/hy3";
     #  inputs.hyprland.follows = "hyprland";
@@ -24,7 +24,7 @@
     pyprland.url = "github:Jozhin-s-Bazhin/pyprland/flake_application";
   };
 
-  outputs = { inputs, nixpkgs, home-manager, hyprland, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, hyprland, ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";

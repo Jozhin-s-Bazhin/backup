@@ -1,0 +1,6 @@
+error:
+       … while updating the lock file of flake 'path:/etc/nixos?lastModified=1713029640&narHash=sha256-F7XT2ljle7C4XvxN1HLLsvb78ZECfEZcIhq/DMwXCOE%3D'
+
+       … while updating the flake input 'inputs'
+
+       error: cannot find flake 'flake:inputs' in the flake registries
