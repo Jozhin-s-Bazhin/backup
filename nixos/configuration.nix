@@ -196,4 +196,6 @@
   
   # Do not touch
   system.stateVersion = "23.11";
+
+  programs.virtualbox.enable = true;
 }
