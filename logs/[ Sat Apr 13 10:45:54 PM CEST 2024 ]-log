@@ -1,0 +1,8 @@
+error: undefined variable 'hyprland'
+
+       at /nix/store/w9cqjgn1zppl23ajs8y87byg2lylq7qd-source/flake.nix:48:9:
+
+           47|       modules = [
+           48|         hyprland.homeManagerModules.default
+             |         ^
+           49|         {wayland.windowManager.hyprland.enable = true;}
