@@ -105,7 +105,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.hyprland}/bin/Hyprland --config /etc/greetd/hyprland.conf";
+        command = "Hyprland --config /etc/greetd/hyprland.conf";
         user = "roman";
       };
     };
