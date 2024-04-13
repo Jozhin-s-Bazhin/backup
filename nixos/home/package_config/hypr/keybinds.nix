@@ -13,7 +13,7 @@ in
     bind = [
       # Controls
       "SUPER, Space, killactive"
-      "SUPER, Caps, overview:toggle"
+      "SUPER, I, overview:toggle"
 
       # Focus
       "SUPER, H, movefocus, l"
