@@ -41,6 +41,8 @@
             home-manager.users.roman = import ./home/home.nix;
 	    home-manager.extraSpecialArgs = { inherit inputs; };
           }
+	hyprland.nixosModules.default
+        {programs.hyprland.enable = true;}
         ];
       };
     };
