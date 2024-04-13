@@ -9,7 +9,8 @@
     plugin = {
       overview = {
         panelColor = "rgba(000000ff)";
-	panelHeight = "100";
+	panelHeight = "150";
+	showEmptyWorkspace = false;
       };
     };
   };
