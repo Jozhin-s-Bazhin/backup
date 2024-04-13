@@ -1,0 +1,8 @@
+error: undefined variable 'inputs'
+
+       at /nix/store/h9f6jrg0k9whmqdr35lnq89r0482jl5f-source/flake.nix:31:17:
+
+           30|         system = "x86_64-linux";
+           31|       specialArgs = { inherit inputs; };
+             |                 ^
+           32|         modules = [
