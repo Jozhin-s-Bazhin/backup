@@ -10,10 +10,10 @@
     ags.url = "github:Aylur/ags";
     hyprlock.url = "github:hyprwm/hyprlock";
     hyprland.url = "github:hyprwm/Hyprland/";
-    Hyprspace = {
-      url = github:KZDKM/Hyprspace;
-      inputs.hyprland.follows = "hyprland";
-    };
+    #Hyprspace = {
+    #  url = github:KZDKM/Hyprspace;
+    #  inputs.hyprland.follows = "hyprland";
+    #};
     #hy3 = {
     #  url = "github:outfoxxed/hy3";
     #  inputs.hyprland.follows = "hyprland";
@@ -38,8 +38,8 @@
             home-manager.users.roman = import ./home/home.nix;
 	          home-manager.extraSpecialArgs = { inherit inputs; };
           }
-#	        hyprland.nixosModules.default
-#         {programs.hyprland.enable = true;}
+	  hyprland.nixosModules.default
+          {programs.hyprland.enable = true;}
         ];
       };
     };
