@@ -33,7 +33,6 @@
     thunderbird
 
     # Hyprland
-    /*
     hyprpaper
     hypridle
     inputs.hyprlock.packages.x86_64-linux.hyprlock
@@ -47,7 +46,6 @@
     cliphist
     fluent-gtk-theme
     wirelesstools
-    */
 
     # CLI utilities
     yazi
