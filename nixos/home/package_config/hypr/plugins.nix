@@ -9,7 +9,7 @@
     plugin = {
       overview = {
         panelColor = "rgba(000000ff)";
-	panelHeight = "200";
+	panelHeight = "100";
       };
     };
   };
