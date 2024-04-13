@@ -24,7 +24,7 @@
     pyprland.url = "github:Jozhin-s-Bazhin/pyprland/flake_application";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, /*hyprland,*/ ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, hyprland, ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
