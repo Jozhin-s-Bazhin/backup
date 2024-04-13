@@ -10,14 +10,14 @@
     ags.url = "github:Aylur/ags";
     #hyprlock.url = "github:hyprwm/hyprlock";
     hyprland.url = "github:hyprwm/Hyprland/9e4b2efe7e24f7b21faefbd50a88f25b5185bc35";
-    /*Hyprspace = {
+    Hyprspace = {
       url = github:KZDKM/Hyprspace;
       inputs.hyprland.follows = "hyprland";
     };
     #hy3 = {
     #  url = "github:outfoxxed/hy3";
     #  inputs.hyprland.follows = "hyprland";
-    #};*/
+    #};
 
     # Custom flakes
     game-setting-manager.url = "github:Jozhin-s-Bazhin/game-setting-manager";
