@@ -8,7 +8,7 @@
   wayland.windowManager.hyprland.settings = {
     plugin = {
       overview = {
-        panelColor = "rgba(b3ff1aee)";
+        panelColor = "rgba(b3ff1a00)";
 	panelHeight = "150";
 	showEmptyWorkspace = false;
       };
