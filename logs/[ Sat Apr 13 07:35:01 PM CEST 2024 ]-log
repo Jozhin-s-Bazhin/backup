@@ -1,0 +1,30 @@
+warning: updating lock file '/etc/nixos/flake.lock':
+• Added input 'Hyprspace':
+    'github:KZDKM/Hyprspace/7dd5d777b103dfb62576bd1fd6f47342598d368f' (2024-04-12)
+• Added input 'Hyprspace/hyprland':
+    follows 'hyprland'
+• Added input 'Hyprspace/hyprlandPlugins':
+    'github:hyprwm/hyprland-plugins/e9457e08ca3ff16dc5a815be62baf9e18b539197' (2024-04-11)
+• Added input 'Hyprspace/hyprlandPlugins/hyprland':
+    follows 'Hyprspace/hyprland'
+• Added input 'Hyprspace/hyprlandPlugins/systems':
+    follows 'Hyprspace/hyprlandPlugins/hyprland/systems'
+• Added input 'Hyprspace/nixpkgs':
+    follows 'Hyprspace/hyprland/nixpkgs'
+building the system configuration...
+these 5 derivations will be built:
+  /nix/store/ryj4v8spm256n9k60mmaja59cz0srrdr-unit-script-nixos-upgrade-start.drv
+  /nix/store/vpv75p6cn79js4p7lpnvx702is4dassd-unit-nixos-upgrade.service.drv
+  /nix/store/yd9b2a3vkmgrxz7casi022f1lnmbj9zv-system-units.drv
+  /nix/store/7nwc9cg0jqaady2wf33qn1d3f36jpc77-etc.drv
+  /nix/store/v7waiwzi3j1ngwhv43vmln87gbzyp1km-nixos-system-nixos-24.05.20240410.1042fd8.drv
+building '/nix/store/ryj4v8spm256n9k60mmaja59cz0srrdr-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/vpv75p6cn79js4p7lpnvx702is4dassd-unit-nixos-upgrade.service.drv'...
+building '/nix/store/yd9b2a3vkmgrxz7casi022f1lnmbj9zv-system-units.drv'...
+building '/nix/store/7nwc9cg0jqaady2wf33qn1d3f36jpc77-etc.drv'...
+building '/nix/store/v7waiwzi3j1ngwhv43vmln87gbzyp1km-nixos-system-nixos-24.05.20240410.1042fd8.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
