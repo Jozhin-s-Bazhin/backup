@@ -1,5 +1,31 @@
 {
   "nodes": {
+    "Hyprspace": {
+      "inputs": {
+        "hyprland": [
+          "hyprland"
+        ],
+        "hyprlandPlugins": "hyprlandPlugins",
+        "nixpkgs": [
+          "Hyprspace",
+          "hyprland",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1713037506,
+        "narHash": "sha256-DmOSdXWO13G+bwg9/PSiuFnR9TV5AbPwxH6vz/jAJqQ=",
+        "owner": "KZDKM",
+        "repo": "Hyprspace",
+        "rev": "672ea5dd87f4758159defecbad9f586e725b32ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KZDKM",
+        "repo": "Hyprspace",
+        "type": "github"
+      }
+    },
     "ags": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -206,6 +232,33 @@
       "original": {
         "owner": "hyprwm",
         "repo": "hyprland-protocols",
+        "type": "github"
+      }
+    },
+    "hyprlandPlugins": {
+      "inputs": {
+        "hyprland": [
+          "Hyprspace",
+          "hyprland"
+        ],
+        "systems": [
+          "Hyprspace",
+          "hyprlandPlugins",
+          "hyprland",
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712836056,
+        "narHash": "sha256-qf6yev9OlJuQv557ApLQ/5V8pQj0YOO9tyh5j3It1mY=",
+        "owner": "hyprwm",
+        "repo": "hyprland-plugins",
+        "rev": "e9457e08ca3ff16dc5a815be62baf9e18b539197",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hyprwm",
+        "repo": "hyprland-plugins",
         "type": "github"
       }
     },
@@ -430,6 +483,7 @@
     },
     "root": {
       "inputs": {
+        "Hyprspace": "Hyprspace",
         "ags": "ags",
         "game-setting-manager": "game-setting-manager",
         "home-manager": "home-manager",
