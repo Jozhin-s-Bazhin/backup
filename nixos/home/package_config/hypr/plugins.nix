@@ -6,10 +6,10 @@
   ];
 
   wayland.windowManager.hyprland.settings = {
-    plugin = [
+    plugin = {
       Hyprspace = {
         ""
       };
-    ]; 
+    };
   };
 }
