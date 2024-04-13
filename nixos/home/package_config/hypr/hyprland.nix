@@ -10,7 +10,10 @@
 { inputs, config, pkgs, ... }:
 
 {
-  imports = [ # Startup
+  imports = [
+    inputs.hyprland.homeManagerModules.default
+     
+    # Startup
     ./startup.nix
 
     # Appearance
@@ -29,8 +32,5 @@
     ./other.nix
   ];  
 
-  wayland.windowManager.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-  };
+  wayland.windowManager.hyprland.enable = true;
 }

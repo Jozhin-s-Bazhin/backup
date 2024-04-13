@@ -13,6 +13,7 @@
 {
   imports =
     [
+      inputs.hyprland.nixosModules.default
       ./hardware-configuration.nix
       ./cli_config.nix
     ];
