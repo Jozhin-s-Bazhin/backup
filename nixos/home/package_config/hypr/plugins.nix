@@ -8,7 +8,7 @@
   wayland.windowManager.hyprland.settings = {
     plugin = {
       overview = {
-        panelColor = "rgba(00000000)";
+        panelColor = "rgba(000000ff)";
       };
     };
   };
