@@ -197,7 +197,4 @@
   
   # Do not touch
   system.stateVersion = "23.11";
-
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "roman" ];
 }
