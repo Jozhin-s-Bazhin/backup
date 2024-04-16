@@ -18,7 +18,7 @@ in
     decoration = { 
       rounding = 5;
       blur = {
-        enabled = false;
+        enabled = true;
         size = 3;
         passes = 1;
         
