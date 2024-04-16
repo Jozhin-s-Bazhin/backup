@@ -44,8 +44,8 @@
     brightnessctl
     wl-clipboard-rs
     cliphist
-    fluent-gtk-theme
     wirelesstools
+    grimblast
 
     # CLI utilities
     yazi
