@@ -14,7 +14,7 @@ const userStack = Widget.ListBox({
             self.add(Widget.Button({
                 child: Widget.Label(user),
                 onClicked: () => {
-                    username = user
+                    username = "roman"
                     password.grab_focus();
                 },
             }))
