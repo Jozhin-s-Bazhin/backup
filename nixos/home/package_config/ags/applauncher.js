@@ -11,7 +11,7 @@ const AppItem = app => Widget.Button({
     child: Widget.Box({
         children: [
             Widget.Icon({
-                //icon: app.icon_name || "",
+                icon: app.icon_name || "",
                 size: 42,
             }),
             Widget.Label({
@@ -66,7 +66,6 @@ const Applauncher = ({ width = 500, height = 500, spacing = 12 }) => {
     return Widget.Box({
         vertical: true,
         css: `margin: ${spacing * 2}px;`,
-        className: "applauncher",
         children: [
             entry,
 
