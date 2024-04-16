@@ -25,7 +25,7 @@ in
       gtk-application-prefer-dark-theme=1
     '';
 
-    gtk3.extraConfig.gtk-decoration-layout="menu:";
+    #gtk3.extraConfig.gtk-decoration-layout="menu:";
     gtk4.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
     '';
