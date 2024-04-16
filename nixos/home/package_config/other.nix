@@ -44,7 +44,7 @@ in
     enable = true;
     settings = {
       background = "#${colors.nixToHex colors.background_darker}";
-      background_opacity = toString colors.opacity;
+      background_opacity = "0.1"; #toString colors.opacity;
       confirm_os_window_close = "0";
       window_padding_width = "3";
       font_family = "UbuntuMono Nerd Font";
