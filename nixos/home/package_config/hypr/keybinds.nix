@@ -13,7 +13,6 @@ in
     bind = [
       # Controls
       "SUPER, Space, killactive"
-      "SUPER, I, overview:toggle"
 
       # Focus
       "SUPER, H, movefocus, l"
@@ -28,9 +27,6 @@ in
       # Window position
       "SUPER, F11, fullscreen"
       "SUPER, V, togglefloating"
-
-      # Power key
-      #", XF86PowerOff, exec, /etc/nixos/homw/scripts/misc/lockBeforeSleep"
 
       # Applications
       "SUPER, Tab, exec, ags -t applauncher"
