@@ -1,8 +1,11 @@
 { config, pkgs, inputs, ... }:
+
+let
+  colors = import ../variables/colors.nix;
+in
 {
   wayland.windowManager.hyprland.plugins = [
     inputs.Hyprspace.packages."${pkgs.system}".Hyprspace
-    #inputs.hy3.packages.x86_64-linux.hy3
   ];
 
   wayland.windowManager.hyprland.settings = {
@@ -11,6 +14,10 @@
         panelColor = "rgba(200, 200, 200, 0)";
 	panelHeight = "150";
 	showEmptyWorkspace = false;
+
+	overrideGaps = true;
+	gapsIn = 5;
+	gapsOut = 10;
       };
     };
   };
