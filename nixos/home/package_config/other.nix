@@ -12,10 +12,8 @@ in
     };
 
     theme = {
-      name = "Fluent-Dark";
-      package = pkgs.fluent-gtk-theme.override {
-        tweaks = [ "round" ];
-      };
+      name = "Flat-Remix-Dark";
+      package = pkgs.flat-remix-gtk;
     };
 
     iconTheme = {
