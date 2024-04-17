@@ -1,11 +1,12 @@
 const greetd = await Service.import('greetd');
 
-async function getUsernames() {
+/*async function getUsernames() {
     const output = await Utils.exec("getent passwd | awk -F: '$3 >= 1000 && $3 < 60000 && !/^nixbld/ {print $1}' | grep -v '^nixbld'");
     return output.split('\n').filter(user => user.trim() !== '');
-}
+}*/
 
-const users = await getUsernames();
+//const users = await getUsernames();
+const users = [ "roman" ];
 
 const userStack = Widget.ListBox({
     css: "background-color: red;",
@@ -14,7 +15,7 @@ const userStack = Widget.ListBox({
             self.add(Widget.Button({
                 child: Widget.Label(user),
                 onClicked: () => {
-                    username = user
+                    username = "roman"
                     password.grab_focus();
                 },
             }))
@@ -36,7 +37,6 @@ const password = Widget.Entry({
     on_accept: () => {
         greetd.login('roman' || '', password.text || '', 'Hyprland')
             .catch(() => {
-                password.text = "";
                 password.grab_focus();
             });
     },
