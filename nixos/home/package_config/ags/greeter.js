@@ -20,7 +20,7 @@ const userStack = Widget.ListBox({
                 },
             }))
         });
-        password.grab_focus(),
+        password.grab_focus()
     },
 });
 
