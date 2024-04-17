@@ -5,7 +5,8 @@ async function getUsernames() {
     return output.split('\n').filter(user => user.trim() !== '');
 }
 
-const users = await getUsernames();
+//const users = await getUsernames();
+const users = [ "roman" ];
 
 const userStack = Widget.ListBox({
     css: "background-color: red;",
@@ -36,7 +37,6 @@ const password = Widget.Entry({
     on_accept: () => {
         greetd.login('roman' || '', password.text || '', 'Hyprland')
             .catch(() => {
-                password.text = "";
                 password.grab_focus();
             });
     },
