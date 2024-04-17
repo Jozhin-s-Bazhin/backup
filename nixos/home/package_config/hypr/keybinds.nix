@@ -39,6 +39,10 @@ in
       # Scratchpad
       "SUPER, Backspace, togglespecialworkspace"
       "SUPER SHIFT, Backspace, movetoworkspace, special"
+
+      # Workspace switching with mouse wheel
+      "SUPER, mouse_down, workspace, e-1"
+      "SUPER, mouse_up, workspace, e+1"
     ] 
     ++
     workspaceBindings;
