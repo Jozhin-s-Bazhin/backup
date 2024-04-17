@@ -16,6 +16,7 @@ in
 	showEmptyWorkspace = false;
 	drawActiveWorkspace = true;
 
+        reservedArea = 17;
 	overrideGaps = true;
 	gapsIn = 5;
 	gapsOut = 10;
