@@ -13,6 +13,7 @@ in
     bind = [
       # Controls
       "SUPER, Space, killactive"
+      "SUPER, Caps, overview:toggle all"
       ", Print, exec, grimblast copysave area"
 
       # Focus
