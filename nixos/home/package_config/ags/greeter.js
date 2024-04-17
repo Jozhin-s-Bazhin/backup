@@ -1,9 +1,9 @@
 const greetd = await Service.import('greetd');
 
-async function getUsernames() {
+/*async function getUsernames() {
     const output = await Utils.exec("getent passwd | awk -F: '$3 >= 1000 && $3 < 60000 && !/^nixbld/ {print $1}' | grep -v '^nixbld'");
     return output.split('\n').filter(user => user.trim() !== '');
-}
+}*/
 
 //const users = await getUsernames();
 const users = [ "roman" ];
@@ -20,7 +20,6 @@ const userStack = Widget.ListBox({
                 },
             }))
         });
-        password.grab_focus()
     },
 });
 
