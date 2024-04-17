@@ -21,8 +21,6 @@ in
         enabled = true;
         size = 3;
         passes = 2;
-        
-        vibrancy = 0.1696;
       };
 
       drop_shadow = false;
