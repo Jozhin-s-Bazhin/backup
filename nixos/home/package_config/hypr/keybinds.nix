@@ -41,8 +41,8 @@ in
       "SUPER SHIFT, Backspace, movetoworkspace, special"
 
       # Workspace switching with mouse wheel
-      "SUPER, mouse_down, workspace, e-1"
-      "SUPER, mouse_up, workspace, e+1"
+      "SUPER, mouse_down, workspace, m-1"
+      "SUPER, mouse_up, workspace, m+1"
     ] 
     ++
     workspaceBindings;
