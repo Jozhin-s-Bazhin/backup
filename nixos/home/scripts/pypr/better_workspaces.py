@@ -9,6 +9,12 @@ async def get_workspaces(self):
     workspaces.sort()
     return workspaces
 
+async def get_currentworkspace(self):
+    monitors = await self.hyprctlJSON("monitors")
+    for monitor in monitors:
+        if monitor["focused"] == "yes":
+            return monitor["active workspace"]
+
 def insert_last_workspace(workspaceid):
     target = (MAX_WORKSPACE_ID - workspaceid) // 2
     print(target)
@@ -19,9 +25,15 @@ async def get_target_workspace(self, workspaceid):
     if workspaceid == "new":
         return workspaces[-1] + 1
     elif "+" in workspaceid:
-        pass
+        currentworkspace = await get_currentworkspace(self)
+        for i in range(len(workspaces)):
+            if workspaces[i] == currentworkspace:
+                return workspaces[i + 1]
     elif "-" in workspaceid:
-        pass
+        currentworkspace = await get_currentworkspace(self)
+        for i in range(len(workspaces)):
+            if workspaces[i] == currentworkspace:
+                return workspaces[i + 1]
     else:
         workspaceid = int(workspaceid)
         if workspaceid > len(workspaces):
