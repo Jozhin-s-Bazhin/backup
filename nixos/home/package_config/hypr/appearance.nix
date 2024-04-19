@@ -21,6 +21,7 @@ in
         enabled = true;
         size = 3;
         passes = 2;
+	special = true;
       };
 
       drop_shadow = false;
