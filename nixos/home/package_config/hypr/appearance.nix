@@ -53,9 +53,10 @@ in
       new_is_master = true;
     };
 
-    /*misc = {
-      disable_hyprland_logo = true;
-    };*/
+    misc = {
+      #disable_hyprland_logo = true;
+      force_default_wallpaper = 1;
+    };
   };
 
   xdg.configFile."hypr/hyprpaper.conf".text = ''
