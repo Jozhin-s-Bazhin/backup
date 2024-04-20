@@ -26,13 +26,17 @@ async def get_target_workspace(self, workspaceid):
         return workspaces[-1] + 1
     elif "+" in workspaceid:
         currentworkspace = await get_currentworkspace(self)
+
         for i in range(len(workspaces)):
             if workspaces[i] == currentworkspace:
+                print(workspaces[i+1])
                 return workspaces[i + 1]
     elif "-" in workspaceid:
         currentworkspace = await get_currentworkspace(self)
+
         for i in range(len(workspaces)):
             if workspaces[i] == currentworkspace:
+                print(workspaces[i+1])
                 return workspaces[i + 1]
     else:
         workspaceid = int(workspaceid)
@@ -43,7 +47,7 @@ async def get_target_workspace(self, workspaceid):
         return target
 
 async def move_workspaces_to_focused_mon(self, event_data):
-    """Takes in a valu5 Olyfran est un concours de français. J’aime bien ce concours.e the hyprland socket gives when changing monitors and moves all inactive windows to that monitor"""
+    """Takes in a value the hyprland socket gives when changing monitors and moves all inactive windows to that monitor"""
     monname, workspacename = event_data.split(",")  # Where monname is the name of the monitor the cursor was just moved to (for example 'eDP-1')
     
     workspaces = await get_workspaces(self)
