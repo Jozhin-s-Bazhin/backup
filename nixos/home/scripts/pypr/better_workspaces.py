@@ -13,7 +13,7 @@ async def get_currentworkspace(self):
     monitors = await self.hyprctlJSON("monitors")
     for monitor in monitors:
         if monitor["focused"] == "yes":
-            return monitor["active workspace"]
+            return monitor["activeWorkspace"]["id"]
 
 def insert_last_workspace(workspaceid):
     target = (MAX_WORKSPACE_ID - workspaceid) // 2
@@ -26,14 +26,13 @@ async def get_target_workspace(self, workspaceid):
         return workspaces[-1] + 1
     elif "+" in workspaceid:
         currentworkspace = await get_currentworkspace(self)
-
         for i in range(len(workspaces)):
+            print(workspaces[i],currentworkspace)
             if workspaces[i] == currentworkspace:
                 print(workspaces[i+1])
                 return workspaces[i + 1]
     elif "-" in workspaceid:
         currentworkspace = await get_currentworkspace(self)
-
         for i in range(len(workspaces)):
             if workspaces[i] == currentworkspace:
                 print(workspaces[i+1])
@@ -62,7 +61,7 @@ async def move_workspaces_to_focused_mon(self, event_data):
         await self.hyprctl(batch)
 
 class Extension(Plugin):
-    """A plugin for better workspaces, similar to Gnome's workspace behaviour, but also with a function to insert workspaces"""
+    """A plugin for better workspaces, similar to Gnome's workspace behaviour, with some other nice features like better multi-monitor behaviour and proper relative workspace controls"""
 
     async def event_focusedmon(self, event_data):
         await move_workspaces_to_focused_mon(self, event_data)

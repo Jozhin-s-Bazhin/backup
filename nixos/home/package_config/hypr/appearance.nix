@@ -53,9 +53,9 @@ in
       new_is_master = true;
     };
 
-    misc = {
+    /*misc = {
       disable_hyprland_logo = true;
-    };
+    };*/
   };
 
   xdg.configFile."hypr/hyprpaper.conf".text = ''
