@@ -95,8 +95,12 @@
     options = "--delete-older-than 30d";
   };
 
+  # Cosmic
+  services.desktopManager.cosmic.enable = true;
+  services.displayManager.cosmic-greeter.enable = true;
+
   # Hyprland
-  programs.hyprland = {
+  /*programs.hyprland = {
     enable = true;
     #package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
@@ -112,7 +116,7 @@
     };
   };
   environment.etc."greetd/hyprland.conf".source = ./home/package_config/ags/hyprland.conf;
-  environment.etc."greetd/greeter.js".source = ./home/package_config/ags/greeter.js;
+  environment.etc."greetd/greeter.js".source = ./home/package_config/ags/greeter.js;*/
 
   # Pipewire
   security.rtkit.enable = true;
@@ -142,7 +146,6 @@
   fonts.fontconfig.defaultFonts = {
     sansSerif = [ "Ubuntu Nerd Font" ];
     serif = [ "Ubuntu Nerd Font" ];
-    #mono = [ "UbuntuMono Nerd Font" ];
   };
 
   # Better battery life
