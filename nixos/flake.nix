@@ -14,10 +14,12 @@
       url = github:KZDKM/Hyprspace;
       inputs.hyprland.follows = "hyprland";
     };
-    #hy3 = {
-    #  url = "github:outfoxxed/hy3";
-    #  inputs.hyprland.follows = "hyprland";
-    #};
+
+    # Cosmic
+    nixos-cosmic = {
+      url = "github:lilyinstarlight/nixos-cosmic";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Custom flakes
     game-setting-manager.url = "github:Jozhin-s-Bazhin/game-setting-manager";
@@ -31,6 +33,15 @@
 	      specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
+
+	  {
+	    nix.settings = {
+	      substituters  = [ "https://cosmic.cachix.org/" ];
+	      trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+	    };
+	  }
+	  nixos-cosmic.nixosModules.default
+
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

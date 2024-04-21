@@ -55,7 +55,7 @@ in
 
     misc = {
       #disable_hyprland_logo = true;
-      force_default_wallpaper = 1;
+      #force_default_wallpaper = 1;
     };
   };
 
