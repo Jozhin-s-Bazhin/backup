@@ -96,16 +96,16 @@
   };
 
   # Cosmic
-  services.desktopManager.cosmic.enable = true;
+  #services.desktopManager.cosmic.enable = true;
   services.displayManager.cosmic-greeter.enable = true;
 
   # Hyprland
-  /*programs.hyprland = {
+  programs.hyprland = {
     enable = true;
     #package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
 
-  # Greetd
+  /*# Greetd
   services.greetd = {
     enable = true;
     settings = {
