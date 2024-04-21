@@ -1,0 +1,37 @@
+building the system configuration...
+these 5 derivations will be built:
+  /nix/store/80a406harwi9bndkrricskzwzsm43m8l-unit-script-nixos-upgrade-start.drv
+  /nix/store/f4qdzmwra4jjdzgdb0khhgldkvq927h7-unit-nixos-upgrade.service.drv
+  /nix/store/7sdrkb4awgsir7vqlnaij2jbky1db3wr-system-units.drv
+  /nix/store/5f7vzz4q629dz4ls8jb40q6h62qf0f8z-etc.drv
+  /nix/store/dss89gr25ghlp7bgy8y13dphwaikbwnl-nixos-system-nixos-24.05.20240412.cfd6b5f.drv
+building '/nix/store/80a406harwi9bndkrricskzwzsm43m8l-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/f4qdzmwra4jjdzgdb0khhgldkvq927h7-unit-nixos-upgrade.service.drv'...
+building '/nix/store/7sdrkb4awgsir7vqlnaij2jbky1db3wr-system-units.drv'...
+building '/nix/store/5f7vzz4q629dz4ls8jb40q6h62qf0f8z-etc.drv'...
+building '/nix/store/dss89gr25ghlp7bgy8y13dphwaikbwnl-nixos-system-nixos-24.05.20240412.cfd6b5f.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+warning: the following units failed: home-manager-roman.service
+
+× home-manager-roman.service - Home Manager environment for roman
+     Loaded: loaded (/etc/systemd/system/home-manager-roman.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Sun 2024-04-21 13:25:37 CEST; 83ms ago
+    Process: 4318 ExecStart=/nix/store/sjl004ksn059xz9yfhj7haap24jv3s09-hm-setup-env /nix/store/lp7v323pgq4xc3pnif2jkp42gpcgb6zk-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 4318 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 176ms
+
+Apr 21 13:25:37 nixos systemd[1]: Starting Home Manager environment for roman...
+Apr 21 13:25:37 nixos hm-activate-roman[4318]: Starting Home Manager activation
+Apr 21 13:25:37 nixos hm-activate-roman[4318]: Activating checkFilesChanged
+Apr 21 13:25:37 nixos hm-activate-roman[4318]: Activating checkLinkTargets
+Apr 21 13:25:37 nixos hm-activate-roman[4414]: Existing file '/home/roman/.config/gtk-4.0/gtk.css' is in the way of '/nix/store/82a8mx0r1qk6sj0v6xi00il0l3h8b0m5-home-manager-files/.config/gtk-4.0/gtk.css'
+Apr 21 13:25:37 nixos hm-activate-roman[4414]: Please move the above files and try again or use 'home-manager switch -b backup' to back up existing files automatically.
+Apr 21 13:25:37 nixos systemd[1]: home-manager-roman.service: Main process exited, code=exited, status=1/FAILURE
+Apr 21 13:25:37 nixos systemd[1]: home-manager-roman.service: Failed with result 'exit-code'.
+Apr 21 13:25:37 nixos systemd[1]: Failed to start Home Manager environment for roman.
+warning: error(s) occurred while switching to the new configuration
