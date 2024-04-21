@@ -54,7 +54,6 @@
     openFirewall = true;
   };
 
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.roman = {
     isNormalUser = true;
@@ -92,17 +91,16 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-older-than 30d";
+    options = "--delete-older-than 7d";
   };
 
   # Cosmic
-  #services.desktopManager.cosmic.enable = true;
+  services.desktopManager.cosmic.enable = true;
   services.displayManager.cosmic-greeter.enable = true;
 
   # Hyprland
   programs.hyprland = {
     enable = true;
-    #package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
 
   /*# Greetd

@@ -8,9 +8,12 @@
     eza
     zoxide
     bat
-    direnv
     tldr
     bc
+
+    # Development
+    direnv
+    poetry
   ];
 
   # Config for cli utilities
