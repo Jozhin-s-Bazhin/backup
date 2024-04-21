@@ -1,0 +1,8 @@
+error: undefined variable 'nixos-cosmic'
+
+       at /nix/store/kgq6gh7i40f63ran80s95c5p6lgmslxa-source/flake.nix:43:4:
+
+           42|    }
+           43|        nixos-cosmic.nixosModules.default
+             |    ^
+           44|
