@@ -164,6 +164,13 @@
     };
   };
 
+  # Virtualisation
+  virtualisation.vmware.host.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    enableNvidia = true;
+  };
+
   ## NVIDIA BS
   # something for hyprland
   boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocation=1" ];

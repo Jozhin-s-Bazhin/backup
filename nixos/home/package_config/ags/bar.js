@@ -19,7 +19,7 @@ function Workspaces() {
         .as(ws => ws.map(({ id }) => id > 0 ? Widget.Button({
             on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
             class_name: activeId.as(i => `workspace-btn ${i === id ? "focused" : ""}`),
-        }) : ""));
+        }) : "").toSorted((a, b) => a.class_name > b.class_name ? a : b));
     
     return Widget.Box({
         class_name: "workspaces",
