@@ -134,8 +134,8 @@
 
   # Kde connect
   services.dbus.enable = true;
-  networking.firewall.allowedTCPPorts = [ 1714 1715 ];
-  networking.firewall.allowedUDPPorts = [ 1714 1715 1716 ];
+  networking.firewall.allowedTCPPorts = [ 1714 1715 7860 ];
+  networking.firewall.allowedUDPPorts = [ 1714 1715 1716 7860 ];
 
   # GTK fix
   programs.dconf.enable = true;
