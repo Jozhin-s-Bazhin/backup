@@ -58,7 +58,7 @@
   users.users.roman = {
     isNormalUser = true;
     description = "Roman";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [ lxqt.lxqt-policykit ];
   };
 
