@@ -58,7 +58,7 @@
   users.users.roman = {
     isNormalUser = true;
     description = "Roman";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ lxqt.lxqt-policykit ];
   };
 
@@ -169,6 +169,10 @@
   virtualisation.docker = {
     enable = true;
     enableNvidia = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
   };
 
   ## NVIDIA BS
