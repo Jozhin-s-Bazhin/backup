@@ -1,11 +1,5 @@
 { lib, ... }:
 
-#let
-#  maxWorkspaceID = 2147483647;
-#  difference = maxWorkspaceID / 11;
-#  generateWorkspaceRule = num: toString (num * difference + difference) + ", persistent:true";
-#  baseWorkspaces = lib.genList generateWorkspaceRule 9;
-#in
 {
   wayland.windowManager.hyprland.settings = {
     monitor = [
@@ -30,9 +24,6 @@
 
     workspace = [
       "special,gapsin:10,gapsout:20"
-      #"${toString (2147483647 / 2)},monitor:eDP-1,default:true"
-      #"${toString ((2147483647 / 4) * 3)},monitor:DP-1,default:true"
-      #"${toString ((2147483647 / 8) * 7)},monitor:HDMI-A-1,default:true"
     ];
   };
 }
