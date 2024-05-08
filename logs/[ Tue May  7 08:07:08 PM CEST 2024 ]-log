@@ -1,0 +1,36 @@
+building the system configuration...
+building '/nix/store/vh6yjal2lyp9va5k5p5shv073jzsgay3-VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle.drv'...
+building '/nix/store/4slcz39jjfqb73rjqc2kbqqb9i6nppjy-gdbm-1.8.3.drv'...
+building '/nix/store/gqwx8nkfw2m5xw92y6k3s4a3a2iqzrzn-vmware-unpack-env-usr-target.drv'...
+error: builder for '/nix/store/vh6yjal2lyp9va5k5p5shv073jzsgay3-VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle.drv' failed with exit code 1;
+       last 7 log lines:
+       >
+       > trying https://download3.vmware.com/software/WKST-1751-LX/VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle
+       >   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+       >                                  Dload  Upload   Total   Spent    Left  Speed
+       >   0    15    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+       > curl: (56) The requested URL returned error: 522
+       > error: cannot download VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle from any mirror
+       For full logs, run 'nix log /nix/store/vh6yjal2lyp9va5k5p5shv073jzsgay3-VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle.drv'.
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/3pif36ks3f56py4wb1dkq6sh0nkf3ygj-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/3pif36ks3f56py4wb1dkq6sh0nkf3ygj-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: 1 dependencies of derivation '/nix/store/6zl9d3wlrw7s6p63l9agnangra8yfqdm-vmware-workstation-17.5.1.drv' failed to build
