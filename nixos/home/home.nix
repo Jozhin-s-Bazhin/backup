@@ -28,6 +28,7 @@
     vscodium 
     spotube
     whatsapp-for-linux
+    webcord
     libreoffice
     bitwarden
     thunderbird
