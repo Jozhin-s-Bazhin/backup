@@ -1,0 +1,71 @@
+warning: updating lock file '/etc/nixos/flake.lock':
+• Removed input 'pyprland'
+• Removed input 'pyprland/flake-utils'
+• Removed input 'pyprland/flake-utils/systems'
+• Removed input 'pyprland/nixpkgs'
+• Removed input 'pyprland/poetry2nix'
+• Removed input 'pyprland/poetry2nix/flake-utils'
+• Removed input 'pyprland/poetry2nix/flake-utils/systems'
+• Removed input 'pyprland/poetry2nix/nix-github-actions'
+• Removed input 'pyprland/poetry2nix/nix-github-actions/nixpkgs'
+• Removed input 'pyprland/poetry2nix/nixpkgs'
+• Removed input 'pyprland/poetry2nix/systems'
+• Removed input 'pyprland/poetry2nix/treefmt-nix'
+• Removed input 'pyprland/poetry2nix/treefmt-nix/nixpkgs'
+building the system configuration...
+these 29 derivations will be built:
+  /nix/store/0r27xw5g7jxqwh8h8mf4r2d3xh09vkkc-unit-script-nixos-upgrade-start.drv
+  /nix/store/07p1i6bmjjhg874ghy51fg0g6xvsvnsk-unit-nixos-upgrade.service.drv
+  /nix/store/2c03s5lhal418r0gcb0a8rvss1yx3dva-Hyprspace-0.1+date=2024-05-10_8049b27.drv
+  /nix/store/zywnp72f4p6ks62x31jv59lqv0aahf1v-nvidia-settings-550.78.drv
+  /nix/store/c1mcjf5pv2ymigrsm7zw3mjayyykvf3d-system-path.drv
+  /nix/store/2p32mq195x7h79ypf38kc4dfhyvyp2kj-dbus-1.drv
+  /nix/store/49jxhr2mjgycd7q0x784x2rv15l55nd6-hyprlock-0.pre+date=2024-05-12_0477df2.drv
+  /nix/store/smsl216gw1irc13y2ccpqi773s95gxrc-home-manager-path.drv
+  /nix/store/472m7z8gywd54pal6yffdz4yqzcjhllg-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/lwsdkxj8y0vqv9hjh1wpkmr51hgxwpg1-X-Restart-Triggers-dbus.drv
+  /nix/store/7bn1jkxglc16l8bnk9mwmxcrbhg0hm40-unit-dbus.service.drv
+  /nix/store/mf3p81x8cx2r7ls8bzgmcqmkp4ni2hd1-linux-6.6.30-modules.drv
+  /nix/store/7bqcr3c0svd2p152gfy25il626a827s9-linux-6.6.30-modules-shrunk.drv
+  /nix/store/9jdsdfv5amx22mmx97il3dc9mk7yf9za-user-environment.drv
+  /nix/store/y6q92i5cab05q5alfn8qz1w5wvzc9nhk-unit-dbus.service.drv
+  /nix/store/csghqms3110si56b83b4wa7i7xswwpgw-user-units.drv
+  /nix/store/x4w49r889y1nh3r34d6ia04ajm6nq05j-X-Restart-Triggers-polkit.drv
+  /nix/store/g74gvb98xfbrmalk0s0azn2rj6c4haix-unit-polkit.service.drv
+  /nix/store/kmydn2pfp0qardzkf8ibrxh27f4d5y40-unit-accounts-daemon.service.drv
+  /nix/store/w1xc48fki35by1sk5lm76f5yrr8akpm8-hm_hyprhyprland.conf.drv
+  /nix/store/ikbxnaz3ihpdnsblj08ngr404jpjn4f5-activation-script.drv
+  /nix/store/nhqrwglhm3ssk46wxm2nb8hag7v7xh47-home-manager-files.drv
+  /nix/store/xqv5a6wsfl1lzgnfqhxykbiag5wknyxs-home-manager-generation.drv
+  /nix/store/x2byg0f5vf72snjpr0rd8ig9yy773vxd-unit-home-manager-roman.service.drv
+  /nix/store/jc3d5i3x1dhswsjyqssy9qz00fb66cc2-system-units.drv
+  /nix/store/righg8cvlxzz5qsh8rkzbp09s4m8rm8r-etc.drv
+  /nix/store/rwc1maakz87kwqc48zvhp7vik0k82wl5-initrd-linux-6.6.30.drv
+  /nix/store/v6jq685gxizgix1k7sh0s22i8bm3yy7p-boot.json.drv
+  /nix/store/i9z7qlv515kihxkkfljsybl9aw5bqry0-nixos-system-nixos-24.05.20240509.f1010e0.drv
+building '/nix/store/mf3p81x8cx2r7ls8bzgmcqmkp4ni2hd1-linux-6.6.30-modules.drv'...
+building '/nix/store/zywnp72f4p6ks62x31jv59lqv0aahf1v-nvidia-settings-550.78.drv'...
+building '/nix/store/0r27xw5g7jxqwh8h8mf4r2d3xh09vkkc-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/49jxhr2mjgycd7q0x784x2rv15l55nd6-hyprlock-0.pre+date=2024-05-12_0477df2.drv'...
+building '/nix/store/2c03s5lhal418r0gcb0a8rvss1yx3dva-Hyprspace-0.1+date=2024-05-10_8049b27.drv'...
+building '/nix/store/07p1i6bmjjhg874ghy51fg0g6xvsvnsk-unit-nixos-upgrade.service.drv'...
+error: builder for '/nix/store/2c03s5lhal418r0gcb0a8rvss1yx3dva-Hyprspace-0.1+date=2024-05-10_8049b27.drv' failed with exit code 1;
+       last 10 log lines:
+       >       |         ^~~~~
+       > /nix/store/gpavv6fs2hch8d0jpfcp5g9l7qkc7s4m-gcc-13.2.0/include/c++/13.2.0/tuple:1310:9: note:   template argument deduction/substitution failed:
+       > /nix/store/gpavv6fs2hch8d0jpfcp5g9l7qkc7s4m-gcc-13.2.0/include/c++/13.2.0/tuple:1991:14: note:   candidate expects 0 arguments, 2 provided
+       >  1991 |       return __result_type(std::forward<_Elements>(__args)...);
+       >       |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       > /nix/store/gpavv6fs2hch8d0jpfcp5g9l7qkc7s4m-gcc-13.2.0/include/c++/13.2.0/tuple:1351:17: note: candidate: 'constexpr std::tuple<_T1, _T2>::tuple(std::tuple<_T1, _T2>&&) [with _T1 = std::unique_ptr<SLayerSurface>; _T2 = float]'
+       >  1351 |       constexpr tuple(tuple&&) = default;
+       >       |                 ^~~~~
+       > /nix/store/gpavv6fs2hch8d0jpfcp5g9l7qkc7s4m-gcc-13.2.0/include/c++/13.2.0/tuple:1351:17: note:   candidate expects 1 argument, 2 provided
+       > ninja: build stopped: subcommand failed.
+       For full logs, run 'nix log /nix/store/2c03s5lhal418r0gcb0a8rvss1yx3dva-Hyprspace-0.1+date=2024-05-10_8049b27.drv'.
+error: 1 dependencies of derivation '/nix/store/w1xc48fki35by1sk5lm76f5yrr8akpm8-hm_hyprhyprland.conf.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ikbxnaz3ihpdnsblj08ngr404jpjn4f5-activation-script.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/xqv5a6wsfl1lzgnfqhxykbiag5wknyxs-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/x2byg0f5vf72snjpr0rd8ig9yy773vxd-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/jc3d5i3x1dhswsjyqssy9qz00fb66cc2-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/righg8cvlxzz5qsh8rkzbp09s4m8rm8r-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/i9z7qlv515kihxkkfljsybl9aw5bqry0-nixos-system-nixos-24.05.20240509.f1010e0.drv' failed to build
