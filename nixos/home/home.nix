@@ -44,6 +44,7 @@
     cliphist
     wirelesstools
     grimblast
+    pyprland
 
     # CLI utilities
     yazi
