@@ -5,7 +5,7 @@ let
 in
 {
   wayland.windowManager.hyprland.plugins = [
-    #inputs.Hyprspace.packages."${pkgs.system}".Hyprspace
+    inputs.Hyprspace.packages."${pkgs.system}".Hyprspace
   ];
 
   wayland.windowManager.hyprland.settings = {
