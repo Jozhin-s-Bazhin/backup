@@ -36,10 +36,7 @@
     # Hyprland
     hyprpaper
     hypridle
-    inputs.hyprlock.packages.x86_64-linux.hyprlock
-    libnotify
-    nerdfonts
-    montserrat
+    inputs.hyprlock.packages.x86_64-linux.hyprlock libnotify nerdfonts montserrat
     qt5.qtbase
     qt6.qtbase
     brightnessctl
@@ -63,6 +60,6 @@
 
     # My own shit
     inputs.game-setting-manager.packages.${system}.gsm-cli
-    inputs.pyprland.packages.${pkgs.system}.pypr
+    #inputs.pyprland.packages.${pkgs.system}.pypr
   ];
 }

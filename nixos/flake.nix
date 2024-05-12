@@ -23,7 +23,7 @@
 
     # Custom flakes
     game-setting-manager.url = "github:Jozhin-s-Bazhin/game-setting-manager";
-    pyprland.url = "github:Jozhin-s-Bazhin/pyprland/flake_application";
+    #pyprland.url = "github:Jozhin-s-Bazhin/pyprland/flake_application";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, hyprland, nixos-cosmic, ... }: {

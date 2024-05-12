@@ -1,0 +1,60 @@
+building the system configuration...
+these 31 derivations will be built:
+  /nix/store/2c03s5lhal418r0gcb0a8rvss1yx3dva-Hyprspace-0.1+date=2024-05-10_8049b27.drv
+  /nix/store/zywnp72f4p6ks62x31jv59lqv0aahf1v-nvidia-settings-550.78.drv
+  /nix/store/c1mcjf5pv2ymigrsm7zw3mjayyykvf3d-system-path.drv
+  /nix/store/2p32mq195x7h79ypf38kc4dfhyvyp2kj-dbus-1.drv
+  /nix/store/49jxhr2mjgycd7q0x784x2rv15l55nd6-hyprlock-0.pre+date=2024-05-12_0477df2.drv
+  /nix/store/w1xc48fki35by1sk5lm76f5yrr8akpm8-hm_hyprhyprland.conf.drv
+  /nix/store/ikbxnaz3ihpdnsblj08ngr404jpjn4f5-activation-script.drv
+  /nix/store/wi0pv95p7ayy7kybi72rsnxbjbb5718n-python3.11-mypy-1.8.0.drv
+  /nix/store/m6p2l231ri7r5d03974vvy87vw43i06v-python3.11-pyprland-2.1.4.drv
+  /nix/store/nvwa9y5ws26szygzqhqshp045bplp8sb-home-manager-path.drv
+  /nix/store/7ir3q4l07qw22mx5ppmxvg0b6bdpwrx6-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/ir17pizhfnma8k7bhi5nf6clrsm1l41n-home-manager-files.drv
+  /nix/store/jhh2spi35da6m250qrlny3hs5bhgnfvw-home-manager-generation.drv
+  /nix/store/6p92ddx19q8i2cv464gf6zphpx3j2bv0-unit-home-manager-roman.service.drv
+  /nix/store/lwsdkxj8y0vqv9hjh1wpkmr51hgxwpg1-X-Restart-Triggers-dbus.drv
+  /nix/store/7bn1jkxglc16l8bnk9mwmxcrbhg0hm40-unit-dbus.service.drv
+  /nix/store/mf3p81x8cx2r7ls8bzgmcqmkp4ni2hd1-linux-6.6.30-modules.drv
+  /nix/store/7bqcr3c0svd2p152gfy25il626a827s9-linux-6.6.30-modules-shrunk.drv
+  /nix/store/y6q92i5cab05q5alfn8qz1w5wvzc9nhk-unit-dbus.service.drv
+  /nix/store/csghqms3110si56b83b4wa7i7xswwpgw-user-units.drv
+  /nix/store/x4w49r889y1nh3r34d6ia04ajm6nq05j-X-Restart-Triggers-polkit.drv
+  /nix/store/g74gvb98xfbrmalk0s0azn2rj6c4haix-unit-polkit.service.drv
+  /nix/store/kmydn2pfp0qardzkf8ibrxh27f4d5y40-unit-accounts-daemon.service.drv
+  /nix/store/q6xji8y9hp8v74bmgv5a14054hhl9591-unit-script-nixos-upgrade-start.drv
+  /nix/store/pd6v4y9dhpj9c9zhv87bh1h6blpa472a-unit-nixos-upgrade.service.drv
+  /nix/store/q9jkw0n7ky6d27a9plwi5sy0mlvhvbvr-system-units.drv
+  /nix/store/zmn11vxb2iyc6xslp9h5rbn6bby6mq9d-user-environment.drv
+  /nix/store/p4n97ibyn52famd5nf0sjj4qbd7k3ls6-etc.drv
+  /nix/store/rwc1maakz87kwqc48zvhp7vik0k82wl5-initrd-linux-6.6.30.drv
+  /nix/store/v6jq685gxizgix1k7sh0s22i8bm3yy7p-boot.json.drv
+  /nix/store/8949pz2qvq7c6a4xjvamhr54wkp4v4qw-nixos-system-nixos-24.05.20240509.f1010e0.drv
+building '/nix/store/mf3p81x8cx2r7ls8bzgmcqmkp4ni2hd1-linux-6.6.30-modules.drv'...
+building '/nix/store/zywnp72f4p6ks62x31jv59lqv0aahf1v-nvidia-settings-550.78.drv'...
+building '/nix/store/q6xji8y9hp8v74bmgv5a14054hhl9591-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/49jxhr2mjgycd7q0x784x2rv15l55nd6-hyprlock-0.pre+date=2024-05-12_0477df2.drv'...
+building '/nix/store/wi0pv95p7ayy7kybi72rsnxbjbb5718n-python3.11-mypy-1.8.0.drv'...
+building '/nix/store/2c03s5lhal418r0gcb0a8rvss1yx3dva-Hyprspace-0.1+date=2024-05-10_8049b27.drv'...
+building '/nix/store/pd6v4y9dhpj9c9zhv87bh1h6blpa472a-unit-nixos-upgrade.service.drv'...
+error: builder for '/nix/store/2c03s5lhal418r0gcb0a8rvss1yx3dva-Hyprspace-0.1+date=2024-05-10_8049b27.drv' failed with exit code 1;
+       last 10 log lines:
+       >       |                     tRenderWindow
+       > ../src/Render.cpp:289:21: error: 'renderLayerStub' was not declared in this scope; did you mean 'tRenderLayer'?
+       >   289 |                     renderLayerStub(ls, owner, layerBox, &time);
+       >       |                     ^~~~~~~~~~~~~~~
+       >       |                     tRenderLayer
+       > ../src/Render.cpp:297:21: error: 'renderLayerStub' was not declared in this scope; did you mean 'tRenderLayer'?
+       >   297 |                     renderLayerStub(ls, owner, layerBox, &time);
+       >       |                     ^~~~~~~~~~~~~~~
+       >       |                     tRenderLayer
+       > ninja: build stopped: subcommand failed.
+       For full logs, run 'nix log /nix/store/2c03s5lhal418r0gcb0a8rvss1yx3dva-Hyprspace-0.1+date=2024-05-10_8049b27.drv'.
+error: 1 dependencies of derivation '/nix/store/w1xc48fki35by1sk5lm76f5yrr8akpm8-hm_hyprhyprland.conf.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ikbxnaz3ihpdnsblj08ngr404jpjn4f5-activation-script.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/jhh2spi35da6m250qrlny3hs5bhgnfvw-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/6p92ddx19q8i2cv464gf6zphpx3j2bv0-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/q9jkw0n7ky6d27a9plwi5sy0mlvhvbvr-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/p4n97ibyn52famd5nf0sjj4qbd7k3ls6-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/8949pz2qvq7c6a4xjvamhr54wkp4v4qw-nixos-system-nixos-24.05.20240509.f1010e0.drv' failed to build
