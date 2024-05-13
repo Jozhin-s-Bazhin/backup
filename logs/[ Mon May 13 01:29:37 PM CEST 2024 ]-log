@@ -1,0 +1,8 @@
+error: undefined variable 'nixos-hardware'
+
+       at /nix/store/b418hdq753ki65wn2chlbpg73084ipg7-source/flake.nix:37:4:
+
+           36|           ./configuration.nix
+           37|     nixos-hardware.nixosModules.dell-xps-15-9560
+             |    ^
+           38|         {
