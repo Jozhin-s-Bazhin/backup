@@ -62,7 +62,7 @@
   users.users.roman = {
     isNormalUser = true;
     description = "Roman";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" ];
     packages = with pkgs; [ lxqt.lxqt-policykit ];
   };
 
@@ -121,6 +121,7 @@
   environment.etc."greetd/greeter.js".source = ./home/package_config/ags/greeter.js;*/
 
   # Pipewire
+  sound.enable = true;
   security.rtkit.enable = true;
   hardware.pulseaudio.enable = false;
   services.pipewire = {
