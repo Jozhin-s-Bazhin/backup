@@ -1,0 +1,82 @@
+building the system configuration...
+these 45 derivations will be built:
+  /nix/store/waih2wv10w3nj7iiyxgff4fkdr0xf1cr-python3.11-pyqt5-5.15.9.drv
+  /nix/store/prn55ydqb2f3g7pmzsw5rz5d7wv29s6p-python3-3.11.8-env.drv
+  /nix/store/d79qbszxmqmcx27f2xm1kf2wcg0gr315-ffado-2.4.8.drv
+  /nix/store/wdjg4167kyzqmljjc8p24n9wkl136yds-pipewire-1.0.4.drv
+  /nix/store/darj7q8r6kjw3gmsdq5i9qr58s7pgjf4-SDL2-2.30.1.drv
+  /nix/store/1kkiccqqfzk5yn4sghsrkb58mxy1zn1x-ffmpeg-6.1.1.drv
+  /nix/store/l3y1k2mrb8s65blc89c7h4bvg3xk3bjg-hyprland-0.40.0+date=2024-05-11_33a7b7b.drv
+  /nix/store/xz41p849h6s8h7ygl81fh0d730nqq19j-xdg-desktop-portal-hyprland-1.3.1+date=2024-03-01_2d2fb54.drv
+  /nix/store/8jyn65rzggqf20w2bk11r8kq9zk2812v-system-path.drv
+  /nix/store/6p5bri7axkka48fi0caxiacz54ims8fv-X-Restart-Triggers-polkit.drv
+  /nix/store/02dmja6qyfnvc63y3wlpima9a2xif05d-unit-polkit.service.drv
+  /nix/store/3qsm4k4mzsxmir4z3hhhbqxrqsvhpyml-Hyprspace-0.1+date=2024-05-10_8049b27.drv
+  /nix/store/j7si3wx6mw8nxay284mxwrk9s9xqdpdl-hm_hyprhyprland.conf.drv
+  /nix/store/7v92wyd29in49bhy3c7qy218lzdda58x-home-manager-path.drv
+  /nix/store/scqyi75w5zhnvka3qgxh1v7ahib70s24-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/35c5yfpl2g4pzzq1cbnkqdgn4ahjdvrw-home-manager-files.drv
+  /nix/store/93fbvsn2h77wnwhqq3d6grh7wn1fmffm-activation-script.drv
+  /nix/store/qkk95p27qqybzclc2sf6zzpzylgw87m4-home-manager-generation.drv
+  /nix/store/3d7izdgz73696wr5x8apavzim1kiw01y-unit-home-manager-roman.service.drv
+  /nix/store/hyv26a6qz7wm061gk4a3kqxbiygvxsci-desktops.drv
+  /nix/store/3qznp4l11vfaj00kdxsja9jq53ymzial-set-environment.drv
+  /nix/store/4j4d4vc6sr4a9vqsafvd4v1idqzr7n7q-users-groups.json.drv
+  /nix/store/5c2yvsfajdfrgchljrx0ss6cygcal3ll-etc-zshenv.drv
+  /nix/store/7qxhp7iprbqnbww3zacn2pjs2bnxiqid-unit-display-manager.service.drv
+  /nix/store/7v3j6ha62ibv88dfqap1904646gn8b1h-unit-alsa-store.service.drv
+  /nix/store/jw0d9aws58nrvi52pby5s16z4834xbmy-X-Restart-Triggers-systemd-udevd.drv
+  /nix/store/7yq0i9blgmcjfh1j8yb5mlv8rl8445ya-unit-systemd-udevd.service.drv
+  /nix/store/s4v951a9a3ybifxhb3zfypzd7fznrjlb-dbus-1.drv
+  /nix/store/rr7b8cxw7syp64qxxf76zac2qn92mgdd-X-Restart-Triggers-dbus.drv
+  /nix/store/c0347q0yn6a12v4g3rvgy5lxw799lsb8-unit-dbus.service.drv
+  /nix/store/c4jgz8ab4n241rh8qyv7q07k1vw48kqp-unit-script-nixos-upgrade-start.drv
+  /nix/store/ldy07wmpgl4nm0zqw8j49bsh66qd16vv-unit-nixos-upgrade.service.drv
+  /nix/store/v4qcar02paj8wkndrr7wz383nv9303fg-unit-accounts-daemon.service.drv
+  /nix/store/bqfx40m607nv1n9npjrmvk8s915zy9vn-system-units.drv
+  /nix/store/cqwhpxzpdcay8npzskm9hn75gkh6ldx0-user-environment.drv
+  /nix/store/db766cmy7g7y4f0kq60b05iz84hr0xrc-unit-dbus.service.drv
+  /nix/store/dgp5gwg2hs9vpfx9z7an4ilwy1yrf85s-user-units.drv
+  /nix/store/dypjma05h6v3yxp2zr2vn9wd80d5m9d7-etc-pam-environment.drv
+  /nix/store/gcr6djrnm43kqx2900hqx00j1m253dla-system-shutdown.drv
+  /nix/store/n2qavbrckis0g0lcpd6i22y76ss73vmg-system-generators.drv
+  /nix/store/ni28l6grazmi019xw65iyxlbvb7rl7ih-etc-profile.drv
+  /nix/store/smm19mfi6w5y4qav7qx907zvr45frd19-hwdb.bin.drv
+  /nix/store/wczw97m1pqd00668xg91k65wgjl79729-udev-rules.drv
+  /nix/store/n5n0vh2nlbsac1i9d17482yc04xxzrzp-etc.drv
+  /nix/store/7zs8zj4hnn12nsvd7gjhl83aywc1lkpi-nixos-system-nixos-24.05.20240509.f1010e0.drv
+building '/nix/store/4j4d4vc6sr4a9vqsafvd4v1idqzr7n7q-users-groups.json.drv'...
+building '/nix/store/smm19mfi6w5y4qav7qx907zvr45frd19-hwdb.bin.drv'...
+building '/nix/store/wczw97m1pqd00668xg91k65wgjl79729-udev-rules.drv'...
+building '/nix/store/7v3j6ha62ibv88dfqap1904646gn8b1h-unit-alsa-store.service.drv'...
+building '/nix/store/jw0d9aws58nrvi52pby5s16z4834xbmy-X-Restart-Triggers-systemd-udevd.drv'...
+building '/nix/store/c4jgz8ab4n241rh8qyv7q07k1vw48kqp-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/waih2wv10w3nj7iiyxgff4fkdr0xf1cr-python3.11-pyqt5-5.15.9.drv'...
+building '/nix/store/ldy07wmpgl4nm0zqw8j49bsh66qd16vv-unit-nixos-upgrade.service.drv'...
+building '/nix/store/7yq0i9blgmcjfh1j8yb5mlv8rl8445ya-unit-systemd-udevd.service.drv'...
+building '/nix/store/prn55ydqb2f3g7pmzsw5rz5d7wv29s6p-python3-3.11.8-env.drv'...
+building '/nix/store/d79qbszxmqmcx27f2xm1kf2wcg0gr315-ffado-2.4.8.drv'...
+building '/nix/store/wdjg4167kyzqmljjc8p24n9wkl136yds-pipewire-1.0.4.drv'...
+building '/nix/store/darj7q8r6kjw3gmsdq5i9qr58s7pgjf4-SDL2-2.30.1.drv'...
+building '/nix/store/1kkiccqqfzk5yn4sghsrkb58mxy1zn1x-ffmpeg-6.1.1.drv'...
+building '/nix/store/l3y1k2mrb8s65blc89c7h4bvg3xk3bjg-hyprland-0.40.0+date=2024-05-11_33a7b7b.drv'...
+error: builder for '/nix/store/l3y1k2mrb8s65blc89c7h4bvg3xk3bjg-hyprland-0.40.0+date=2024-05-11_33a7b7b.drv' failed with exit code 1;
+       last 10 log lines:
+       >   The following required packages were not found:
+       >
+       >    - hyprcursor>=0.1.7
+       >
+       > Call Stack (most recent call first):
+       >   /nix/store/mbw6qprvn80p8k7z3lq44hnz6b332xf6-cmake-3.28.3/share/cmake-3.28/Modules/FindPkgConfig.cmake:841 (_pkg_check_modules_internal)
+       >   CMakeLists.txt:107 (pkg_check_modules)
+       >
+       > 
+       > -- Configuring incomplete, errors occurred!
+       For full logs, run 'nix log /nix/store/l3y1k2mrb8s65blc89c7h4bvg3xk3bjg-hyprland-0.40.0+date=2024-05-11_33a7b7b.drv'.
+error: 1 dependencies of derivation '/nix/store/3qsm4k4mzsxmir4z3hhhbqxrqsvhpyml-Hyprspace-0.1+date=2024-05-10_8049b27.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/93fbvsn2h77wnwhqq3d6grh7wn1fmffm-activation-script.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/hyv26a6qz7wm061gk4a3kqxbiygvxsci-desktops.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/7v92wyd29in49bhy3c7qy218lzdda58x-home-manager-path.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/8jyn65rzggqf20w2bk11r8kq9zk2812v-system-path.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/xz41p849h6s8h7ygl81fh0d730nqq19j-xdg-desktop-portal-hyprland-1.3.1+date=2024-03-01_2d2fb54.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/7zs8zj4hnn12nsvd7gjhl83aywc1lkpi-nixos-system-nixos-24.05.20240509.f1010e0.drv' failed to build
