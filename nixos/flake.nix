@@ -14,6 +14,7 @@
       url = github:KZDKM/Hyprspace;
       inputs.hyprland.follows = "hyprland";
     };
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     # Cosmic
     nixos-cosmic = {
@@ -33,7 +34,7 @@
 	      specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
-
+	  nixos-hardware.nixosModules.dell-xps-15-9560
 	  {
 	    nix.settings = {
 	      substituters  = [ 
