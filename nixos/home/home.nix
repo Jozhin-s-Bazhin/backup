@@ -36,7 +36,10 @@
     # Hyprland
     hyprpaper
     hypridle
-    inputs.hyprlock.packages.x86_64-linux.hyprlock libnotify nerdfonts montserrat
+    inputs.hyprlock.packages.x86_64-linux.hyprlock 
+    libnotify 
+    nerdfonts 
+    montserrat
     qt5.qtbase
     qt6.qtbase
     brightnessctl

@@ -14,7 +14,7 @@
   imports =
     [
       inputs.hyprland.nixosModules.default
-      ./hardware-configuration.nix
+      ./hardware-configuration.nix 
       ./cli_config.nix
     ];
 
@@ -99,13 +99,11 @@
   };
 
   # Cosmic
-  services.desktopManager.cosmic.enable = true;
+  #services.desktopManager.cosmic.enable = true;
   #services.displayManager.cosmic-greeter.enable = true;
 
   # Hyprland
-  programs.hyprland = {
-    enable = true;
-  };
+  programs.hyprland.enable = true;
 
   /*# Greetd
   services.greetd = {
