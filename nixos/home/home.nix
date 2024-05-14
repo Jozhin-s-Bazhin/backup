@@ -22,7 +22,6 @@
     # Applications
     floorp
     kitty
-    lutris
     qbittorrent
     vlc
     vscodium 
