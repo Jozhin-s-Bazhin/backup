@@ -122,9 +122,9 @@
   environment.etc."greetd/greeter.js".source = ./home/package_config/ags/greeter.js;*/
 
   # Pipewire
-  sound.enable = true;
+  #sound.enable = true;
   security.rtkit.enable = true;
-  hardware.pulseaudio.enable = false;
+  #hardware.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
