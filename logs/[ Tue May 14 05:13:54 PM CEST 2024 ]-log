@@ -1,0 +1,27 @@
+building the system configuration...
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+the following new units were started: auto-cpufreq.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+warning: the following units failed: home-manager-roman.service
+
+× home-manager-roman.service - Home Manager environment for roman
+     Loaded: loaded (/etc/systemd/system/home-manager-roman.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Tue 2024-05-14 17:14:13 CEST; 222ms ago
+    Process: 3797 ExecStart=/nix/store/129dzr91vbrz7qnq54iqkn2lard1j1f3-hm-setup-env /nix/store/gg2c14q1k6yjaf4nkrjk82idhy3782bi-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 3797 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 588ms
+
+May 14 17:14:13 nixos hm-activate-roman[3893]: Please do one of the following:
+May 14 17:14:13 nixos hm-activate-roman[3893]: - Move or remove the above files and try again.
+May 14 17:14:13 nixos hm-activate-roman[3893]: - In standalone mode, use 'home-manager switch -b backup' to back up
+May 14 17:14:13 nixos hm-activate-roman[3893]:   files automatically.
+May 14 17:14:13 nixos hm-activate-roman[3893]: - When used as a NixOS or nix-darwin module, set
+May 14 17:14:13 nixos hm-activate-roman[3893]:     'home-manager.backupFileExtension'
+May 14 17:14:13 nixos hm-activate-roman[3893]:   to, for example, 'backup' and rebuild.
+May 14 17:14:13 nixos systemd[1]: home-manager-roman.service: Main process exited, code=exited, status=1/FAILURE
+May 14 17:14:13 nixos systemd[1]: home-manager-roman.service: Failed with result 'exit-code'.
+May 14 17:14:13 nixos systemd[1]: Failed to start Home Manager environment for roman.
+warning: error(s) occurred while switching to the new configuration
