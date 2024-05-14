@@ -6,41 +6,41 @@ in
   # GTK
   gtk = {
     enable = true;
-    font = {
+    /*font = {
       name = "Ubuntu Nerd Font";
       size = 11;
-    };
+    };*/
 
-    theme = {
+    /*theme = {
       name = "Flat-Remix-Dark";
       package = pkgs.flat-remix-gtk;
-    };
+    };*/
 
-    iconTheme = {
+    /*iconTheme = {
       name = "adwaita";
       package = pkgs.gnome.adwaita-icon-theme;
-    };
+    };*/
 
-    gtk3.extraConfig.Settings = ''
+    /*gtk3.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
     '';
 
     #gtk3.extraConfig.gtk-decoration-layout="menu:";
     gtk4.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
-    '';
-  };
+    '';*/
+  #};
 
-  xdg.configFile = {
+  /*xdg.configFile = {
     "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
     "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
     "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
-  };
+  };*/
 
-  dconf = {
+  /*dconf = {
     enable = true;
     settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
-  };
+  };*/
 
   # Kitty
   programs.kitty = {
