@@ -31,6 +31,7 @@
     libreoffice
     bitwarden
     thunderbird
+    lutris
 
     # CLI utilities
     yazi
