@@ -108,7 +108,4 @@ in
   # KDEConnect
   services.kdeconnect.enable = true;
   services.kdeconnect.indicator = true;
-
-  # Lutris
-  programs.lutris.enable = true;
 }
