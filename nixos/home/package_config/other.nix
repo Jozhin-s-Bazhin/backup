@@ -5,16 +5,16 @@ in
 {
   # GTK
   gtk = {
-    enable = true;
+    #enable = true;
     /*font = {
       name = "Ubuntu Nerd Font";
       size = 11;
     };*/
 
-    /*theme = {
-      name = "Flat-Remix-Dark";
+    theme = {
+      name = "Flat-Remix-GTK";
       package = pkgs.flat-remix-gtk;
-    };*/
+    };
 
     /*iconTheme = {
       name = "adwaita";
