@@ -13,6 +13,6 @@
     "org/gnome/shell/extensions/user-theme" = {
       name = "Flat-Remix";
     };
-    #"org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    "org/gnome/desktop/interface".color-scheme = "prefer-dark";
   };
 }
