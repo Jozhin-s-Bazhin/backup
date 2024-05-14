@@ -68,5 +68,7 @@
 
     # gnome
     gnomeExtensions.forge
+    gnomeExtensions.user-theme
+    flat-remix-gnome
   ];
 }
