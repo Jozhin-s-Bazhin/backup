@@ -4,7 +4,7 @@
     "org/gnome/shell" = {
       disable-user-extensions = false;
       enabled-extensions = [
-        "forge@forge-ext.github.com"
+        "forge@forge-ext.forge.github.com"
 	"user-theme@gnome-shell-extensions.gcampax.github.com"
 	"blur-my-shell@aunetx"
       ];
