@@ -1,8 +1,8 @@
 { ... }:
 {
   imports = [
-    ./keybinds.nix
-    ./theming.nix
+    #./keybinds.nix
+    #./theming.nix
     ./extensions.nix
   ];
 }
