@@ -1,0 +1,83 @@
+warning: updating lock file '/etc/nixos/flake.lock':
+• Removed input 'nixos-cosmic'
+• Removed input 'nixos-cosmic/flake-compat'
+• Removed input 'nixos-cosmic/nixpkgs'
+building the system configuration...
+these 40 derivations will be built:
+  /nix/store/6zzyn5302qz5jx7wgfzragmybdi7vnrd-Hyprspace-0.1+date=2024-05-10_8049b27.drv
+  /nix/store/a0b0j23iymx3nh8fxbgm546rw93qlsla-hm_hyprhyprland.conf.drv
+  /nix/store/11vy6hg01sdzcy6s4b1x0kgnjj8725w7-activation-script.drv
+  /nix/store/19k072kq6hlnf910n4m2vq1mwm3fm0a9-fc-cache.drv
+  /nix/store/1jcmfkfq0lsdibi4jg0nfgmq0pbkpi4k-unit-script-nixos-upgrade-start.drv
+  /nix/store/l648bz163mwgjj8xr2gv5q2vib6zyw24-nixos-generate-config.drv
+  /nix/store/h7kbwkb0f35i3lnnm7yqj6s8336y9xvy-system-path.drv
+  /nix/store/42h4pfqi14nk0pqz45hzx4n3lmrxh39y-unit-accounts-daemon.service.drv
+  /nix/store/4j35vphsy65ks94iygi4iff5pb98b9lx-xserver.conf.drv
+  /nix/store/g7qp51mqvs21nbwx6dm7v3bjbc0gq555-X-Restart-Triggers-polkit.drv
+  /nix/store/ck15c1l5vs6bjngvx3gav0w26ljpvplz-unit-polkit.service.drv
+  /nix/store/g8ycidiw8qkrid5p65ndf1kfkk6j47p4-desktops.drv
+  /nix/store/fa46kv5js6v04ww4mwzcd6hjdcfa83a9-unit-display-manager.service.drv
+  /nix/store/qkz9jsxp43glplzmnr7kabd3xb713n1b-dbus-1.drv
+  /nix/store/smhaf2cmlrg8jfjlnjrxakazmk6xlald-X-Restart-Triggers-dbus.drv
+  /nix/store/gyi3xmpgivr392yqjq9nd6n1l2rkzk2r-unit-dbus.service.drv
+  /nix/store/vhnyb7y5gg5skzcvfxavzipdq197hrgw-home-manager-path.drv
+  /nix/store/j84rzjryzz4p48hz0kgm6swbvwmplslc-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/s60cadnbfxafkljgq0gh1zjdhqjrw4pw-home-manager-files.drv
+  /nix/store/gizi5yaakcn3yr7vi26m8z41prj5crcq-home-manager-generation.drv
+  /nix/store/qzas7900f60z82vxy960ihl5fnhvr149-unit-home-manager-roman.service.drv
+  /nix/store/rlpx3c36fzblplfxagclr0q21k14d8fg-nix.conf.drv
+  /nix/store/i39pkib6kw5icnk6q1qpinx33j9v0684-X-Restart-Triggers-nix-daemon.drv
+  /nix/store/v7r557d57vc0qb1mrcrsvc8s90mhr160-unit-nix-daemon.service.drv
+  /nix/store/w5lj37kpay9ccncvpvhz8xg3lv9pwd6p-unit-nixos-upgrade.service.drv
+  /nix/store/659rpwnigy65523k5jkyjn7r3xijhrw3-system-units.drv
+  /nix/store/wgvj4wxiy8l043rdrxrmfpddhksww6v5-fc-00-nixos-cache.conf.drv
+  /nix/store/zg29jr5gmrna8v0fx7ljyhy7fsmkpkf7-fontconfig-conf.drv
+  /nix/store/dkzf4k8cs7kb375s9jbckr8xqpvbcvdh-fontconfig-etc.drv
+  /nix/store/lnqgrirh1rm77vjv9dygd2c63mspq0ws-etc-pam-environment.drv
+  /nix/store/mcahl3lhvkr293m52gv47nzvg19jx9xm-system-shutdown.drv
+  /nix/store/p7kx2ygypikb37aw6nms7ghfmyzwhkgs-unit-dbus.service.drv
+  /nix/store/p4qsig7q68lddscp33clfld36lpwnrzf-user-units.drv
+  /nix/store/qmqz6icha804dbm8jj56i6764hxaf5r8-set-environment.drv
+  /nix/store/pik6f1mg3fhly74n57lpi3vyjn9sy4rp-etc-profile.drv
+  /nix/store/q89msyxzzhzakkx9qnqr3b86j96ash8v-etc-zshenv.drv
+  /nix/store/qbd6rzi9bz4ncyzjf5rcmz7hd4vmd521-system-generators.drv
+  /nix/store/xir2bbfh5qz0vvh2g5r87fwvlsppl9c0-user-environment.drv
+  /nix/store/9vhsn9micz8ypfc893hhyazhz45ndna8-etc.drv
+  /nix/store/swm7blkfcmq10q3xrzrr91m1n1g356nk-nixos-system-nixos-24.05.20240512.2057814.drv
+this path will be fetched (0.28 MiB download, 0.71 MiB unpacked):
+  /nix/store/xbqwxzy6nbd8psg89m7id1m77mfgmp13-xdg-desktop-portal-hyprland-1.3.1+date=2024-05-02_1f228ba
+copying path '/nix/store/xbqwxzy6nbd8psg89m7id1m77mfgmp13-xdg-desktop-portal-hyprland-1.3.1+date=2024-05-02_1f228ba' from 'https://hyprland.cachix.org'...
+building '/nix/store/rlpx3c36fzblplfxagclr0q21k14d8fg-nix.conf.drv'...
+building '/nix/store/l648bz163mwgjj8xr2gv5q2vib6zyw24-nixos-generate-config.drv'...
+building '/nix/store/g8ycidiw8qkrid5p65ndf1kfkk6j47p4-desktops.drv'...
+building '/nix/store/vhnyb7y5gg5skzcvfxavzipdq197hrgw-home-manager-path.drv'...
+building '/nix/store/1jcmfkfq0lsdibi4jg0nfgmq0pbkpi4k-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/4j35vphsy65ks94iygi4iff5pb98b9lx-xserver.conf.drv'...
+building '/nix/store/19k072kq6hlnf910n4m2vq1mwm3fm0a9-fc-cache.drv'...
+building '/nix/store/6zzyn5302qz5jx7wgfzragmybdi7vnrd-Hyprspace-0.1+date=2024-05-10_8049b27.drv'...
+building '/nix/store/fa46kv5js6v04ww4mwzcd6hjdcfa83a9-unit-display-manager.service.drv'...
+building '/nix/store/w5lj37kpay9ccncvpvhz8xg3lv9pwd6p-unit-nixos-upgrade.service.drv'...
+building '/nix/store/qbd6rzi9bz4ncyzjf5rcmz7hd4vmd521-system-generators.drv'...
+building '/nix/store/h7kbwkb0f35i3lnnm7yqj6s8336y9xvy-system-path.drv'...
+building '/nix/store/mcahl3lhvkr293m52gv47nzvg19jx9xm-system-shutdown.drv'...
+building '/nix/store/i39pkib6kw5icnk6q1qpinx33j9v0684-X-Restart-Triggers-nix-daemon.drv'...
+error: builder for '/nix/store/6zzyn5302qz5jx7wgfzragmybdi7vnrd-Hyprspace-0.1+date=2024-05-10_8049b27.drv' failed with exit code 1;
+       last 10 log lines:
+       > fixing cmake files...
+       > cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/share/doc/Hyprspace -DCMAKE_INSTALL_INFODIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/include -DCMAKE_INSTALL_SBINDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/strip -DCMAKE_RANLIB=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/ranlib -DCMAKE_AR=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27
+       > CMake Warning:
+       >   Ignoring extra path from command line:
+       >
+       >    ".."
+       >
+       > 
+       > CMake Error: The source directory "/build/cxgbk57a4xmp36cxp05jnzw1vgxmrdr4-source" does not appear to contain CMakeLists.txt.
+       > Specify --help for usage, or press the help button on the CMake GUI.
+       For full logs, run 'nix log /nix/store/6zzyn5302qz5jx7wgfzragmybdi7vnrd-Hyprspace-0.1+date=2024-05-10_8049b27.drv'.
+error: 1 dependencies of derivation '/nix/store/a0b0j23iymx3nh8fxbgm546rw93qlsla-hm_hyprhyprland.conf.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/11vy6hg01sdzcy6s4b1x0kgnjj8725w7-activation-script.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/gizi5yaakcn3yr7vi26m8z41prj5crcq-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/qzas7900f60z82vxy960ihl5fnhvr149-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/659rpwnigy65523k5jkyjn7r3xijhrw3-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/9vhsn9micz8ypfc893hhyazhz45ndna8-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/swm7blkfcmq10q3xrzrr91m1n1g356nk-nixos-system-nixos-24.05.20240512.2057814.drv' failed to build
