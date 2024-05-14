@@ -7,6 +7,7 @@
         "forge@forge-ext.forge.github.com"
 	"user-theme@gnome-shell-extensions.gcampax.github.com"
 	"blur-my-shell@aunetx"
+	"switch-workspaces-on-active-monitor@gnome-shell-extension-simulate-switching-workspaces-on-active-monitor.micheledaros.github.com"
       ];
     };
 

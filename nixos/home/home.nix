@@ -66,10 +66,13 @@
     grimblast
     pyprland
 
-    # gnome
+    # GNOME
+    flat-remix-gnome
+
+    # Extensions
     gnomeExtensions.forge
     gnomeExtensions.user-themes
-    flat-remix-gnome
     gnomeExtensions.blur-my-shell
+    gnomeExtensions.switch-workspaces-on-active-monitor
   ];
 }
