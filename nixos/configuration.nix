@@ -37,6 +37,9 @@
   # Experimental settings
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # Home manager backup
+  home-manager.backupFileExtension = "backup";
+
   # Configure keymap in X11
   services.xserver = {
     xkb.layout = "us";
@@ -68,7 +71,7 @@
 
   # Logind
   services.logind = {
-    lidSwitch = "ignore";
+    lidSwitch = "suspend";
     powerKey = "poweroff";
   };
 
