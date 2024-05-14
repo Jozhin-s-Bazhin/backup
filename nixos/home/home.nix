@@ -13,7 +13,7 @@
 {
   imports = [
     #./package_config/package_config.nix
-    #./config.nix
+    ./config.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
