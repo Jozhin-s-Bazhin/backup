@@ -27,7 +27,7 @@
     game-setting-manager.url = "github:Jozhin-s-Bazhin/game-setting-manager";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, hyprland, nixos-cosmic, nixos-hardware, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, hyprland, nixos-hardware, ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -38,17 +38,16 @@
 	  {
 	    nix.settings = {
 	      substituters  = [ 
-	        "https://cosmic.cachix.org/" 
+	        #"https://cosmic.cachix.org/" 
 	        "https://hyprland.cachix.org" 
 	      ];
 	      trusted-public-keys = [ 
-	        "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" 
+	        #"cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" 
 		"hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
 	      ];
 	    };
 	  }
-	  nixos-cosmic.nixosModules.default
-
+	  #nixos-cosmic.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

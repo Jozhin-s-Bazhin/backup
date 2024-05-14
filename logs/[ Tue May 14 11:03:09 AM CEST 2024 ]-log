@@ -1,0 +1,6 @@
+error:
+       … while updating the lock file of flake 'path:/etc/nixos?lastModified=1715677385&narHash=sha256-AfO0cD3Y3Pj3oVM%2BqmGKLRzD/hLWe6dg2TqVrZEj138%3D'
+
+       … while updating the flake input 'nixos-cosmic'
+
+       error: cannot find flake 'flake:nixos-cosmic' in the flake registries
