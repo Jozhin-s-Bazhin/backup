@@ -48,6 +48,7 @@
     # Nvidia
     videoDrivers = [ "nvidia" ];
 
+    # Gnome
     enable = true;
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
@@ -100,6 +101,20 @@
     dates = "weekly";
     options = "--delete-older-than 7d";
   };
+
+  # GNOME
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-photos
+    gnome-tour
+  ]) ++ (with pkgs.gnome; [
+    cheese
+    gnome-music
+    gnome-terminal
+    gedit
+    epiphany
+    geary
+    gnome-characters
+  ]);
 
   # Cosmic
   #services.desktopManager.cosmic.enable = true;

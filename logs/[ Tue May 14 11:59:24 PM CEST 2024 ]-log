@@ -1,0 +1,4 @@
+building the system configuration...
+warning: error: unable to download 'https://cache.nixos.org/1dklq6dsv1pnijn1fiw5h4blwqvwaka8.narinfo': Couldn't resolve host name (6); retrying in 252 ms
+warning: error: unable to download 'https://cache.nixos.org/1dklq6dsv1pnijn1fiw5h4blwqvwaka8.narinfo': Couldn't resolve host name (6); retrying in 619 ms
+warning: error: unable to download 'https://cache.nixos.org/1dklq6dsv1pnijn1fiw5h4blwqvwaka8.narinfo': Couldn't resolve host name (6); retrying in 1031 ms
