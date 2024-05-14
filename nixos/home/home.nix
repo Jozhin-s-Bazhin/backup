@@ -70,5 +70,6 @@
     gnomeExtensions.forge
     gnomeExtensions.user-themes
     flat-remix-gnome
+    gnomeExtensions.blur-my-shell
   ];
 }

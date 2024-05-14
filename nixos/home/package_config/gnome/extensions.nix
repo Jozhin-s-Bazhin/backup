@@ -6,6 +6,7 @@
       enabled-extensions = [
         "forge@forge-ext"
 	"user-theme@gnome-shell-extensions.gcampax.github.com"
+	"blur-my-shell@aunetx"
       ];
     };
 
