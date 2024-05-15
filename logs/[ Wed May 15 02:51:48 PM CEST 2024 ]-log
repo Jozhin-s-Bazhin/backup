@@ -1,0 +1,41 @@
+building the system configuration...
+these 5 derivations will be built:
+  /nix/store/bdhdhfgy6v21h3f72icbsgvj0q4akscj-unit-script-nixos-upgrade-start.drv
+  /nix/store/w2jph6xjhhdz8nk9wjr0fam2xfmqj1sq-unit-nixos-upgrade.service.drv
+  /nix/store/g9dx45l6x6y95rad4gm5ma6j77nl0xmm-system-units.drv
+  /nix/store/6k15gy1yn75aph5ihcp1j7ipq55cvbx3-etc.drv
+  /nix/store/d4z5fkca7kdwdkr05f2is8g41q83jv6p-nixos-system-nixos-24.05.20240512.2057814.drv
+building '/nix/store/bdhdhfgy6v21h3f72icbsgvj0q4akscj-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/w2jph6xjhhdz8nk9wjr0fam2xfmqj1sq-unit-nixos-upgrade.service.drv'...
+building '/nix/store/g9dx45l6x6y95rad4gm5ma6j77nl0xmm-system-units.drv'...
+building '/nix/store/6k15gy1yn75aph5ihcp1j7ipq55cvbx3-etc.drv'...
+building '/nix/store/d4z5fkca7kdwdkr05f2is8g41q83jv6p-nixos-system-nixos-24.05.20240512.2057814.drv'...
+stopping the following units: accounts-daemon.service
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: polkit.service
+starting the following units: accounts-daemon.service
+warning: the following units failed: home-manager-roman.service
+
+× home-manager-roman.service - Home Manager environment for roman
+     Loaded: loaded (/etc/systemd/system/home-manager-roman.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Wed 2024-05-15 14:52:23 CEST; 397ms ago
+    Process: 158437 ExecStart=/nix/store/129dzr91vbrz7qnq54iqkn2lard1j1f3-hm-setup-env /nix/store/8q5z2xrvlh6vdxwiplnx1j3d0d7qigl4-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 158437 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 473ms
+
+May 15 14:52:23 nixos hm-activate-roman[158562]: Please do one of the following:
+May 15 14:52:23 nixos hm-activate-roman[158562]: - Move or remove the above files and try again.
+May 15 14:52:23 nixos hm-activate-roman[158562]: - In standalone mode, use 'home-manager switch -b backup' to back up
+May 15 14:52:23 nixos hm-activate-roman[158562]:   files automatically.
+May 15 14:52:23 nixos hm-activate-roman[158562]: - When used as a NixOS or nix-darwin module, set
+May 15 14:52:23 nixos hm-activate-roman[158562]:     'home-manager.backupFileExtension'
+May 15 14:52:23 nixos hm-activate-roman[158562]:   to, for example, 'backup' and rebuild.
+May 15 14:52:23 nixos systemd[1]: home-manager-roman.service: Main process exited, code=exited, status=1/FAILURE
+May 15 14:52:23 nixos systemd[1]: home-manager-roman.service: Failed with result 'exit-code'.
+May 15 14:52:23 nixos systemd[1]: Failed to start Home Manager environment for roman.
+warning: error(s) occurred while switching to the new configuration
