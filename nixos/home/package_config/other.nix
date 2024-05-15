@@ -11,10 +11,6 @@ in
       size = 11;
     };
 
-    theme = {
-      name = "Flat-Remix";
-    };
-
     iconTheme = {
       name = "WhiteSur";
       package = pkgs.whitesur-icon-theme;
@@ -22,10 +18,14 @@ in
   };
 
   # Gtk theme
-  home.file.".themes/Flat-Remix/".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/";
+  home.file.".themes/Flat-Remix/".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Grey-Dark/";
   xdg.configFile = {
-    "gtk-4.0/assets".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark/assets";
-    "gtk-4.0/gtk.css".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark/gtk.css";
+    "gtk-4.0/assets".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Grey-Dark/assets";
+    "gtk-4.0/gtk.css".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Grey-Dark/gtk.css";
+  };
+
+  home.sessionVariables = {
+    GTK_THEME = "Flat-Remix";
   };
 
   dconf = {
