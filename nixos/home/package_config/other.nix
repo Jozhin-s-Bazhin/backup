@@ -38,7 +38,13 @@ in
    
   # Gtk theme
   xdg.configFile."gtk-4.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark";
-  home.file.".themes/Flat-Remix".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark";
+  home.file = {
+    ".themes/Flat-Remix/index.theme".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/index.theme";
+    ".themes/Flat-Remix/gtk-2.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/gtk-2.0";
+    ".themes/Flat-Remix/gtk-3.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/gtk-3.0";
+    ".themes/Flat-Remix/gtk-4.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/gtk-4.0";
+    ".themes/Flat-Remix/cinnamon".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/cinnamon";
+  };
 
   dconf = {
     enable = true;
