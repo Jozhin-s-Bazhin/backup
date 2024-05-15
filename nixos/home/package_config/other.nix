@@ -12,7 +12,7 @@ in
     };
 
     iconTheme = {
-      name = "Flat-Remix-Blue";
+      name = "Flat-Remix";
       package = pkgs.flat-remix-icon-theme;
     };
   };
