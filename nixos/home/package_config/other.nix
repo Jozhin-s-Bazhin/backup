@@ -4,9 +4,15 @@ let
 in
 {
   # GTK
-  gtk = { enable = true; font = {
+  gtk = { 
+    enable = true; 
+    font = {
       name = "Ubuntu Nerd Font";
       size = 11;
+    };
+
+    theme = {
+      name = "Flat-Remix";
     };
 
     iconTheme = {
