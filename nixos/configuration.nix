@@ -45,6 +45,9 @@
     # Nvidia
     videoDrivers = [ "nvidia" ];
 
+    # AMD
+    #videoDrivers = [ "amd" ];
+
     # Gnome
     enable = true;
     displayManager.gdm.enable = true;
@@ -69,7 +72,7 @@
 
   # Logind
   services.logind = {
-    lidSwitch = "suspend";
+    #lidSwitch = "suspend";
     powerKey = "poweroff";
   };
 
