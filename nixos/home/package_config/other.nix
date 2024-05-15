@@ -12,8 +12,8 @@ in
     };
 
     iconTheme = {
-      name = "WhiteSur";
-      package = pkgs.whitesur-icon-theme;
+      name = "Flat-Remix-Blue";
+      package = pkgs.flat-remix-icon-theme;
     };
   };
 
