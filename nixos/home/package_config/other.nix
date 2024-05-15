@@ -18,6 +18,7 @@ in
     };
 
     iconTheme = {
+      enable = true;
       name = "Reversal";
       package = pkgs.reversal-icon-theme;
     };
