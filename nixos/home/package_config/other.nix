@@ -3,7 +3,7 @@ let
   colors = import ./variables/colors.nix { inherit lib; };
 in
 {
-  /*# GTK
+  # GTK
   gtk = {
     enable = true;
     font = {
@@ -12,13 +12,14 @@ in
     };
 
     theme = {
+      enable = true;
       name = "Flat-Remix-GTK";
       package = pkgs.flat-remix-gtk;
     };
 
     iconTheme = {
-      name = "adwaita";
-      package = pkgs.gnome.adwaita-icon-theme;
+      name = "Reversal";
+      package = pkgs.reversal-icon-theme;
     };
 
     gtk3.extraConfig.Settings = ''
