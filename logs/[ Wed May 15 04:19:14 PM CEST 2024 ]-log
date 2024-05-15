@@ -1,0 +1,30 @@
+building the system configuration...
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/vsbi6gfwf2bdamw0d0d9xndb1rrxfnbk-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/vsbi6gfwf2bdamw0d0d9xndb1rrxfnbk-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: syntax error, unexpected '=', expecting ';'
+
+       at /nix/store/sgdfvgghsnkgbgg3d3lyhfbiffqc1i8k-source/home/package_config/other.nix:40:71:
+
+           39|   # Gtk theme
+           40|   home.file."Flat-Remix".source = ".themes/Flat-Remix/gtk-4.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/gtk-4.0";
+             |                                                                       ^
+           41|   xdg.configFile = {

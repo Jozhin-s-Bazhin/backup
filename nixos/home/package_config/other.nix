@@ -9,47 +9,18 @@ in
       size = 11;
     };
 
-    /*theme = {
-      #enable = true;
-      name = "Flat-Remix";
-      package = pkgs.flat-remix-gtk;
-    };*/
-
     iconTheme = {
       name = "WhiteSur";
       package = pkgs.whitesur-icon-theme;
     };
-
-    /*gtk3.extraConfig.Settings = ''
-      gtk-application-prefer-dark-theme=1
-    '';
-
-    #gtk3.extraConfig.gtk-decoration-layout="menu:";
-    gtk4.extraConfig.Settings = ''
-      gtk-application-prefer-dark-theme=1
-    '';*/
   };
 
-  /*xdg.configFile = {
-    "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
-    "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
-    "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
-  };*/
-   
   # Gtk theme
   home.file."Flat-Remix".source = ".themes/Flat-Remix/gtk-4.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/gtk-4.0";
   xdg.configFile = {
-    #"gtk-4.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark";
     "gtk-4.0/assets".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark/assets";
     "gtk-4.0/gtk.css".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark/gtk.css";
   };
-  /*home.file = {
-    ".themes/Flat-Remix/index.theme".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/index.theme";
-    ".themes/Flat-Remix/gtk-2.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/gtk-2.0";
-    ".themes/Flat-Remix/gtk-3.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/gtk-3.0";
-    ".themes/Flat-Remix/gtk-4.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/gtk-4.0";
-    ".themes/Flat-Remix/cinnamon".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/cinnamon";
-  };*/
 
   dconf = {
     enable = true;
