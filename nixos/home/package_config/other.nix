@@ -4,9 +4,7 @@ let
 in
 {
   # GTK
-  gtk = {
-    enable = true;
-    font = {
+  gtk = { enable = true; font = {
       name = "Ubuntu Nerd Font";
       size = 11;
     };
@@ -40,7 +38,7 @@ in
    
   # Gtk theme
   xdg.configFile."gtk-4.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark";
-  home.file.".themes/Flat-Remix".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark"
+  home.file.".themes/Flat-Remix".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark";
 
   dconf = {
     enable = true;
