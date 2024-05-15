@@ -1,0 +1,32 @@
+building the system configuration...
+these 13 derivations will be built:
+  /nix/store/zixzwbmx0qb3ilrcjbwkmwj6wqllr7lh-home-manager-path.drv
+  /nix/store/84bzjsig0dmp9r789psy2f0g2dpjx8zz-user-environment.drv
+  /nix/store/mdrmvmb5slxy9r5i1zvxsa5g7829f7rv-unit-script-nixos-upgrade-start.drv
+  /nix/store/hfwmfkcybkmykslix82rhr65qkjidl5a-unit-nixos-upgrade.service.drv
+  /nix/store/bz3cgg9qdba8ga0s7xif07dcx6fjpamx-hm_gtk3.0settings.ini.drv
+  /nix/store/k6nhi3x8wg2nyqg66024q9v2cvs05fxi-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/x8nwa4hi0qyzm72rx1y3jbqhanzrywaw-hm_gtk4.0gtk.css.drv
+  /nix/store/ivzv4f356kmq5sjxiqh76dmy290fdcng-home-manager-files.drv
+  /nix/store/w1px8l8myxablpp5vnxx26f5g0drcpn7-home-manager-generation.drv
+  /nix/store/ixn1x53vb25cp88avqa6hrpgfzrnh500-unit-home-manager-roman.service.drv
+  /nix/store/jg8g2cmafr3s8i5lijn973z6nk5xc6wg-system-units.drv
+  /nix/store/nqph09b563ih29w71f0dwxpy2ibi46f1-etc.drv
+  /nix/store/09app78lyvbzg3p6hkx2gwrdii9rvsix-nixos-system-nixos-24.05.20240512.2057814.drv
+building '/nix/store/zixzwbmx0qb3ilrcjbwkmwj6wqllr7lh-home-manager-path.drv'...
+building '/nix/store/mdrmvmb5slxy9r5i1zvxsa5g7829f7rv-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/bz3cgg9qdba8ga0s7xif07dcx6fjpamx-hm_gtk3.0settings.ini.drv'...
+building '/nix/store/x8nwa4hi0qyzm72rx1y3jbqhanzrywaw-hm_gtk4.0gtk.css.drv'...
+building '/nix/store/hfwmfkcybkmykslix82rhr65qkjidl5a-unit-nixos-upgrade.service.drv'...
+building '/nix/store/k6nhi3x8wg2nyqg66024q9v2cvs05fxi-hm_fontconfigconf.d10hmfonts.conf.drv'...
+building '/nix/store/84bzjsig0dmp9r789psy2f0g2dpjx8zz-user-environment.drv'...
+building '/nix/store/ivzv4f356kmq5sjxiqh76dmy290fdcng-home-manager-files.drv'...
+error: builder for '/nix/store/ivzv4f356kmq5sjxiqh76dmy290fdcng-home-manager-files.drv' failed with exit code 1;
+       last 1 log lines:
+       > Error installing file '.config/gtk-4.0/gtk.css' outside $HOME
+       For full logs, run 'nix log /nix/store/ivzv4f356kmq5sjxiqh76dmy290fdcng-home-manager-files.drv'.
+error: 1 dependencies of derivation '/nix/store/w1px8l8myxablpp5vnxx26f5g0drcpn7-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ixn1x53vb25cp88avqa6hrpgfzrnh500-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/jg8g2cmafr3s8i5lijn973z6nk5xc6wg-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/nqph09b563ih29w71f0dwxpy2ibi46f1-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/09app78lyvbzg3p6hkx2gwrdii9rvsix-nixos-system-nixos-24.05.20240512.2057814.drv' failed to build

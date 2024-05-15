@@ -39,7 +39,7 @@ in
     "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
   };*/
 
-  xdg.configFile."gtk-4.0".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}";
+  xdg.configFile."gtk-4.0".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/";
 
   dconf = {
     enable = true;
