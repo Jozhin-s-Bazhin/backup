@@ -1,0 +1,22 @@
+building the system configuration...
+these 8 derivations will be built:
+  /nix/store/2c8jk0xwnk63ihmppfcva1rxflv024hr-unit-nixos-upgrade.service.drv
+  /nix/store/nss2vsqw02z3zv3nixm1wzm5dzqy1v9s-home-manager-files.drv
+  /nix/store/qrzf0jgdlky9cn109mya5qw2g4d8znlv-home-manager-generation.drv
+  /nix/store/lrw3cas2dr29k0f2rnifl7lpz3xir81j-unit-home-manager-roman.service.drv
+  /nix/store/9yssy5xfk1zj748kayvnrzq5bdsg0h5f-system-units.drv
+  /nix/store/cv531m6nd633ajwdp3rwihkvn87kc8yn-user-environment.drv
+  /nix/store/g72k0scpn8gqjfpy719icjwdfig0m947-etc.drv
+  /nix/store/hs1r0zlimjcxjlq20063apd2hcknwim0-nixos-system-nixos-24.05.20240512.2057814.drv
+building '/nix/store/cv531m6nd633ajwdp3rwihkvn87kc8yn-user-environment.drv'...
+building '/nix/store/2c8jk0xwnk63ihmppfcva1rxflv024hr-unit-nixos-upgrade.service.drv'...
+building '/nix/store/nss2vsqw02z3zv3nixm1wzm5dzqy1v9s-home-manager-files.drv'...
+error: builder for '/nix/store/nss2vsqw02z3zv3nixm1wzm5dzqy1v9s-home-manager-files.drv' failed with exit code 1;
+       last 1 log lines:
+       > Error installing file '.config/gtk-4.0/settings.ini' outside $HOME
+       For full logs, run 'nix log /nix/store/nss2vsqw02z3zv3nixm1wzm5dzqy1v9s-home-manager-files.drv'.
+error: 1 dependencies of derivation '/nix/store/qrzf0jgdlky9cn109mya5qw2g4d8znlv-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/lrw3cas2dr29k0f2rnifl7lpz3xir81j-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/9yssy5xfk1zj748kayvnrzq5bdsg0h5f-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/g72k0scpn8gqjfpy719icjwdfig0m947-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/hs1r0zlimjcxjlq20063apd2hcknwim0-nixos-system-nixos-24.05.20240512.2057814.drv' failed to build
