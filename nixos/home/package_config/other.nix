@@ -23,8 +23,11 @@ in
     "gtk-4.0/assets".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Grey-Dark/assets";
     "gtk-4.0/gtk.css".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Grey-Dark/gtk.css";
   };
-  home.file.".profile".text = ''
+  /*home.file.".profile".text = ''
     export GTK_THEME=Flat-Remix
+  '';*/
+  xdg.configFile."environment.d/gtk-theme.conf".text = ''
+    GTK_THEME=Flat-Remix
   '';
 
   dconf = {
