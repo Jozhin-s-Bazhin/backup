@@ -1,6 +1,7 @@
 # Here lives shit I don't understand
 { pkgs, config, ... }:
 {
+  backupFileExtension = "backup";
   home.username = "roman";
   home.homeDirectory = "/home/roman";
   home.stateVersion = "23.11"; # Do not change
