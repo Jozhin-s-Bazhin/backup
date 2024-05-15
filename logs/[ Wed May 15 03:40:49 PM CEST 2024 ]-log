@@ -1,0 +1,24 @@
+building the system configuration...
+these 9 derivations will be built:
+  /nix/store/6zn4x8qgx7mdqkz4n5pw07bn5d6aywak-unit-script-nixos-upgrade-start.drv
+  /nix/store/84bzjsig0dmp9r789psy2f0g2dpjx8zz-user-environment.drv
+  /nix/store/p45l2xg84ds507q44q7ih6alg57sq8yy-unit-nixos-upgrade.service.drv
+  /nix/store/pn4r7i0r37bgdlpsybkrbcxpq5f8kp7v-home-manager-files.drv
+  /nix/store/sapdqx95khb7dglgn2ypjy1gk0rm6p7f-home-manager-generation.drv
+  /nix/store/zi8jnlwk0li0zdn53962pi0n9qp1jrbb-unit-home-manager-roman.service.drv
+  /nix/store/g2nl4c5fw1bfni7ss47r0cgf6g5r4iwa-system-units.drv
+  /nix/store/mi911dv091nh31c37r1ix2invnxi7718-etc.drv
+  /nix/store/935wg9ikj6mvxwb9jx7qai82njysi01s-nixos-system-nixos-24.05.20240512.2057814.drv
+building '/nix/store/84bzjsig0dmp9r789psy2f0g2dpjx8zz-user-environment.drv'...
+building '/nix/store/6zn4x8qgx7mdqkz4n5pw07bn5d6aywak-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/pn4r7i0r37bgdlpsybkrbcxpq5f8kp7v-home-manager-files.drv'...
+building '/nix/store/p45l2xg84ds507q44q7ih6alg57sq8yy-unit-nixos-upgrade.service.drv'...
+error: builder for '/nix/store/pn4r7i0r37bgdlpsybkrbcxpq5f8kp7v-home-manager-files.drv' failed with exit code 1;
+       last 1 log lines:
+       > Error installing file '.config/gtk-4.0/gtk.css' outside $HOME
+       For full logs, run 'nix log /nix/store/pn4r7i0r37bgdlpsybkrbcxpq5f8kp7v-home-manager-files.drv'.
+error: 1 dependencies of derivation '/nix/store/sapdqx95khb7dglgn2ypjy1gk0rm6p7f-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/zi8jnlwk0li0zdn53962pi0n9qp1jrbb-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/g2nl4c5fw1bfni7ss47r0cgf6g5r4iwa-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/mi911dv091nh31c37r1ix2invnxi7718-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/935wg9ikj6mvxwb9jx7qai82njysi01s-nixos-system-nixos-24.05.20240512.2057814.drv' failed to build
