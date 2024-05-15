@@ -20,7 +20,7 @@ in
     iconTheme = {
       #enable = true;
       name = "Reversal";
-      package = pkgs.reversal-icon-theme;
+      package = pkgs.flat-remix-icon-theme;
     };
 
     gtk3.extraConfig.Settings = ''
