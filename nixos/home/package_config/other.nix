@@ -37,10 +37,10 @@ in
     "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
   };*/
 
-  /*dconf = {
+  dconf = {
     enable = true;
     settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
-  };*/
+  };
 
   # Kitty
   programs.kitty = {
