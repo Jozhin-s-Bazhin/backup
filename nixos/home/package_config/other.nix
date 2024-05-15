@@ -24,7 +24,7 @@ in
     "gtk-4.0/gtk.css".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Grey-Dark/gtk.css";
   };
   home.file.".profile".text = ''
-    export GTK_THEME="Flat-Remix"
+    export GTK_THEME=Flat-Remix
   '';
 
   dconf = {
