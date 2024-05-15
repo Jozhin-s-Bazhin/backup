@@ -12,13 +12,13 @@ in
     };
 
     theme = {
-      enable = true;
+      #enable = true;
       name = "Flat-Remix-GTK";
       package = pkgs.flat-remix-gtk;
     };
 
     iconTheme = {
-      enable = true;
+      #enable = true;
       name = "Reversal";
       package = pkgs.reversal-icon-theme;
     };
