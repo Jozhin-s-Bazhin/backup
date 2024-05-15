@@ -28,9 +28,9 @@ in
     '';
 
     #gtk3.extraConfig.gtk-decoration-layout="menu:";
-    gtk4.extraConfig.Settings = ''
+    /*gtk4.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
-    '';
+    '';*/
   };
 
   xdg.configFile = {
