@@ -5,21 +5,21 @@ in
 {
   # GTK
   gtk = {
-    #enable = true;
-    /*font = {
+    enable = true;
+    font = {
       name = "Ubuntu Nerd Font";
       size = 11;
-    };*/
+    };
 
     theme = {
       name = "Flat-Remix-GTK";
       package = pkgs.flat-remix-gtk;
     };
 
-    /*iconTheme = {
+    iconTheme = {
       name = "adwaita";
       package = pkgs.gnome.adwaita-icon-theme;
-    };*/
+    };
 
     /*gtk3.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
