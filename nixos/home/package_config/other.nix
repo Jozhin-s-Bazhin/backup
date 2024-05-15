@@ -64,11 +64,11 @@ in
       ms-python.python
       ms-python.vscode-pylance
       jnoortheen.nix-ide
+      fkrull.gtk-dark-title-bar
     ];
     userSettings = {
       vscode-neovim.neovimExecutablePaths.linux = "${pkgs.neovim}/bin/nvim";
       extensions.experimental.affinity."asvetliakov.vscode-neovim" = 1;
-      appearance.statusBar = false;
       "git.confirmSync" = false;
     };
     keybindings = [
