@@ -19,8 +19,8 @@ in
 
     iconTheme = {
       #enable = true;
-      name = "Reversal";
-      package = pkgs.flat-remix-icon-theme;
+      name = "WhiteSur";
+      package = pkgs.whitesur-icon-theme;
     };
 
     /*gtk3.extraConfig.Settings = ''
