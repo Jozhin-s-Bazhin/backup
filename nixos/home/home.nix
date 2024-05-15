@@ -68,6 +68,7 @@
 
     # GNOME
     flat-remix-gnome
+    flat-remix-gtk
 
     # Extensions
     gnomeExtensions.forge

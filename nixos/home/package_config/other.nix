@@ -23,21 +23,23 @@ in
       package = pkgs.flat-remix-icon-theme;
     };
 
-    gtk3.extraConfig.Settings = ''
+    /*gtk3.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
     '';
 
     #gtk3.extraConfig.gtk-decoration-layout="menu:";
-    /*gtk4.extraConfig.Settings = ''
+    gtk4.extraConfig.Settings = ''
       gtk-application-prefer-dark-theme=1
     '';*/
   };
 
-  xdg.configFile = {
+  /*xdg.configFile = {
     "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
     "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
     "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
-  };
+  };*/
+
+  xdg.configFile."gtk-4.0".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}"
 
   dconf = {
     enable = true;
