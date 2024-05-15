@@ -72,7 +72,7 @@
 
   # Logind
   services.logind = {
-    #lidSwitch = "suspend";
+    lidSwitch = "suspend";
     powerKey = "poweroff";
   };
 
