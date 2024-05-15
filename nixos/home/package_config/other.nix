@@ -13,7 +13,7 @@ in
 
     theme = {
       #enable = true;
-      name = "Flat-Remix:dark";
+      name = "Flat-Remix";
       package = pkgs.flat-remix-gtk;
     };
 
