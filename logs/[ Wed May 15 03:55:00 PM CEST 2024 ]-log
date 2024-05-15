@@ -1,0 +1,20 @@
+building the system configuration...
+these 7 derivations will be built:
+  /nix/store/smi962vyyxwbvsx4a1dfrf0g9dcg8gr3-home-manager-files.drv
+  /nix/store/bbqdx0c0nhddrpvvmrnzyl9b7ld0gp15-home-manager-generation.drv
+  /nix/store/brcv4vrq4fzrkn2n4xiav5nw290f9ck7-unit-home-manager-roman.service.drv
+  /nix/store/yjbjc77wzclwdjw823jbhllyjkmnymkk-unit-nixos-upgrade.service.drv
+  /nix/store/8fhjadf50l6z63578hbc4h8jc7bijjfm-system-units.drv
+  /nix/store/c7ap2dyny17bcbqgsd570hnq77mdbiss-etc.drv
+  /nix/store/pqaiizq5ffv6ply0is49idmz3p9l6cyd-nixos-system-nixos-24.05.20240512.2057814.drv
+building '/nix/store/yjbjc77wzclwdjw823jbhllyjkmnymkk-unit-nixos-upgrade.service.drv'...
+building '/nix/store/smi962vyyxwbvsx4a1dfrf0g9dcg8gr3-home-manager-files.drv'...
+error: builder for '/nix/store/smi962vyyxwbvsx4a1dfrf0g9dcg8gr3-home-manager-files.drv' failed with exit code 1;
+       last 1 log lines:
+       > Error installing file '.config/gtk-4.0/gtk.css' outside $HOME
+       For full logs, run 'nix log /nix/store/smi962vyyxwbvsx4a1dfrf0g9dcg8gr3-home-manager-files.drv'.
+error: 1 dependencies of derivation '/nix/store/bbqdx0c0nhddrpvvmrnzyl9b7ld0gp15-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/brcv4vrq4fzrkn2n4xiav5nw290f9ck7-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/8fhjadf50l6z63578hbc4h8jc7bijjfm-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/c7ap2dyny17bcbqgsd570hnq77mdbiss-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/pqaiizq5ffv6ply0is49idmz3p9l6cyd-nixos-system-nixos-24.05.20240512.2057814.drv' failed to build

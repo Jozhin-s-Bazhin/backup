@@ -11,14 +11,13 @@ in
       size = 11;
     };
 
-    theme = {
+    /*theme = {
       #enable = true;
       name = "Flat-Remix";
       package = pkgs.flat-remix-gtk;
-    };
+    };*/
 
     iconTheme = {
-      #enable = true;
       name = "WhiteSur";
       package = pkgs.whitesur-icon-theme;
     };
@@ -39,11 +38,14 @@ in
     "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
   };*/
    
-  xdg.configFile."gtk-4.0".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/LibAdwaita-Blue-Dark";
+  # Gtk theme
+  xdg.configFile."gtk-4.0".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark";
+  home.file.".themes/Flat-Remix".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark"
 
   dconf = {
     enable = true;
     settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    settings."org/gnome/desktop/interface".gtk-theme = "Flat-Remix";
   };
 
   # Kitty
