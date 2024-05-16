@@ -33,6 +33,16 @@ in
     settings."org/gnome/desktop/interface".gtk-theme = "Flat-Remix";
   };
 
+  # QT
+  /*qt = {
+    enable = true;
+    platformTheme.name = "qt5ct";
+    style = {
+      name = "";
+      package = "";
+    };
+  };*/
+
   # Kitty
   programs.kitty = {
     enable = true;
