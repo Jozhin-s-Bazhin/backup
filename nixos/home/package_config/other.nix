@@ -12,8 +12,8 @@ in
     };
 
     iconTheme = {
-      name = "";
-      package = pkgs.flat-remix-icon-theme;
+      name = "Tela";
+      package = pkgs.tela-icon-theme;
     };
   };
 
