@@ -12,8 +12,8 @@ in
     };
 
     iconTheme = {
-      name = "Tela";
-      package = pkgs.tela-icon-theme;
+      name = "Whitesur";
+      package = pkgs.whitesur-icon-theme;
     };
   };
 
