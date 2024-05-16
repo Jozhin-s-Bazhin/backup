@@ -69,7 +69,6 @@
     # GNOME
     flat-remix-gnome
     flat-remix-gtk
-    gnome.gnome-power-manager
 
     # Extensions
     gnomeExtensions.forge
