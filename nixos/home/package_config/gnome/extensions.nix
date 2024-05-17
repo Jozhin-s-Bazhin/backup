@@ -24,7 +24,7 @@
   };
 
   # Forge settings
-  xdg.configFile = {
+  /*xdg.configFile = {
     
   "forge/config/windows.json".text = ''
     {
@@ -286,5 +286,5 @@
     background-color: rgba(6, 108, 250, 1);
     }
   '';
-  };
+  };*/
 }
