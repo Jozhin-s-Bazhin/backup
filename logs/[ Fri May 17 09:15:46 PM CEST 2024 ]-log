@@ -1,0 +1,44 @@
+building the system configuration...
+these 8 derivations will be built:
+  /nix/store/96wv8i3m5b0jrhqp9h2f9p480vji2a6w-home-manager-files.drv
+  /nix/store/6kkms646ihg8f4v0sgq2khvj77l8rq11-home-manager-generation.drv
+  /nix/store/kangapmp5x7qjb78n82b830j48fifvpl-unit-home-manager-roman.service.drv
+  /nix/store/yagj40bp5784swlk73gq86l8qnalrxbc-unit-script-nixos-upgrade-start.drv
+  /nix/store/rc4zd7k01xb7z413r29scwpkq9364877-unit-nixos-upgrade.service.drv
+  /nix/store/1fa5vrzfkx37pq4di8893xfqa7jb1gl8-system-units.drv
+  /nix/store/2dm90f4figrahz9715w3gsis85jzn1wa-etc.drv
+  /nix/store/72z3p5f4mas1gsgy1c8wlpfxq195kyhy-nixos-system-nixos-24.05.20240512.2057814.drv
+building '/nix/store/yagj40bp5784swlk73gq86l8qnalrxbc-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/96wv8i3m5b0jrhqp9h2f9p480vji2a6w-home-manager-files.drv'...
+building '/nix/store/rc4zd7k01xb7z413r29scwpkq9364877-unit-nixos-upgrade.service.drv'...
+building '/nix/store/6kkms646ihg8f4v0sgq2khvj77l8rq11-home-manager-generation.drv'...
+building '/nix/store/kangapmp5x7qjb78n82b830j48fifvpl-unit-home-manager-roman.service.drv'...
+building '/nix/store/1fa5vrzfkx37pq4di8893xfqa7jb1gl8-system-units.drv'...
+building '/nix/store/2dm90f4figrahz9715w3gsis85jzn1wa-etc.drv'...
+building '/nix/store/72z3p5f4mas1gsgy1c8wlpfxq195kyhy-nixos-system-nixos-24.05.20240512.2057814.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+warning: the following units failed: home-manager-roman.service
+
+× home-manager-roman.service - Home Manager environment for roman
+     Loaded: loaded (/etc/systemd/system/home-manager-roman.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Fri 2024-05-17 21:16:14 CEST; 82ms ago
+   Duration: 11min 60ms
+    Process: 96185 ExecStart=/nix/store/129dzr91vbrz7qnq54iqkn2lard1j1f3-hm-setup-env /nix/store/v7r2bn9pcqxxlylgj3842wb2mqi1i31n-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 96185 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 191ms
+
+May 17 21:16:14 nixos hm-activate-roman[96185]: Starting Home Manager activation
+May 17 21:16:14 nixos hm-activate-roman[96185]: Activating checkFilesChanged
+May 17 21:16:14 nixos hm-activate-roman[96185]: Activating checkLinkTargets
+May 17 21:16:14 nixos hm-activate-roman[96185]: Activating writeBoundary
+May 17 21:16:14 nixos hm-activate-roman[96185]: Activating installPackages
+May 17 21:16:14 nixos hm-activate-roman[96185]: Activating dconfSettings
+May 17 21:16:14 nixos hm-activate-roman[96365]: error: [/org/gnome/desktop/wm/preferences/]: focus-mode: invalid path: dconf key must not contain two consecutive slashes
+May 17 21:16:14 nixos systemd[1]: home-manager-roman.service: Main process exited, code=exited, status=1/FAILURE
+May 17 21:16:14 nixos systemd[1]: home-manager-roman.service: Failed with result 'exit-code'.
+May 17 21:16:14 nixos systemd[1]: Failed to start Home Manager environment for roman.
+warning: error(s) occurred while switching to the new configuration

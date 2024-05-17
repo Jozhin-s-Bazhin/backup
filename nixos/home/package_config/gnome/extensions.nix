@@ -17,14 +17,14 @@
     "/org/gnome/desktop/wm/preferences/".focus-mode = "sloppy";
 
     # Themes
-    "org/gnome/shell/extensions/user-theme" = {
+    "/org/gnome/shell/extensions/user-theme/" = {
       name = "Flat-Remix";
     };
     "org/gnome/desktop/interface".color-scheme = "prefer-dark";
   };
 
   # Forge settings
-  /*xdg.configFile = {
+  xdg.configFile = {
     
   "forge/config/windows.json".text = ''
     {
@@ -286,5 +286,5 @@
     background-color: rgba(6, 108, 250, 1);
     }
   '';
-  };*/
+  };
 }
