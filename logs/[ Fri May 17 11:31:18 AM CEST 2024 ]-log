@@ -1,0 +1,51 @@
+building the system configuration...
+these 10 derivations will be built:
+  /nix/store/0p3iazdixnxsavfg5b2sak4ijhjd4sv8-hm-dconf.ini.drv
+  /nix/store/j5k198q272ydq8iz1kwg6y22rgw86m64-unit-script-nixos-upgrade-start.drv
+  /nix/store/25dck8rnanjrk201ns2pfj8yyn21k8qz-unit-nixos-upgrade.service.drv
+  /nix/store/4f01r24yah1sgkxxx75d6a6869qzv5fc-activation-script.drv
+  /nix/store/vh77ihcgljwyx52h8l1lpcq6f1azshjn-dconf-keys.json.drv
+  /nix/store/zds5b0060q948drlzvk7a1r9407vvndp-home-manager-generation.drv
+  /nix/store/cbwqbi4fk7dv1swx8iffpdyk2m3r95gy-unit-home-manager-roman.service.drv
+  /nix/store/xlrs80a5wirk6ska2wbxplfhg4057vh3-system-units.drv
+  /nix/store/6aljhawz2vjxd9wjisyzl41np9fbk9ab-etc.drv
+  /nix/store/mg2crgkfyz5wkvl3z5hk4g7g3cd9mp1y-nixos-system-nixos-24.05.20240512.2057814.drv
+building '/nix/store/j5k198q272ydq8iz1kwg6y22rgw86m64-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/vh77ihcgljwyx52h8l1lpcq6f1azshjn-dconf-keys.json.drv'...
+building '/nix/store/0p3iazdixnxsavfg5b2sak4ijhjd4sv8-hm-dconf.ini.drv'...
+building '/nix/store/25dck8rnanjrk201ns2pfj8yyn21k8qz-unit-nixos-upgrade.service.drv'...
+building '/nix/store/4f01r24yah1sgkxxx75d6a6869qzv5fc-activation-script.drv'...
+building '/nix/store/zds5b0060q948drlzvk7a1r9407vvndp-home-manager-generation.drv'...
+building '/nix/store/cbwqbi4fk7dv1swx8iffpdyk2m3r95gy-unit-home-manager-roman.service.drv'...
+building '/nix/store/xlrs80a5wirk6ska2wbxplfhg4057vh3-system-units.drv'...
+building '/nix/store/6aljhawz2vjxd9wjisyzl41np9fbk9ab-etc.drv'...
+building '/nix/store/mg2crgkfyz5wkvl3z5hk4g7g3cd9mp1y-nixos-system-nixos-24.05.20240512.2057814.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-roman.service
+Job for home-manager-roman.service failed because the control process exited with error code.
+See "systemctl status home-manager-roman.service" and "journalctl -xeu home-manager-roman.service" for details.
+warning: the following units failed: home-manager-roman.service
+
+× home-manager-roman.service - Home Manager environment for roman
+     Loaded: loaded (/etc/systemd/system/home-manager-roman.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Fri 2024-05-17 11:32:04 CEST; 100ms ago
+   Duration: 11min 60ms
+    Process: 35884 ExecStart=/nix/store/129dzr91vbrz7qnq54iqkn2lard1j1f3-hm-setup-env /nix/store/2sqwjdmk0yva1f66657acwckklq772xw-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 35884 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 174ms
+
+May 17 11:32:04 nixos hm-activate-roman[35972]: Please do one of the following:
+May 17 11:32:04 nixos hm-activate-roman[35972]: - Move or remove the above files and try again.
+May 17 11:32:04 nixos hm-activate-roman[35972]: - In standalone mode, use 'home-manager switch -b backup' to back up
+May 17 11:32:04 nixos hm-activate-roman[35972]:   files automatically.
+May 17 11:32:04 nixos hm-activate-roman[35972]: - When used as a NixOS or nix-darwin module, set
+May 17 11:32:04 nixos hm-activate-roman[35972]:     'home-manager.backupFileExtension'
+May 17 11:32:04 nixos hm-activate-roman[35972]:   to, for example, 'backup' and rebuild.
+May 17 11:32:04 nixos systemd[1]: home-manager-roman.service: Main process exited, code=exited, status=1/FAILURE
+May 17 11:32:04 nixos systemd[1]: home-manager-roman.service: Failed with result 'exit-code'.
+May 17 11:32:04 nixos systemd[1]: Failed to start Home Manager environment for roman.
+warning: error(s) occurred while switching to the new configuration

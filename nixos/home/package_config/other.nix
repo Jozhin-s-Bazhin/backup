@@ -12,8 +12,8 @@ in
     };
 
     iconTheme = {
-      name = "Whitesur";
-      package = pkgs.whitesur-icon-theme;
+      name = "Reversal";
+      package = pkgs.reversal-icon-theme;
     };
   };
 
