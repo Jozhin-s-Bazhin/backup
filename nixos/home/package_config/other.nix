@@ -12,8 +12,8 @@ in
     };
 
     iconTheme = {
-      name = "Reversal";
-      package = pkgs.reversal-icon-theme;
+      name = "Deepin";
+      package = pkgs.deepin.deepin-icon-theme;
     };
   };
 
