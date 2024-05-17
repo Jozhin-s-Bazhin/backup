@@ -23,6 +23,7 @@
     "org/gnome/desktop/interface".color-scheme = "prefer-dark";
   };
 
+  /*
   # Forge settings
   xdg.configFile = {
     
@@ -286,5 +287,5 @@
     background-color: rgba(6, 108, 250, 1);
     }
   '';
-  };
+  };*/
 }
