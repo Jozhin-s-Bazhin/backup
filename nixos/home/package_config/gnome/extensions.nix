@@ -14,7 +14,7 @@
     };
 
     # Focus follows mouse
-    "/org/gnome/desktop/wm/preferences".focus-mode = "sloppy";
+    #"/org/gnome/desktop/wm/preferences".focus-mode = "sloppy";
 
     # Themes
     "/org/gnome/shell/extensions/user-theme" = {
