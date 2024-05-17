@@ -54,6 +54,7 @@ in
       font_family = "UbuntuMono Nerd Font";
       font_size = "13.0";
       enable_audio_bell = "no";
+      hide_window_decorations = "yes";
     };
   };
 
