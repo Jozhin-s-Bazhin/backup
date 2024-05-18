@@ -1,0 +1,36 @@
+building the system configuration...
+these 11 derivations will be built:
+  /nix/store/6zzyn5302qz5jx7wgfzragmybdi7vnrd-Hyprspace-0.1+date=2024-05-10_8049b27.drv
+  /nix/store/ahfvanzcc3s9lzvq2r9jlv2bzrnqk1in-hm_hyprhyprland.conf.drv
+  /nix/store/bnmqxjrl5pfccr3pch0qwmh7hh91p3nx-home-manager-files.drv
+  /nix/store/x5ll8gwr417llcxx3m9vfs99caksswvg-activation-script.drv
+  /nix/store/3dvry99jxmb9xvybsdqhkmdlcfx3zkiy-home-manager-generation.drv
+  /nix/store/c05a4fpifgn3p482d4kvfrignpir1bv4-unit-home-manager-roman.service.drv
+  /nix/store/gsxy72m1a5zf4f2302zgdkkndxrbrmsq-unit-script-nixos-upgrade-start.drv
+  /nix/store/cbzz18vbxi307vif84jnr51v5pvsvaj6-unit-nixos-upgrade.service.drv
+  /nix/store/zqza32wmrgbzf061fgszx9ydzx3a3hmp-system-units.drv
+  /nix/store/ys7f8zn2xlhnkkpmdv6cq5lf1k3pviwd-etc.drv
+  /nix/store/05377d0amqw37dyvxmmhhqbng0w1shai-nixos-system-nixos-24.05.20240512.2057814.drv
+building '/nix/store/gsxy72m1a5zf4f2302zgdkkndxrbrmsq-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/6zzyn5302qz5jx7wgfzragmybdi7vnrd-Hyprspace-0.1+date=2024-05-10_8049b27.drv'...
+building '/nix/store/cbzz18vbxi307vif84jnr51v5pvsvaj6-unit-nixos-upgrade.service.drv'...
+error: builder for '/nix/store/6zzyn5302qz5jx7wgfzragmybdi7vnrd-Hyprspace-0.1+date=2024-05-10_8049b27.drv' failed with exit code 1;
+       last 10 log lines:
+       > fixing cmake files...
+       > cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/share/doc/Hyprspace -DCMAKE_INSTALL_INFODIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/include -DCMAKE_INSTALL_SBINDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/strip -DCMAKE_RANLIB=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/ranlib -DCMAKE_AR=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/n0k898qw1qbh2h8wchdsc919jfc6hkf1-Hyprspace-0.1+date=2024-05-10_8049b27
+       > CMake Warning:
+       >   Ignoring extra path from command line:
+       >
+       >    ".."
+       >
+       > 
+       > CMake Error: The source directory "/build/cxgbk57a4xmp36cxp05jnzw1vgxmrdr4-source" does not appear to contain CMakeLists.txt.
+       > Specify --help for usage, or press the help button on the CMake GUI.
+       For full logs, run 'nix log /nix/store/6zzyn5302qz5jx7wgfzragmybdi7vnrd-Hyprspace-0.1+date=2024-05-10_8049b27.drv'.
+error: 1 dependencies of derivation '/nix/store/ahfvanzcc3s9lzvq2r9jlv2bzrnqk1in-hm_hyprhyprland.conf.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/x5ll8gwr417llcxx3m9vfs99caksswvg-activation-script.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/3dvry99jxmb9xvybsdqhkmdlcfx3zkiy-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/c05a4fpifgn3p482d4kvfrignpir1bv4-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/zqza32wmrgbzf061fgszx9ydzx3a3hmp-system-units.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ys7f8zn2xlhnkkpmdv6cq5lf1k3pviwd-etc.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/05377d0amqw37dyvxmmhhqbng0w1shai-nixos-system-nixos-24.05.20240512.2057814.drv' failed to build
