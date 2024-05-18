@@ -7,8 +7,9 @@ class Extension(Plugin):
     
     async def on_loaded(self):
         monitors = [ monitor["id"] for monitor in self.hyprctlJSON("monitors") ]
-        for monitor in range(3) if not in monitors:
-            subprocess.run("ags", "-t", f"bar-{monitor}")
+        for monitor in range(3): 
+            if monitor not in monitors:
+                subprocess.run("ags", "-t", f"bar-{monitor}")
 
     async def event_monitoraddedv2(self, monitor):
         monitor_id = monitor.split(",")[0]
