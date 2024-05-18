@@ -163,7 +163,7 @@ export function Bar(monitor) {
     return Widget.Window({
         name: `bar-${monitor}`, // name has to be unique
         class_name: "bar",
-        monitor,
+        monitor: monitor,
         anchor: ["top", "left", "right"],
         exclusivity: "exclusive",
         child: Widget.CenterBox({
