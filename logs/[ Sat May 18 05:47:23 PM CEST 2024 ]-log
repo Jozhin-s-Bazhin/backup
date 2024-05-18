@@ -1,0 +1,95 @@
+building the system configuration...
+copying path '/nix/store/08d9gcdp4pp4c55w5v0ryjf3jgxbn3dr-source' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/k7w6niswbdj5fnvmgk3vh3h86xs8y4dq-source' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/7sivr9wwfvqr0y29565cqz5wd0xqbw4m-source' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/bzkrx7m8vc3rx7sh8k14fv5fyyrvp6a4-source' from 'https://hyprland.cachix.org'...
+these 34 derivations will be built:
+  /nix/store/001498lmfif91z3gwmijpl3lyfm8pp70-system-path.drv
+  /nix/store/3rwpl62d5qqbxrl05x7aq8mwygcd49zr-dbus-1.drv
+  /nix/store/m2xqix9j4kc0llxd0a20iszd2qibvzwp-X-Restart-Triggers-dbus.drv
+  /nix/store/2d1w7j2149fvi0n8cxsrnmhwk64q850d-unit-dbus.service.drv
+  /nix/store/29dmjl5f0g2702hgfd3lqdqrq5rvlck6-hyprlock-0.pre+date=2024-05-17_997f222.drv
+  /nix/store/087sgwpbnljbl7vzb446l4pma8cq8vr2-ags.drv
+  /nix/store/rkd1a6967k7y3f4p1zav1g9z0nr2py1x-ags-1.8.2.drv
+  /nix/store/8igl8wws8bllgkr70h37zgbqsimyci1q-home-manager-path.drv
+  /nix/store/4f478v7wqfsfxsnmhbvgbk6d20nh7bhf-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/ahqkrazzzi537nj05hzy5ibvp7z5qqwq-Hyprspace-0.1+date=2024-05-10_8049b27.drv
+  /nix/store/x1bl0z57mj6lxr7h6mpyccibiyhyw202-hm_hyprhyprland.conf.drv
+  /nix/store/gndkilhl0rapzhnmhw8rcq1c2j1lp2i0-home-manager-files.drv
+  /nix/store/zy7nfmcfagmjas2qim3q0njs8qwh3ard-activation-script.drv
+  /nix/store/mydhlkp02z9w2k71823nrvw04d66xvqi-home-manager-generation.drv
+  /nix/store/5kzqkgm94b5a9bi4jsifrpw2gsa8p5hl-unit-home-manager-roman.service.drv
+  /nix/store/lplsw5dcy21rl11lwckpg9ggrq86p1rg-X-Restart-Triggers-polkit.drv
+  /nix/store/akzlg139lp8w4pb3zk3vypz1zdq61l7y-unit-polkit.service.drv
+  /nix/store/xlrh3b4zl1fwk543nmh7fiiyj0zd4fv7-unit-script-nixos-upgrade-start.drv
+  /nix/store/gy0hcl1yqdkz3i1q7vph9qmvidz2hhp5-unit-nixos-upgrade.service.drv
+  /nix/store/kqfbnaf9qm9f8d98svryy7f0wrjjfiqq-unit-accounts-daemon.service.drv
+  /nix/store/2acvx9m2plran8pd3rhcx5mhs9fv2khi-desktops.drv
+  /nix/store/rdx41vvkij59f07vsw6m0wbxvmg9f961-unit-display-manager.service.drv
+  /nix/store/00bc8a8v0spd59gjwvjh7g0qw93p3l3k-system-units.drv
+  /nix/store/2pj9zfzvy2whbiwcjqbhjlzyhyc8bayz-system-shutdown.drv
+  /nix/store/v118x9m95hb46y9dcmgk7h7qjbb8h0sj-set-environment.drv
+  /nix/store/ps4x95x6r3w30c6a3lpv8a90p08dljys-etc-zshenv.drv
+  /nix/store/qwq84g2w0nwnw0mcwhj5aim70iqw7n7c-etc-pam-environment.drv
+  /nix/store/r79wch1i4w2zxydzymg2yw57v3pgal1q-system-generators.drv
+  /nix/store/sw41kvm8gx2x1qa2pah1588kq9ydlrsi-etc-profile.drv
+  /nix/store/r2fqvb2gv9xkzcbang69c7l1wpzvh0ja-unit-dbus.service.drv
+  /nix/store/yy52nglpz06y9pnzhc8jszyjsvinlhrv-user-units.drv
+  /nix/store/z1hlwrvq1hgz3kdjyfj7fyjwgxpwiq3j-user-environment.drv
+  /nix/store/a6dxb91wlzrnjl4rqf6msr6qc6axy21j-etc.drv
+  /nix/store/z46ymnx85xm96a1045lk9dr3192iynfg-nixos-system-nixos-24.05.20240515.33d1e75.drv
+these 14 paths will be fetched (93.04 MiB download, 476.24 MiB unpacked):
+  /nix/store/wbf3f8jw4207k76xvd1cmfqmgrv55cj6-hyprcursor-0.pre+date=2024-05-15_7c3aa03
+  /nix/store/whmwdiddj93a6dd5zg1257jyqqhym2cp-hyprcursor-0.pre+date=2024-05-15_7c3aa03-dev
+  /nix/store/c9rzfhvljk3yr2f2qjjcirnw16qdppi8-hyprcursor-0.pre+date=2024-05-15_7c3aa03-lib
+  /nix/store/abzwd8rf6vdw2i5xbra4lqgvlascyprs-hyprland-0.40.0+date=2024-05-17_2ead1fd
+  /nix/store/jrxqidyj778327xnwi64gx675m2bp4n0-hyprland-0.40.0+date=2024-05-17_2ead1fd-dev
+  /nix/store/pk6xni7005r1lwbnks2rz3bngcdm8zg0-hyprland-0.40.0+date=2024-05-17_2ead1fd-man
+  /nix/store/xx9r04rlpfjqv57sci6vgp8bd4ab8lwb-hyprlang-0.pre+date=2024-05-15_969cb07
+  /nix/store/kdy610a11j40x11zmdm87h9d84z2xq11-hyprlang-0.pre+date=2024-05-15_969cb07-dev
+  /nix/store/3cn1r0wcyz1wd29vqrpp7ji9px7yf1mb-hyprwayland-scanner-0.1.0+date=2024-05-16_f5181a0
+  /nix/store/vj2ynzq8hdr21cp1s2v3n3vkhhdq24nx-make-shell-wrapper-hook
+  /nix/store/y167bazzmvpfwya01976rnsyizx724pj-nodejs-20.11.1-source
+  /nix/store/c9ss08blvplg3hy3jzsbfxhk7p4pimcb-npm-config-hook
+  /nix/store/gkynpzar4484fsclirj8134fmf3c743w-npm-install-hook
+  /nix/store/zk6pmsl2nmhpzqx0iqh8j75cxg6q6drd-xdg-desktop-portal-hyprland-1.3.1+date=2024-05-15_af7c87a
+copying path '/nix/store/pk6xni7005r1lwbnks2rz3bngcdm8zg0-hyprland-0.40.0+date=2024-05-17_2ead1fd-man' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/xx9r04rlpfjqv57sci6vgp8bd4ab8lwb-hyprlang-0.pre+date=2024-05-15_969cb07' from 'https://hyprland.cachix.org'...
+building '/nix/store/xlrh3b4zl1fwk543nmh7fiiyj0zd4fv7-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/29dmjl5f0g2702hgfd3lqdqrq5rvlck6-hyprlock-0.pre+date=2024-05-17_997f222.drv'...
+copying path '/nix/store/y167bazzmvpfwya01976rnsyizx724pj-nodejs-20.11.1-source' from 'https://cache.nixos.org'...
+copying path '/nix/store/vj2ynzq8hdr21cp1s2v3n3vkhhdq24nx-make-shell-wrapper-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/3cn1r0wcyz1wd29vqrpp7ji9px7yf1mb-hyprwayland-scanner-0.1.0+date=2024-05-16_f5181a0' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/c9rzfhvljk3yr2f2qjjcirnw16qdppi8-hyprcursor-0.pre+date=2024-05-15_7c3aa03-lib' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/kdy610a11j40x11zmdm87h9d84z2xq11-hyprlang-0.pre+date=2024-05-15_969cb07-dev' from 'https://hyprland.cachix.org'...
+building '/nix/store/gy0hcl1yqdkz3i1q7vph9qmvidz2hhp5-unit-nixos-upgrade.service.drv'...
+copying path '/nix/store/wbf3f8jw4207k76xvd1cmfqmgrv55cj6-hyprcursor-0.pre+date=2024-05-15_7c3aa03' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/abzwd8rf6vdw2i5xbra4lqgvlascyprs-hyprland-0.40.0+date=2024-05-17_2ead1fd' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/gkynpzar4484fsclirj8134fmf3c743w-npm-install-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/whmwdiddj93a6dd5zg1257jyqqhym2cp-hyprcursor-0.pre+date=2024-05-15_7c3aa03-dev' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/jrxqidyj778327xnwi64gx675m2bp4n0-hyprland-0.40.0+date=2024-05-17_2ead1fd-dev' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/zk6pmsl2nmhpzqx0iqh8j75cxg6q6drd-xdg-desktop-portal-hyprland-1.3.1+date=2024-05-15_af7c87a' from 'https://hyprland.cachix.org'...
+building '/nix/store/ahqkrazzzi537nj05hzy5ibvp7z5qqwq-Hyprspace-0.1+date=2024-05-10_8049b27.drv'...
+building '/nix/store/2acvx9m2plran8pd3rhcx5mhs9fv2khi-desktops.drv'...
+building '/nix/store/r79wch1i4w2zxydzymg2yw57v3pgal1q-system-generators.drv'...
+building '/nix/store/001498lmfif91z3gwmijpl3lyfm8pp70-system-path.drv'...
+building '/nix/store/2pj9zfzvy2whbiwcjqbhjlzyhyc8bayz-system-shutdown.drv'...
+building '/nix/store/rdx41vvkij59f07vsw6m0wbxvmg9f961-unit-display-manager.service.drv'...
+error: builder for '/nix/store/ahqkrazzzi537nj05hzy5ibvp7z5qqwq-Hyprspace-0.1+date=2024-05-10_8049b27.drv' failed with exit code 1;
+       last 10 log lines:
+       > fixing cmake files...
+       > cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/share/doc/Hyprspace -DCMAKE_INSTALL_INFODIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/include -DCMAKE_INSTALL_SBINDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/strip -DCMAKE_RANLIB=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/ranlib -DCMAKE_AR=/nix/store/k2k5qhqlnqk7sgc83qcnjnnv3r6pdazq-gcc-wrapper-13.2.0/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/7y0y4asm8b03rcy15i9w9w9rvyw8j6dh-Hyprspace-0.1+date=2024-05-10_8049b27
+       > CMake Warning:
+       >   Ignoring extra path from command line:
+       >
+       >    ".."
+       >
+       > 
+       > CMake Error: The source directory "/build/cxgbk57a4xmp36cxp05jnzw1vgxmrdr4-source" does not appear to contain CMakeLists.txt.
+       > Specify --help for usage, or press the help button on the CMake GUI.
+       For full logs, run 'nix log /nix/store/ahqkrazzzi537nj05hzy5ibvp7z5qqwq-Hyprspace-0.1+date=2024-05-10_8049b27.drv'.
+error: 1 dependencies of derivation '/nix/store/x1bl0z57mj6lxr7h6mpyccibiyhyw202-hm_hyprhyprland.conf.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/zy7nfmcfagmjas2qim3q0njs8qwh3ard-activation-script.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/mydhlkp02z9w2k71823nrvw04d66xvqi-home-manager-generation.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/5kzqkgm94b5a9bi4jsifrpw2gsa8p5hl-unit-home-manager-roman.service.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/00bc8a8v0spd59gjwvjh7g0qw93p3l3k-system-units.drv' failed to build
