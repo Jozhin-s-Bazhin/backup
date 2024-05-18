@@ -3,8 +3,8 @@
 {
   imports = [
     ./other.nix
-    #./ags/ags.nix
-    #./hypr/hyprland.nix
-    ./gnome/gnome.nix
+    ./ags/ags.nix
+    ./hypr/hyprland.nix
+    #./gnome/gnome.nix
   ];
 }
