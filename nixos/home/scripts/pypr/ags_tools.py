@@ -5,14 +5,14 @@ import subprocess
 class Extension(Plugin):
     """A plugin that provides some useful features for ags like opening ags widgets when new monitors are connected"""
 
-    async def get_monitors(self):
-        return [ monitor.id for monitor in await self.hyprctlJSON("monitors") ]
- 
-    async def on_reload(self):
-        monitors = await self.get_monitors(self)
+    async def event_monitoraddedv2(self, monitor):
+        monitor_id = monitor.split(",")[0]
+        subprocess.run(["ags", "-t", f"bar-{monitor}"])
+        
+    async def event_monitorremoved(self, monitorname):
+        monitors = self.hyprctlJSON("monitors")
         for monitor in monitors:
-            subprocess.run(["ags", "-r", "import {{ Bar }} from \"../../package_config/ags/bar.js\"; bar({0})".format(monitor)])
-   
-    async def event_monitoradded(self, event_data):
-
-    async def event_monitorremoved(self, event_data):
+            if monitor["name"] == monitorname:
+                monitor_id = monitor["id"]
+                break
+        subprocess.run(["ags", "-t", f"bar-{monitor_id}"])

@@ -7,6 +7,7 @@ App.config({
     windows: [
 	Bar(0),
 	Bar(1),
+	Bar(2),
 	NotificationPopups(),
 	applauncher
     ]
