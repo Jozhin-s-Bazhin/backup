@@ -4,6 +4,11 @@ import subprocess
 
 class Extension(Plugin):
     """A plugin that provides some useful features for ags like opening ags widgets when new monitors are connected"""
+    
+    async def on_loaded(self):
+        monitors = [ monitor["id"] for monitor in self.hyprctlJSON("monitors") ]
+        for monitor in range(3) if not in monitors:
+            subprocess.run("ags", "-t", f"bar-{monitor}")
 
     async def event_monitoraddedv2(self, monitor):
         monitor_id = monitor.split(",")[0]
