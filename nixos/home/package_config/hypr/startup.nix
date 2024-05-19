@@ -4,8 +4,7 @@
   wayland.windowManager.hyprland.settings = {
     env = [
       "XCURSOR_SIZE, 24"
-      "QT_QPA_PLATFORMTHEME, qt5ct"
-    ];
+      "QT_QPA_PLATFORMTHEME, qt5ct" ];
 
     exec-once = [
       # Polkit

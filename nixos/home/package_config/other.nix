@@ -12,7 +12,7 @@ in
     };
 
     iconTheme = {
-      name = "tela-circle";
+      name = "Tela-circle";
       package = pkgs.tela-circle-icon-theme;
     };
   };

@@ -1,6 +1,6 @@
 from pyprland.plugins.interface import Plugin
 import subprocess
-import time
+from time import sleep
 
 async def remove_unused_bars(self):
     monitors_json = await self.hyprctlJSON("monitors")
@@ -13,6 +13,7 @@ class Extension(Plugin):
     """A plugin that provides some useful features for ags like opening ags widgets when new monitors are connected"""
 
     async def on_reload(self):
+        sleep(1)
         await remove_unused_bars(self)
 
     async def event_monitoraddedv2(self, monitor):
@@ -22,5 +23,5 @@ class Extension(Plugin):
         #command = ["ags", "-r", f"bar-{monitor_id}"]
         subprocess.run(["ags", "-q"])
         subprocess.run("ags & disown", shell=True)
-        time.sleep(1)
+        sleep(1)
         await remove_unused_bars(self)
