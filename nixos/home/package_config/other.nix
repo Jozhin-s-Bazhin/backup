@@ -34,14 +34,11 @@ in
   };
 
   # QT
-  /*qt = {
+  qt = {
     enable = true;
-    platformTheme.name = "qt5ct";
-    style = {
-      name = "";
-      package = "";
-    };
-  };*/
+    platformTheme.name = "gtk2";
+    style = "gtk2";
+  };
 
   # Kitty
   programs.kitty = {
