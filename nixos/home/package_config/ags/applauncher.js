@@ -25,7 +25,7 @@ const AppItem = app => Widget.Button({
     }),
 })
 
-const Applauncher = ({ width = 500, height = 500, spacing = 12 }) => {
+const Applauncher = ({ width = 600, height = 200, spacing = 12 }) => {
     // list of application buttons
     let applications = query("").map(AppItem)
 
@@ -64,7 +64,7 @@ const Applauncher = ({ width = 500, height = 500, spacing = 12 }) => {
     })
 
     return Widget.Box({
-        vertical: true,
+        vertical: false,
         css: `margin: ${spacing * 2}px;`,
         children: [
             entry,
