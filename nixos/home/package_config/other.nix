@@ -12,8 +12,8 @@ in
     };
 
     iconTheme = {
-      name = "Deepin";
-      package = pkgs.deepin.deepin-icon-theme;
+      name = "tela-circle";
+      package = pkgs.tela-circle-icon-theme;
     };
   };
 
