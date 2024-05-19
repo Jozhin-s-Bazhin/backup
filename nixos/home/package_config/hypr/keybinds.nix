@@ -42,9 +42,9 @@ in
 
       # Workspace switching with mouse wheel
       "SUPER, mouse_down, exec, pypr workspace -1"
-      "SUPER, mouse_down, exec, pypr movetoworkspace -1"
+      "SUPER SHIFT, mouse_down, exec, pypr movetoworkspace -1"
       "SUPER, mouse_up, exec, pypr workspace +1"
-      "SUPER, mouse_up, exec, pypr movetoworkspace +1"
+      "SUPER SHIFT, mouse_up, exec, pypr movetoworkspace +1"
 
       # Workspace switching with arrow keys
       "SUPER, left, exec, pypr workspace -1"
