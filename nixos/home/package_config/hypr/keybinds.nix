@@ -50,7 +50,7 @@ in
       "SUPER, left, exec, pypr workspace -1"
       "SUPER SHIFT, left, exec, pypr movetoworkspace -1"
       "SUPER, right, exec, pypr workspace +1"
-      "SUPER SHIFT, right, exec, pypr workspace +1"
+      "SUPER SHIFT, right, exec, pypr movetoworkspace +1"
     ] 
     ++
     workspaceBindings;
