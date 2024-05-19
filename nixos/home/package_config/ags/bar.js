@@ -14,17 +14,26 @@ const date = Variable("", {
 // then you can simply instantiate one by calling it
 
 function Workspaces() {
-    const activeId = hyprland.active.workspace.bind("id");
-    const workspaces = hyprland.bind("workspaces")
-        .as(ws => ws.map(({ id }) => id > 0 ? Widget.Button({
-            on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
-            class_name: activeId.as(i => `workspace-btn ${i === id ? "focused" : ""}`),
-        }) : "").toSorted((a, b) => a.class_name > b.class_name ? a : b));
-    
-    return Widget.Box({
-        class_name: "workspaces",
-        children: workspaces,
-    });
+  const activeId = hyprland.active.workspace.bind("id");
+  const workspaces = hyprland.bind("workspaces").as((ws) =>
+    ws
+      // remove scratchpads from the list
+      .filter(({ id }) => id > 0)
+      // sort by id
+      .sort((a, b) => a.id - b.id)
+      .map(({ id }) =>
+        Widget.Button({
+          on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
+          child: Widget.Label(`${id}`),
+          class_name: activeId.as((i) => `${i === id ? "focused" : ""}`),
+        })
+      )
+  );
+
+  return Widget.Box({
+    class_name: "workspaces",
+    children: workspaces,
+  });
 }
 
 function Clock() {

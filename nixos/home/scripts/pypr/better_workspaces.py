@@ -12,7 +12,7 @@ async def get_workspaces(self):
 async def get_currentworkspace(self):
     monitors = await self.hyprctlJSON("monitors")
     for monitor in monitors:
-        if monitor["focused"] == "yes":
+        if monitor["focused"]:
             return monitor["activeWorkspace"]["id"]
 
 def insert_last_workspace(workspaceid):
@@ -22,21 +22,32 @@ def insert_last_workspace(workspaceid):
  
 async def get_target_workspace(self, workspaceid):
     workspaces = await get_workspaces(self)
+
     if workspaceid == "new":
         return workspaces[-1] + 1
+
     elif "+" in workspaceid:
         currentworkspace = await get_currentworkspace(self)
+
         for i in range(len(workspaces)):
-            print(workspaces[i],currentworkspace)
             if workspaces[i] == currentworkspace:
-                print(workspaces[i+1])
-                return workspaces[i + 1]
+                if i + 1 >= len(workspaces):
+                    return workspaces[i] + 1
+                else:
+                    return workspaces[i + 1]
+
     elif "-" in workspaceid:
         currentworkspace = await get_currentworkspace(self)
+
         for i in range(len(workspaces)):
             if workspaces[i] == currentworkspace:
-                print(workspaces[i+1])
-                return workspaces[i + 1]
+                if workspaces[i] == 1:
+                    return "No target workspace"
+                elif i == 0:
+                    return workspaces[i] - 1
+                else:
+                    return workspaces[i - 1]
+
     else:
         workspaceid = int(workspaceid)
         if workspaceid > len(workspaces):
@@ -68,8 +79,10 @@ class Extension(Plugin):
         
     async def run_workspace(self, workspaceid):
         target = await get_target_workspace(self, workspaceid)
+        if target == "No target workspace": return
         await self.hyprctl(f"workspace {target}")
         
     async def run_movetoworkspace(self, workspaceid):
         target = await get_target_workspace(self, workspaceid)
+        if target == "No target workspace": return
         await self.hyprctl(f"movetoworkspace {target}")

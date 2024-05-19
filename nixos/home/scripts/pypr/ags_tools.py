@@ -1,25 +1,26 @@
 from pyprland.plugins.interface import Plugin
 import subprocess
+import time
 
-
+async def remove_unused_bars(self):
+    monitors_json = await self.hyprctlJSON("monitors")
+    monitors = [ monitor["id"] for monitor in monitors_json ]
+    for monitor in range(3): 
+        if monitor not in monitors:
+            subprocess.run(["ags", "-t", f"bar-{monitor}"])
+ 
 class Extension(Plugin):
     """A plugin that provides some useful features for ags like opening ags widgets when new monitors are connected"""
-    
-    async def __init__(self, *args):
-        super().__init__(*args)
-        monitors = [ monitor["id"] for monitor in await self.hyprctlJSON("monitors") ]
-        for monitor in range(3): 
-            if monitor not in monitors:
-                subprocess.run("ags", "-t", f"bar-{monitor}")
+
+    async def on_reload(self):
+        await remove_unused_bars(self)
 
     async def event_monitoraddedv2(self, monitor):
+        print(f"monitoradd start {monitor}")
         monitor_id = monitor.split(",")[0]
-        subprocess.run(["ags", "-t", f"bar-{monitor}"])
-        
-    async def event_monitorremoved(self, monitorname):
-        monitors = self.hyprctlJSON("monitors")
-        for monitor in monitors:
-            if monitor["name"] == monitorname:
-                monitor_id = monitor["id"]
-                break
-        subprocess.run(["ags", "-t", f"bar-{monitor_id}"])
+        #time.sleep(3)
+        #command = ["ags", "-r", f"bar-{monitor_id}"]
+        subprocess.run(["ags", "-q"])
+        subprocess.run("ags & disown", shell=True)
+        time.sleep(1)
+        await remove_unused_bars(self)
