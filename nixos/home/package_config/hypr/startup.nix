@@ -14,9 +14,6 @@
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
 
-      # Startup apps
-      "floorp &"
-
       # Other
       "hyprpaper"
       "hypridle"
