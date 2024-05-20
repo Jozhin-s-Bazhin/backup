@@ -31,7 +31,6 @@
     libreoffice
     bitwarden
     thunderbird
-    lutris
 
     # CLI utilities
     yazi
@@ -66,14 +65,15 @@
     grimblast
     pyprland
 
-    # GNOME
-    flat-remix-gnome
     flat-remix-gtk
+
+    /*# GNOME
+    flat-remix-gnome
 
     # Extensions
     gnomeExtensions.forge
     gnomeExtensions.user-themes
     gnomeExtensions.blur-my-shell
-    gnomeExtensions.switch-workspaces-on-active-monitor
+    gnomeExtensions.switch-workspaces-on-active-monitor*/
   ];
 }
