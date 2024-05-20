@@ -76,5 +76,9 @@
     gnomeExtensions.user-themes
     gnomeExtensions.blur-my-shell
     gnomeExtensions.switch-workspaces-on-active-monitor*/
+
+    # Games
+    lutris
+    crrcsim
   ];
 }
