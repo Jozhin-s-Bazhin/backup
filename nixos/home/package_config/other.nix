@@ -18,7 +18,7 @@ in
   };
 
   # Gtk theme
-  home.file.".themes/Flat-Remix/".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Darkest/";
+  home.file.".themes/Flat-Remix/".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Blue-Dark/";
   xdg.configFile = {
     "gtk-4.0/assets".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark/assets";
     "gtk-4.0/gtk.css".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark/gtk.css";
