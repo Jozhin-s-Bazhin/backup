@@ -64,6 +64,7 @@
     wirelesstools
     grimblast
     pyprland
+    anyrun
 
     flat-remix-gtk
 
