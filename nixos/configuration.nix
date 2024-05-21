@@ -25,6 +25,9 @@
   # Firmware updates
   services.fwupd.enable = true;
 
+  # Kernel
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # Define your hostname
   networking.hostName = "nixos";
 
