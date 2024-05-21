@@ -9,6 +9,13 @@ echo -e "Started system rebuild"
 echo -e "Copying changes... $NC"
 cp -r /etc/nixos/ /home/roman/backup/
 
+# Rebuild system
+echo -e "$RED"
+echo -e "Starting nixos-rebuild switch ..."
+echo -e "$NC"
+
+sudo nixos-rebuild switch --flake /etc/nixos#nixos 2>&1 | tee ~/backup/logs/"[ $date ]-log"
+
 # Commit and push changes
 echo -e "${RED}Committing..."
 echo -e "$NC"
@@ -18,13 +25,6 @@ date=$(date)
 git -C ~/backup/ add -A > /dev/null
 git -C ~/backup/ commit -m "[ $date ] nixos-rebuild switch --flake /etc/nixos#nixos" 
 git -C ~/backup/ push -q
-
-# Rebuild system
-echo -e "$RED"
-echo -e "Starting nixos-rebuild switch ..."
-echo -e "$NC"
-
-sudo nixos-rebuild switch --flake /etc/nixos#nixos 2>&1 | tee ~/backup/logs/"[ $date ]-log"
 
 echo -e "$RED"
 echo -e "Finished${NC}"
