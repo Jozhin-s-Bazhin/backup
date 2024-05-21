@@ -22,6 +22,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Firmware updates
+  services.fwupd.enable = true;
+
   # Define your hostname
   networking.hostName = "nixos";
 
@@ -102,6 +105,9 @@
     dates = "weekly";
     options = "--delete-older-than 7d";
   };
+
+  # Fingerprint sensor
+  services.fprintd.enable = true;
 
   # GNOME
   environment.gnome.excludePackages = (with pkgs; [
