@@ -29,12 +29,12 @@
 
   outputs = inputs@{ nixpkgs, home-manager, hyprland, nixos-hardware, ... }: {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      framework = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 	      specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
-	  nixos-hardware.nixosModules.dell-xps-15-9560
+          nixos-hardware.nixosModules.framework-16-7040-amd
 	  {
 	    nix.settings = {
 	      substituters  = [ 

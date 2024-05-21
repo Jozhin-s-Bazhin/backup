@@ -23,7 +23,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Define your hostname
-  networking.hostName = "nixos";
+  networking.hostName = "framework";
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -43,10 +43,10 @@
     xkb.variant = "";
 
     # Nvidia
-    videoDrivers = [ "nvidia" ];
+    #videoDrivers = [ "nvidia" ];
 
     # AMD
-    #videoDrivers = [ "amd" ];
+    videoDrivers = [ "amd" ];
 
     # Gnome
     enable = true;
@@ -200,7 +200,20 @@
     };
   };
 
-  ## NVIDIA BS
+  # AMD
+  boot.initrd.kernelModules = [ "amdgpu" ];
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+    extraPackages = with pkgs; [ 
+      amdvlk 
+      driversi686Linux.amdvlk
+      rocmPackages.clr.icd
+   ];
+  };
+
+  /*## NVIDIA BS
   # something for hyprland
   boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocation=1" ];
 
@@ -230,7 +243,7 @@
       intelBusId = "PCI:0:2:0";
       nvidiaBusId = "PCI:1:0:0";
     };
-  };
+  };*/
   
   # Do not touch
   system.stateVersion = "23.11";
