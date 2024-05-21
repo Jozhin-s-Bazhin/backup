@@ -52,7 +52,8 @@
     # Hyprland
     hyprpaper
     hypridle
-    inputs.hyprlock.packages.x86_64-linux.hyprlock 
+    #inputs.hyprlock.packages.x86_64-linux.hyprlock 
+    swaylock
     libnotify 
     nerdfonts 
     montserrat
