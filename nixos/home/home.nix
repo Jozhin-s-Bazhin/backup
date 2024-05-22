@@ -90,28 +90,7 @@
 
 	# Minecraft
 	openjdk11
-	alsa-lib
-	at-spi2-atk
-	dbus
-	expat
-	#gcc-libs
-	#gdk-pixbuf2
-	#glib2
-	glibc
-	#libcups
-	libdrm
-	#libxcb
-	#libxcomposite
-	#libxdamage
-	#libxext
-	#libxfixes
-	#libxrandr
-	nspr
-	nss
-	#util-linux-libs
-	#xorg-xrandr
-	zlib
-	flite
+	libfuse
       ];
     })
   ];
