@@ -147,7 +147,7 @@
   environment.etc."greetd/greeter.js".source = ./home/package_config/ags/greeter.js;*/
 
   # Pipewire
-  #sound.enable = true;
+  sound.enable = true;
   security.rtkit.enable = true;
   hardware.pulseaudio.enable = false;
   services.pipewire = {
@@ -159,6 +159,8 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
+
+  # Pulseaudio
 
   # Bluetooth
   hardware.bluetooth.enable = true;
