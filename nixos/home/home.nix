@@ -90,30 +90,28 @@
 
 	# Minecraft
 	openjdk11
-	libX11
-    	zlib
-    	libuuid
-    	libsecret
-    	gdk_pixbuf
-    	glib
-    stdenv.cc.cc.lib
-    atk
-    at-spi2-atk
-    dbus
-    xorg.libXrandr
-    xorg.libXcomposite
-    xorg.libXdamage
-    xorg.libXext
-    xorg.libXfixes
-    xorg.libX11
-    xorg.libxcb
-    xorg.libX11
-    xorg.libxcb
-    gbm
-    alsaLib
-    cups
-    nss
-    nspr
+	alsa-lib
+	at-spi2-atk
+	dbus
+	expat
+	gcc-libs
+	gdk-pixbuf2
+	glib2
+	glibc
+	libcups
+	libdrm
+	libxcb
+	libxcomposite
+	libxdamage
+	libxext
+	libxfixes
+	libxrandr
+	nspr
+	nss
+	util-linux-libs
+	xorg-xrandr
+	zlib
+	flite
       ];
     })
   ];

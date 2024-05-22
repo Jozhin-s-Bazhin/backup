@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'libX11'
+       error: undefined variable 'gcc-libs'
 
-       at /nix/store/pzj744yxg2c7l9gnligs2nm1ggcxa1lg-source/home/home.nix:93:2:
+       at /nix/store/g70g39q8mgcg89ilhi36yna5axyflgkv-source/home/home.nix:97:2:
 
-           92|  openjdk11
-           93|        libX11
+           96|        expat
+           97|    gcc-libs
              |  ^
-           94|         zlib
+           98|       gdk-pixbuf2
