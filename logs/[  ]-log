@@ -1,38 +1,30 @@
 building the system configuration...
-these 15 derivations will be built:
-  /nix/store/rjdpvkhxzqrmwx26pxzrhrw8r2z2s8gx-lutris-usr-target.drv
-  /nix/store/insm577jfqdmqw534yzq2fcwn6nia009-lutris-fhs.drv
-  /nix/store/lw9aj04xx8xc641dnym1g7ssxxrs646a-lutris-bwrap.drv
-  /nix/store/9jk07lvxqhsiivn2bgvqgfhrks5ai6ys-lutris.drv
-  /nix/store/zssysy7wyjv7gcnfb6sykr1a3r90dvrl-home-manager-path.drv
-  /nix/store/m937pwyx40ny765kl380azqd7336xynx-hm_fontconfigconf.d10hmfonts.conf.drv
-  /nix/store/7cw1v5i569x769ly2fjakaapz13xpdpc-home-manager-files.drv
-  /nix/store/7r56qrfws469lsgj0b1szglrq24ynlvw-user-environment.drv
-  /nix/store/zglk39bdkkn3ig21hwkylxbi50fa320c-unit-script-nixos-upgrade-start.drv
-  /nix/store/9qzq0qhdlgwzgy2iwn917nzq9i67qdc6-unit-nixos-upgrade.service.drv
-  /nix/store/xwm502g11yw7pdrwadg2ca9iw8j1iw7g-home-manager-generation.drv
-  /nix/store/bl1df9962dmwwc74c0rq6yvpbapwkphp-unit-home-manager-roman.service.drv
-  /nix/store/rjayllfdjb2kfc0hyb20xqczdfk2fhyh-system-units.drv
-  /nix/store/ii1g0dm92wnp8xwvbrngm0rn6jr146l9-etc.drv
-  /nix/store/g7vjilzmwl0x94nw82l37pnj8lwsmd6r-nixos-system-nixos-24.05.20240515.33d1e75.drv
-building '/nix/store/zglk39bdkkn3ig21hwkylxbi50fa320c-unit-script-nixos-upgrade-start.drv'...
-building '/nix/store/rjdpvkhxzqrmwx26pxzrhrw8r2z2s8gx-lutris-usr-target.drv'...
-building '/nix/store/9qzq0qhdlgwzgy2iwn917nzq9i67qdc6-unit-nixos-upgrade.service.drv'...
-building '/nix/store/insm577jfqdmqw534yzq2fcwn6nia009-lutris-fhs.drv'...
-building '/nix/store/lw9aj04xx8xc641dnym1g7ssxxrs646a-lutris-bwrap.drv'...
-building '/nix/store/9jk07lvxqhsiivn2bgvqgfhrks5ai6ys-lutris.drv'...
-building '/nix/store/zssysy7wyjv7gcnfb6sykr1a3r90dvrl-home-manager-path.drv'...
-building '/nix/store/m937pwyx40ny765kl380azqd7336xynx-hm_fontconfigconf.d10hmfonts.conf.drv'...
-building '/nix/store/7r56qrfws469lsgj0b1szglrq24ynlvw-user-environment.drv'...
-building '/nix/store/7cw1v5i569x769ly2fjakaapz13xpdpc-home-manager-files.drv'...
-building '/nix/store/xwm502g11yw7pdrwadg2ca9iw8j1iw7g-home-manager-generation.drv'...
-building '/nix/store/bl1df9962dmwwc74c0rq6yvpbapwkphp-unit-home-manager-roman.service.drv'...
-building '/nix/store/rjayllfdjb2kfc0hyb20xqczdfk2fhyh-system-units.drv'...
-building '/nix/store/ii1g0dm92wnp8xwvbrngm0rn6jr146l9-etc.drv'...
-building '/nix/store/g7vjilzmwl0x94nw82l37pnj8lwsmd6r-nixos-system-nixos-24.05.20240515.33d1e75.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for roman...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-roman.service
-the following new units were started: auto-cpufreq.service, fwupd-refresh.service, fwupd.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service, udisks2.service
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: undefined variable 'java'
+
+       at /nix/store/5jr8vgl6g7ari0qxhb1p5p44hc570rwq-source/home/home.nix:87:3:
+
+           86|     pango
+           87|    java
+             |   ^
+           88|        ];

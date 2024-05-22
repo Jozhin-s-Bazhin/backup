@@ -84,6 +84,7 @@
          # List package dependencies here
 	 gtk3
 	 pango
+	 java
        ];
     })
   ];
