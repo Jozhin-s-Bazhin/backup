@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'libxext'
+       error: undefined variable 'util-linux-libs'
 
-       at /nix/store/wms0l98bz61i3mfy328kqgmsdg3khxws-source/home/home.nix:106:2:
+       at /nix/store/4jra4jq9b2b0fnh8fml714v8hmkcqayd-source/home/home.nix:111:2:
 
-          105|        #libxdamage
-          106|      libxext
+          110|        nss
+          111|      util-linux-libs
              |  ^
-          107|        libxfixes
+          112|        xorg-xrandr

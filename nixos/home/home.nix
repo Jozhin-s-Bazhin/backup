@@ -103,9 +103,9 @@
 	#libxcb
 	#libxcomposite
 	#libxdamage
-	libxext
-	libxfixes
-	libxrandr
+	#libxext
+	#libxfixes
+	#libxrandr
 	nspr
 	nss
 	util-linux-libs
