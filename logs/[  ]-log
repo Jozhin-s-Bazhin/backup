@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'libxcb'
+       error: undefined variable 'libxcomposite'
 
-       at /nix/store/7hh61gczc2dlzyzw55craf8js7gz1s5d-source/home/home.nix:103:2:
+       at /nix/store/yx9fqg3ligr45pmj3xl95h9177wn57sk-source/home/home.nix:104:2:
 
-          102|         libdrm
-          103|   libxcb
+          103|  #libxcb
+          104|  libxcomposite
              |  ^
-          104|         libxcomposite
+          105|  libxdamage

@@ -100,7 +100,7 @@
 	glibc
 	#libcups
 	libdrm
-	libxcb
+	#libxcb
 	libxcomposite
 	libxdamage
 	libxext
