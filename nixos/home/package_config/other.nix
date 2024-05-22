@@ -41,7 +41,13 @@ in
   };
 
   # Cursor
-  home.pointerCursor.size = 48;
+  home.pointerCursor = {
+    package = pkgs.gnome.adwaita-icon-theme;
+    gtk.enable = true;
+    name = "Adwaita";
+    size = 48;
+    x11.enable = true;
+  };
 
   # Kitty
   programs.kitty = {
