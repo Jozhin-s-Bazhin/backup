@@ -8,7 +8,7 @@
 # By Roman Bezroutchko
 
 
-{ inputs, pkgs, config, ... }:
+{ inputs, pkgs, config, lib, ... }:
 
 {
   imports =
@@ -147,7 +147,7 @@
   environment.etc."greetd/greeter.js".source = ./home/package_config/ags/greeter.js;*/
 
   # Pipewire
-  sound.enable = true;
+  #sound.enable = true;
   security.rtkit.enable = true;
   hardware.pulseaudio.enable = lib.mkForce false;
   services.pipewire = {
@@ -160,7 +160,7 @@
       package = pkgs.wireplumber;
     };
     # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+    jack.enable = true;
   };
 
   # Pulseaudio
