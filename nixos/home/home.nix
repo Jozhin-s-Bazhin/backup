@@ -101,7 +101,7 @@
 	#libcups
 	libdrm
 	#libxcb
-	libxcomposite
+	#libxcomposite
 	libxdamage
 	libxext
 	libxfixes
