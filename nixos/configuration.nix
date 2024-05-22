@@ -206,6 +206,13 @@
     };
   };
 
+  # Running non-NixOS binaries
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged programs
+    # here, NOT in environment.systemPackages
+  ];
+
   # Virtualisation
   #virtualisation.vmware.host.enable = true;
   #virtualisation.virtualbox.host.enable = true;
