@@ -43,6 +43,7 @@
     cmatrix
     pipes-rs
     freesweep
+    btop
 
     # My own shit
     inputs.game-setting-manager.packages.${system}.gsm-cli
@@ -84,7 +85,7 @@
          # List package dependencies here
 	 gtk3
 	 pango
-	 java
+	 jdk
        ];
     })
   ];
