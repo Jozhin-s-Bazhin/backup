@@ -95,7 +95,7 @@
 	dbus
 	expat
 	#gcc-libs
-	gdk-pixbuf2
+	#gdk-pixbuf2
 	glib2
 	glibc
 	libcups

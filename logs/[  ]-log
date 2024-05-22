@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'gdk-pixbuf2'
+       error: undefined variable 'glib2'
 
-       at /nix/store/0494xc7c1kcpirw0c1wban9nlrvr28qg-source/home/home.nix:98:2:
+       at /nix/store/r2y0zrc44yg2p3bhnjzvrwb4c4qls2lf-source/home/home.nix:99:2:
 
-           97|     #gcc-libs
-           98|        gdk-pixbuf2
+           98|   #gdk-pixbuf2
+           99|     glib2
              |  ^
-           99|    glib2
+          100|  glibc
