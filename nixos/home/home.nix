@@ -109,7 +109,7 @@
 	nspr
 	nss
 	#util-linux-libs
-	xorg-xrandr
+	#xorg-xrandr
 	zlib
 	flite
       ];
