@@ -149,13 +149,16 @@
   # Pipewire
   sound.enable = true;
   security.rtkit.enable = true;
-  hardware.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = lib.mkForce false;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    #wireplumber.enable = true;
+    wireplumber = {
+      enable = true;
+      package = pkgs.wireplumber;
+    };
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
