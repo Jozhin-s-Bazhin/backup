@@ -12,8 +12,8 @@ in
       "col.active_border" = "rgba(${ colors.nixToHex colors.accent }ff)";
       "col.inactive_border" = "rgba(${ colors.nixToHex colors.background_darker }ff)";
       layout = "dwindle";
-      allow_tearing = false; 
-      }; 
+      allow_tearing = true; 
+    }; 
 
     decoration = { 
       rounding = 5;
@@ -55,7 +55,7 @@ in
 
     misc = {
       disable_hyprland_logo = true;
-      #force_default_wallpaper = 1;
+      vrr = 1;
     };
 
     xwayland.force_zero_scaling = true;
