@@ -163,8 +163,6 @@
     jack.enable = true;
   };
 
-  # Pulseaudio
-
   # Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
@@ -183,6 +181,9 @@
     sansSerif = [ "Ubuntu Nerd Font" ];
     serif = [ "Ubuntu Nerd Font" ];
   };
+
+  # Piper
+  services.ratbagd.enable = true;
 
   # Better battery life
   services.upower.enable = true;
@@ -207,7 +208,7 @@
   #virtualisation.virtualbox.host.enable = true;
   virtualisation.docker = {
     enable = true;
-    enableNvidia = true;
+    #enableNvidia = true;
     rootless = {
       enable = true;
       setSocketVariable = true;

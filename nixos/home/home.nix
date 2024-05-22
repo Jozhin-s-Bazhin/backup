@@ -30,6 +30,8 @@
     libreoffice
     bitwarden
     thunderbird
+    piper
+    pavucontrol
 
     # CLI utilities
     yazi
