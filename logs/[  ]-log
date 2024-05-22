@@ -1,23 +1,30 @@
 building the system configuration...
-these 8 derivations will be built:
-  /nix/store/csmi9a4213vgrsy5v0iyal0sxgd8xzsv-unit-script-nixos-upgrade-start.drv
-  /nix/store/iw6mzrzk21mnwswn1j9n3g8iapspsfpx-unit-nixos-upgrade.service.drv
-  /nix/store/pzdcjfavimy1hv9fqjb367kgf8ia4gwb-unit-script-mkswap-var-lib-swapfile-start.drv
-  /nix/store/y013rkqdfswn65zx13wj860fnxy00xi0-unit-mkswap-var-lib-swapfile.service.drv
-  /nix/store/px5rnm8fbxwi9037g1bzj59lx6j86dc0-system-units.drv
-  /nix/store/z8jy95nsq88b3ybrzab6q1blma9g0s7x-etc-fstab.drv
-  /nix/store/93cahi8dpdxka7amhy8hzfpb4cfbasyq-etc.drv
-  /nix/store/x62pwbbnbpww37rjlmcj8gzjnpnbyfv7-nixos-system-nixos-24.05.20240515.33d1e75.drv
-building '/nix/store/z8jy95nsq88b3ybrzab6q1blma9g0s7x-etc-fstab.drv'...
-building '/nix/store/pzdcjfavimy1hv9fqjb367kgf8ia4gwb-unit-script-mkswap-var-lib-swapfile-start.drv'...
-building '/nix/store/csmi9a4213vgrsy5v0iyal0sxgd8xzsv-unit-script-nixos-upgrade-start.drv'...
-building '/nix/store/y013rkqdfswn65zx13wj860fnxy00xi0-unit-mkswap-var-lib-swapfile.service.drv'...
-building '/nix/store/iw6mzrzk21mnwswn1j9n3g8iapspsfpx-unit-nixos-upgrade.service.drv'...
-building '/nix/store/px5rnm8fbxwi9037g1bzj59lx6j86dc0-system-units.drv'...
-building '/nix/store/93cahi8dpdxka7amhy8hzfpb4cfbasyq-etc.drv'...
-building '/nix/store/x62pwbbnbpww37rjlmcj8gzjnpnbyfv7-nixos-system-nixos-24.05.20240515.33d1e75.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for roman...
-restarting sysinit-reactivation.target
-the following new units were started: var-lib-swapfile.swap
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: undefined variable 'libgconf-2-4'
+
+       at /nix/store/1s8rhmkq3yb6k1wvs5m0ffybx057ak5z-source/home/home.nix:93:2:
+
+           92|    openjdk11
+           93|        libgconf-2-4
+             |  ^
+           94|       ];

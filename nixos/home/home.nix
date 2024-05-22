@@ -83,12 +83,15 @@
     # Games
     crrcsim
     (lutris.override {
-       extraPkgs = pkgs: [
-         # List package dependencies here
-	 gtk3
-	 pango
-	 openjdk11
-       ];
+      extraPkgs = pkgs: [
+      	# War thunder
+	gtk3
+	pango
+
+	# Minecraft
+	openjdk11
+	libgconf-2-4
+      ];
     })
   ];
 }
