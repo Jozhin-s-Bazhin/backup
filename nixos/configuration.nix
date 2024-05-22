@@ -75,7 +75,7 @@
   users.users.roman = {
     isNormalUser = true;
     description = "Roman";
-    extraGroups = [ "networkmanager" "wheel" "audio" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "fuse" ];
     packages = with pkgs; [ lxqt.lxqt-policykit ];
   };
 
