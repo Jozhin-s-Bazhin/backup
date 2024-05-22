@@ -94,7 +94,7 @@
 	at-spi2-atk
 	dbus
 	expat
-	gcc-libs
+	#gcc-libs
 	gdk-pixbuf2
 	glib2
 	glibc
