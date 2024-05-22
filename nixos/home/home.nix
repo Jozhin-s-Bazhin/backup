@@ -98,7 +98,7 @@
 	#gdk-pixbuf2
 	#glib2
 	glibc
-	libcups
+	#libcups
 	libdrm
 	libxcb
 	libxcomposite

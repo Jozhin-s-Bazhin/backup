@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'libcups'
+       error: undefined variable 'libxcb'
 
-       at /nix/store/500iihhw2f5ij1yay50jp3vpx4ma7r44-source/home/home.nix:101:2:
+       at /nix/store/7hh61gczc2dlzyzw55craf8js7gz1s5d-source/home/home.nix:103:2:
 
-          100|        glibc
-          101|    libcups
+          102|         libdrm
+          103|   libxcb
              |  ^
-          102|        libdrm
+          104|         libxcomposite
