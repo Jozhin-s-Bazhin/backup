@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'libgconf-2-4'
+       error: undefined variable 'libgtk-3'
 
-       at /nix/store/1s8rhmkq3yb6k1wvs5m0ffybx057ak5z-source/home/home.nix:93:2:
+       at /nix/store/lqqyn0yfbi5pvy9n78716rv5cjjjjvzf-source/home/home.nix:93:2:
 
-           92|    openjdk11
-           93|        libgconf-2-4
+           92|        openjdk11
+           93|        libgtk-3
              |  ^
            94|       ];

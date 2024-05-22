@@ -90,7 +90,7 @@
 
 	# Minecraft
 	openjdk11
-	libgconf-2-4
+	libgtk-3
       ];
     })
   ];
