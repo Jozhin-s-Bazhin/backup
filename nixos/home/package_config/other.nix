@@ -40,6 +40,9 @@ in
     style.name = "gtk2";
   };
 
+  # Cursor
+  home.pointerCursor.size = 48;
+
   # Kitty
   programs.kitty = {
     enable = true;
