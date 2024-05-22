@@ -85,7 +85,7 @@
          # List package dependencies here
 	 gtk3
 	 pango
-	 jdk
+	 openjdk11
        ];
     })
   ];
