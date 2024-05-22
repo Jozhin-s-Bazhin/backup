@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'util-linux-libs'
+       error: undefined variable 'xorg-xrandr'
 
-       at /nix/store/4jra4jq9b2b0fnh8fml714v8hmkcqayd-source/home/home.nix:111:2:
+       at /nix/store/klf9frr039md6qwxzy0xsdncha0rjy8k-source/home/home.nix:112:2:
 
-          110|        nss
-          111|      util-linux-libs
+          111|    #util-linux-libs
+          112|         xorg-xrandr
              |  ^
-          112|        xorg-xrandr
+          113|    zlib
