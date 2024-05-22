@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'libxdamage'
+       error: undefined variable 'libxext'
 
-       at /nix/store/k23hf8bhjaw037f659pf5x0x133vicdp-source/home/home.nix:105:2:
+       at /nix/store/wms0l98bz61i3mfy328kqgmsdg3khxws-source/home/home.nix:106:2:
 
-          104|     #libxcomposite
-          105|   libxdamage
+          105|        #libxdamage
+          106|      libxext
              |  ^
-          106|     libxext
+          107|        libxfixes

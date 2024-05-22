@@ -102,7 +102,7 @@
 	libdrm
 	#libxcb
 	#libxcomposite
-	libxdamage
+	#libxdamage
 	libxext
 	libxfixes
 	libxrandr
