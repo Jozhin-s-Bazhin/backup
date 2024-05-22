@@ -27,6 +27,9 @@
 
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelParams = [
+    "usbcore.autosuspend=30"
+  ];
 
   # Define your hostname
   networking.hostName = "nixos";
