@@ -88,10 +88,11 @@
 	gtk3
 	pango
 
-	# Minecraft
+	/*# Minecraft
 	openjdk11
-	fuse
+	fuse*/
       ];
     })
+    prismlauncher
   ];
 }
