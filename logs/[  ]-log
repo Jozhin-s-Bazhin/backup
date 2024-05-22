@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'libgtk-3'
+       error: undefined variable 'libX11'
 
-       at /nix/store/lqqyn0yfbi5pvy9n78716rv5cjjjjvzf-source/home/home.nix:93:2:
+       at /nix/store/pzj744yxg2c7l9gnligs2nm1ggcxa1lg-source/home/home.nix:93:2:
 
-           92|        openjdk11
-           93|        libgtk-3
+           92|  openjdk11
+           93|        libX11
              |  ^
-           94|       ];
+           94|         zlib

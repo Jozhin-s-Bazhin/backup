@@ -90,7 +90,30 @@
 
 	# Minecraft
 	openjdk11
-	libgtk-3
+	libX11
+    	zlib
+    	libuuid
+    	libsecret
+    	gdk_pixbuf
+    	glib
+    stdenv.cc.cc.lib
+    atk
+    at-spi2-atk
+    dbus
+    xorg.libXrandr
+    xorg.libXcomposite
+    xorg.libXdamage
+    xorg.libXext
+    xorg.libXfixes
+    xorg.libX11
+    xorg.libxcb
+    xorg.libX11
+    xorg.libxcb
+    gbm
+    alsaLib
+    cups
+    nss
+    nspr
       ];
     })
   ];
