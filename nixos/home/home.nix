@@ -96,7 +96,7 @@
 	expat
 	#gcc-libs
 	#gdk-pixbuf2
-	glib2
+	#glib2
 	glibc
 	libcups
 	libdrm

@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'glib2'
+       error: undefined variable 'libcups'
 
-       at /nix/store/r2y0zrc44yg2p3bhnjzvrwb4c4qls2lf-source/home/home.nix:99:2:
+       at /nix/store/500iihhw2f5ij1yay50jp3vpx4ma7r44-source/home/home.nix:101:2:
 
-           98|   #gdk-pixbuf2
-           99|     glib2
+          100|        glibc
+          101|    libcups
              |  ^
-          100|  glibc
+          102|        libdrm
