@@ -90,7 +90,7 @@
 
 	# Minecraft
 	openjdk11
-	libfuse
+	fuse
       ];
     })
   ];
