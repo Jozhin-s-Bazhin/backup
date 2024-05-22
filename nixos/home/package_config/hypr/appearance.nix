@@ -57,6 +57,8 @@ in
       disable_hyprland_logo = true;
       #force_default_wallpaper = 1;
     };
+
+    xwayland.force_zero_scaling = true;
   };
 
   xdg.configFile."hypr/hyprpaper.conf".text = ''
