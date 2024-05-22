@@ -13,8 +13,7 @@
 {
   imports = [
     ./package_config/package_config.nix
-    ./config.nix
-  ];
+    ./config.nix ];
 
   nixpkgs.config.allowUnfree = true;
 
@@ -79,7 +78,13 @@
     gnomeExtensions.switch-workspaces-on-active-monitor*/
 
     # Games
-    lutris
     crrcsim
+    (lutris.override {
+       extraPkgs = pkgs: [
+         # List package dependencies here
+	 gtk3
+	 pango
+       ];
+    })
   ];
 }
