@@ -23,8 +23,10 @@ in
     "gtk-4.0/assets".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark/assets";
     "gtk-4.0/gtk.css".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix/LibAdwaita-Blue-Dark/gtk.css";
   };
-  xdg.configFile."environment.d/gtk-theme.conf".text = ''
+  xdg.configFile."environment.d/envvars.conf".text = ''
     GTK_THEME=Flat-Remix
+    XCURSOR_SIZE=24
+    HYPRCURSOR_SIZE=24
   '';
 
   dconf = {
