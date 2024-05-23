@@ -36,6 +36,7 @@
     # CLI utilities
     yazi
     graphicsmagick
+    radeontop
 
     # Goofy ah
     neofetch 
