@@ -7,7 +7,7 @@
       "eDP-2, preferred, 0x0, 1.6"
 
       # Ultrawide at home
-      "desc:Huawei Technologies Co. Inc. ZQE-CAA 0xC080F622, preferred, -720x-1440, 1"  # Above eDP-1
+      #"desc:Huawei Technologies Co. Inc. ZQE-CAA 0xC080F622, preferred, -720x-1440, 1"  # Above eDP-1
 
       # Monitor at home
       "desc:Iiyama North America PL2283H 1132555227963, preferred, 0x-1080, 1"  # Above eDP-1
