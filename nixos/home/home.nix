@@ -88,6 +88,7 @@
       	# War thunder
 	gtk3
 	pango
+	gamescope
 
 	/*# Minecraft
 	openjdk11
