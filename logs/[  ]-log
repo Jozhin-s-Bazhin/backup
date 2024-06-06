@@ -21,9 +21,9 @@ error:
 
        error: syntax error, unexpected '}', expecting ';'
 
-       at /nix/store/m95xg89l5a2002r6g2xa681alicy0hs9-source/configuration.nix:172:46:
+       at /nix/store/1nq6ch330nsrhyyxgry23bqbaj17nnlf-source/configuration.nix:173:70:
 
-          171|         {
-          172|    matches = [{ "node.name" = "alsa_input.*" }];
-             |                                              ^
+          172|     matches = [{ "node.name" = "alsa_input.*"; }];
           173|           actions = [{ "update-props" = { "priority.driver" = 2000; }}];
+             |                                                                      ^
+          174|         }

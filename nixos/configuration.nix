@@ -169,11 +169,11 @@
     config = {
       rules = [
         { 
-	  matches = [{ "node.name" = "alsa_input.*" }];
+	  matches = [{ "node.name" = "alsa_input.*"; }];
           actions = [{ "update-props" = { "priority.driver" = 2000; }}]; 
         }
         { 
-	  matches = [{ "node.name" = "alsa_output.*" }];
+	  matches = [{ "node.name" = "alsa_output.*"; }];
           actions = [{ "update-props" = { "priority.driver" = 2000; }}]; 
 	}
       ];
