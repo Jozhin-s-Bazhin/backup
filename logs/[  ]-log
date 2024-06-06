@@ -1,24 +1,21 @@
-error:
-       … while calling the 'seq' builtin
-
-         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:322:18:
-
-          321|         options = checked options;
-          322|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          323|         _module = checked (config._module);
-
-       … while calling the 'throw' builtin
-
-         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:298:18:
-
-          297|                     ''
-          298|             else throw baseMsg
-             |                  ^
-          299|         else null;
-
-       error: The option `hardware.sensor.ioo' does not exist. Definition values:
-       - In `/nix/store/imanlbid8w1dyy5y7szan99gnsbqys3n-source/configuration.nix':
-           {
-             enable = true;
-           }
+building the system configuration...
+these 5 derivations will be built:
+  /nix/store/2wsq951qy1wy4krpr0cqcpmna74bfxp3-unit-script-nixos-upgrade-start.drv
+  /nix/store/qqjdnlhldxdd3a9yv0pckyk93z8gsir1-unit-nixos-upgrade.service.drv
+  /nix/store/fdyny77wgqn16pq65ya8xmmv5r4ay9m7-system-units.drv
+  /nix/store/ags0j5byr7q38islh9q78xnfv3fpihcq-etc.drv
+  /nix/store/85mndh1xipxavgznp83nz3crdvyzaisn-nixos-system-nixos-24.05.20240515.33d1e75.drv
+building '/nix/store/2wsq951qy1wy4krpr0cqcpmna74bfxp3-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/qqjdnlhldxdd3a9yv0pckyk93z8gsir1-unit-nixos-upgrade.service.drv'...
+building '/nix/store/fdyny77wgqn16pq65ya8xmmv5r4ay9m7-system-units.drv'...
+building '/nix/store/ags0j5byr7q38islh9q78xnfv3fpihcq-etc.drv'...
+building '/nix/store/85mndh1xipxavgznp83nz3crdvyzaisn-nixos-system-nixos-24.05.20240515.33d1e75.drv'...
+stopping the following units: accounts-daemon.service
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: polkit.service
+starting the following units: accounts-daemon.service
+the following new units were started: auto-cpufreq.service

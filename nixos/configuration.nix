@@ -213,7 +213,7 @@
       };
     };
   };
-  hardware.sensor.ioo.enable = true;
+  hardware.sensor.iio.enable = true;
 
   # Running non-NixOS binaries
   programs.nix-ld.enable = true;
