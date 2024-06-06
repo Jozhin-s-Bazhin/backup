@@ -164,6 +164,20 @@
     };
     # If you want to use JACK applications, uncomment this
     jack.enable = true;
+
+    # Audio device switching
+    config = {
+      rules = [
+        { 
+	  matches = [{ "node.name" = "alsa_input.*" }];
+          actions = [{ "update-props" = { "priority.driver" = 2000; }}]; 
+        }
+        { 
+	  matches = [{ "node.name" = "alsa_output.*" }];
+          actions = [{ "update-props" = { "priority.driver" = 2000; }}]; 
+	}
+      ];
+    };
   };
 
   # Bluetooth
