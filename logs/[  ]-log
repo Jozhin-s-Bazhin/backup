@@ -19,11 +19,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: syntax error, unexpected '}', expecting ';'
+       error: syntax error, unexpected ','
 
-       at /nix/store/r33jasjr8wzxkvd8gkmi2kqilvszm1nd-source/configuration.nix:176:13:
+       at /nix/store/hhycqdngpp55vby4idgfl1xympk0582s-source/configuration.nix:183:10:
 
-          175|               "node.name" = "~alsa_output.*"
-          176|             }
-             |             ^
-          177|           ];
+          182|           };
+          183|         },
+             |          ^
+          184|         {
