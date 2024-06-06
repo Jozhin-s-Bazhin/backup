@@ -69,6 +69,7 @@
     grimblast
     pyprland
     anyrun
+    wluma
 
     flat-remix-gtk
 

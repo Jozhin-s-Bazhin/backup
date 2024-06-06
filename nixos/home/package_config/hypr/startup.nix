@@ -19,6 +19,7 @@
       "hypridle"
       "ags"
       "pypr"
+      "wluma"
     ];
   };
 
