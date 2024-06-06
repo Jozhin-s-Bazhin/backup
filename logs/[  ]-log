@@ -19,11 +19,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: syntax error, unexpected ','
+       error: syntax error, unexpected end of file, expecting ';'
 
-       at /nix/store/hhycqdngpp55vby4idgfl1xympk0582s-source/configuration.nix:183:10:
+       at /nix/store/3ldgdym8ymz32wz9c5y2m4kghhvdb2kc-source/configuration.nix:315:2:
 
-          182|           };
-          183|         },
-             |          ^
-          184|         {
+          314|   system.stateVersion = "23.11";
+          315| }
+             |  ^
+          316|

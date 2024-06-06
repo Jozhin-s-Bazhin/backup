@@ -180,7 +180,7 @@
               "priority.driver" = 2000;
             };
           };
-        },
+        }
         {
           matches = [
             {
