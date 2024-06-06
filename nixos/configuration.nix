@@ -220,6 +220,7 @@
     # Add any missing dynamic libraries for unpackaged programs
     # here, NOT in environment.systemPackages
   ];
+  programs.java.enable = true;
 
   # Virtualisation
   #virtualisation.vmware.host.enable = true;
