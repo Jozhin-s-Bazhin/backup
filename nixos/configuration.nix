@@ -28,7 +28,7 @@
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [
-    "usbcore.autosuspend=30"
+    "usbcore.autosuspend=60"
   ];
 
   # Define your hostname
