@@ -22,7 +22,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Firmware updates
+  # Firmware
+  hardware.enableAllFirmware = true;
   services.fwupd.enable = true;
 
   # Kernel
@@ -166,36 +167,6 @@
     jack.enable = true;
 
     # Audio device switching
-  wireplumber.extraConfig = {
-    "set-device-priority" = {
-      "alsa.rules" = [
-        {
-          matches = [
-            {
-              "node.name" = "~alsa_output.*";
-            }
-          ];
-          actions = {
-            "update-props" = {
-              "priority.driver" = 2000;
-            };
-          };
-        }
-        {
-          matches = [
-            {
-              "node.name" = "~alsa_input.*";
-            }
-          ];
-          actions = {
-            "update-props" = {
-              "priority.driver" = 2000;
-            };
-          };
-        }
-      ];
-    };
-  };
   };
 
   # Bluetooth
