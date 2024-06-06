@@ -1,29 +1,26 @@
-error:
-       … while calling the 'seq' builtin
-
-         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:322:18:
-
-          321|         options = checked options;
-          322|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          323|         _module = checked (config._module);
-
-       … while evaluating a branch condition
-
-         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:261:9:
-
-          260|       checkUnmatched =
-          261|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [] then
-             |         ^
-          262|           let
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: syntax error, unexpected end of file, expecting ';'
-
-       at /nix/store/3ldgdym8ymz32wz9c5y2m4kghhvdb2kc-source/configuration.nix:315:2:
-
-          314|   system.stateVersion = "23.11";
-          315| }
-             |  ^
-          316|
+building the system configuration...
+these 10 derivations will be built:
+  /nix/store/hbzbf8pqsbcc31qvg74dlhza8s3kwmm6-set-device-priority.conf.drv
+  /nix/store/y4nhh0zjdrmfr6dfj620fz879jd1255j-wireplumber-extra-config.drv
+  /nix/store/101pn83cmwyc1bzrl7g4ki3h96cw0rr7-wireplumber-configs.drv
+  /nix/store/a8pjjn5mrn7z86703gmhsw1zria201jn-unit-wireplumber.service.drv
+  /nix/store/4y67rx5mxlbb98gqi84qq9x9fdx37igk-user-units.drv
+  /nix/store/mkfxq90asf2ldsdcfzxiyjavgilnyqfw-unit-script-nixos-upgrade-start.drv
+  /nix/store/qzjh2462dy4f3dvkrqpy6yj3d8693kg9-unit-nixos-upgrade.service.drv
+  /nix/store/i3iibhibinpxgldpfn0dsjrdx83mvbkj-system-units.drv
+  /nix/store/ql4yvmyks6vqm162hmcjaa7y71g9807l-etc.drv
+  /nix/store/agkgzd8v10i7rv94mm71lw45gy0z4rmx-nixos-system-nixos-24.05.20240515.33d1e75.drv
+building '/nix/store/mkfxq90asf2ldsdcfzxiyjavgilnyqfw-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/hbzbf8pqsbcc31qvg74dlhza8s3kwmm6-set-device-priority.conf.drv'...
+building '/nix/store/qzjh2462dy4f3dvkrqpy6yj3d8693kg9-unit-nixos-upgrade.service.drv'...
+building '/nix/store/y4nhh0zjdrmfr6dfj620fz879jd1255j-wireplumber-extra-config.drv'...
+building '/nix/store/i3iibhibinpxgldpfn0dsjrdx83mvbkj-system-units.drv'...
+building '/nix/store/101pn83cmwyc1bzrl7g4ki3h96cw0rr7-wireplumber-configs.drv'...
+building '/nix/store/a8pjjn5mrn7z86703gmhsw1zria201jn-unit-wireplumber.service.drv'...
+building '/nix/store/4y67rx5mxlbb98gqi84qq9x9fdx37igk-user-units.drv'...
+building '/nix/store/ql4yvmyks6vqm162hmcjaa7y71g9807l-etc.drv'...
+building '/nix/store/agkgzd8v10i7rv94mm71lw45gy0z4rmx-nixos-system-nixos-24.05.20240515.33d1e75.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
