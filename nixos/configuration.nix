@@ -166,18 +166,46 @@
     jack.enable = true;
 
     # Audio device switching
-    config = {
-      rules = [
-        { 
-	  matches = [{ "node.name" = "alsa_input.*"; }];
-          actions = [{ "update-props" = { "priority.driver" = 2000; }; }]; 
-        }
-        { 
-	  matches = [{ "node.name" = "alsa_output.*"; }];
-          actions = [{ "update-props" = { "priority.driver" = 2000; }; }]; 
-	}
-      ];
-    };
+     extraConfig = ''
+    [context.properties]
+    # Add any global properties here if needed
+
+    [rules]
+    rules.add = [
+      {
+        matches = [
+          {
+            # Match all ALSA input devices
+            "node.name" = "alsa_input.*"
+          }
+        ],
+        actions = [
+          {
+            # Set a high priority for these devices
+            "update-props" = {
+              "priority.driver" = 2000;
+            }
+          }
+        ]
+      },
+      {
+        matches = [
+          {
+            # Match all ALSA output devices
+            "node.name" = "alsa_output.*"
+          }
+        ],
+        actions = [
+          {
+            # Set a high priority for these devices
+            "update-props" = {
+              "priority.driver" = 2000;
+            }
+          }
+        ]
+      }
+    ];
+  '';
   };
 
   # Bluetooth
