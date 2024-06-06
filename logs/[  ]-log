@@ -1,29 +1,27 @@
+building the system configuration...
 error:
-       … while calling the 'seq' builtin
+       … while calling the 'head' builtin
 
-         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:322:18:
+         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/attrsets.nix:1575:11:
 
-          321|         options = checked options;
-          322|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          323|         _module = checked (config._module);
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
 
-       … while evaluating a branch condition
+       … while evaluating the attribute 'value'
 
-         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:261:9:
+         at /nix/store/0qd773b63yg8435w8hpm13zqz7iipcbs-source/lib/modules.nix:809:9:
 
-          260|       checkUnmatched =
-          261|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [] then
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
              |         ^
-          262|           let
+          810|         inherit (res.defsFinal') highestPrio;
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: syntax error, unexpected '}', expecting ';'
-
-       at /nix/store/1nq6ch330nsrhyyxgry23bqbaj17nnlf-source/configuration.nix:173:70:
-
-          172|     matches = [{ "node.name" = "alsa_input.*"; }];
-          173|           actions = [{ "update-props" = { "priority.driver" = 2000; }}];
-             |                                                                      ^
-          174|         }
+       error:
+       Failed assertions:
+       - The option definition `services.pipewire.config' in `/nix/store/h2kr7m0h0gamk8gi3wfb87y1ljpqmq98-source/configuration.nix' no longer has any effect; please remove it.
+       Overriding default PipeWire configuration through NixOS options never worked correctly and is no longer supported.
+       Please create drop-in configuration files via `services.pipewire.extraConfig` instead.
