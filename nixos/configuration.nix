@@ -166,7 +166,7 @@
     jack.enable = true;
 
     # Audio device switching
-     extraConfig = ''
+    wireplumber.extraConfig = ''
     [context.properties]
     # Add any global properties here if needed
 
