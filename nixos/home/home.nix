@@ -26,7 +26,8 @@
     vscodium 
     spotube
     whatsapp-for-linux
-    webcord
+    #webcord
+    discord-screenaudio
     libreoffice
     bitwarden
     thunderbird
