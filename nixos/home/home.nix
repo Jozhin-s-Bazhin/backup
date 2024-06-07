@@ -27,7 +27,7 @@
     spotube
     whatsapp-for-linux
     #webcord
-    discord-screenaudio
+    dissent
     libreoffice
     bitwarden
     thunderbird
