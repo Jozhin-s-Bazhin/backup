@@ -26,8 +26,8 @@
     vscodium 
     spotube
     whatsapp-for-linux
-    #webcord
-    dissent
+    webcord
+    #dissent
     libreoffice
     bitwarden
     thunderbird
