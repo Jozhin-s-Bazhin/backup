@@ -11,10 +11,10 @@ in
       size = 11;
     };
 
-    iconTheme = {
+/*    iconTheme = {
       name = "Tela-circle";
       package = pkgs.tela-circle-icon-theme;
-    };
+    };*/
   };
 
   # Gtk theme
