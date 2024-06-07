@@ -5,12 +5,12 @@ MAX_WORKSPACE_ID = 2147483647
 ROOT_WORKSPACE_ID = MAX_WORKSPACE_ID / 2
 
 async def get_workspaces(self):
-    workspaces = [ workspace["id"] for workspace in (await self.hyprctlJSON("workspaces")) if workspace["id"] > 0 ]
+    workspaces = [ workspace["id"] for workspace in (await self.hyprctl_json("workspaces")) if workspace["id"] > 0 ]
     workspaces.sort()
     return workspaces
 
 async def get_currentworkspace(self):
-    monitors = await self.hyprctlJSON("monitors")
+    monitors = await self.hyprctl_json("monitors")
     for monitor in monitors:
         if monitor["focused"]:
             return monitor["activeWorkspace"]["id"]
@@ -61,7 +61,7 @@ async def move_workspaces_to_focused_mon(self, event_data):
     monname, workspacename = event_data.split(",")  # Where monname is the name of the monitor the cursor was just moved to (for example 'eDP-1')
     
     workspaces = await get_workspaces(self)
-    active_workspaces = [ monitor["activeWorkspace"]["id"] for monitor in (await self.hyprctlJSON("monitors")) ]
+    active_workspaces = [ monitor["activeWorkspace"]["id"] for monitor in (await self.hyprctl_json("monitors")) ]
 
     batch = []
     for workspace in workspaces:

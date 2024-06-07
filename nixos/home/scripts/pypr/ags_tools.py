@@ -3,7 +3,7 @@ import subprocess
 from time import sleep
 
 async def remove_unused_bars(self):
-    monitors_json = await self.hyprctlJSON("monitors")
+    monitors_json = await self.hyprctl_json("monitors")
     monitors = [ monitor["id"] for monitor in monitors_json ]
     for monitor in range(3): 
         if monitor not in monitors:
