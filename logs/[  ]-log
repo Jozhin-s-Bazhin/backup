@@ -18,7 +18,7 @@ error:
           299|         else null;
 
        error: The option `services.xdg-desktop-portal-hyprland' does not exist. Definition values:
-       - In `/nix/store/l5wv8rpaafm5vramhawhim9vzm99xqip-source/configuration.nix':
+       - In `/nix/store/ybxf520ngkiwyyra08rybl6ymcfrvq0l-source/configuration.nix':
            {
              enable = true;
            }
