@@ -137,7 +137,6 @@
   # Hyprland
   programs.hyprland.enable = true;
   programs.hyprland.portalPackage = pkgs.xdg-desktop-portal-hyprland;
-  services.xdg-desktop-portal-hyprland.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   xdg.portal = { enable = true; extraPortals = [ pkgs.xdg-desktop-portal-gtk ]; };
 
