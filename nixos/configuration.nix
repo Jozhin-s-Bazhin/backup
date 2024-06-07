@@ -59,9 +59,9 @@
     videoDrivers = [ "amd" ];
 
     # Gnome
-    enable = true;
+    /*enable = true;
     displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
+    desktopManager.gnome.enable = true;*/
   };
 
   # Enable printing
@@ -117,7 +117,7 @@
   services.fprintd.enable = true;
 
   # GNOME
-  environment.gnome.excludePackages = (with pkgs; [
+  /*environment.gnome.excludePackages = (with pkgs; [
     gnome-photos
     gnome-tour
     gedit
@@ -128,7 +128,7 @@
     epiphany
     geary
     gnome-characters
-  ]);
+  ]);*/
 
   # Cosmic
   #services.desktopManager.cosmic.enable = true;
@@ -137,6 +137,7 @@
   # Hyprland
   programs.hyprland.enable = true;
   programs.hyprland.portalPackage = pkgs.xdg-desktop-portal-hyprland;
+  services.xdg-desktop-portal-hyprland.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   xdg.portal = { enable = true; extraPortals = [ pkgs.xdg-desktop-portal-gtk ]; };
 
