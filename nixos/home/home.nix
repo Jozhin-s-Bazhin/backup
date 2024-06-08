@@ -91,8 +91,8 @@
 	pango
 	gamescope
 	
-	  libXrandr
-  libX11
+	  xorg.libXrandr
+  xorg.libX11
   gtk3
   glib
   gdk_pixbuf

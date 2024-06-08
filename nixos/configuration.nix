@@ -226,8 +226,8 @@
   programs.nix-ld.libraries = with pkgs; [
     # Add any missing dynamic libraries for unpackaged programs
     # here, NOT in environment.systemPackages
-      libXrandr
-      libX11
+      xorg.libXrandr
+      xorg.libX11
       gtk3
       glib
   gdk_pixbuf
