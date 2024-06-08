@@ -91,6 +91,7 @@
        gtk3
 	pango
 	gamescope
+	fontconfig
 	
 	  /*xorg.libXrandr
   xorg.libX11
@@ -98,9 +99,6 @@
   gdk-pixbuf
   stdenv.cc.cc.lib*/
 
-	/*# Minecraft
-	openjdk11
-	fuse*/
       ];
     })
     prismlauncher
