@@ -28,4 +28,19 @@
   };
 
   programs.home-manager.enable = true;
+
+  # WLUMA config
+  xdg.configFile."wluma/config.toml".text = ''
+    path = "/sys/bus/iio/devices"
+    thresholds = { 0 = "night", 20 = "dark", 80 = "dim", 250 = "normal", 500 = "bright", 800 = "outdoors" }
+
+    [[output.backlight]]
+    name = "eDP-2"
+    path = "/sys/class/backlight/amdgpu_bl2"
+    capturer = "wlroots"
+
+    #[[keyboard]]
+    #name = "keyboard-framework"
+    #path = "/sys/bus/platform/devices/dell-laptop/leds/dell::kbd_backlight"
+  '';
 }
