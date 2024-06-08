@@ -16,6 +16,7 @@
       inputs.hyprland.follows = "hyprland";
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    iio-hyprland.url = "github:JeanSchoeller/iio-hyprland";
 
     # Cosmic
     /*nixos-cosmic = {

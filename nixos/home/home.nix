@@ -70,7 +70,7 @@
     grimblast
     pyprland
     anyrun
-    wluma
+    inputs.iio-hyprland.packages.${pkgs.system}.default
 
     flat-remix-gtk
 
