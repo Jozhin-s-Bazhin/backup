@@ -37,6 +37,6 @@
   [[output.backlight]]
   name = "eDP-2"
   path = "/sys/class/backlight/amdgpu_bl2"
-  capturer = "none"
+  capturer = "wlroots"
   '';
 }
