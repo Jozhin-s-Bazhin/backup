@@ -230,7 +230,7 @@
       xorg.libX11
       gtk3
       glib
-  gdk_pixbuf
+  gdk-pixbuf
   stdenv.cc.cc.lib
   ];
 
