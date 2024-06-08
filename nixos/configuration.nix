@@ -226,7 +226,12 @@
   programs.nix-ld.libraries = with pkgs; [
     # Add any missing dynamic libraries for unpackaged programs
     # here, NOT in environment.systemPackages
-    xorg.xrandr
+      libXrandr
+      libX11
+      gtk3
+      glib
+  gdk_pixbuf
+  stdenv.cc.cc.lib
   ];
 
   # Virtualisation

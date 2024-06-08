@@ -88,9 +88,15 @@
     (lutris.override {
       extraPkgs = pkgs: [
       	# War thunder
-	gtk3
 	pango
 	gamescope
+	
+	  libXrandr
+  libX11
+  gtk3
+  glib
+  gdk_pixbuf
+  stdenv.cc.cc.lib
 
 	/*# Minecraft
 	openjdk11
