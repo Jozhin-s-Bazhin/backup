@@ -102,6 +102,5 @@
       ];
     })
     prismlauncher
-    gamescope
   ];
 }

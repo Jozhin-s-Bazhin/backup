@@ -258,6 +258,7 @@
       rocmPackages.clr.icd
    ];
   };
+  programs.gamescope.enable = true;
 
   /*## NVIDIA BS
   # something for hyprland
