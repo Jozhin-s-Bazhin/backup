@@ -259,6 +259,7 @@
    ];
   };
   programs.gamescope.enable = true;
+  programs.gamescope.capSysNice = true;
 
   /*## NVIDIA BS
   # something for hyprland
