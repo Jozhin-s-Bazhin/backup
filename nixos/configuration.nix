@@ -260,6 +260,7 @@
   };
   programs.gamescope.enable = true;
   programs.gamescope.capSysNice = true;
+  services.hardware.openrgb.enable = true;
 
   /*## NVIDIA BS
   # something for hyprland
