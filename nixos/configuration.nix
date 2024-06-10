@@ -256,7 +256,7 @@
       amdvlk 
       rocmPackages.clr.icd
     ];
-    hardware.opengl.extraPackages32 = [
+    extraPackages32 = [
       pkgs.driversi686Linux.amdvlk
     ];
   };
