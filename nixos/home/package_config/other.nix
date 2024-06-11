@@ -83,7 +83,6 @@ in
       ms-python.python
       ms-python.vscode-pylance
       jnoortheen.nix-ide
-      codeium.codeium
     ];
     userSettings = {
       vscode-neovim.neovimExecutablePaths.linux = "${pkgs.neovim}/bin/nvim";
