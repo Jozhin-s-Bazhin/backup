@@ -250,14 +250,14 @@
     driSupport = true;
     driSupport32Bit = true;
     extraPackages = with pkgs; [ 
-      #amdvlk 
+      amdvlk 
       rocmPackages.clr.icd
     ];
     extraPackages32 = [
       pkgs.driversi686Linux.amdvlk
     ];
   };
-  #environment.variables.AMD_VULKAN_ICD = "RADV";
+  environment.variables.AMD_VULKAN_ICD = "RADV";
   programs.gamescope.enable = true;
   programs.gamescope.capSysNice = true;
   services.hardware.openrgb.enable = true;
