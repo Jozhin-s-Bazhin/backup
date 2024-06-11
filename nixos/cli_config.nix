@@ -79,7 +79,6 @@
     configure.customRC = ''
       inoremap jk <Esc>
       set ignorecase
-      highlight Normal ctermbg=NONE
     '';
   };
 }
