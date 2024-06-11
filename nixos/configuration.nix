@@ -257,7 +257,7 @@
       pkgs.driversi686Linux.amdvlk
     ];
   };
-  environment.variables.AMD_VULKAN_ICD = "RADV";
+  #environment.variables.AMD_VULKAN_ICD = "RADV";
   programs.gamescope.enable = true;
   programs.gamescope.capSysNice = true;
   services.hardware.openrgb.enable = true;
