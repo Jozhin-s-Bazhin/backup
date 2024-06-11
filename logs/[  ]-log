@@ -1,6 +1,30 @@
 building the system configuration...
-activating the configuration...
-setting up /etc...
-reloading user units for roman...
-restarting sysinit-reactivation.target
-the following new units were started: auto-cpufreq.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/3dr5pyja36lvvrszhzffww1jwyrx6i09-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/3dr5pyja36lvvrszhzffww1jwyrx6i09-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: undefined variable 'codeium'
+
+       at /nix/store/v5fg9kb076jwqg7wxb541s3043hqkzkm-source/home/package_config/other.nix:86:7:
+
+           85|       jnoortheen.nix-ide
+           86|       codeium.codeium
+             |       ^
+           87|     ];
