@@ -257,7 +257,7 @@
       pkgs.driversi686Linux.amdvlk
     ];
   };
-  #environment.variables.VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/radeon_icd.x86_64.json";
+  environment.variables.VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/radeon_icd.x86_64.json";
   programs.gamescope.enable = true;
   programs.gamescope.capSysNice = true;
   services.hardware.openrgb.enable = true;
