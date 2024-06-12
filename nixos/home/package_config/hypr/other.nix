@@ -22,7 +22,7 @@
       "noblur,class:^(xwaylandvideobridge)$"
 
       # LibreOffice
-      "nofullscreenrequest,class:$libreoffice-*"
+      "supressevent fullscreen,class:$libreoffice-*"
     ];
 
     workspace = [
