@@ -25,7 +25,8 @@
 
     windowrule = [
       # LibreOffice
-      "supressevent fullscreen,$libreoffice-*"
+      #"supressevent fullscreen,$libreoffice-*"
+      "fullscreen 0,$libreoffice-*"
     ];
 
     workspace = [
