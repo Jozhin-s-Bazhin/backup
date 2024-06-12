@@ -20,13 +20,7 @@
       "noinitialfocus,class:^(xwaylandvideobridge)$"
       "maxsize 1 1,class:^(xwaylandvideobridge)$"
       "noblur,class:^(xwaylandvideobridge)$"
-
-    ];
-
-    windowrule = [
-      # LibreOffice
-      #"supressevent fullscreen,$libreoffice-*"
-      "fullscreen 0,$libreoffice-*"
+      "tile,class:^libreoffice-*"
     ];
 
     workspace = [
