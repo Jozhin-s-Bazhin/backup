@@ -21,6 +21,9 @@
       "maxsize 1 1,class:^(xwaylandvideobridge)$"
       "noblur,class:^(xwaylandvideobridge)$"
 
+    ];
+
+    windowrule = [
       # LibreOffice
       "supressevent fullscreen,class:$libreoffice-*"
     ];
