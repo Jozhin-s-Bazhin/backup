@@ -22,7 +22,7 @@
       "noblur,class:^(xwaylandvideobridge)$"
 
       # LibreOffice
-      "supressevent,class:^libreoffice-*"
+      "suppressevent ,class:^libreoffice-*"
     ];
 
     workspace = [
