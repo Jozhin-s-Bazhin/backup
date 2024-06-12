@@ -22,7 +22,7 @@
       "noblur,class:^(xwaylandvideobridge)$"
 
       # LibreOffice
-      "suppressevent ,class:^libreoffice-*"
+      "suppressevent maximize,class:^libreoffice-*"
     ];
 
     workspace = [
