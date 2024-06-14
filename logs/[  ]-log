@@ -1,27 +1,25 @@
 building the system configuration...
-these 10 derivations will be built:
-  /nix/store/049izh111wxz7qqs439px1wwa9jpnsk6-hm_hyprhyprland.conf.drv
-  /nix/store/08x1bf4cwvhw9h0n3bvrpnabdnh5zjyl-home-manager-files.drv
-  /nix/store/ra1jw30m6r8b86xd872npy2x7pwd74j6-activation-script.drv
-  /nix/store/55gilr34d19s0icqw6xbmr4mwaq34jky-home-manager-generation.drv
-  /nix/store/s79ygvpvanfq81ky5kmv13nwgmxgy59l-unit-script-nixos-upgrade-start.drv
-  /nix/store/js8nxv0h9bsll8ii8l9iqr40ayazysll-unit-nixos-upgrade.service.drv
-  /nix/store/w20cvpj7cmifdzx5yalgq0f4iq2q0gck-unit-home-manager-roman.service.drv
-  /nix/store/lws3l3ld4c00clr24s1wypv31kmrw73m-system-units.drv
-  /nix/store/npcr61s038iq7l6idvhm8sb4myc3g81a-etc.drv
-  /nix/store/iss49azk5lgkz8wkr1jqwlidsc7y90zs-nixos-system-nixos-24.11.20240612.57d6973.drv
-building '/nix/store/s79ygvpvanfq81ky5kmv13nwgmxgy59l-unit-script-nixos-upgrade-start.drv'...
-building '/nix/store/049izh111wxz7qqs439px1wwa9jpnsk6-hm_hyprhyprland.conf.drv'...
-building '/nix/store/js8nxv0h9bsll8ii8l9iqr40ayazysll-unit-nixos-upgrade.service.drv'...
-building '/nix/store/ra1jw30m6r8b86xd872npy2x7pwd74j6-activation-script.drv'...
-building '/nix/store/08x1bf4cwvhw9h0n3bvrpnabdnh5zjyl-home-manager-files.drv'...
-building '/nix/store/55gilr34d19s0icqw6xbmr4mwaq34jky-home-manager-generation.drv'...
-building '/nix/store/w20cvpj7cmifdzx5yalgq0f4iq2q0gck-unit-home-manager-roman.service.drv'...
-building '/nix/store/lws3l3ld4c00clr24s1wypv31kmrw73m-system-units.drv'...
-building '/nix/store/npcr61s038iq7l6idvhm8sb4myc3g81a-etc.drv'...
-building '/nix/store/iss49azk5lgkz8wkr1jqwlidsc7y90zs-nixos-system-nixos-24.11.20240612.57d6973.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for roman...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-roman.service
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error:
+       Failed assertions:
+       - Anbox needs a kernel with binder and ashmem support
