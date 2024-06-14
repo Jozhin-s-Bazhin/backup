@@ -261,7 +261,7 @@
   programs.gamescope.enable = true;
   programs.gamescope.capSysNice = true;
   services.hardware.openrgb.enable = true;
-  virtualisation.anbox.enable = true;
+  virtualisation.waydroid.enable = true;
 
   /*## NVIDIA BS
   # something for hyprland
