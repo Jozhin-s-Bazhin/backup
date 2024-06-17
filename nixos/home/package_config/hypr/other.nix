@@ -23,6 +23,9 @@
 
       # LibreOffice
       "suppressevent maximize,class:^libreoffice-*"
+
+      # Prismlauncher fix
+      "float, class:Prism*, initialclass:gamescope"
     ];
 
     workspace = [
