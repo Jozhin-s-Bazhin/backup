@@ -25,7 +25,7 @@
       "suppressevent maximize,class:^libreoffice-*"
 
       # Prismlauncher fix
-      "float, class:gamescope, title:Prism*"
+      "float, class:^(gamescope)$, title:^(Prism Launcher 8.3)$"
     ];
 
     workspace = [
