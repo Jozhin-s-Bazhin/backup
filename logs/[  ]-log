@@ -20,8 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: The option `home-manager.users.roman.programs.vscode.keybindings."[definition 1-entry 1]".jk' does not exist. Definition values:
-       - In `/nix/store/6bwixw31ba01cmbrgkyipybzvqap9v0p-source/home/package_config/other.nix':
-           {
-             command = "vscode-neovim.escape";
-           }
+       error: syntax error, unexpected '}', expecting '.' or '='
+
+       at /nix/store/wrhbx2gp1g4qkg55d9ms07fijny8fzxr-source/home/package_config/other.nix:96:7:
+
+           95|         "\"jk\": { \"command\": \"vscode-neovim.escape\" }"
+           96|       }
+             |       ^
+           97|       {
