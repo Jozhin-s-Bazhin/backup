@@ -92,7 +92,7 @@ in
     };
     keybindings = [
       {
-        "\"jk\": { \"command\": \"vscode-neovim.escape\" }" 
+        "jk" = "{ \"command\": \"vscode-neovim.escape\" }";
       }
     ];
   };
