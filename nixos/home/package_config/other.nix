@@ -92,7 +92,11 @@ in
     };
     keybindings = [
       {
-        "jk" = "{ \"command\": \"vscode-neovim.escape\" }";
+        "vscode-neovim.compositeKeys" = {
+	  "jk" = {
+	    "command" = "vscode-neovim.escape";
+	  };
+	};
       }
     ];
   };
