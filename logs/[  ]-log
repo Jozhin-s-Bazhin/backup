@@ -22,9 +22,9 @@ error:
 
        error: syntax error, unexpected '}', expecting '.' or '='
 
-       at /nix/store/wrhbx2gp1g4qkg55d9ms07fijny8fzxr-source/home/package_config/other.nix:96:7:
+       at /nix/store/hqr51bhiazmah4pbmpqn8mikpm24g7j8-source/home/package_config/other.nix:96:7:
 
            95|         "\"jk\": { \"command\": \"vscode-neovim.escape\" }"
            96|       }
              |       ^
-           97|       {
+           97|     ];
