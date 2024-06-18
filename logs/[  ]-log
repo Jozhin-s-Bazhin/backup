@@ -20,8 +20,8 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: The option `home-manager.users.roman.programs.vscode.keybindings."[definition 1-entry 1]"."vscode-neovim.compositeKeys"' does not exist. Definition values:
-       - In `/nix/store/nh1cl6bvham0c8cbp4ys9vxl41fz2f91-source/home/package_config/other.nix':
+       error: The option `home-manager.users.roman.programs.vscode."vscode-neovim.compositeKeys"' does not exist. Definition values:
+       - In `/nix/store/y6nv5y8b8qi8pn77xzkxhz4l1hyil4q9-source/home/package_config/other.nix':
            {
              jk = {
                command = "vscode-neovim.escape";

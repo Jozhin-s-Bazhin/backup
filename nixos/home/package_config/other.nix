@@ -90,15 +90,12 @@ in
       "window.titleBarStyle" = "native";
       "git.confirmSync" = false;
     };
-    keybindings = [
-      {
-        "vscode-neovim.compositeKeys" = {
+    "vscode-neovim.compositeKeys" = {
 	  "jk" = {
 	    "command" = "vscode-neovim.escape";
 	  };
 	};
-      }
-    ];
+
   };
 
   xdg.configFile."hypr/pyprland.toml".text = ''
