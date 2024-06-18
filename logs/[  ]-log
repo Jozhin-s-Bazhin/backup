@@ -1,17 +1,27 @@
 building the system configuration...
-these 5 derivations will be built:
-  /nix/store/xjjgpizxa5d1c3srhjxppv85bway8x3h-unit-script-nixos-upgrade-start.drv
-  /nix/store/0r06f62wn03qdws8152396dmq3zwzw2f-unit-nixos-upgrade.service.drv
-  /nix/store/hx13wyyf1pfsb15w5bvnnnlfh692r2kv-system-units.drv
-  /nix/store/4aixii49xgspwp1h0xn554ln4v2k449c-etc.drv
-  /nix/store/lf7fqvshfxk8a6kwd6yqc3abcj62r7l5-nixos-system-nixos-24.11.20240612.57d6973.drv
-building '/nix/store/xjjgpizxa5d1c3srhjxppv85bway8x3h-unit-script-nixos-upgrade-start.drv'...
-building '/nix/store/0r06f62wn03qdws8152396dmq3zwzw2f-unit-nixos-upgrade.service.drv'...
-building '/nix/store/hx13wyyf1pfsb15w5bvnnnlfh692r2kv-system-units.drv'...
-building '/nix/store/4aixii49xgspwp1h0xn554ln4v2k449c-etc.drv'...
-building '/nix/store/lf7fqvshfxk8a6kwd6yqc3abcj62r7l5-nixos-system-nixos-24.11.20240612.57d6973.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for roman...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-roman.service
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: The option `home-manager.users.roman.programs.vscode.keybindings."[definition 1-entry 1]".jk' does not exist. Definition values:
+       - In `/nix/store/6bwixw31ba01cmbrgkyipybzvqap9v0p-source/home/package_config/other.nix':
+           {
+             command = "vscode-neovim.escape";
+           }
