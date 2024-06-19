@@ -1,29 +1,28 @@
 building the system configuration...
-these 9 derivations will be built:
-  /nix/store/f5xy16pliy4g1z3c2b2ggravl5m80sbz-vscode-user-settings.drv
-  /nix/store/7ld7ldjngrxff9zy4nsqq78yia44hydm-home-manager-files.drv
-  /nix/store/m9djaklg9lp21jiinmk372sxyj211snz-home-manager-generation.drv
-  /nix/store/8xsjcp7xaw6h8k909ay5vmfcfrilmsnk-unit-home-manager-roman.service.drv
-  /nix/store/fmkphlh1qjinc0g5c53l3siz6hyigms4-unit-script-nixos-upgrade-start.drv
-  /nix/store/xkw0zmm429a1dvmbi606021srn6bsmj4-unit-nixos-upgrade.service.drv
-  /nix/store/fh6b9hlm2zmr9vhl5b5n5bv25hj7b7r1-system-units.drv
-  /nix/store/rd739i22mzc12qbn11gzgaz67gsfyprd-etc.drv
-  /nix/store/balssia5js82llxy06ksrwxy8sw1s9hy-nixos-system-nixos-24.11.20240612.57d6973.drv
-this path will be fetched (0.00 MiB download, 0.01 MiB unpacked):
-  /nix/store/n5chc8i5za5jrr4biwwgx7a96p0a7aq9-jq-1.7.1-dev
-building '/nix/store/fmkphlh1qjinc0g5c53l3siz6hyigms4-unit-script-nixos-upgrade-start.drv'...
-copying path '/nix/store/n5chc8i5za5jrr4biwwgx7a96p0a7aq9-jq-1.7.1-dev' from 'https://cache.nixos.org'...
-building '/nix/store/f5xy16pliy4g1z3c2b2ggravl5m80sbz-vscode-user-settings.drv'...
-building '/nix/store/xkw0zmm429a1dvmbi606021srn6bsmj4-unit-nixos-upgrade.service.drv'...
-building '/nix/store/7ld7ldjngrxff9zy4nsqq78yia44hydm-home-manager-files.drv'...
-building '/nix/store/m9djaklg9lp21jiinmk372sxyj211snz-home-manager-generation.drv'...
-building '/nix/store/8xsjcp7xaw6h8k909ay5vmfcfrilmsnk-unit-home-manager-roman.service.drv'...
-building '/nix/store/fh6b9hlm2zmr9vhl5b5n5bv25hj7b7r1-system-units.drv'...
-building '/nix/store/rd739i22mzc12qbn11gzgaz67gsfyprd-etc.drv'...
-building '/nix/store/balssia5js82llxy06ksrwxy8sw1s9hy-nixos-system-nixos-24.11.20240612.57d6973.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for roman...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-roman.service
-the following new units were started: auto-cpufreq.service
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: The option `hardware.amdgpu.amdvlk' in module `/nix/store/jc9wxgmplah06lrh609rzkck9126x502-source/common/gpu/amd' would be a parent of the following options, but its type `boolean' does not support nested options.
+        - option(s) with prefix `hardware.amdgpu.amdvlk.enable' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
+        - option(s) with prefix `hardware.amdgpu.amdvlk.package' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
+        - option(s) with prefix `hardware.amdgpu.amdvlk.settings' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
+        - option(s) with prefix `hardware.amdgpu.amdvlk.support32Bit' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
+        - option(s) with prefix `hardware.amdgpu.amdvlk.supportExperimental' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
