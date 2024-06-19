@@ -56,7 +56,7 @@
     #videoDrivers = [ "nvidia" ];
 
     # AMD
-    videoDrivers = [ "amd" ];
+    videoDrivers = [ "modesetting" ];
 
     # Gnome
     /*enable = true;

@@ -1,28 +1,17 @@
 building the system configuration...
-error:
-       … while calling the 'head' builtin
-
-         at /nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/lib/attrsets.nix:1575:11:
-
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: The option `hardware.amdgpu.amdvlk' in module `/nix/store/jc9wxgmplah06lrh609rzkck9126x502-source/common/gpu/amd' would be a parent of the following options, but its type `boolean' does not support nested options.
-        - option(s) with prefix `hardware.amdgpu.amdvlk.enable' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
-        - option(s) with prefix `hardware.amdgpu.amdvlk.package' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
-        - option(s) with prefix `hardware.amdgpu.amdvlk.settings' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
-        - option(s) with prefix `hardware.amdgpu.amdvlk.support32Bit' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
-        - option(s) with prefix `hardware.amdgpu.amdvlk.supportExperimental' in module `/nix/store/5w7nhyvrgsa81h0kyifmbl6j97hvlzh5-source/nixos/modules/services/hardware/amdvlk.nix'
+these 5 derivations will be built:
+  /nix/store/4hq59xgk2mw76yqjb5wfrmhij5469g8d-unit-script-nixos-upgrade-start.drv
+  /nix/store/gbx04hbw3zy8ai9hdsxqkwzwww2i2a7x-unit-nixos-upgrade.service.drv
+  /nix/store/f441d1f6f5r43l67w9ba0pr8hiagsiz8-system-units.drv
+  /nix/store/2h7rwksz1i4raamkv5518gmgh8c4zb3w-etc.drv
+  /nix/store/9jgykh74y58mgwk1sfm1drk5nfnh12f6-nixos-system-nixos-24.11.20240612.57d6973.drv
+building '/nix/store/4hq59xgk2mw76yqjb5wfrmhij5469g8d-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/gbx04hbw3zy8ai9hdsxqkwzwww2i2a7x-unit-nixos-upgrade.service.drv'...
+building '/nix/store/f441d1f6f5r43l67w9ba0pr8hiagsiz8-system-units.drv'...
+building '/nix/store/2h7rwksz1i4raamkv5518gmgh8c4zb3w-etc.drv'...
+building '/nix/store/9jgykh74y58mgwk1sfm1drk5nfnh12f6-nixos-system-nixos-24.11.20240612.57d6973.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
+the following new units were started: auto-cpufreq.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
