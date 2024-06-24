@@ -20,11 +20,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: attempt to call something which is not a function but a list
+       error: attribute 'proton-ge-custom' missing
 
-       at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/nixos/modules/programs/steam.nix:58:80:
+       at /nix/store/97v1s315zdzfi832qjlyjbd2bhymavn9-source/configuration.nix:200:23:
 
-           57|         in prevLibs ++ additionalLibs;
-           58|         extraPkgs = p: (cfg.extraPackages ++ lib.optionals (prev ? extraPkgs) (prev.extraPkgs p));
-             |                                                                                ^
-           59|       } // lib.optionalAttrs (cfg.gamescopeSession.enable && gamescopeCfg.capSysNice)
+          199|     gamescopeSession.enable = true;
+          200|     extraPackages = [ pkgs.proton-ge-custom ];
+             |                       ^
+          201|   };
