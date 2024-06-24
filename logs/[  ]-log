@@ -1,29 +1,29 @@
-building the system configuration...
-these 11 derivations will be built:
-  /nix/store/0rwb2l6wz08bhs5p21985x4plqjlrapg-unit-script-nixos-upgrade-start.drv
-  /nix/store/5k5zzcaqxpwgm4jnd9s5s9774ks8dkkl-home-manager-path.drv
-  /nix/store/vq1g1bhax7chi6c5h5pk99spb4iiygxm-hm_fontconfigconf.d10hmfonts.conf.drv
-  /nix/store/fpgady3cz9mn77djaxi6bvv0jb1q3vg1-home-manager-files.drv
-  /nix/store/y5i076jdl33ycarr7cnh1mwcffmqlfxj-home-manager-generation.drv
-  /nix/store/3z6riz37lfai1z146r6qp53g9gvfjbp6-unit-home-manager-roman.service.drv
-  /nix/store/4v4ighxr41g29caw68871ka5g1iym1pq-user-environment.drv
-  /nix/store/c6dvqw3a5aha44d2a2q94hjnfqmx7asx-unit-nixos-upgrade.service.drv
-  /nix/store/gb8aibllsxxs2mnybsw5l197s0wy3qw4-system-units.drv
-  /nix/store/rbp9kpnwxncvbsvlfjn92dm544y0s4gz-etc.drv
-  /nix/store/rnfcvbfdgvwwdir8a2fwp4l6dal25cpv-nixos-system-nixos-24.11.20240612.57d6973.drv
-building '/nix/store/5k5zzcaqxpwgm4jnd9s5s9774ks8dkkl-home-manager-path.drv'...
-building '/nix/store/0rwb2l6wz08bhs5p21985x4plqjlrapg-unit-script-nixos-upgrade-start.drv'...
-building '/nix/store/c6dvqw3a5aha44d2a2q94hjnfqmx7asx-unit-nixos-upgrade.service.drv'...
-building '/nix/store/vq1g1bhax7chi6c5h5pk99spb4iiygxm-hm_fontconfigconf.d10hmfonts.conf.drv'...
-building '/nix/store/4v4ighxr41g29caw68871ka5g1iym1pq-user-environment.drv'...
-building '/nix/store/fpgady3cz9mn77djaxi6bvv0jb1q3vg1-home-manager-files.drv'...
-building '/nix/store/y5i076jdl33ycarr7cnh1mwcffmqlfxj-home-manager-generation.drv'...
-building '/nix/store/3z6riz37lfai1z146r6qp53g9gvfjbp6-unit-home-manager-roman.service.drv'...
-building '/nix/store/gb8aibllsxxs2mnybsw5l197s0wy3qw4-system-units.drv'...
-building '/nix/store/rbp9kpnwxncvbsvlfjn92dm544y0s4gz-etc.drv'...
-building '/nix/store/rnfcvbfdgvwwdir8a2fwp4l6dal25cpv-nixos-system-nixos-24.11.20240612.57d6973.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for roman...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-roman.service
+error:
+       … while calling the 'seq' builtin
+
+         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/modules.nix:322:18:
+
+          321|         options = checked options;
+          322|         config = checked (removeAttrs config [ "_module" ]);
+             |                  ^
+          323|         _module = checked (config._module);
+
+       … while evaluating a branch condition
+
+         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/modules.nix:261:9:
+
+          260|       checkUnmatched =
+          261|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [] then
+             |         ^
+          262|           let
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: undefined variable 'proton-ge-custom'
+
+       at /nix/store/24bxsxp8q3f6pl9mnrwaqnmf4kdnnqam-source/configuration.nix:201:26:
+
+          200|     package = pkgs.steam.override {
+          201|      extraPkgs = pkgs: [ proton-ge-custom ];
+             |                          ^
+          202|     };
