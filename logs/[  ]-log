@@ -1,29 +1,39 @@
+building the system configuration...
+copying path '/nix/store/gzf4zwcakda1nykn6h0avh45xhjhvsz4-source' from 'https://cache.nixos.org'...
+copying path '/nix/store/rljkm6h18fjvavm6l17jiil8glphc44f-source' from 'https://cache.nixos.org'...
+copying path '/nix/store/ka839ivm6bhhwwfq7sf1d9abwc462dqq-source' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/saac8938s9qrg2x47s3k0p5g5i7d3r61-source' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/is1197i42hrhj23yln1r2cssr3zwh77n-source' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/521fbzy39xl4d8m818hdra5gwmka1kmr-source' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/rx96fhs9xg6b71flmgwbkvrvx209w0gn-source' from 'https://cache.nixos.org'...
+copying path '/nix/store/1gkify2zf0791dikfkbgf0wknh0xq8rq-source' from 'https://hyprland.cachix.org'...
+copying path '/nix/store/b2hxgkvh0jrkxfv312xcrmrr3qyz50c1-source' from 'https://cache.nixos.org'...
 error:
-       … while calling the 'seq' builtin
+       … while calling the 'head' builtin
 
-         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/modules.nix:322:18:
+         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/attrsets.nix:1575:11:
 
-          321|         options = checked options;
-          322|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          323|         _module = checked (config._module);
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
 
-       … while evaluating a branch condition
+       … while evaluating the attribute 'value'
 
-         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/modules.nix:261:9:
+         at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/lib/modules.nix:809:9:
 
-          260|       checkUnmatched =
-          261|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [] then
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
              |         ^
-          262|           let
+          810|         inherit (res.defsFinal') highestPrio;
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'proton-ge-custom'
+       error: attempt to call something which is not a function but a list
 
-       at /nix/store/24bxsxp8q3f6pl9mnrwaqnmf4kdnnqam-source/configuration.nix:201:26:
+       at /nix/store/dydg48djlykksz8cxq0xjplyxpa9pvf4-source/nixos/modules/programs/steam.nix:58:80:
 
-          200|     package = pkgs.steam.override {
-          201|      extraPkgs = pkgs: [ proton-ge-custom ];
-             |                          ^
-          202|     };
+           57|         in prevLibs ++ additionalLibs;
+           58|         extraPkgs = p: (cfg.extraPackages ++ lib.optionals (prev ? extraPkgs) (prev.extraPkgs p));
+             |                                                                                ^
+           59|       } // lib.optionalAttrs (cfg.gamescopeSession.enable && gamescopeCfg.capSysNice)
