@@ -1,21 +1,16 @@
-error:
-       … while calling the 'seq' builtin
-
-         at /nix/store/yqy82fn77fy3rv7lpwa9m11w3a2nnqg5-source/lib/modules.nix:322:18:
-
-          321|         options = checked options;
-          322|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          323|         _module = checked (config._module);
-
-       … while calling the 'throw' builtin
-
-         at /nix/store/yqy82fn77fy3rv7lpwa9m11w3a2nnqg5-source/lib/modules.nix:298:18:
-
-          297|                     ''
-          298|             else throw baseMsg
-             |                  ^
-          299|         else null;
-
-       error: The option `hardware.graphics.driSupport32Bit' does not exist. Definition values:
-       - In `/nix/store/v7hpqwxx5ba2dp9bajjsjhsbngmbib9a-source/configuration.nix': true
+building the system configuration...
+these 5 derivations will be built:
+  /nix/store/zm93012kx5hf68yzs8rhyjf5ry1gls1p-unit-script-nixos-upgrade-start.drv
+  /nix/store/l1yw0v6src660ywmr146b5115am0zlpa-unit-nixos-upgrade.service.drv
+  /nix/store/97iqsmga8vx1bjhwqvxd25lnzkixp8gg-system-units.drv
+  /nix/store/pr4gq5yk25jg8rpb1vpd0cd4xxg1bvgx-etc.drv
+  /nix/store/qxixw1s5z9fxa1pzqxynwmj5q8l5kfwd-nixos-system-nixos-24.11.20240622.a71e967.drv
+building '/nix/store/zm93012kx5hf68yzs8rhyjf5ry1gls1p-unit-script-nixos-upgrade-start.drv'...
+building '/nix/store/l1yw0v6src660ywmr146b5115am0zlpa-unit-nixos-upgrade.service.drv'...
+building '/nix/store/97iqsmga8vx1bjhwqvxd25lnzkixp8gg-system-units.drv'...
+building '/nix/store/pr4gq5yk25jg8rpb1vpd0cd4xxg1bvgx-etc.drv'...
+building '/nix/store/qxixw1s5z9fxa1pzqxynwmj5q8l5kfwd-nixos-system-nixos-24.11.20240622.a71e967.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for roman...
+restarting sysinit-reactivation.target
