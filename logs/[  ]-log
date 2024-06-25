@@ -1,5 +1,4 @@
 building the system configuration...
-copying path '/nix/store/pfqbxdicyksnqda6h5xv285sx7vamwzd-source' from 'https://cache.nixos.org'...
 error:
        … while calling the 'head' builtin
 
@@ -23,8 +22,5 @@ error:
 
        error:
        Failed assertions:
-       - The option definition `hardware.opengl.driSupport' in `/nix/store/qbrimynsc1ldwpnhrb7mxnn6w2jf6wpf-source/configuration.nix' no longer has any effect; please remove it.
-       The setting can be removed.
-
        - You have set services.power-profiles-daemon.enable = true;
        which conflicts with services.auto-cpufreq.enable = true;
